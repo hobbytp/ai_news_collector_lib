@@ -1,0 +1,97 @@
+"""
+AI News Collector Library Setup
+"""
+
+from setuptools import setup, find_packages
+import os
+
+# 读取README文件
+def read_readme():
+    readme_path = os.path.join(os.path.dirname(__file__), 'README.md')
+    if os.path.exists(readme_path):
+        with open(readme_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    return "AI News Collector Library - A Python library for collecting AI-related news from multiple sources"
+
+# 读取requirements文件
+def read_requirements():
+    requirements_path = os.path.join(os.path.dirname(__file__), 'requirements.txt')
+    if os.path.exists(requirements_path):
+        with open(requirements_path, 'r', encoding='utf-8') as f:
+            return [line.strip() for line in f if line.strip() and not line.startswith('#')]
+    return [
+        'requests>=2.28.0',
+        'beautifulsoup4>=4.11.0',
+        'feedparser>=6.0.0',
+        'python-dotenv>=0.19.0'
+    ]
+
+setup(
+    name="ai-news-collector-lib",
+    version="0.1.0",
+    author="AI News Collector Team",
+    author_email="support@ai-news-collector.com",
+    description="A Python library for collecting AI-related news from multiple sources",
+    long_description=read_readme(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/ai-news-collector/ai-news-collector-lib",
+    project_urls={
+        "Bug Tracker": "https://github.com/ai-news-collector/ai-news-collector-lib/issues",
+        "Documentation": "https://ai-news-collector-lib.readthedocs.io/",
+        "Source Code": "https://github.com/ai-news-collector/ai-news-collector-lib",
+    },
+    py_modules=['ai_news_collector_lib'],
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    ],
+    python_requires=">=3.8",
+    install_requires=read_requirements(),
+    extras_require={
+        "advanced": [
+            "aiohttp>=3.8.0",
+            "redis>=4.0.0",
+            "schedule>=1.2.0",
+            "apscheduler>=3.9.0",
+        ],
+        "nlp": [
+            "nltk>=3.8",
+            "spacy>=3.4.0",
+            "textblob>=0.17.0",
+        ],
+        "web": [
+            "fastapi>=0.80.0",
+            "uvicorn>=0.18.0",
+            "streamlit>=1.20.0",
+        ],
+        "dev": [
+            "pytest>=7.0.0",
+            "pytest-asyncio>=0.20.0",
+            "black>=22.0.0",
+            "flake8>=5.0.0",
+            "mypy>=0.950",
+        ],
+    },
+    entry_points={
+        "console_scripts": [
+            "ai-news-collector=ai_news_collector_lib.cli:main",
+        ],
+    },
+    include_package_data=True,
+    package_data={
+        "ai_news_collector_lib": ["*.json", "*.yaml", "*.yml"],
+    },
+    keywords="ai, news, collector, search, web scraping, machine learning, artificial intelligence",
+    license="MIT",
+    zip_safe=False,
+)

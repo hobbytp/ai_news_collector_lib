@@ -1,0 +1,30 @@
+# AI News Collector Library Requirements
+
+# 核心依赖
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+feedparser>=6.0.0
+python-dotenv>=0.19.0
+
+# 可选依赖 - 高级功能
+aiohttp>=3.8.0          # 异步HTTP客户端
+redis>=4.0.0            # 缓存存储
+schedule>=1.2.0         # 定时任务
+apscheduler>=3.9.0      # 高级调度器
+
+# 可选依赖 - 内容处理
+nltk>=3.8               # 自然语言处理
+spacy>=3.4.0           # 高级NLP
+textblob>=0.17.0       # 文本分析
+
+# 可选依赖 - Web框架
+fastapi>=0.80.0        # API框架
+uvicorn>=0.18.0        # ASGI服务器
+streamlit>=1.20.0      # Web界面
+
+# 开发依赖
+pytest>=7.0.0          # 测试框架
+pytest-asyncio>=0.20.0 # 异步测试
+black>=22.0.0          # 代码格式化
+flake8>=5.0.0          # 代码检查
+mypy>=0.950            # 类型检查

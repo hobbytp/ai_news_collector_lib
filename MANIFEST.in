@@ -1,0 +1,21 @@
+# AI News Collector Library Manifest
+
+include README.md
+include LICENSE
+include requirements.txt
+include MANIFEST.in
+
+recursive-include ai_news_collector_lib *.py
+recursive-include ai_news_collector_lib *.json
+recursive-include ai_news_collector_lib *.yaml
+recursive-include ai_news_collector_lib *.yml
+
+recursive-include examples *.py
+recursive-include tests *.py
+
+exclude *.pyc
+exclude *.pyo
+exclude __pycache__
+exclude .git*
+exclude .DS_Store
+exclude *.egg-info
