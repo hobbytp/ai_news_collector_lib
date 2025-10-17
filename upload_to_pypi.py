@@ -74,7 +74,7 @@ def upload_to_pypi():
 if __name__ == "__main__":
     success = upload_to_pypi()
     if success:
-        print("\n��� 包已成功上传到PyPI!")
+        print("\n✅ 包已成功上传到PyPI!")
         print("你可以通过以下命令安装:")
         print("pip install ai-news-collector-lib")
     else:

@@ -176,14 +176,16 @@ class ArxivTool(BaseSearchTool):
                 for entry in feed.entries:
                     try:
                         # 解析发布时间
-                        published_str = getattr(entry, 'published', None) or getattr(entry, 'updated', None)
-                        if published_str:
-                            # feedparser已处理RFC822/ISO日期；统一转ISO字符串
-                            try:
+                        # 说明：feedparser 可能仅提供 published_parsed 或 updated_parsed，两者单位均为 time.struct_time
+                        # 这里按优先级回退：published_parsed > updated_parsed > 当前时间
+                        try:
+                            if hasattr(entry, 'published_parsed') and entry.published_parsed:
                                 published_date = datetime(*entry.published_parsed[:6])
-                            except Exception:
+                            elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                                published_date = datetime(*entry.updated_parsed[:6])
+                            else:
                                 published_date = datetime.now()
-                        else:
+                        except Exception:
                             published_date = datetime.now()
                         
                         article = Article(
