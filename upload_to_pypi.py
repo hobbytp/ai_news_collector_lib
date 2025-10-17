@@ -19,7 +19,8 @@ def upload_to_pypi():
         print("请先设置: export TWINE_PASSWORD='your-pypi-token'")
         return False
     
-    os.environ['HTTPS_PROXY'] = 'http://localhost:33210'
+    # 使用环境中的代理配置（如果需要），不强制设置本地代理
+    # 如需代理，请在运行前设置 HTTPS_PROXY 环境变量
     os.environ['TWINE_USERNAME'] = '__token__'
     
     # 检查包文件
