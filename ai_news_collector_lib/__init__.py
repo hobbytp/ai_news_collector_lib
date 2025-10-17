@@ -17,7 +17,7 @@ AI News Collector Library
     result = await collector.collect_news("artificial intelligence")
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "AI News Collector Team"
 __email__ = "support@ai-news-collector.com"
 

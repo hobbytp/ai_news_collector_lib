@@ -28,7 +28,7 @@ def read_requirements():
 
 setup(
     name="ai-news-collector-lib",
-    version="0.1.0",
+    version="0.1.1",
     author="AI News Collector Team",
     author_email="support@ai-news-collector.com",
     description="A Python library for collecting AI-related news from multiple sources",
@@ -80,6 +80,7 @@ setup(
             "black>=22.0.0",
             "flake8>=5.0.0",
             "mypy>=0.950",
+            "vcrpy>=4.4.0",
         ],
     },
     entry_points={

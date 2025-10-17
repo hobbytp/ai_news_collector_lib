@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ai-news-collector-lib"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python library for collecting AI-related news from multiple sources"
 readme = "README.md"
 license = { text = "MIT" }
@@ -60,6 +60,7 @@ dev = [
     "black>=22.0.0",
     "flake8>=5.0.0",
     "mypy>=0.950",
+    "vcrpy>=4.4.0",
 ]
 
 [project.urls]
