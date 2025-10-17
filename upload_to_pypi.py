@@ -6,6 +6,10 @@ import os
 import sys
 import subprocess
 import shutil
+from dotenv import load_dotenv
+
+# 自动加载项目根目录 .env（如果存在），便于读取 TWINE_PASSWORD 等环境变量
+load_dotenv()
 
 def upload_to_pypi():
     """上传包到PyPI"""
@@ -28,12 +32,24 @@ def upload_to_pypi():
     if not os.path.exists(dist_dir):
         print("错误: dist目录不存在")
         return False
-    
+
+    # 读取当前版本，便于仅上传对应版本的制品
+    current_version = None
+    try:
+        from ai_news_collector_lib import __version__ as _v
+        current_version = _v
+    except Exception:
+        pass
+
     # 获取包文件列表
     package_files = []
     for file in os.listdir(dist_dir):
-        if file.endswith(('.whl', '.tar.gz')):
-            package_files.append(os.path.join(dist_dir, file))
+        if not file.endswith(('.whl', '.tar.gz')):
+            continue
+        if current_version and (f"-{current_version}" not in file):
+            # 跳过与当前版本不匹配的旧制品，避免 PyPI "File already exists"
+            continue
+        package_files.append(os.path.join(dist_dir, file))
     
     if not package_files:
         print("错误: 没有找到包文件")
@@ -43,15 +59,20 @@ def upload_to_pypi():
     
     # 构建twine命令
     cmd = [sys.executable, '-m', 'twine', 'upload'] + package_files
-    
+
     try:
         print("执行上传命令...")
+        # 在Windows中文环境下，强制子进程使用UTF-8，避免 rich/twine 输出引发 gbk 编码错误
+        child_env = os.environ.copy()
+        child_env.setdefault('PYTHONIOENCODING', 'utf-8')
+        child_env.setdefault('PYTHONUTF8', '1')
         result = subprocess.run(
             cmd,
             capture_output=True,
             text=True,
             encoding='utf-8',
-            errors='replace'
+            errors='replace',
+            env=child_env
         )
         
         print("STDOUT:")
