@@ -28,7 +28,7 @@ def read_requirements():
 
 setup(
     name="ai-news-collector-lib",
-    version="0.1.0",
+    version="0.1.1",
     author="AI News Collector Team",
     author_email="support@ai-news-collector.com",
     description="A Python library for collecting AI-related news from multiple sources",
