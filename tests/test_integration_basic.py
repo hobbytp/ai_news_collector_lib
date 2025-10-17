@@ -4,14 +4,15 @@ from datetime import datetime
 
 @pytest.mark.asyncio
 @pytest.mark.network
-async def test_collect_news_basic_network(collector, allow_network):
+async def test_collect_news_basic_network(collector, allow_network, vcr_vcr):
     if not allow_network:
         pytest.skip("Network disabled by .env (ALLOW_NETWORK != 1)")
 
     # 仅选择较稳定的免费源，降低波动
     sources = [s for s in collector.get_available_sources() if s in ("hackernews", "duckduckgo")]
-
-    result = await collector.collect_news(query="artificial intelligence", sources=sources)
+    # 使用 VCR 录制/回放网络请求
+    with vcr_vcr.use_cassette("basic_ai_hn_ddg.yaml"):
+        result = await collector.collect_news(query="artificial intelligence", sources=sources)
 
     # 结构断言
     assert isinstance(result.total_articles, int)

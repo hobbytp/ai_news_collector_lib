@@ -206,6 +206,31 @@ python -m pytest tests/test_integration.py::TestIntegration::test_api_keys_valid
 4. 项目已经配置了`python-dotenv`来自动加载`.env`文件
 5. 集成测试标记为`@pytest.mark.integration`，可以单独运行
 
+## VCR 录制/回放（稳定网络集成测试）
+
+项目已集成 [vcrpy]，支持将网络请求“录制”为磁带（YAML），之后回放以避免网络抖动：
+
+- 磁带目录：`tests/cassettes/`
+- 环境变量：
+  - `ALLOW_NETWORK=1` 允许触网（首次运行会录制磁带）
+  - `UPDATE_CASSETTES=1` 强制重新录制磁带（与 `ALLOW_NETWORK=1` 搭配）
+
+### 使用方法
+
+```bash
+# 首次录制（允许网络，若磁带不存在则录制；存在则回放）
+ALLOW_NETWORK=1 python -m pytest -m network -v
+
+# 更新（重新录制所有相关磁带）
+UPDATE_CASSETTES=1 ALLOW_NETWORK=1 python -m pytest -m network -v
+
+# 离线回放（不触网，仅回放已有磁带；如无磁带则跳过或失败）
+python -m pytest -m network -v
+```
+
+> 提示：我们的网络集成测试在 `tests/test_integration_basic.py` 与 `tests/test_integration_advanced.py` 已使用磁带。
+> 离线单元测试（如 ArXiv 回退逻辑）不需要磁带。
+
 ## 快速开始
 
 ### 1. 运行单元测试（推荐开始）

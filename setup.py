@@ -80,6 +80,7 @@ setup(
             "black>=22.0.0",
             "flake8>=5.0.0",
             "mypy>=0.950",
+            "vcrpy>=4.4.0",
         ],
     },
     entry_points={

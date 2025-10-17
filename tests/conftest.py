@@ -1,6 +1,7 @@
 import os
 import pytest
 from dotenv import load_dotenv
+import vcr
 
 # 加载本地 .env，以便测试根据环境开关网络等行为
 load_dotenv()
@@ -63,3 +64,39 @@ def advanced_config(max_articles, days_back):
 def advanced_collector(advanced_config):
     from ai_news_collector_lib import AdvancedAINewsCollector
     return AdvancedAINewsCollector(advanced_config)
+
+
+# =====================
+# VCR 配置：录制/回放 HTTP
+# =====================
+
+def _get_record_mode(allow_net: bool) -> str:
+    """根据环境决定 vcr 的录制模式。
+    - 未允许网络：none（只回放，不触网）
+    - 允许网络但更新磁带：all（重新录制）
+    - 允许网络：once（无磁带时录制，有磁带时回放）
+    """
+    if not allow_net:
+        return "none"
+    if os.getenv("UPDATE_CASSETTES", "0") == "1":
+        return "all"
+    return "once"
+
+
+# 统一的 VCR 实例（磁带目录在 tests/cassettes）
+_cassette_dir = os.path.join(os.path.dirname(__file__), "cassettes")
+os.makedirs(_cassette_dir, exist_ok=True)
+
+
+@pytest.fixture(scope="session")
+def vcr_vcr(allow_network):
+    """提供配置好的 VCR 实例供测试使用。"""
+    return vcr.VCR(
+        cassette_library_dir=_cassette_dir,
+        record_mode=_get_record_mode(allow_network),
+        filter_headers=["Authorization", "X-API-KEY"],
+        filter_query_parameters=["apiKey", "key"],
+        match_on=["method", "scheme", "host", "port", "path", "query"],
+        decode_compressed_response=True,
+        allow_playback_repeats=True,
+    )
