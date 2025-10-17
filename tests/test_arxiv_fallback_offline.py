@@ -81,7 +81,8 @@ def _patch_requests_and_bs(monkeypatch, content_bytes: bytes):
 def test_arxiv_fallback_updated(monkeypatch):
     _patch_requests_and_bs(monkeypatch, ATOM_UPDATED)
     tool = ArxivTool(max_articles=1)
-    articles = tool.search("test", days_back=365)
+    # 避免被 _filter_by_date 误过滤，设置 days_back=0
+    articles = tool.search("test", days_back=0)
 
     assert len(articles) == 1
     a = articles[0]
@@ -94,7 +95,8 @@ def test_arxiv_fallback_updated(monkeypatch):
 def test_arxiv_fallback_published(monkeypatch):
     _patch_requests_and_bs(monkeypatch, ATOM_PUBLISHED)
     tool = ArxivTool(max_articles=1)
-    articles = tool.search("test", days_back=365)
+    # 避免被 _filter_by_date 误过滤，设置 days_back=0
+    articles = tool.search("test", days_back=0)
 
     assert len(articles) == 1
     a = articles[0]
@@ -107,7 +109,8 @@ def test_arxiv_fallback_now(monkeypatch):
     _patch_requests_and_bs(monkeypatch, ATOM_NO_DATES)
     tool = ArxivTool(max_articles=1)
     start = datetime.now() - timedelta(seconds=10)
-    articles = tool.search("test", days_back=365)
+    # 避免被 _filter_by_date 误过滤，设置 days_back=0
+    articles = tool.search("test", days_back=0)
     end = datetime.now() + timedelta(seconds=10)
 
     assert len(articles) == 1
