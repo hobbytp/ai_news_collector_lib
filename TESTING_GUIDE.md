@@ -231,6 +231,40 @@ python -m pytest -m network -v
 > 提示：我们的网络集成测试在 `tests/test_integration_basic.py` 与 `tests/test_integration_advanced.py` 已使用磁带。
 > 离线单元测试（如 ArXiv 回退逻辑）不需要磁带。
 
+## CI 测试与发布流程
+
+- Push/PR 测试工作流：`.github/workflows/test.yml`
+  - Python `3.12`，安装 `.[dev]` 依赖（包含 `vcrpy`）。
+  - 以离线模式运行测试：`ALLOW_NETWORK=0 python -m pytest -q`（使用已提交的磁带回放）。
+
+- 发布工作流：`.github/workflows/publish.yml`
+  - 发布前安装构建工具与 `.[dev]` 依赖。
+  - 运行离线测试（VCR 回放）后再执行打包与发布：`python -m build` + `twine upload`。
+  - 使用 GitHub Secrets `PYPI_API_TOKEN` 执行发布。
+
+### 本地录制/回放与发布的推荐流程
+
+```bash
+# 1) 安装开发依赖（确保有 vcrpy 和 pytest）
+pip install -e .[dev]
+
+# 2) 离线回放（默认）
+python -m pytest -m network -v
+
+# 3) 首次录制或更新磁带
+ALLOW_NETWORK=1 python -m pytest -m network -v
+ALLOW_NETWORK=1 UPDATE_CASSETTES=1 python -m pytest -m network -v
+
+# 4) 本地打包（发布前自检）
+python -m build
+
+# 5) 本地上传到 PyPI（需要环境变量 TWINE_PASSWORD 设置为 PyPI Token）
+export TWINE_PASSWORD="<your-pypi-token>"  # Windows PowerShell: $env:TWINE_PASSWORD="..."
+python -m twine upload dist/*
+```
+
+> 注意：`upload_to_pypi.py` 脚本也可用于上传，但需提前设置 `TWINE_PASSWORD`。若你的网络需要代理，可在终端中设置 `HTTPS_PROXY` 环境变量后再执行上传。
+
 ## 快速开始
 
 ### 1. 运行单元测试（推荐开始）
