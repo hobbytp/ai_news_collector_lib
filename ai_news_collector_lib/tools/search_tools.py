@@ -142,32 +142,67 @@ class ArxivTool(BaseSearchTool):
             response = requests.get(url, timeout=30)
             response.raise_for_status()
             
-            # 解析XML响应
-            soup = BeautifulSoup(response.content, 'xml')
-            entries = soup.find_all('entry')
+            articles: List[Article] = []
             
-            articles = []
-            for entry in entries:
-                try:
-                    published_str = entry.find('published').text
-                    published_date = datetime.fromisoformat(published_str.replace('Z', '+00:00'))
-                    
-                    article = Article(
-                        title=entry.find('title').text.strip(),
-                        url=entry.find('id').text,
-                        summary=entry.find('summary').text.strip()[:500] + '...',
-                        published=published_date.isoformat(),
-                        author=', '.join([author.find('name').text for author in entry.find_all('author')]),
-                        source_name='ArXiv',
-                        source='arxiv'
-                    )
-                    articles.append(article)
-                    
-                    if len(articles) >= self.max_articles:
-                        break
-                except Exception as e:
-                    logger.warning(f"Error parsing ArXiv entry: {e}")
-                    continue
+            # 优先使用BeautifulSoup的XML解析；失败时回退到feedparser
+            try:
+                soup = BeautifulSoup(response.content, 'xml')
+                entries = soup.find_all('entry')
+                
+                for entry in entries:
+                    try:
+                        published_str = entry.find('published').text
+                        published_date = datetime.fromisoformat(published_str.replace('Z', '+00:00'))
+                        
+                        article = Article(
+                            title=entry.find('title').text.strip(),
+                            url=entry.find('id').text,
+                            summary=entry.find('summary').text.strip()[:500] + '...',
+                            published=published_date.isoformat(),
+                            author=', '.join([author.find('name').text for author in entry.find_all('author')]),
+                            source_name='ArXiv',
+                            source='arxiv'
+                        )
+                        articles.append(article)
+                        
+                        if len(articles) >= self.max_articles:
+                            break
+                    except Exception as e:
+                        logger.warning(f"Error parsing ArXiv entry: {e}")
+                        continue
+            except Exception as soup_error:
+                logger.warning(f"BeautifulSoup XML解析失败，使用feedparser回退: {soup_error}")
+                feed = feedparser.parse(response.content)
+                for entry in feed.entries:
+                    try:
+                        # 解析发布时间
+                        # 说明：feedparser 可能仅提供 published_parsed 或 updated_parsed，两者单位均为 time.struct_time
+                        # 这里按优先级回退：published_parsed > updated_parsed > 当前时间
+                        try:
+                            if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                                published_date = datetime(*entry.published_parsed[:6])
+                            elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                                published_date = datetime(*entry.updated_parsed[:6])
+                            else:
+                                published_date = datetime.now()
+                        except Exception:
+                            published_date = datetime.now()
+                        
+                        article = Article(
+                            title=getattr(entry, 'title', '').strip(),
+                            url=getattr(entry, 'id', '') or getattr(entry, 'link', ''),
+                            summary=(getattr(entry, 'summary', '') or getattr(entry, 'content', [{'value': ''}])[0].get('value', '')).strip()[:500] + '...',
+                            published=published_date.isoformat(),
+                            author=', '.join([a.get('name', '') for a in getattr(entry, 'authors', [])]) if hasattr(entry, 'authors') else 'ArXiv',
+                            source_name='ArXiv',
+                            source='arxiv'
+                        )
+                        articles.append(article)
+                        if len(articles) >= self.max_articles:
+                            break
+                    except Exception as e:
+                        logger.warning(f"Error parsing ArXiv feed entry: {e}")
+                        continue
             
             # 按日期过滤
             articles = self._filter_by_date(articles, days_back)
@@ -543,7 +578,8 @@ class MetaSotaSearchTool(BaseSearchTool):
             headers = {
                 'Authorization': f'Bearer {self.api_key}',
                 'Content-Type': 'application/json',
-                'User-Agent': 'AI-News-Collector/1.0'
+                'User-Agent': 'AI-News-Collector/1.0',
+                'Accept': 'application/json'
             }
             
             # 测试MCP服务器健康状态
@@ -558,6 +594,10 @@ class MetaSotaSearchTool(BaseSearchTool):
                     logger.warning("MetaSota MCP服务器返回非JSON响应")
             elif response.status_code == 401:
                 logger.warning("MetaSota MCP服务器认证失败，请检查API密钥")
+            elif response.status_code in (404, 405):
+                # 一些MCP端点可能不支持GET根路径，返回405；视为端点可达，后续用POST尝试
+                self.is_available = True
+                logger.warning(f"MetaSota MCP服务器对GET返回 {response.status_code}，将尝试POST调用")
             else:
                 logger.warning(f"MetaSota MCP服务器响应异常: {response.status_code}")
         except Exception as e:
