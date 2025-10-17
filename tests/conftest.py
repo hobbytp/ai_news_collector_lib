@@ -98,5 +98,4 @@ def vcr_vcr(allow_network):
         filter_query_parameters=["apiKey", "key"],
         match_on=["method", "scheme", "host", "port", "path", "query"],
         decode_compressed_response=True,
-        allow_playback_repeats=True,
     )
