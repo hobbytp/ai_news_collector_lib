@@ -309,6 +309,40 @@ pytest -v
 pytest tests/test_collector.py
 ```
 
+## 🗓️ ArXiv 日期解析与回退
+
+- 默认采用 `BeautifulSoup` 的 XML 解析获取 `published` 字段；若解析异常则回退到 `feedparser`。
+- 在 `feedparser` 分支中，日期字段可能仅存在其一：`published_parsed` 或 `updated_parsed`，两者类型均为 `time.struct_time`。
+- 回退顺序为：`published_parsed` → `updated_parsed` → `datetime.now()`，以尽量保持条目的时间接近真实发布时间。
+- 将 `struct_time` 转换为 `datetime` 时仅取到秒位：`datetime(*entry.published_parsed[:6])` 或 `datetime(*entry.updated_parsed[:6])`。
+- 时区说明：Atom 中尾部 `Z` 表示 UTC。BS4 分支使用 `published_str.replace('Z', '+00:00')` 后通过 `datetime.fromisoformat` 解析；`feedparser` 分支直接由 `struct_time` 构建 `datetime`。
+
+实现节选（位于 `ai_news_collector_lib/tools/search_tools.py` 的 `ArxivTool`）：
+
+```python
+feed = feedparser.parse(response.content)
+for entry in feed.entries:
+    # 说明：feedparser 可能仅提供 published_parsed 或 updated_parsed
+    # 回退顺序：published_parsed > updated_parsed > 当前时间
+    try:
+        if hasattr(entry, 'published_parsed') and entry.published_parsed:
+            published_date = datetime(*entry.published_parsed[:6])
+        elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+            published_date = datetime(*entry.updated_parsed[:6])
+        else:
+            published_date = datetime.now()
+    except Exception:
+        published_date = datetime.now()
+```
+
+最小验证脚本：`scripts/min_check_feedparser_fallback.py`
+
+```bash
+python scripts/min_check_feedparser_fallback.py
+```
+
+该脚本分别构造 RSS (`pubDate`) 与 Atom (`updated`) 的示例，在仅存在其中一个日期字段时验证回退逻辑能够正常运行且不抛异常。
+
 ## 📚 文档
 
 - [完整文档](https://ai-news-collector-lib.readthedocs.io/)

@@ -178,6 +178,12 @@ config = AdvancedSearchConfig(
 | 📚 ArXiv | 学术论文和预印本 | 最新研究成果 |
 | 🦆 DuckDuckGo | 隐私保护的网页搜索 | 无追踪搜索 |
 
+> 注：ArXiv 日期解析与回退
+- 优先使用 `BeautifulSoup` 解析 `published`；若 XML 解析失败则回退到 `feedparser`。
+- 在 `feedparser` 分支中，日期字段可能仅提供其一：`published_parsed` 或 `updated_parsed`（均为 `time.struct_time`）。
+- 回退顺序：`published_parsed` → `updated_parsed` → `datetime.now()`，以最大程度贴近真实发布时间。
+- `struct_time` 转换示例：`datetime(*entry.published_parsed[:6])`。
+
 ### 付费源（需要API密钥）
 
 | 源 | 描述 | API密钥 | 特点 |
