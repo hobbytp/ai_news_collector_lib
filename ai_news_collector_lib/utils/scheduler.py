@@ -5,11 +5,15 @@
 
 import asyncio
 import logging
-import schedule
 import time
 from typing import Callable, Optional, Dict, Any
 from datetime import datetime
 from pathlib import Path
+
+try:
+    import schedule
+except ImportError:
+    schedule = None
 
 logger = logging.getLogger(__name__)
 
@@ -28,7 +32,16 @@ class DailyScheduler:
             collector_func: 收集函数
             schedule_time: 调度时间
             timezone: 时区
+            
+        Raises:
+            ImportError: 如果 schedule 模块未安装
         """
+        if schedule is None:
+            raise ImportError(
+                "The 'schedule' package is required to use DailyScheduler. "
+                "Install it with: pip install schedule"
+            )
+        
         self.collector_func = collector_func
         self.schedule_time = schedule_time
         self.timezone = timezone
