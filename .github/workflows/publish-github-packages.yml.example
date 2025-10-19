@@ -1,0 +1,45 @@
+name: Publish to GitHub Packages
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  publish-github-packages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install build twine
+      
+      - name: Build package
+        run: python -m build
+      
+      - name: Publish to GitHub Packages
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          TWINE_REPOSITORY_URL: https://upload.pypi.org/legacy/
+        run: |
+          # 注意：GitHub Packages for Python 使用不同的 repository URL
+          # 需要在 setup.py 或 pyproject.toml 中配置正确的包名
+          
+          # GitHub Packages 需要包名包含组织名
+          # 例如: @hobbytp/ai-news-collector-lib
+          
+          echo "注意：GitHub Packages for Python 有特殊要求"
+          echo "建议只发布到 PyPI"
