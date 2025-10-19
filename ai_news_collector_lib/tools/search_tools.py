@@ -7,7 +7,7 @@ import requests
 import logging
 import json
 from typing import List, Optional
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from bs4 import BeautifulSoup
 import feedparser
 import re
@@ -43,7 +43,7 @@ class BaseSearchTool:
         if days_back <= 0:
             return articles
         
-        cutoff_date = datetime.now() - timedelta(days=days_back)
+        cutoff_date = datetime.now(timezone.utc) - timedelta(days=days_back)
         filtered_articles = []
         
         for article in articles:
@@ -180,13 +180,15 @@ class ArxivTool(BaseSearchTool):
                         # 这里按优先级回退：published_parsed > updated_parsed > 当前时间
                         try:
                             if hasattr(entry, 'published_parsed') and entry.published_parsed:
-                                published_date = datetime(*entry.published_parsed[:6])
+                                # struct_time 是 naive 的，假设为 UTC
+                                published_date = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
                             elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
-                                published_date = datetime(*entry.updated_parsed[:6])
+                                # struct_time 是 naive 的，假设为 UTC
+                                published_date = datetime(*entry.updated_parsed[:6], tzinfo=timezone.utc)
                             else:
-                                published_date = datetime.now()
+                                published_date = datetime.now(timezone.utc)
                         except Exception:
-                            published_date = datetime.now()
+                            published_date = datetime.now(timezone.utc)
                         
                         article = Article(
                             title=getattr(entry, 'title', '').strip(),
@@ -227,7 +229,7 @@ class DuckDuckGoTool(BaseSearchTool):
         """搜索DuckDuckGo"""
         try:
             # 添加时间过滤和站点限制
-            time_filter = f" after:{(datetime.now() - timedelta(days=days_back)).strftime('%Y-%m-%d')}"
+            time_filter = f" after:{(datetime.now(timezone.utc) - timedelta(days=days_back)).strftime('%Y-%m-%d')}"
             search_query = f"{query} site:techcrunch.com OR site:venturebeat.com OR site:theverge.com OR site:wired.com{time_filter}"
             
             params = {
@@ -262,7 +264,7 @@ class DuckDuckGoTool(BaseSearchTool):
                         title=title,
                         url=href,
                         summary=f"AI news article found via DuckDuckGo search for '{query}'",
-                        published=datetime.now().isoformat(),
+                        published=datetime.now(timezone.utc).isoformat(),
                         author='DuckDuckGo Search',
                         source_name='DuckDuckGo',
                         source='duckduckgo'
@@ -297,7 +299,7 @@ class NewsAPITool(BaseSearchTool):
                 'language': 'en',
                 'sortBy': 'publishedAt',
                 'pageSize': self.max_articles,
-                'from': (datetime.now() - timedelta(days=days_back)).strftime('%Y-%m-%d')
+                'from': (datetime.now(timezone.utc) - timedelta(days=days_back)).strftime('%Y-%m-%d')
             }
             
             response = requests.get(url, params=params, timeout=15)
@@ -312,7 +314,7 @@ class NewsAPITool(BaseSearchTool):
                         title=item.get('title', 'No title'),
                         url=item.get('url', ''),
                         summary=item.get('description', 'No summary'),
-                        published=item.get('publishedAt', datetime.now().isoformat()),
+                        published=item.get('publishedAt', datetime.now(timezone.utc).isoformat()),
                         author=item.get('author', 'Unknown'),
                         source_name=item.get('source', {}).get('name', 'NewsAPI'),
                         source='newsapi'
@@ -340,7 +342,7 @@ class TavilyTool(BaseSearchTool):
             import requests
             
             # 计算日期范围
-            end_date = datetime.now()
+            end_date = datetime.now(timezone.utc)
             start_date = end_date - timedelta(days=days_back)
             
             payload = {
@@ -367,7 +369,7 @@ class TavilyTool(BaseSearchTool):
             
             for result in data.get('results', []):
                 # 检查日期过滤
-                published_date = datetime.now()
+                published_date = datetime.now(timezone.utc)
                 if result.get('published_date'):
                     try:
                         published_date = datetime.fromisoformat(result['published_date'].replace('Z', '+00:00'))
@@ -431,7 +433,7 @@ class GoogleSearchTool(BaseSearchTool):
                     title=item.get('title', ''),
                     url=item.get('link', ''),
                     summary=item.get('snippet', ''),
-                    published=datetime.now().isoformat(),  # Google API不总是提供日期
+                    published=datetime.now(timezone.utc).isoformat(),  # Google API不总是提供日期
                     author='Google Search',
                     source_name=item.get('displayLink', ''),
                     source='google_search'
@@ -484,7 +486,7 @@ class SerperTool(BaseSearchTool):
                     title=result.get('title', ''),
                     url=result.get('link', ''),
                     summary=result.get('snippet', ''),
-                    published=datetime.now().isoformat(),
+                    published=datetime.now(timezone.utc).isoformat(),
                     author='Serper Search',
                     source_name=result.get('displayLink', ''),
                     source='serper'
@@ -541,7 +543,7 @@ class BraveSearchTool(BaseSearchTool):
                     title=result.get('title', ''),
                     url=result.get('url', ''),
                     summary=result.get('description', ''),
-                    published=datetime.now().isoformat(),
+                    published=datetime.now(timezone.utc).isoformat(),
                     author='Brave Search',
                     source_name=result.get('url', '').split('/')[2] if result.get('url') else 'Brave',
                     source='brave_search'
@@ -683,7 +685,7 @@ class MetaSotaSearchTool(BaseSearchTool):
                     for result in results:
                         if isinstance(result, dict):
                             # 计算发布时间
-                            published_date = datetime.now()
+                            published_date = datetime.now(timezone.utc)
                             if result.get('published_date') or result.get('date') or result.get('created_at'):
                                 try:
                                     date_str = (result.get('published_date') or 
@@ -694,7 +696,7 @@ class MetaSotaSearchTool(BaseSearchTool):
                                     pass
                             
                             # 检查时间范围
-                            if published_date >= datetime.now() - timedelta(days=days_back):
+                            if published_date >= datetime.now(timezone.utc) - timedelta(days=days_back):
                                 article = Article(
                                     title=result.get('title', result.get('headline', result.get('name', ''))),
                                     url=result.get('link', result.get('url', result.get('href', ''))),
