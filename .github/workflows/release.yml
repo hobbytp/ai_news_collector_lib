@@ -1,0 +1,73 @@
+name: Create GitHub Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'  # 匹配 v0.1.0, v0.1.1 等
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Get version from tag
+        id: get_version
+        run: |
+          echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+          echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+      
+      - name: Generate release notes
+        id: release_notes
+        run: |
+          # 获取上一个 tag
+          PREV_TAG=$(git describe --abbrev=0 --tags $(git rev-list --tags --skip=1 --max-count=1) 2>/dev/null || echo "")
+          
+          if [ -z "$PREV_TAG" ]; then
+            # 如果没有上一个 tag，显示所有提交
+            COMMITS=$(git log --pretty=format:"- %s (%h)" ${{ steps.get_version.outputs.TAG_NAME }})
+          else
+            # 显示两个 tag 之间的提交
+            COMMITS=$(git log --pretty=format:"- %s (%h)" ${PREV_TAG}..${{ steps.get_version.outputs.TAG_NAME }})
+          fi
+          
+          # 创建 release notes
+          cat > release_notes.md << EOF
+          ## What's Changed
+          
+          ${COMMITS}
+          
+          ## Installation
+          
+          Install from PyPI:
+          \`\`\`bash
+          pip install ai-news-collector-lib==${{ steps.get_version.outputs.VERSION }}
+          \`\`\`
+          
+          ## Documentation
+          
+          - [README](https://github.com/${{ github.repository }}/blob/${{ steps.get_version.outputs.TAG_NAME }}/README.md)
+          - [Usage Guide](https://github.com/${{ github.repository }}/blob/${{ steps.get_version.outputs.TAG_NAME }}/USAGE_GUIDE.md)
+          - [Testing Guide](https://github.com/${{ github.repository }}/blob/${{ steps.get_version.outputs.TAG_NAME }}/TESTING_GUIDE.md)
+          
+          ## PyPI Package
+          
+          https://pypi.org/project/ai-news-collector-lib/${{ steps.get_version.outputs.VERSION }}/
+          EOF
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.get_version.outputs.TAG_NAME }}
+          name: Release ${{ steps.get_version.outputs.TAG_NAME }}
+          body_path: release_notes.md
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
