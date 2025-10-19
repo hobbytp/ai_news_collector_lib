@@ -17,7 +17,7 @@ AI News Collector Library
     result = await collector.collect_news("artificial intelligence")
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "AI News Collector Team"
 __email__ = "support@ai-news-collector.com"
 
@@ -27,9 +27,14 @@ from .core.advanced_collector import AdvancedAINewsCollector
 from .config.settings import SearchConfig, AdvancedSearchConfig
 from .models.article import Article, AdvancedArticle
 from .models.result import SearchResult
-from .utils.scheduler import DailyScheduler
 from .utils.cache import CacheManager
 from .utils.reporter import ReportGenerator
+
+# 尝试导入可选的调度器（需要 schedule 包）
+try:
+    from .utils.scheduler import DailyScheduler
+except ImportError:
+    DailyScheduler = None
 
 # 导出主要接口
 __all__ = [
@@ -47,7 +52,6 @@ __all__ = [
     'SearchResult',
     
     # 工具类
-    'DailyScheduler',
     'CacheManager',
     'ReportGenerator',
     
@@ -56,6 +60,10 @@ __all__ = [
     '__author__',
     '__email__'
 ]
+
+# 仅当 schedule 模块可用时导出 DailyScheduler
+if DailyScheduler is not None:
+    __all__.insert(-3, 'DailyScheduler')
 
 # 库信息
 LIBRARY_INFO = {

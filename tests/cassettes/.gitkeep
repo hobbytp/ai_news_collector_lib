@@ -1,0 +1,1 @@
+# Keep cassette directory in VCS. Some YAML cassette files are committed for offline replay, while new ones may be recorded during test runs.
