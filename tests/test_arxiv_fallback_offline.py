@@ -117,6 +117,9 @@ def test_arxiv_fallback_now(monkeypatch):
     a = articles[0]
     # fallback 至 datetime.now()：断言在合理时间窗口内
     pub = datetime.fromisoformat(a.published.replace('Z', '+00:00'))
+    # 确保 pub 是时区感知的，如果不是则假设为 UTC
+    if pub.tzinfo is None:
+        pub = pub.replace(tzinfo=timezone.utc)
     assert start <= pub <= end, (start, pub, end)
     assert a.source == "arxiv"
     assert a.source_name == "ArXiv"
