@@ -1,5 +1,5 @@
 import types
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pytest
 
 from ai_news_collector_lib.tools.search_tools import ArxivTool
@@ -108,15 +108,15 @@ def test_arxiv_fallback_published(monkeypatch):
 def test_arxiv_fallback_now(monkeypatch):
     _patch_requests_and_bs(monkeypatch, ATOM_NO_DATES)
     tool = ArxivTool(max_articles=1)
-    start = datetime.now() - timedelta(seconds=10)
+    start = datetime.now(timezone.utc) - timedelta(seconds=10)
     # 避免被 _filter_by_date 误过滤，设置 days_back=0
     articles = tool.search("test", days_back=0)
-    end = datetime.now() + timedelta(seconds=10)
+    end = datetime.now(timezone.utc) + timedelta(seconds=10)
 
     assert len(articles) == 1
     a = articles[0]
     # fallback 至 datetime.now()：断言在合理时间窗口内
-    pub = datetime.fromisoformat(a.published)
+    pub = datetime.fromisoformat(a.published.replace('Z', '+00:00'))
     assert start <= pub <= end, (start, pub, end)
     assert a.source == "arxiv"
     assert a.source_name == "ArXiv"

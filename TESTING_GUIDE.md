@@ -228,6 +228,8 @@ UPDATE_CASSETTES=1 ALLOW_NETWORK=1 python -m pytest -m network -v
 python -m pytest -m network -v
 ```
 
+> ⚠️ 注意：当前测试代码如果在 `ALLOW_NETWORK != 1` 时无条件跳过网络测试，则不会自动回放已有磁带。要实现真正的离线回放，需确保测试只在"磁带缺失"时才跳过，否则应调整 skip 条件或参考测试代码实现。
+
 > 提示：我们的网络集成测试在 `tests/test_integration_basic.py` 与 `tests/test_integration_advanced.py` 已使用磁带。
 > 离线单元测试（如 ArXiv 回退逻辑）不需要磁带。
 

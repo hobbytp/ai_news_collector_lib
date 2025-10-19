@@ -96,6 +96,6 @@ def vcr_vcr(allow_network):
         record_mode=_get_record_mode(allow_network),
         filter_headers=["Authorization", "X-API-KEY"],
         filter_query_parameters=["apiKey", "key"],
-        match_on=["method", "scheme", "host", "port", "path", "query"],
+        match_on=["method", "path", "query"],
         decode_compressed_response=True,
     )
