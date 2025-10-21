@@ -7,12 +7,14 @@ on:
       - 'ai_news_collector_lib/tools/search_tools.py'
       - 'tests/test_paid_apis.py'
       - 'tests/cassettes/**'
+      - 'setup.py'
   pull_request:
     branches: [master, main, develop]
     paths:
       - 'ai_news_collector_lib/tools/search_tools.py'
       - 'tests/test_paid_apis.py'
       - 'tests/cassettes/**'
+      - 'setup.py'
 
 jobs:
   test-paid-apis:
