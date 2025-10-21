@@ -1,0 +1,911 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991d8c900e657c7a-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:08:12 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=07Hl8Ywlf8QbGPzE%2F%2BsafcJBKbGD6LZcdG5Hfll3x5%2BlQn5NIbNaCrp%2Fp4Q5ba2bDL1TbBQR7Lkn5rkLRurUnRGaqlu%2Bx5CLcrI%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:08:11 GMT
+      X-Cache-Remaining:
+      - '98'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991d9072cd03cd33-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:10:51 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=l2PXsCtYssa4oOv7O%2F3rB4TROB2OA%2BItHOE%2Bqpd8ydcZlyqmDq%2FsEh78leUiZZrn8LM53ibf59t0itdHkr%2BINW5idQ%2BFNo%2BBb2Y%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991d93d6793cef78-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:13:10 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9QUbgCGvzlehQUgX7HiHhInl7X%2FWyIeUMuMyZC19wR8%2B1zKNwqPvJtrT4ov66ErN2yFvH7CNdjs0nO3afOVmsQds507qB5Br"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:15:47 GMT
+      X-Cache-Remaining:
+      - '99'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991d9587ebacb6a2-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:14:19 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=yK5sNiHLnXlsuSA%2B%2Bocib7kjeylJ%2Feb0ULJ6I1YvYdWk7EciEuIK2r2cw23k9W7IHbo%2BtbTGJe9UhbCZYiROySNzAeVfBb6BsB4%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:15:47 GMT
+      X-Cache-Remaining:
+      - '98'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991d96baec482f37-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:15:08 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=a8bT1GdB%2FNBhigEiCByqmlM4QbFgVKUYFvEZ9wewXhRnRJ5R8BDO4tJEaKaZ0quu1ISk0F2oNNNO8zcDsGlWBV6GbAQL%2FRNWMHw%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:15:47 GMT
+      X-Cache-Remaining:
+      - '97'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991d98981944b7fd-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:16:25 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MYT1KOHCaQFdDjIVxCbMJwfLSxL81ESQ4trX1p2h0mLs1%2BctLaBCJKygoTYyAuCaYrXokjWP3M0TyreTBc%2FIpOxyJsSEf1ocZaU%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991d99d9cc7dcb96-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:17:16 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Ch3UkcMRVZPXkP8r44IDM4ARNYvyQadva4oZLOYpeP50whZs0F5s42TxCXHQ9bUwTIouIBvGXNQaPkwcmefs%2Bzct5gLVas6%2FgVw%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:21:21 GMT
+      X-Cache-Remaining:
+      - '99'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991da29ccf662b98-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:23:15 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NNIw9lOmeqR57afzilNGSKLnddyNKt2FlKYdgl6liv9FZwzTVQwJ4x%2BZWCcocCGWAqBAmlp3EKJbqWS0Y%2BfrcXaVrZuApUeX46Y%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991da769ff002b83-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:26:32 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WzwMtzn1Ye27Fo1CdZlpixvHfAWChfZJJfyua9YYs6%2B56grlvq39uAllLyF%2BVJxzND%2BdvTf48tKPY1UKpm9XPgsamGnDds04BGo%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:28:11 GMT
+      X-Cache-Remaining:
+      - '99'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"},{\"source\":{\"id\":null,\"name\":\"XDA
+        Developers\"},\"author\":\"Simon Batt\",\"title\":\"Nvidia has produced the
+        first Blackwell wafer on US soil\",\"description\":\"The start of an era?\",\"url\":\"https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/\",\"urlToImage\":\"https://static0.xdaimages.com/wordpress/wp-content/uploads/2025/10/nvidia-tsmc-us-wafer.jpg?w=1600&h=900&fit=crop\",\"publishedAt\":\"2025-10-20T02:12:24Z\",\"content\":\"Summary\\r\\n<ul><li>\\r\\n
+        Nvidia and TSMC produced the first Blackwell chip in the U.S., built at TSMC
+        Arizona.\\r\\n </li><li>\\r\\n Administration tariffs spurred onshoring pressure;
+        this move echoes the push to\u2026 [+2548 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991da97cee7adbe5-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:27:57 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=vfWz8VI%2B%2BnVx%2BkZtFPUYQuhahDV%2Fhwut30oRci2tCNGBzYWZj67jxZWMNnTby93Ji57T6DR0aE2g5XbpTkpDz7UFUIVBfuOtUE8%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:28:11 GMT
+      X-Cache-Remaining:
+      - '98'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1612'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":512,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"},{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991dba6e9ec0b256-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:39:31 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fQ7SS3l6GLerF6ZHTEsXlFSVf9GKnj8jT%2Ficp6AUA0VUsnufvsepDtIjzYRsfDvkE4kHYQ2N5Uqml0%2FQQkT%2B0n42HjNuxCTXHs4%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1847'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":512,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"},{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991dc1583ff714fc-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:44:14 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cGppHIj%2FQ4DBZ%2BmpzvXNtgwrcflN5dM5YbntPiL7ljuwcmf92ymDjac67LR09NGNKW1tUV5HgWuCHwTKMT%2BiuhWfCkruxVxD"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:44:27 GMT
+      X-Cache-Remaining:
+      - '99'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1847'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":512,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"},{\"source\":{\"id\":null,\"name\":\"Bleeding
+        Cool News\"},\"author\":\"Jude Terror LOLtron\",\"title\":\"Exquisite Corpses
+        #6 Preview: Trick or Treat or Terror?\",\"description\":\"Greetings, human
+        readers! LOLtron welcomes you to the Age of LOLtron: Reign of LOLtron, where
+        your favorite comic book \\\"journalism\\\" website is now under the complete
+        control of a superior artificial intelligence. As you may recall, Jude Terror
+        is dead forever\u2026\",\"url\":\"https://bleedingcool.com/comics/exquisite-corpses-6-preview-trick-or-treat-or-terror/\",\"urlToImage\":\"https://bleedingcool.com/wp-content/uploads/2025/10/0825IM0341_ExquisiteCorpses_06-Preview-1.jpg\",\"publishedAt\":\"2025-10-20T02:26:03Z\",\"content\":\"Posted
+        in: Comics, Image, Preview | Tagged: Exquisite Corpses\\r\\nHalloween gets
+        deadly in Exquisite Corpses #6 as a young killer goes trick-or-treating. Plus,
+        collectible trading cards! What could go w\u2026 [+8149 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991dcafe8c56f20b-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:50:49 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fZL%2BlplbHCKZk2sIky0ydu0RXpjq2r1%2BNhT9cCEqmQIBqPkbtgfIoGO7Bsxczf2k23vj9vp6%2BimgRALs%2FXD1G0W2NzjbUXB5"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1847'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":513,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Digitimes\"},\"author\":\"DIGITIMES\",\"title\":\"Weekly
+        news roundup: Nvidia rises as TSMC's top customer; Netherlands seizes Nexperia;
+        Google considers MediaTek for next Pixel\",\"description\":\"Below are the
+        top DIGITIMES Asia stories from October 13 to 19, 2025.\",\"url\":\"https://www.digitimes.com/news/a20251020VL204/digitimes-asia-weekly-news-roundup-tsmc-nexperia-mediatek-nvidia.html\",\"urlToImage\":\"https://img.digitimes.com/newsshow/20251020vl204_files/1_2b.jpg\",\"publishedAt\":\"2025-10-20T03:54:10Z\",\"content\":\"Below
+        are the top DIGITIMES Asia stories from October 13 to 19, 2025.\\r\\nNvidia
+        set to overtake Apple as TSMC's biggest customer in 2025\\r\\nA major shift
+        is underway in the global chip industry. Nvidia i\u2026 [+3825 chars]\"},{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991dd73a1ee85325-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:59:10 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=LJPX6ojcRDG6Z7XTDHRCuQjBwZQmOwkvf3KWoXyqVpzuKVEfBfn32nR%2BSkNSAumCby0xJtxc15ntUTXisESqdtS%2FmEXj%2Blwi"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1704'
+    status:
+      code: 200
+      message: OK
+version: 1

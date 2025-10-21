@@ -482,13 +482,23 @@ class SerperTool(BaseSearchTool):
             articles = []
             
             for result in data.get('organic', []):
+                # 从 URL 提取域名作为 source_name
+                url = result.get('link', '')
+                source_name = ''
+                if url:
+                    try:
+                        from urllib.parse import urlparse
+                        source_name = urlparse(url).netloc or ''
+                    except Exception:
+                        source_name = ''
+                
                 article = Article(
                     title=result.get('title', ''),
-                    url=result.get('link', ''),
+                    url=url,
                     summary=result.get('snippet', ''),
                     published=datetime.now(timezone.utc).isoformat(),
                     author='Serper Search',
-                    source_name=result.get('displayLink', ''),
+                    source_name=source_name,
                     source='serper'
                 )
                 articles.append(article)

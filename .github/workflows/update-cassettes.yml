@@ -1,0 +1,101 @@
+name: Update API Cassettes (Monthly)
+
+on:
+  schedule:
+    # 每月第一天的08:00 UTC运行
+    - cron: '0 8 1 * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update-cassettes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .[dev]
+
+      - name: Create .env file with API keys
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_SEARCH_ENGINE_ID: ${{ secrets.GOOGLE_SEARCH_ENGINE_ID }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          METASOTA_API_KEY: ${{ secrets.METASOTA_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+        run: |
+          cat > .env << 'EOF'
+          ALLOW_NETWORK=1
+          TEST_PAID_APIS=1
+          UPDATE_CASSETTES=1
+          
+          TAVILY_API_KEY=${{ env.TAVILY_API_KEY }}
+          GOOGLE_API_KEY=${{ env.GOOGLE_API_KEY }}
+          GOOGLE_SEARCH_ENGINE_ID=${{ env.GOOGLE_SEARCH_ENGINE_ID }}
+          SERPER_API_KEY=${{ env.SERPER_API_KEY }}
+          BRAVE_API_KEY=${{ env.BRAVE_API_KEY }}
+          METASOTA_API_KEY=${{ env.METASOTA_API_KEY }}
+          NEWSAPI_KEY=${{ env.NEWSAPI_KEY }}
+          EOF
+          
+      - name: Skip if no API keys configured
+        run: |
+          if [ -z "${{ secrets.TAVILY_API_KEY }}" ] && \
+             [ -z "${{ secrets.SERPER_API_KEY }}" ] && \
+             [ -z "${{ secrets.GOOGLE_API_KEY }}" ]; then
+            echo "::notice::No API keys configured in GitHub Secrets, skipping cassette update"
+            exit 0
+          fi
+
+      - name: Run paid API tests and record cassettes
+        run: |
+          python -m pytest tests/test_paid_apis.py -v
+        continue-on-error: true  # 即使某个API失败也继续
+
+      - name: Check if cassettes changed
+        id: changes
+        run: |
+          if git diff --quiet tests/cassettes/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            git diff tests/cassettes/ | head -50
+          fi
+
+      - name: Commit and push cassette changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tests/cassettes/*.yaml
+          git commit -m "chore(ci): update API cassettes"
+          git push
+
+      - name: Create Pull Request for cassette changes
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "chore: update API cassettes"
+          title: "chore: Update API cassettes"
+          body: |
+            # Automated Cassette Update
+
+            Updated API cassettes from monthly scheduled run.
+
+            - Timestamp: ${{ github.event.scheduled_time }}
+            - Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            **Please review the changes and merge if tests pass.**
+          branch: update-cassettes
+          delete-branch: true

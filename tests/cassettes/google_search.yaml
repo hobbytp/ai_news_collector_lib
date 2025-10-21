@@ -1,0 +1,2061 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12800000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12800000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.318308,\n    \"formattedSearchTime\":
+        \"0.32\",\n    \"totalResults\": \"12800000\",\n    \"formattedTotalResults\":
+        \"12,800,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"3 hours ago
+        ... Machine learning is the ability of a machine to improve its performance
+        based on previous results. Machine learning methods enable computers to learn
+        without\_...\",\n      \"htmlSnippet\": \"3 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        \\u003cb\\u003eMachine learning\\u003c/b\\u003e is the ability of a machine
+        to improve its performance based on previous results. \\u003cb\\u003eMachine
+        learning\\u003c/b\\u003e methods enable computers to learn without&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"htmlFormattedUrl\": \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sX3Tq8V1hBBh-qpTWoO4moJW8ISAOkceGb7MDB8ZC29K5nes3v_c4Vs&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Igor Bibi\"\n          },\n          {\n
+        \           \"name\": \"Daniel Schaffert\"\n          },\n          {\n            \"name\":
+        \"Victor Olsavszky\"\n          },\n          {\n            \"name\": \"Shehabeldin
+        Saber\"\n          },\n          {\n            \"name\": \"Hend Abou El Nasr\"\n
+        \         },\n          {\n            \"name\": \"Nora Saif\"\n          },\n
+        \         {\n            \"name\": \"Khalid Ibraheem Alohali\"\n          },\n
+        \         {\n            \"name\": \"Laura Asaad Almusaeeb\"\n          },\n
+        \         {\n            \"name\": \"Ruaim Abdullah Muaygil\"\n          },\n
+        \         {\n            \"name\": \"Roman Zubatyuk\"\n          },\n          {\n
+        \           \"name\": \"Malgorzata Biczysko\"\n          },\n          {\n
+        \           \"name\": \"Pavel V. Afonine\"\n          },\n          {\n            \"name\":
+        \"Ebru Hasbay\"\n          },\n          {\n            \"name\": \"\xC7a\u011Flar
+        Cengizler\"\n          },\n          {\n            \"name\": \"Mariatou Dram\xE9\"\n
+        \         },\n          {\n            \"name\": \"Francisco-Javier Garcia-Rodriguez\"\n
+        \         },\n          {\n            \"name\": \"Pedro Escoll\"\n          },\n
+        \         {\n            \"name\": \"Elizabeth Gibney\"\n          },\n          {\n
+        \           \"name\": \"Michael Attwaters\"\n          },\n          {\n            \"name\":
+        \"Rita Strack\"\n          },\n          {\n            \"name\": \"Shamini
+        Bundell\"\n          },\n          {\n            \"name\": \"Long-Chen Shen\"\n
+        \         },\n          {\n            \"name\": \"Dong-Jun Yu\"\n          },\n
+        \         {\n            \"name\": \"Jiangning Song\"\n          }\n        ],\n
+        \       \"periodical\": [\n          {\n            \"name\": \"Nature.com\",\n
+        \           \"publisher\": \"Springer Nature\"\n          }\n        ],\n
+        \       \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-21761-5/MediaObjects/41598_2025_21761_Fig1_HTML.png\",\n
+        \           \"name\": \"Automated assessment of periapical health based on
+        the radiographic periapical index using YOLOv8, YOLOv11, and YOLOv12 one-stage
+        object detection algorithms\",\n            \"headline\": \"Automated assessment
+        of periapical health based on the radiographic periapical index using YOLOv8,
+        YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n            \"url\":
+        \"Automated assessment of periapical health based on the radiographic periapical
+        index using YOLOv8, YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n
+        \           \"datepublished\": \"2025-10-20\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20496-7/MediaObjects/41598_2025_20496_Fig1_HTML.png\",\n
+        \           \"name\": \"Reasoning-based LLMs surpass average human performance
+        on medical social skills\",\n            \"headline\": \"Reasoning-based LLMs
+        surpass average human performance on medical social skills\",\n            \"url\":
+        \"Reasoning-based LLMs surpass average human performance on medical social
+        skills\",\n            \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64313-1/MediaObjects/41467_2025_64313_Fig1_HTML.png\",\n
+        \           \"name\": \"AQuaRef: machine learning accelerated quantum refinement
+        of protein structures\",\n            \"description\": \"AQuaRef employs machine
+        learning to refine protein structures from cryo-EM and X-ray data in Phenix.
+        It achieves quantum-level precision, improving model geometry and fit to the
+        data while...\",\n            \"headline\": \"AQuaRef: machine learning accelerated
+        quantum refinement of protein structures\",\n            \"url\": \"AQuaRef:
+        machine learning accelerated quantum refinement of protein structures\",\n
+        \           \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20284-3/MediaObjects/41598_2025_20284_Fig1_HTML.png\",\n
+        \           \"name\": \"A modified deep learning approach for seminal vesicle
+        region localization in prostate MRI\",\n            \"headline\": \"A modified
+        deep learning approach for seminal vesicle region localization in prostate
+        MRI\",\n            \"url\": \"A modified deep learning approach for seminal
+        vesicle region localization in prostate MRI\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\",\n
+        \           \"name\": \"Backtracking metabolic dynamics in single cells predicts
+        bacterial replication in human macrophages\",\n            \"description\":
+        \"Computational models can help to explain the dynamics of cellular infection
+        with pathogens. Here the authors use computational models to assess the single
+        cell infection parameters of human...\",\n            \"headline\": \"Backtracking
+        metabolic dynamics in single cells predicts bacterial replication in human
+        macrophages\",\n            \"url\": \"Backtracking metabolic dynamics in
+        single cells predicts bacterial replication in human macrophages\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"nature\",\n
+        \           \"name\": \"nature\",\n            \"position\": \"1\"\n          },\n
+        \         {\n            \"item\": \"subjects\",\n            \"name\": \"subjects\",\n
+        \           \"position\": \"2\"\n          },\n          {\n            \"name\":
+        \"machine learning\",\n            \"position\": \"3\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Journal of Chemical Information and Modeling - ACS Publications\",\n      \"htmlTitle\":
+        \"Journal of Chemical Information and Modeling - ACS Publications\",\n      \"link\":
+        \"https://pubs.acs.org/journal/jcisd8\",\n      \"displayLink\": \"pubs.acs.org\",\n
+        \     \"snippet\": \"3 hours ago ... Call for Papers. Modeling Reactions from
+        Chemical Theories to Machine Learning. This Virtual Special Issue will spotlight
+        remarkable advancements in theoretical\_...\",\n      \"htmlSnippet\": \"3
+        hours ago \\u003cb\\u003e...\\u003c/b\\u003e Call for Papers. Modeling Reactions
+        from Chemical Theories to \\u003cb\\u003eMachine Learning\\u003c/b\\u003e.
+        This Virtual Special Issue will spotlight remarkable advancements in theoretical&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://pubs.acs.org/journal/jcisd8\",\n      \"htmlFormattedUrl\":
+        \"https://pubs.acs.org/journal/jcisd8\",\n      \"pagemap\": {\n        \"metatags\":
+        [\n          {\n            \"viewport\": \"width=device-width,initial-scale=1,maximum-scale=10,
+        user-scalable=1\",\n            \"pbcontext\": \";journal:journal:jcisd8;page:string:Journal
+        Home;ctype:string:Journal Content;wgroup:string:ACHS website Group;website:website:acspubs;requestedJournal:journal:jcisd8;pageGroup:string:Publication
+        Pages\",\n            \"publication_doi\": \"10.1021/jcisd8\",\n            \"dc.identifier\":
+        \"10.1021/jcisd8\",\n            \"format-detection\": \"telephone=no\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"MCML - Munich Center for Machine Learning\",\n      \"htmlTitle\":
+        \"MCML - Munich Center for \\u003cb\\u003eMachine Learning\\u003c/b\\u003e\",\n
+        \     \"link\": \"https://mcml.ai/\",\n      \"displayLink\": \"mcml.ai\",\n
+        \     \"snippet\": \"3 hours ago ... The MCML is a top place for AI and ML
+        research in Europe. We attract the most promising researchers and transfer
+        AI potential to industry and society.\",\n      \"htmlSnippet\": \"3 hours
+        ago \\u003cb\\u003e...\\u003c/b\\u003e The MCML is a top place for AI and
+        ML research in Europe. We attract the most promising researchers and transfer
+        AI potential to industry and society.\",\n      \"formattedUrl\": \"https://mcml.ai/\",\n
+        \     \"htmlFormattedUrl\": \"https://mcml.ai/\",\n      \"pagemap\": {\n
+        \       \"cse_thumbnail\": [\n          {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgxxF_2keX91gs18oKUGNRwIbNjrDhUNIwRK50P_p2Zg0to8idieZv0ie&s\",\n
+        \           \"width\": \"190\",\n            \"height\": \"190\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"author\": \"mcml.ai\",\n
+        \           \"og:title\": \"MCML - Munich Center for Machine Learning\",\n
+        \           \"og:url\": \"https://mcml.ai/\",\n            \"og:description\":
+        \"The MCML is a top place for AI and ML research in Europe. We attract the
+        most promising researchers and transfer AI potential to industry and society.\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://mcml.ai/images/pictograms/pis.png\"\n          }\n        ]\n      }\n
+        \   }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:26:09 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18772'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12700000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12700000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.273113,\n    \"formattedSearchTime\":
+        \"0.27\",\n    \"totalResults\": \"12700000\",\n    \"formattedTotalResults\":
+        \"12,700,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"3 hours ago
+        ... Machine learning is the ability of a machine to improve its performance
+        based on previous results. Machine learning methods enable computers to learn
+        without\_...\",\n      \"htmlSnippet\": \"3 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        \\u003cb\\u003eMachine learning\\u003c/b\\u003e is the ability of a machine
+        to improve its performance based on previous results. \\u003cb\\u003eMachine
+        learning\\u003c/b\\u003e methods enable computers to learn without&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"htmlFormattedUrl\": \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sX3Tq8V1hBBh-qpTWoO4moJW8ISAOkceGb7MDB8ZC29K5nes3v_c4Vs&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Igor Bibi\"\n          },\n          {\n
+        \           \"name\": \"Daniel Schaffert\"\n          },\n          {\n            \"name\":
+        \"Victor Olsavszky\"\n          },\n          {\n            \"name\": \"Shehabeldin
+        Saber\"\n          },\n          {\n            \"name\": \"Hend Abou El Nasr\"\n
+        \         },\n          {\n            \"name\": \"Nora Saif\"\n          },\n
+        \         {\n            \"name\": \"Khalid Ibraheem Alohali\"\n          },\n
+        \         {\n            \"name\": \"Laura Asaad Almusaeeb\"\n          },\n
+        \         {\n            \"name\": \"Ruaim Abdullah Muaygil\"\n          },\n
+        \         {\n            \"name\": \"Roman Zubatyuk\"\n          },\n          {\n
+        \           \"name\": \"Malgorzata Biczysko\"\n          },\n          {\n
+        \           \"name\": \"Pavel V. Afonine\"\n          },\n          {\n            \"name\":
+        \"Ebru Hasbay\"\n          },\n          {\n            \"name\": \"\xC7a\u011Flar
+        Cengizler\"\n          },\n          {\n            \"name\": \"Mariatou Dram\xE9\"\n
+        \         },\n          {\n            \"name\": \"Francisco-Javier Garcia-Rodriguez\"\n
+        \         },\n          {\n            \"name\": \"Pedro Escoll\"\n          },\n
+        \         {\n            \"name\": \"Elizabeth Gibney\"\n          },\n          {\n
+        \           \"name\": \"Michael Attwaters\"\n          },\n          {\n            \"name\":
+        \"Rita Strack\"\n          },\n          {\n            \"name\": \"Shamini
+        Bundell\"\n          },\n          {\n            \"name\": \"Long-Chen Shen\"\n
+        \         },\n          {\n            \"name\": \"Dong-Jun Yu\"\n          },\n
+        \         {\n            \"name\": \"Jiangning Song\"\n          }\n        ],\n
+        \       \"periodical\": [\n          {\n            \"name\": \"Nature.com\",\n
+        \           \"publisher\": \"Springer Nature\"\n          }\n        ],\n
+        \       \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-21761-5/MediaObjects/41598_2025_21761_Fig1_HTML.png\",\n
+        \           \"name\": \"Automated assessment of periapical health based on
+        the radiographic periapical index using YOLOv8, YOLOv11, and YOLOv12 one-stage
+        object detection algorithms\",\n            \"headline\": \"Automated assessment
+        of periapical health based on the radiographic periapical index using YOLOv8,
+        YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n            \"url\":
+        \"Automated assessment of periapical health based on the radiographic periapical
+        index using YOLOv8, YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n
+        \           \"datepublished\": \"2025-10-20\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20496-7/MediaObjects/41598_2025_20496_Fig1_HTML.png\",\n
+        \           \"name\": \"Reasoning-based LLMs surpass average human performance
+        on medical social skills\",\n            \"headline\": \"Reasoning-based LLMs
+        surpass average human performance on medical social skills\",\n            \"url\":
+        \"Reasoning-based LLMs surpass average human performance on medical social
+        skills\",\n            \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64313-1/MediaObjects/41467_2025_64313_Fig1_HTML.png\",\n
+        \           \"name\": \"AQuaRef: machine learning accelerated quantum refinement
+        of protein structures\",\n            \"description\": \"AQuaRef employs machine
+        learning to refine protein structures from cryo-EM and X-ray data in Phenix.
+        It achieves quantum-level precision, improving model geometry and fit to the
+        data while...\",\n            \"headline\": \"AQuaRef: machine learning accelerated
+        quantum refinement of protein structures\",\n            \"url\": \"AQuaRef:
+        machine learning accelerated quantum refinement of protein structures\",\n
+        \           \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20284-3/MediaObjects/41598_2025_20284_Fig1_HTML.png\",\n
+        \           \"name\": \"A modified deep learning approach for seminal vesicle
+        region localization in prostate MRI\",\n            \"headline\": \"A modified
+        deep learning approach for seminal vesicle region localization in prostate
+        MRI\",\n            \"url\": \"A modified deep learning approach for seminal
+        vesicle region localization in prostate MRI\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\",\n
+        \           \"name\": \"Backtracking metabolic dynamics in single cells predicts
+        bacterial replication in human macrophages\",\n            \"description\":
+        \"Computational models can help to explain the dynamics of cellular infection
+        with pathogens. Here the authors use computational models to assess the single
+        cell infection parameters of human...\",\n            \"headline\": \"Backtracking
+        metabolic dynamics in single cells predicts bacterial replication in human
+        macrophages\",\n            \"url\": \"Backtracking metabolic dynamics in
+        single cells predicts bacterial replication in human macrophages\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"nature\",\n
+        \           \"name\": \"nature\",\n            \"position\": \"1\"\n          },\n
+        \         {\n            \"item\": \"subjects\",\n            \"name\": \"subjects\",\n
+        \           \"position\": \"2\"\n          },\n          {\n            \"name\":
+        \"machine learning\",\n            \"position\": \"3\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"MCML - Munich Center for Machine Learning\",\n      \"htmlTitle\": \"MCML
+        - Munich Center for \\u003cb\\u003eMachine Learning\\u003c/b\\u003e\",\n      \"link\":
+        \"https://mcml.ai/\",\n      \"displayLink\": \"mcml.ai\",\n      \"snippet\":
+        \"3 hours ago ... The MCML is a top place for AI and ML research in Europe.
+        We attract the most promising researchers and transfer AI potential to industry
+        and society.\",\n      \"htmlSnippet\": \"3 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        The MCML is a top place for AI and ML research in Europe. We attract the most
+        promising researchers and transfer AI potential to industry and society.\",\n
+        \     \"formattedUrl\": \"https://mcml.ai/\",\n      \"htmlFormattedUrl\":
+        \"https://mcml.ai/\",\n      \"pagemap\": {\n        \"cse_thumbnail\": [\n
+        \         {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgxxF_2keX91gs18oKUGNRwIbNjrDhUNIwRK50P_p2Zg0to8idieZv0ie&s\",\n
+        \           \"width\": \"190\",\n            \"height\": \"190\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"author\": \"mcml.ai\",\n
+        \           \"og:title\": \"MCML - Munich Center for Machine Learning\",\n
+        \           \"og:url\": \"https://mcml.ai/\",\n            \"og:description\":
+        \"The MCML is a top place for AI and ML research in Europe. We attract the
+        most promising researchers and transfer AI potential to industry and society.\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://mcml.ai/images/pictograms/pis.png\"\n          }\n        ]\n      }\n
+        \   },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Flexible Remote Junior Machine Learning Jobs \u2013 Apply Today to ...\",\n
+        \     \"htmlTitle\": \"Flexible Remote Junior \\u003cb\\u003eMachine Learning\\u003c/b\\u003e
+        Jobs \u2013 Apply Today to ...\",\n      \"link\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"displayLink\": \"www.indeed.com\",\n      \"snippet\": \"3 hours ago
+        ... Build, train, and deploy scalable machine learning models tailored to
+        client needs. Proven experience in machine learning model development and
+        deployment. Job\_...\",\n      \"htmlSnippet\": \"3 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Build, train, and deploy scalable \\u003cb\\u003emachine learning\\u003c/b\\u003e
+        models tailored to client needs. Proven experience in \\u003cb\\u003emachine
+        learning\\u003c/b\\u003e model development and deployment. Job&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"htmlFormattedUrl\": \"https://www.indeed.com/q-remote-junior-\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e-jobs.html\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"referrer\":
+        \"origin-when-cross-origin\",\n            \"viewport\": \"width=device-width,initial-scale=1.0\",\n
+        \           \"format-detection\": \"telephone=no\"\n          }\n        ]\n
+        \     }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:27:06 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18672'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12700000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12700000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.294328,\n    \"formattedSearchTime\":
+        \"0.29\",\n    \"totalResults\": \"12700000\",\n    \"formattedTotalResults\":
+        \"12,700,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"4 hours ago
+        ... Machine learning is the ability of a machine to improve its performance
+        based on previous results. Machine learning methods enable computers to learn
+        without\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        \\u003cb\\u003eMachine learning\\u003c/b\\u003e is the ability of a machine
+        to improve its performance based on previous results. \\u003cb\\u003eMachine
+        learning\\u003c/b\\u003e methods enable computers to learn without&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"htmlFormattedUrl\": \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sX3Tq8V1hBBh-qpTWoO4moJW8ISAOkceGb7MDB8ZC29K5nes3v_c4Vs&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Igor Bibi\"\n          },\n          {\n
+        \           \"name\": \"Daniel Schaffert\"\n          },\n          {\n            \"name\":
+        \"Victor Olsavszky\"\n          },\n          {\n            \"name\": \"Shehabeldin
+        Saber\"\n          },\n          {\n            \"name\": \"Hend Abou El Nasr\"\n
+        \         },\n          {\n            \"name\": \"Nora Saif\"\n          },\n
+        \         {\n            \"name\": \"Khalid Ibraheem Alohali\"\n          },\n
+        \         {\n            \"name\": \"Laura Asaad Almusaeeb\"\n          },\n
+        \         {\n            \"name\": \"Ruaim Abdullah Muaygil\"\n          },\n
+        \         {\n            \"name\": \"Roman Zubatyuk\"\n          },\n          {\n
+        \           \"name\": \"Malgorzata Biczysko\"\n          },\n          {\n
+        \           \"name\": \"Pavel V. Afonine\"\n          },\n          {\n            \"name\":
+        \"Ebru Hasbay\"\n          },\n          {\n            \"name\": \"\xC7a\u011Flar
+        Cengizler\"\n          },\n          {\n            \"name\": \"Mariatou Dram\xE9\"\n
+        \         },\n          {\n            \"name\": \"Francisco-Javier Garcia-Rodriguez\"\n
+        \         },\n          {\n            \"name\": \"Pedro Escoll\"\n          },\n
+        \         {\n            \"name\": \"Elizabeth Gibney\"\n          },\n          {\n
+        \           \"name\": \"Michael Attwaters\"\n          },\n          {\n            \"name\":
+        \"Rita Strack\"\n          },\n          {\n            \"name\": \"Shamini
+        Bundell\"\n          },\n          {\n            \"name\": \"Long-Chen Shen\"\n
+        \         },\n          {\n            \"name\": \"Dong-Jun Yu\"\n          },\n
+        \         {\n            \"name\": \"Jiangning Song\"\n          }\n        ],\n
+        \       \"periodical\": [\n          {\n            \"name\": \"Nature.com\",\n
+        \           \"publisher\": \"Springer Nature\"\n          }\n        ],\n
+        \       \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-21761-5/MediaObjects/41598_2025_21761_Fig1_HTML.png\",\n
+        \           \"name\": \"Automated assessment of periapical health based on
+        the radiographic periapical index using YOLOv8, YOLOv11, and YOLOv12 one-stage
+        object detection algorithms\",\n            \"headline\": \"Automated assessment
+        of periapical health based on the radiographic periapical index using YOLOv8,
+        YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n            \"url\":
+        \"Automated assessment of periapical health based on the radiographic periapical
+        index using YOLOv8, YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n
+        \           \"datepublished\": \"2025-10-20\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20496-7/MediaObjects/41598_2025_20496_Fig1_HTML.png\",\n
+        \           \"name\": \"Reasoning-based LLMs surpass average human performance
+        on medical social skills\",\n            \"headline\": \"Reasoning-based LLMs
+        surpass average human performance on medical social skills\",\n            \"url\":
+        \"Reasoning-based LLMs surpass average human performance on medical social
+        skills\",\n            \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64313-1/MediaObjects/41467_2025_64313_Fig1_HTML.png\",\n
+        \           \"name\": \"AQuaRef: machine learning accelerated quantum refinement
+        of protein structures\",\n            \"description\": \"AQuaRef employs machine
+        learning to refine protein structures from cryo-EM and X-ray data in Phenix.
+        It achieves quantum-level precision, improving model geometry and fit to the
+        data while...\",\n            \"headline\": \"AQuaRef: machine learning accelerated
+        quantum refinement of protein structures\",\n            \"url\": \"AQuaRef:
+        machine learning accelerated quantum refinement of protein structures\",\n
+        \           \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20284-3/MediaObjects/41598_2025_20284_Fig1_HTML.png\",\n
+        \           \"name\": \"A modified deep learning approach for seminal vesicle
+        region localization in prostate MRI\",\n            \"headline\": \"A modified
+        deep learning approach for seminal vesicle region localization in prostate
+        MRI\",\n            \"url\": \"A modified deep learning approach for seminal
+        vesicle region localization in prostate MRI\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\",\n
+        \           \"name\": \"Backtracking metabolic dynamics in single cells predicts
+        bacterial replication in human macrophages\",\n            \"description\":
+        \"Computational models can help to explain the dynamics of cellular infection
+        with pathogens. Here the authors use computational models to assess the single
+        cell infection parameters of human...\",\n            \"headline\": \"Backtracking
+        metabolic dynamics in single cells predicts bacterial replication in human
+        macrophages\",\n            \"url\": \"Backtracking metabolic dynamics in
+        single cells predicts bacterial replication in human macrophages\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"nature\",\n
+        \           \"name\": \"nature\",\n            \"position\": \"1\"\n          },\n
+        \         {\n            \"item\": \"subjects\",\n            \"name\": \"subjects\",\n
+        \           \"position\": \"2\"\n          },\n          {\n            \"name\":
+        \"machine learning\",\n            \"position\": \"3\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"MCML - Munich Center for Machine Learning\",\n      \"htmlTitle\": \"MCML
+        - Munich Center for \\u003cb\\u003eMachine Learning\\u003c/b\\u003e\",\n      \"link\":
+        \"https://mcml.ai/\",\n      \"displayLink\": \"mcml.ai\",\n      \"snippet\":
+        \"4 hours ago ... The MCML is a top place for AI and ML research in Europe.
+        We attract the most promising researchers and transfer AI potential to industry
+        and society.\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        The MCML is a top place for AI and ML research in Europe. We attract the most
+        promising researchers and transfer AI potential to industry and society.\",\n
+        \     \"formattedUrl\": \"https://mcml.ai/\",\n      \"htmlFormattedUrl\":
+        \"https://mcml.ai/\",\n      \"pagemap\": {\n        \"cse_thumbnail\": [\n
+        \         {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgxxF_2keX91gs18oKUGNRwIbNjrDhUNIwRK50P_p2Zg0to8idieZv0ie&s\",\n
+        \           \"width\": \"190\",\n            \"height\": \"190\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"author\": \"mcml.ai\",\n
+        \           \"og:title\": \"MCML - Munich Center for Machine Learning\",\n
+        \           \"og:url\": \"https://mcml.ai/\",\n            \"og:description\":
+        \"The MCML is a top place for AI and ML research in Europe. We attract the
+        most promising researchers and transfer AI potential to industry and society.\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://mcml.ai/images/pictograms/pis.png\"\n          }\n        ]\n      }\n
+        \   },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Flexible Remote Junior Machine Learning Jobs \u2013 Apply Today to ...\",\n
+        \     \"htmlTitle\": \"Flexible Remote Junior \\u003cb\\u003eMachine Learning\\u003c/b\\u003e
+        Jobs \u2013 Apply Today to ...\",\n      \"link\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"displayLink\": \"www.indeed.com\",\n      \"snippet\": \"4 hours ago
+        ... Build, train, and deploy scalable machine learning models tailored to
+        client needs. Proven experience in machine learning model development and
+        deployment. Job\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Build, train, and deploy scalable \\u003cb\\u003emachine learning\\u003c/b\\u003e
+        models tailored to client needs. Proven experience in \\u003cb\\u003emachine
+        learning\\u003c/b\\u003e model development and deployment. Job&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"htmlFormattedUrl\": \"https://www.indeed.com/q-remote-junior-\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e-jobs.html\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"referrer\":
+        \"origin-when-cross-origin\",\n            \"viewport\": \"width=device-width,initial-scale=1.0\",\n
+        \           \"format-detection\": \"telephone=no\"\n          }\n        ]\n
+        \     }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:36:57 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18672'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12700000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12700000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.398635,\n    \"formattedSearchTime\":
+        \"0.40\",\n    \"totalResults\": \"12700000\",\n    \"formattedTotalResults\":
+        \"12,700,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"4 hours ago
+        ... Latest Research and Reviews \xB7 Cardiovascular risk assessment enhanced
+        by automated machine learning in a multi-phase study \xB7 Automated assessment
+        of periapical\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Latest Research and Reviews &middot; Cardiovascular risk assessment enhanced
+        by automated \\u003cb\\u003emachine learning\\u003c/b\\u003e in a multi-phase
+        study &middot; Automated assessment of periapical&nbsp;...\",\n      \"formattedUrl\":
+        \"https://www.nature.com/subjects/machine-learning\",\n      \"htmlFormattedUrl\":
+        \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sX3Tq8V1hBBh-qpTWoO4moJW8ISAOkceGb7MDB8ZC29K5nes3v_c4Vs&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Igor Bibi\"\n          },\n          {\n
+        \           \"name\": \"Daniel Schaffert\"\n          },\n          {\n            \"name\":
+        \"Victor Olsavszky\"\n          },\n          {\n            \"name\": \"Shehabeldin
+        Saber\"\n          },\n          {\n            \"name\": \"Hend Abou El Nasr\"\n
+        \         },\n          {\n            \"name\": \"Nora Saif\"\n          },\n
+        \         {\n            \"name\": \"Khalid Ibraheem Alohali\"\n          },\n
+        \         {\n            \"name\": \"Laura Asaad Almusaeeb\"\n          },\n
+        \         {\n            \"name\": \"Ruaim Abdullah Muaygil\"\n          },\n
+        \         {\n            \"name\": \"Roman Zubatyuk\"\n          },\n          {\n
+        \           \"name\": \"Malgorzata Biczysko\"\n          },\n          {\n
+        \           \"name\": \"Pavel V. Afonine\"\n          },\n          {\n            \"name\":
+        \"Ebru Hasbay\"\n          },\n          {\n            \"name\": \"\xC7a\u011Flar
+        Cengizler\"\n          },\n          {\n            \"name\": \"Mariatou Dram\xE9\"\n
+        \         },\n          {\n            \"name\": \"Francisco-Javier Garcia-Rodriguez\"\n
+        \         },\n          {\n            \"name\": \"Pedro Escoll\"\n          },\n
+        \         {\n            \"name\": \"Elizabeth Gibney\"\n          },\n          {\n
+        \           \"name\": \"Michael Attwaters\"\n          },\n          {\n            \"name\":
+        \"Rita Strack\"\n          },\n          {\n            \"name\": \"Shamini
+        Bundell\"\n          },\n          {\n            \"name\": \"Long-Chen Shen\"\n
+        \         },\n          {\n            \"name\": \"Dong-Jun Yu\"\n          },\n
+        \         {\n            \"name\": \"Jiangning Song\"\n          }\n        ],\n
+        \       \"periodical\": [\n          {\n            \"name\": \"Nature.com\",\n
+        \           \"publisher\": \"Springer Nature\"\n          }\n        ],\n
+        \       \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-21761-5/MediaObjects/41598_2025_21761_Fig1_HTML.png\",\n
+        \           \"name\": \"Automated assessment of periapical health based on
+        the radiographic periapical index using YOLOv8, YOLOv11, and YOLOv12 one-stage
+        object detection algorithms\",\n            \"headline\": \"Automated assessment
+        of periapical health based on the radiographic periapical index using YOLOv8,
+        YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n            \"url\":
+        \"Automated assessment of periapical health based on the radiographic periapical
+        index using YOLOv8, YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n
+        \           \"datepublished\": \"2025-10-20\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20496-7/MediaObjects/41598_2025_20496_Fig1_HTML.png\",\n
+        \           \"name\": \"Reasoning-based LLMs surpass average human performance
+        on medical social skills\",\n            \"headline\": \"Reasoning-based LLMs
+        surpass average human performance on medical social skills\",\n            \"url\":
+        \"Reasoning-based LLMs surpass average human performance on medical social
+        skills\",\n            \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64313-1/MediaObjects/41467_2025_64313_Fig1_HTML.png\",\n
+        \           \"name\": \"AQuaRef: machine learning accelerated quantum refinement
+        of protein structures\",\n            \"description\": \"AQuaRef employs machine
+        learning to refine protein structures from cryo-EM and X-ray data in Phenix.
+        It achieves quantum-level precision, improving model geometry and fit to the
+        data while...\",\n            \"headline\": \"AQuaRef: machine learning accelerated
+        quantum refinement of protein structures\",\n            \"url\": \"AQuaRef:
+        machine learning accelerated quantum refinement of protein structures\",\n
+        \           \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20284-3/MediaObjects/41598_2025_20284_Fig1_HTML.png\",\n
+        \           \"name\": \"A modified deep learning approach for seminal vesicle
+        region localization in prostate MRI\",\n            \"headline\": \"A modified
+        deep learning approach for seminal vesicle region localization in prostate
+        MRI\",\n            \"url\": \"A modified deep learning approach for seminal
+        vesicle region localization in prostate MRI\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\",\n
+        \           \"name\": \"Backtracking metabolic dynamics in single cells predicts
+        bacterial replication in human macrophages\",\n            \"description\":
+        \"Computational models can help to explain the dynamics of cellular infection
+        with pathogens. Here the authors use computational models to assess the single
+        cell infection parameters of human...\",\n            \"headline\": \"Backtracking
+        metabolic dynamics in single cells predicts bacterial replication in human
+        macrophages\",\n            \"url\": \"Backtracking metabolic dynamics in
+        single cells predicts bacterial replication in human macrophages\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"nature\",\n
+        \           \"name\": \"nature\",\n            \"position\": \"1\"\n          },\n
+        \         {\n            \"item\": \"subjects\",\n            \"name\": \"subjects\",\n
+        \           \"position\": \"2\"\n          },\n          {\n            \"name\":
+        \"machine learning\",\n            \"position\": \"3\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"MCML - Munich Center for Machine Learning\",\n      \"htmlTitle\": \"MCML
+        - Munich Center for \\u003cb\\u003eMachine Learning\\u003c/b\\u003e\",\n      \"link\":
+        \"https://mcml.ai/\",\n      \"displayLink\": \"mcml.ai\",\n      \"snippet\":
+        \"4 hours ago ... A top spot for AI and ML research in Europe. We attract
+        the most promising researchers from all career levels to our center and transfer
+        innovations and AI\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        A top spot for AI and ML research in Europe. We attract the most promising
+        researchers from all career levels to our center and transfer innovations
+        and AI&nbsp;...\",\n      \"formattedUrl\": \"https://mcml.ai/\",\n      \"htmlFormattedUrl\":
+        \"https://mcml.ai/\",\n      \"pagemap\": {\n        \"cse_thumbnail\": [\n
+        \         {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgxxF_2keX91gs18oKUGNRwIbNjrDhUNIwRK50P_p2Zg0to8idieZv0ie&s\",\n
+        \           \"width\": \"190\",\n            \"height\": \"190\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"author\": \"mcml.ai\",\n
+        \           \"og:title\": \"MCML - Munich Center for Machine Learning\",\n
+        \           \"og:url\": \"https://mcml.ai/\",\n            \"og:description\":
+        \"The MCML is a top place for AI and ML research in Europe. We attract the
+        most promising researchers and transfer AI potential to industry and society.\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://mcml.ai/images/pictograms/pis.png\"\n          }\n        ]\n      }\n
+        \   },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Flexible Remote Junior Machine Learning Jobs \u2013 Apply Today to ...\",\n
+        \     \"htmlTitle\": \"Flexible Remote Junior \\u003cb\\u003eMachine Learning\\u003c/b\\u003e
+        Jobs \u2013 Apply Today to ...\",\n      \"link\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"displayLink\": \"www.indeed.com\",\n      \"snippet\": \"4 hours ago
+        ... remote junior machine learning jobs \xB7 Machine Learning Engineer \xB7
+        Remote AI Training & Domain Expert \xB7 Technology IC - Machine Learning \xB7
+        Junior AI Systems\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        remote junior \\u003cb\\u003emachine learning\\u003c/b\\u003e jobs &middot;
+        \\u003cb\\u003eMachine Learning\\u003c/b\\u003e Engineer &middot; Remote AI
+        Training &amp; Domain Expert &middot; Technology IC - \\u003cb\\u003eMachine
+        Learning\\u003c/b\\u003e &middot; Junior AI Systems&nbsp;...\",\n      \"formattedUrl\":
+        \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n      \"htmlFormattedUrl\":
+        \"https://www.indeed.com/q-remote-junior-\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e-jobs.html\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"referrer\":
+        \"origin-when-cross-origin\",\n            \"viewport\": \"width=device-width,initial-scale=1.0\",\n
+        \           \"format-detection\": \"telephone=no\"\n          }\n        ]\n
+        \     }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:37:14 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18744'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12700000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12700000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.29405,\n    \"formattedSearchTime\":
+        \"0.29\",\n    \"totalResults\": \"12700000\",\n    \"formattedTotalResults\":
+        \"12,700,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"4 hours ago
+        ... Machine learning is the ability of a machine to improve its performance
+        based on previous results. Machine learning methods enable computers to learn
+        without\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        \\u003cb\\u003eMachine learning\\u003c/b\\u003e is the ability of a machine
+        to improve its performance based on previous results. \\u003cb\\u003eMachine
+        learning\\u003c/b\\u003e methods enable computers to learn without&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"htmlFormattedUrl\": \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sX3Tq8V1hBBh-qpTWoO4moJW8ISAOkceGb7MDB8ZC29K5nes3v_c4Vs&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Igor Bibi\"\n          },\n          {\n
+        \           \"name\": \"Daniel Schaffert\"\n          },\n          {\n            \"name\":
+        \"Victor Olsavszky\"\n          },\n          {\n            \"name\": \"Shehabeldin
+        Saber\"\n          },\n          {\n            \"name\": \"Hend Abou El Nasr\"\n
+        \         },\n          {\n            \"name\": \"Nora Saif\"\n          },\n
+        \         {\n            \"name\": \"Khalid Ibraheem Alohali\"\n          },\n
+        \         {\n            \"name\": \"Laura Asaad Almusaeeb\"\n          },\n
+        \         {\n            \"name\": \"Ruaim Abdullah Muaygil\"\n          },\n
+        \         {\n            \"name\": \"Roman Zubatyuk\"\n          },\n          {\n
+        \           \"name\": \"Malgorzata Biczysko\"\n          },\n          {\n
+        \           \"name\": \"Pavel V. Afonine\"\n          },\n          {\n            \"name\":
+        \"Ebru Hasbay\"\n          },\n          {\n            \"name\": \"\xC7a\u011Flar
+        Cengizler\"\n          },\n          {\n            \"name\": \"Mariatou Dram\xE9\"\n
+        \         },\n          {\n            \"name\": \"Francisco-Javier Garcia-Rodriguez\"\n
+        \         },\n          {\n            \"name\": \"Pedro Escoll\"\n          },\n
+        \         {\n            \"name\": \"Elizabeth Gibney\"\n          },\n          {\n
+        \           \"name\": \"Michael Attwaters\"\n          },\n          {\n            \"name\":
+        \"Rita Strack\"\n          },\n          {\n            \"name\": \"Shamini
+        Bundell\"\n          },\n          {\n            \"name\": \"Long-Chen Shen\"\n
+        \         },\n          {\n            \"name\": \"Dong-Jun Yu\"\n          },\n
+        \         {\n            \"name\": \"Jiangning Song\"\n          }\n        ],\n
+        \       \"periodical\": [\n          {\n            \"name\": \"Nature.com\",\n
+        \           \"publisher\": \"Springer Nature\"\n          }\n        ],\n
+        \       \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-21761-5/MediaObjects/41598_2025_21761_Fig1_HTML.png\",\n
+        \           \"name\": \"Automated assessment of periapical health based on
+        the radiographic periapical index using YOLOv8, YOLOv11, and YOLOv12 one-stage
+        object detection algorithms\",\n            \"headline\": \"Automated assessment
+        of periapical health based on the radiographic periapical index using YOLOv8,
+        YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n            \"url\":
+        \"Automated assessment of periapical health based on the radiographic periapical
+        index using YOLOv8, YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n
+        \           \"datepublished\": \"2025-10-20\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20496-7/MediaObjects/41598_2025_20496_Fig1_HTML.png\",\n
+        \           \"name\": \"Reasoning-based LLMs surpass average human performance
+        on medical social skills\",\n            \"headline\": \"Reasoning-based LLMs
+        surpass average human performance on medical social skills\",\n            \"url\":
+        \"Reasoning-based LLMs surpass average human performance on medical social
+        skills\",\n            \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64313-1/MediaObjects/41467_2025_64313_Fig1_HTML.png\",\n
+        \           \"name\": \"AQuaRef: machine learning accelerated quantum refinement
+        of protein structures\",\n            \"description\": \"AQuaRef employs machine
+        learning to refine protein structures from cryo-EM and X-ray data in Phenix.
+        It achieves quantum-level precision, improving model geometry and fit to the
+        data while...\",\n            \"headline\": \"AQuaRef: machine learning accelerated
+        quantum refinement of protein structures\",\n            \"url\": \"AQuaRef:
+        machine learning accelerated quantum refinement of protein structures\",\n
+        \           \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20284-3/MediaObjects/41598_2025_20284_Fig1_HTML.png\",\n
+        \           \"name\": \"A modified deep learning approach for seminal vesicle
+        region localization in prostate MRI\",\n            \"headline\": \"A modified
+        deep learning approach for seminal vesicle region localization in prostate
+        MRI\",\n            \"url\": \"A modified deep learning approach for seminal
+        vesicle region localization in prostate MRI\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\",\n
+        \           \"name\": \"Backtracking metabolic dynamics in single cells predicts
+        bacterial replication in human macrophages\",\n            \"description\":
+        \"Computational models can help to explain the dynamics of cellular infection
+        with pathogens. Here the authors use computational models to assess the single
+        cell infection parameters of human...\",\n            \"headline\": \"Backtracking
+        metabolic dynamics in single cells predicts bacterial replication in human
+        macrophages\",\n            \"url\": \"Backtracking metabolic dynamics in
+        single cells predicts bacterial replication in human macrophages\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"nature\",\n
+        \           \"name\": \"nature\",\n            \"position\": \"1\"\n          },\n
+        \         {\n            \"item\": \"subjects\",\n            \"name\": \"subjects\",\n
+        \           \"position\": \"2\"\n          },\n          {\n            \"name\":
+        \"machine learning\",\n            \"position\": \"3\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"MCML - Munich Center for Machine Learning\",\n      \"htmlTitle\": \"MCML
+        - Munich Center for \\u003cb\\u003eMachine Learning\\u003c/b\\u003e\",\n      \"link\":
+        \"https://mcml.ai/\",\n      \"displayLink\": \"mcml.ai\",\n      \"snippet\":
+        \"4 hours ago ... The MCML is a top place for AI and ML research in Europe.
+        We attract the most promising researchers and transfer AI potential to industry
+        and society.\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        The MCML is a top place for AI and ML research in Europe. We attract the most
+        promising researchers and transfer AI potential to industry and society.\",\n
+        \     \"formattedUrl\": \"https://mcml.ai/\",\n      \"htmlFormattedUrl\":
+        \"https://mcml.ai/\",\n      \"pagemap\": {\n        \"cse_thumbnail\": [\n
+        \         {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgxxF_2keX91gs18oKUGNRwIbNjrDhUNIwRK50P_p2Zg0to8idieZv0ie&s\",\n
+        \           \"width\": \"190\",\n            \"height\": \"190\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"author\": \"mcml.ai\",\n
+        \           \"og:title\": \"MCML - Munich Center for Machine Learning\",\n
+        \           \"og:url\": \"https://mcml.ai/\",\n            \"og:description\":
+        \"The MCML is a top place for AI and ML research in Europe. We attract the
+        most promising researchers and transfer AI potential to industry and society.\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://mcml.ai/images/pictograms/pis.png\"\n          }\n        ]\n      }\n
+        \   },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Flexible Remote Junior Machine Learning Jobs \u2013 Apply Today to ...\",\n
+        \     \"htmlTitle\": \"Flexible Remote Junior \\u003cb\\u003eMachine Learning\\u003c/b\\u003e
+        Jobs \u2013 Apply Today to ...\",\n      \"link\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"displayLink\": \"www.indeed.com\",\n      \"snippet\": \"4 hours ago
+        ... Build, train, and deploy scalable machine learning models tailored to
+        client needs. Proven experience in machine learning model development and
+        deployment. Job\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Build, train, and deploy scalable \\u003cb\\u003emachine learning\\u003c/b\\u003e
+        models tailored to client needs. Proven experience in \\u003cb\\u003emachine
+        learning\\u003c/b\\u003e model development and deployment. Job&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"htmlFormattedUrl\": \"https://www.indeed.com/q-remote-junior-\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e-jobs.html\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"referrer\":
+        \"origin-when-cross-origin\",\n            \"viewport\": \"width=device-width,initial-scale=1.0\",\n
+        \           \"format-detection\": \"telephone=no\"\n          }\n        ]\n
+        \     }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:39:10 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18671'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12800000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12800000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.425121,\n    \"formattedSearchTime\":
+        \"0.43\",\n    \"totalResults\": \"12800000\",\n    \"formattedTotalResults\":
+        \"12,800,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"4 hours ago
+        ... Machine learning is the ability of a machine to improve its performance
+        based on previous results. Machine learning methods enable computers to learn
+        without\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        \\u003cb\\u003eMachine learning\\u003c/b\\u003e is the ability of a machine
+        to improve its performance based on previous results. \\u003cb\\u003eMachine
+        learning\\u003c/b\\u003e methods enable computers to learn without&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"htmlFormattedUrl\": \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sX3Tq8V1hBBh-qpTWoO4moJW8ISAOkceGb7MDB8ZC29K5nes3v_c4Vs&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Igor Bibi\"\n          },\n          {\n
+        \           \"name\": \"Daniel Schaffert\"\n          },\n          {\n            \"name\":
+        \"Victor Olsavszky\"\n          },\n          {\n            \"name\": \"Shehabeldin
+        Saber\"\n          },\n          {\n            \"name\": \"Hend Abou El Nasr\"\n
+        \         },\n          {\n            \"name\": \"Nora Saif\"\n          },\n
+        \         {\n            \"name\": \"Khalid Ibraheem Alohali\"\n          },\n
+        \         {\n            \"name\": \"Laura Asaad Almusaeeb\"\n          },\n
+        \         {\n            \"name\": \"Ruaim Abdullah Muaygil\"\n          },\n
+        \         {\n            \"name\": \"Roman Zubatyuk\"\n          },\n          {\n
+        \           \"name\": \"Malgorzata Biczysko\"\n          },\n          {\n
+        \           \"name\": \"Pavel V. Afonine\"\n          },\n          {\n            \"name\":
+        \"Ebru Hasbay\"\n          },\n          {\n            \"name\": \"\xC7a\u011Flar
+        Cengizler\"\n          },\n          {\n            \"name\": \"Mariatou Dram\xE9\"\n
+        \         },\n          {\n            \"name\": \"Francisco-Javier Garcia-Rodriguez\"\n
+        \         },\n          {\n            \"name\": \"Pedro Escoll\"\n          },\n
+        \         {\n            \"name\": \"Elizabeth Gibney\"\n          },\n          {\n
+        \           \"name\": \"Michael Attwaters\"\n          },\n          {\n            \"name\":
+        \"Rita Strack\"\n          },\n          {\n            \"name\": \"Shamini
+        Bundell\"\n          },\n          {\n            \"name\": \"Long-Chen Shen\"\n
+        \         },\n          {\n            \"name\": \"Dong-Jun Yu\"\n          },\n
+        \         {\n            \"name\": \"Jiangning Song\"\n          }\n        ],\n
+        \       \"periodical\": [\n          {\n            \"name\": \"Nature.com\",\n
+        \           \"publisher\": \"Springer Nature\"\n          }\n        ],\n
+        \       \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-21761-5/MediaObjects/41598_2025_21761_Fig1_HTML.png\",\n
+        \           \"name\": \"Automated assessment of periapical health based on
+        the radiographic periapical index using YOLOv8, YOLOv11, and YOLOv12 one-stage
+        object detection algorithms\",\n            \"headline\": \"Automated assessment
+        of periapical health based on the radiographic periapical index using YOLOv8,
+        YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n            \"url\":
+        \"Automated assessment of periapical health based on the radiographic periapical
+        index using YOLOv8, YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n
+        \           \"datepublished\": \"2025-10-20\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20496-7/MediaObjects/41598_2025_20496_Fig1_HTML.png\",\n
+        \           \"name\": \"Reasoning-based LLMs surpass average human performance
+        on medical social skills\",\n            \"headline\": \"Reasoning-based LLMs
+        surpass average human performance on medical social skills\",\n            \"url\":
+        \"Reasoning-based LLMs surpass average human performance on medical social
+        skills\",\n            \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64313-1/MediaObjects/41467_2025_64313_Fig1_HTML.png\",\n
+        \           \"name\": \"AQuaRef: machine learning accelerated quantum refinement
+        of protein structures\",\n            \"description\": \"AQuaRef employs machine
+        learning to refine protein structures from cryo-EM and X-ray data in Phenix.
+        It achieves quantum-level precision, improving model geometry and fit to the
+        data while...\",\n            \"headline\": \"AQuaRef: machine learning accelerated
+        quantum refinement of protein structures\",\n            \"url\": \"AQuaRef:
+        machine learning accelerated quantum refinement of protein structures\",\n
+        \           \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20284-3/MediaObjects/41598_2025_20284_Fig1_HTML.png\",\n
+        \           \"name\": \"A modified deep learning approach for seminal vesicle
+        region localization in prostate MRI\",\n            \"headline\": \"A modified
+        deep learning approach for seminal vesicle region localization in prostate
+        MRI\",\n            \"url\": \"A modified deep learning approach for seminal
+        vesicle region localization in prostate MRI\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\",\n
+        \           \"name\": \"Backtracking metabolic dynamics in single cells predicts
+        bacterial replication in human macrophages\",\n            \"description\":
+        \"Computational models can help to explain the dynamics of cellular infection
+        with pathogens. Here the authors use computational models to assess the single
+        cell infection parameters of human...\",\n            \"headline\": \"Backtracking
+        metabolic dynamics in single cells predicts bacterial replication in human
+        macrophages\",\n            \"url\": \"Backtracking metabolic dynamics in
+        single cells predicts bacterial replication in human macrophages\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"nature\",\n
+        \           \"name\": \"nature\",\n            \"position\": \"1\"\n          },\n
+        \         {\n            \"item\": \"subjects\",\n            \"name\": \"subjects\",\n
+        \           \"position\": \"2\"\n          },\n          {\n            \"name\":
+        \"machine learning\",\n            \"position\": \"3\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Journal of Chemical Information and Modeling - ACS Publications\",\n      \"htmlTitle\":
+        \"Journal of Chemical Information and Modeling - ACS Publications\",\n      \"link\":
+        \"https://pubs.acs.org/journal/jcisd8\",\n      \"displayLink\": \"pubs.acs.org\",\n
+        \     \"snippet\": \"4 hours ago ... Call for Papers. Modeling Reactions from
+        Chemical Theories to Machine Learning. This Virtual Special Issue will spotlight
+        remarkable advancements in theoretical\_...\",\n      \"htmlSnippet\": \"4
+        hours ago \\u003cb\\u003e...\\u003c/b\\u003e Call for Papers. Modeling Reactions
+        from Chemical Theories to \\u003cb\\u003eMachine Learning\\u003c/b\\u003e.
+        This Virtual Special Issue will spotlight remarkable advancements in theoretical&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://pubs.acs.org/journal/jcisd8\",\n      \"htmlFormattedUrl\":
+        \"https://pubs.acs.org/journal/jcisd8\",\n      \"pagemap\": {\n        \"metatags\":
+        [\n          {\n            \"viewport\": \"width=device-width,initial-scale=1,maximum-scale=10,
+        user-scalable=1\",\n            \"pbcontext\": \";journal:journal:jcisd8;page:string:Journal
+        Home;ctype:string:Journal Content;wgroup:string:ACHS website Group;website:website:acspubs;requestedJournal:journal:jcisd8;pageGroup:string:Publication
+        Pages\",\n            \"publication_doi\": \"10.1021/jcisd8\",\n            \"dc.identifier\":
+        \"10.1021/jcisd8\",\n            \"format-detection\": \"telephone=no\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"MCML - Munich Center for Machine Learning\",\n      \"htmlTitle\":
+        \"MCML - Munich Center for \\u003cb\\u003eMachine Learning\\u003c/b\\u003e\",\n
+        \     \"link\": \"https://mcml.ai/\",\n      \"displayLink\": \"mcml.ai\",\n
+        \     \"snippet\": \"4 hours ago ... The MCML is a top place for AI and ML
+        research in Europe. We attract the most promising researchers and transfer
+        AI potential to industry and society.\",\n      \"htmlSnippet\": \"4 hours
+        ago \\u003cb\\u003e...\\u003c/b\\u003e The MCML is a top place for AI and
+        ML research in Europe. We attract the most promising researchers and transfer
+        AI potential to industry and society.\",\n      \"formattedUrl\": \"https://mcml.ai/\",\n
+        \     \"htmlFormattedUrl\": \"https://mcml.ai/\",\n      \"pagemap\": {\n
+        \       \"cse_thumbnail\": [\n          {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgxxF_2keX91gs18oKUGNRwIbNjrDhUNIwRK50P_p2Zg0to8idieZv0ie&s\",\n
+        \           \"width\": \"190\",\n            \"height\": \"190\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"author\": \"mcml.ai\",\n
+        \           \"og:title\": \"MCML - Munich Center for Machine Learning\",\n
+        \           \"og:url\": \"https://mcml.ai/\",\n            \"og:description\":
+        \"The MCML is a top place for AI and ML research in Europe. We attract the
+        most promising researchers and transfer AI potential to industry and society.\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://mcml.ai/images/pictograms/pis.png\"\n          }\n        ]\n      }\n
+        \   }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:43:53 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18772'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12700000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12700000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.310359,\n    \"formattedSearchTime\":
+        \"0.31\",\n    \"totalResults\": \"12700000\",\n    \"formattedTotalResults\":
+        \"12,700,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"4 hours ago
+        ... Machine learning is the ability of a machine to improve its performance
+        based on previous results. Machine learning methods enable computers to learn
+        without\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        \\u003cb\\u003eMachine learning\\u003c/b\\u003e is the ability of a machine
+        to improve its performance based on previous results. \\u003cb\\u003eMachine
+        learning\\u003c/b\\u003e methods enable computers to learn without&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"htmlFormattedUrl\": \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sX3Tq8V1hBBh-qpTWoO4moJW8ISAOkceGb7MDB8ZC29K5nes3v_c4Vs&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Igor Bibi\"\n          },\n          {\n
+        \           \"name\": \"Daniel Schaffert\"\n          },\n          {\n            \"name\":
+        \"Victor Olsavszky\"\n          },\n          {\n            \"name\": \"Shehabeldin
+        Saber\"\n          },\n          {\n            \"name\": \"Hend Abou El Nasr\"\n
+        \         },\n          {\n            \"name\": \"Nora Saif\"\n          },\n
+        \         {\n            \"name\": \"Khalid Ibraheem Alohali\"\n          },\n
+        \         {\n            \"name\": \"Laura Asaad Almusaeeb\"\n          },\n
+        \         {\n            \"name\": \"Ruaim Abdullah Muaygil\"\n          },\n
+        \         {\n            \"name\": \"Roman Zubatyuk\"\n          },\n          {\n
+        \           \"name\": \"Malgorzata Biczysko\"\n          },\n          {\n
+        \           \"name\": \"Pavel V. Afonine\"\n          },\n          {\n            \"name\":
+        \"Ebru Hasbay\"\n          },\n          {\n            \"name\": \"\xC7a\u011Flar
+        Cengizler\"\n          },\n          {\n            \"name\": \"Mariatou Dram\xE9\"\n
+        \         },\n          {\n            \"name\": \"Francisco-Javier Garcia-Rodriguez\"\n
+        \         },\n          {\n            \"name\": \"Pedro Escoll\"\n          },\n
+        \         {\n            \"name\": \"Elizabeth Gibney\"\n          },\n          {\n
+        \           \"name\": \"Michael Attwaters\"\n          },\n          {\n            \"name\":
+        \"Rita Strack\"\n          },\n          {\n            \"name\": \"Shamini
+        Bundell\"\n          },\n          {\n            \"name\": \"Long-Chen Shen\"\n
+        \         },\n          {\n            \"name\": \"Dong-Jun Yu\"\n          },\n
+        \         {\n            \"name\": \"Jiangning Song\"\n          }\n        ],\n
+        \       \"periodical\": [\n          {\n            \"name\": \"Nature.com\",\n
+        \           \"publisher\": \"Springer Nature\"\n          }\n        ],\n
+        \       \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-21761-5/MediaObjects/41598_2025_21761_Fig1_HTML.png\",\n
+        \           \"name\": \"Automated assessment of periapical health based on
+        the radiographic periapical index using YOLOv8, YOLOv11, and YOLOv12 one-stage
+        object detection algorithms\",\n            \"headline\": \"Automated assessment
+        of periapical health based on the radiographic periapical index using YOLOv8,
+        YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n            \"url\":
+        \"Automated assessment of periapical health based on the radiographic periapical
+        index using YOLOv8, YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n
+        \           \"datepublished\": \"2025-10-20\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20496-7/MediaObjects/41598_2025_20496_Fig1_HTML.png\",\n
+        \           \"name\": \"Reasoning-based LLMs surpass average human performance
+        on medical social skills\",\n            \"headline\": \"Reasoning-based LLMs
+        surpass average human performance on medical social skills\",\n            \"url\":
+        \"Reasoning-based LLMs surpass average human performance on medical social
+        skills\",\n            \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64313-1/MediaObjects/41467_2025_64313_Fig1_HTML.png\",\n
+        \           \"name\": \"AQuaRef: machine learning accelerated quantum refinement
+        of protein structures\",\n            \"description\": \"AQuaRef employs machine
+        learning to refine protein structures from cryo-EM and X-ray data in Phenix.
+        It achieves quantum-level precision, improving model geometry and fit to the
+        data while...\",\n            \"headline\": \"AQuaRef: machine learning accelerated
+        quantum refinement of protein structures\",\n            \"url\": \"AQuaRef:
+        machine learning accelerated quantum refinement of protein structures\",\n
+        \           \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20284-3/MediaObjects/41598_2025_20284_Fig1_HTML.png\",\n
+        \           \"name\": \"A modified deep learning approach for seminal vesicle
+        region localization in prostate MRI\",\n            \"headline\": \"A modified
+        deep learning approach for seminal vesicle region localization in prostate
+        MRI\",\n            \"url\": \"A modified deep learning approach for seminal
+        vesicle region localization in prostate MRI\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\",\n
+        \           \"name\": \"Backtracking metabolic dynamics in single cells predicts
+        bacterial replication in human macrophages\",\n            \"description\":
+        \"Computational models can help to explain the dynamics of cellular infection
+        with pathogens. Here the authors use computational models to assess the single
+        cell infection parameters of human...\",\n            \"headline\": \"Backtracking
+        metabolic dynamics in single cells predicts bacterial replication in human
+        macrophages\",\n            \"url\": \"Backtracking metabolic dynamics in
+        single cells predicts bacterial replication in human macrophages\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"nature\",\n
+        \           \"name\": \"nature\",\n            \"position\": \"1\"\n          },\n
+        \         {\n            \"item\": \"subjects\",\n            \"name\": \"subjects\",\n
+        \           \"position\": \"2\"\n          },\n          {\n            \"name\":
+        \"machine learning\",\n            \"position\": \"3\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"MCML - Munich Center for Machine Learning\",\n      \"htmlTitle\": \"MCML
+        - Munich Center for \\u003cb\\u003eMachine Learning\\u003c/b\\u003e\",\n      \"link\":
+        \"https://mcml.ai/\",\n      \"displayLink\": \"mcml.ai\",\n      \"snippet\":
+        \"4 hours ago ... The MCML is a top place for AI and ML research in Europe.
+        We attract the most promising researchers and transfer AI potential to industry
+        and society.\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        The MCML is a top place for AI and ML research in Europe. We attract the most
+        promising researchers and transfer AI potential to industry and society.\",\n
+        \     \"formattedUrl\": \"https://mcml.ai/\",\n      \"htmlFormattedUrl\":
+        \"https://mcml.ai/\",\n      \"pagemap\": {\n        \"cse_thumbnail\": [\n
+        \         {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgxxF_2keX91gs18oKUGNRwIbNjrDhUNIwRK50P_p2Zg0to8idieZv0ie&s\",\n
+        \           \"width\": \"190\",\n            \"height\": \"190\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"author\": \"mcml.ai\",\n
+        \           \"og:title\": \"MCML - Munich Center for Machine Learning\",\n
+        \           \"og:url\": \"https://mcml.ai/\",\n            \"og:description\":
+        \"The MCML is a top place for AI and ML research in Europe. We attract the
+        most promising researchers and transfer AI potential to industry and society.\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://mcml.ai/images/pictograms/pis.png\"\n          }\n        ]\n      }\n
+        \   },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Flexible Remote Junior Machine Learning Jobs \u2013 Apply Today to ...\",\n
+        \     \"htmlTitle\": \"Flexible Remote Junior \\u003cb\\u003eMachine Learning\\u003c/b\\u003e
+        Jobs \u2013 Apply Today to ...\",\n      \"link\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"displayLink\": \"www.indeed.com\",\n      \"snippet\": \"4 hours ago
+        ... Build, train, and deploy scalable machine learning models tailored to
+        client needs. Proven experience in machine learning model development and
+        deployment. Job\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Build, train, and deploy scalable \\u003cb\\u003emachine learning\\u003c/b\\u003e
+        models tailored to client needs. Proven experience in \\u003cb\\u003emachine
+        learning\\u003c/b\\u003e model development and deployment. Job&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"htmlFormattedUrl\": \"https://www.indeed.com/q-remote-junior-\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e-jobs.html\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"referrer\":
+        \"origin-when-cross-origin\",\n            \"viewport\": \"width=device-width,initial-scale=1.0\",\n
+        \           \"format-detection\": \"telephone=no\"\n          }\n        ]\n
+        \     }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:49:57 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18672'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12700000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12700000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.28803,\n    \"formattedSearchTime\":
+        \"0.29\",\n    \"totalResults\": \"12700000\",\n    \"formattedTotalResults\":
+        \"12,700,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"4 hours ago
+        ... Machine learning is the ability of a machine to improve its performance
+        based on previous results. Machine learning methods enable computers to learn
+        without\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        \\u003cb\\u003eMachine learning\\u003c/b\\u003e is the ability of a machine
+        to improve its performance based on previous results. \\u003cb\\u003eMachine
+        learning\\u003c/b\\u003e methods enable computers to learn without&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"htmlFormattedUrl\": \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sX3Tq8V1hBBh-qpTWoO4moJW8ISAOkceGb7MDB8ZC29K5nes3v_c4Vs&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Igor Bibi\"\n          },\n          {\n
+        \           \"name\": \"Daniel Schaffert\"\n          },\n          {\n            \"name\":
+        \"Victor Olsavszky\"\n          },\n          {\n            \"name\": \"Shehabeldin
+        Saber\"\n          },\n          {\n            \"name\": \"Hend Abou El Nasr\"\n
+        \         },\n          {\n            \"name\": \"Nora Saif\"\n          },\n
+        \         {\n            \"name\": \"Khalid Ibraheem Alohali\"\n          },\n
+        \         {\n            \"name\": \"Laura Asaad Almusaeeb\"\n          },\n
+        \         {\n            \"name\": \"Ruaim Abdullah Muaygil\"\n          },\n
+        \         {\n            \"name\": \"Roman Zubatyuk\"\n          },\n          {\n
+        \           \"name\": \"Malgorzata Biczysko\"\n          },\n          {\n
+        \           \"name\": \"Pavel V. Afonine\"\n          },\n          {\n            \"name\":
+        \"Ebru Hasbay\"\n          },\n          {\n            \"name\": \"\xC7a\u011Flar
+        Cengizler\"\n          },\n          {\n            \"name\": \"Mariatou Dram\xE9\"\n
+        \         },\n          {\n            \"name\": \"Francisco-Javier Garcia-Rodriguez\"\n
+        \         },\n          {\n            \"name\": \"Pedro Escoll\"\n          },\n
+        \         {\n            \"name\": \"Elizabeth Gibney\"\n          },\n          {\n
+        \           \"name\": \"Michael Attwaters\"\n          },\n          {\n            \"name\":
+        \"Rita Strack\"\n          },\n          {\n            \"name\": \"Shamini
+        Bundell\"\n          },\n          {\n            \"name\": \"Long-Chen Shen\"\n
+        \         },\n          {\n            \"name\": \"Dong-Jun Yu\"\n          },\n
+        \         {\n            \"name\": \"Jiangning Song\"\n          }\n        ],\n
+        \       \"periodical\": [\n          {\n            \"name\": \"Nature.com\",\n
+        \           \"publisher\": \"Springer Nature\"\n          }\n        ],\n
+        \       \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-21761-5/MediaObjects/41598_2025_21761_Fig1_HTML.png\",\n
+        \           \"name\": \"Automated assessment of periapical health based on
+        the radiographic periapical index using YOLOv8, YOLOv11, and YOLOv12 one-stage
+        object detection algorithms\",\n            \"headline\": \"Automated assessment
+        of periapical health based on the radiographic periapical index using YOLOv8,
+        YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n            \"url\":
+        \"Automated assessment of periapical health based on the radiographic periapical
+        index using YOLOv8, YOLOv11, and YOLOv12 one-stage object detection algorithms\",\n
+        \           \"datepublished\": \"2025-10-20\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20496-7/MediaObjects/41598_2025_20496_Fig1_HTML.png\",\n
+        \           \"name\": \"Reasoning-based LLMs surpass average human performance
+        on medical social skills\",\n            \"headline\": \"Reasoning-based LLMs
+        surpass average human performance on medical social skills\",\n            \"url\":
+        \"Reasoning-based LLMs surpass average human performance on medical social
+        skills\",\n            \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64313-1/MediaObjects/41467_2025_64313_Fig1_HTML.png\",\n
+        \           \"name\": \"AQuaRef: machine learning accelerated quantum refinement
+        of protein structures\",\n            \"description\": \"AQuaRef employs machine
+        learning to refine protein structures from cryo-EM and X-ray data in Phenix.
+        It achieves quantum-level precision, improving model geometry and fit to the
+        data while...\",\n            \"headline\": \"AQuaRef: machine learning accelerated
+        quantum refinement of protein structures\",\n            \"url\": \"AQuaRef:
+        machine learning accelerated quantum refinement of protein structures\",\n
+        \           \"datepublished\": \"2025-10-17\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20284-3/MediaObjects/41598_2025_20284_Fig1_HTML.png\",\n
+        \           \"name\": \"A modified deep learning approach for seminal vesicle
+        region localization in prostate MRI\",\n            \"headline\": \"A modified
+        deep learning approach for seminal vesicle region localization in prostate
+        MRI\",\n            \"url\": \"A modified deep learning approach for seminal
+        vesicle region localization in prostate MRI\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41467-025-64225-0/MediaObjects/41467_2025_64225_Fig1_HTML.png\",\n
+        \           \"name\": \"Backtracking metabolic dynamics in single cells predicts
+        bacterial replication in human macrophages\",\n            \"description\":
+        \"Computational models can help to explain the dynamics of cellular infection
+        with pathogens. Here the authors use computational models to assess the single
+        cell infection parameters of human...\",\n            \"headline\": \"Backtracking
+        metabolic dynamics in single cells predicts bacterial replication in human
+        macrophages\",\n            \"url\": \"Backtracking metabolic dynamics in
+        single cells predicts bacterial replication in human macrophages\",\n            \"datepublished\":
+        \"2025-10-16\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"nature\",\n
+        \           \"name\": \"nature\",\n            \"position\": \"1\"\n          },\n
+        \         {\n            \"item\": \"subjects\",\n            \"name\": \"subjects\",\n
+        \           \"position\": \"2\"\n          },\n          {\n            \"name\":
+        \"machine learning\",\n            \"position\": \"3\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"MCML - Munich Center for Machine Learning\",\n      \"htmlTitle\": \"MCML
+        - Munich Center for \\u003cb\\u003eMachine Learning\\u003c/b\\u003e\",\n      \"link\":
+        \"https://mcml.ai/\",\n      \"displayLink\": \"mcml.ai\",\n      \"snippet\":
+        \"4 hours ago ... The MCML is a top place for AI and ML research in Europe.
+        We attract the most promising researchers and transfer AI potential to industry
+        and society.\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        The MCML is a top place for AI and ML research in Europe. We attract the most
+        promising researchers and transfer AI potential to industry and society.\",\n
+        \     \"formattedUrl\": \"https://mcml.ai/\",\n      \"htmlFormattedUrl\":
+        \"https://mcml.ai/\",\n      \"pagemap\": {\n        \"cse_thumbnail\": [\n
+        \         {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgxxF_2keX91gs18oKUGNRwIbNjrDhUNIwRK50P_p2Zg0to8idieZv0ie&s\",\n
+        \           \"width\": \"190\",\n            \"height\": \"190\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"author\": \"mcml.ai\",\n
+        \           \"og:title\": \"MCML - Munich Center for Machine Learning\",\n
+        \           \"og:url\": \"https://mcml.ai/\",\n            \"og:description\":
+        \"The MCML is a top place for AI and ML research in Europe. We attract the
+        most promising researchers and transfer AI potential to industry and society.\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://mcml.ai/images/pictograms/pis.png\"\n          }\n        ]\n      }\n
+        \   },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Flexible Remote Junior Machine Learning Jobs \u2013 Apply Today to ...\",\n
+        \     \"htmlTitle\": \"Flexible Remote Junior \\u003cb\\u003eMachine Learning\\u003c/b\\u003e
+        Jobs \u2013 Apply Today to ...\",\n      \"link\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"displayLink\": \"www.indeed.com\",\n      \"snippet\": \"4 hours ago
+        ... Build, train, and deploy scalable machine learning models tailored to
+        client needs. Proven experience in machine learning model development and
+        deployment. Job\_...\",\n      \"htmlSnippet\": \"4 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Build, train, and deploy scalable \\u003cb\\u003emachine learning\\u003c/b\\u003e
+        models tailored to client needs. Proven experience in \\u003cb\\u003emachine
+        learning\\u003c/b\\u003e model development and deployment. Job&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.indeed.com/q-remote-junior-machine-learning-jobs.html\",\n
+        \     \"htmlFormattedUrl\": \"https://www.indeed.com/q-remote-junior-\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e-jobs.html\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"referrer\":
+        \"origin-when-cross-origin\",\n            \"viewport\": \"width=device-width,initial-scale=1.0\",\n
+        \           \"format-detection\": \"telephone=no\"\n          }\n        ]\n
+        \     }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:58:50 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18671'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,513 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2233,\"articles\":[{\"source\":{\"id\":null,\"name\":\"TheStreet\"},\"author\":\"Vuk
+        Zdinjak\",\"title\":\"Analysts revamp Salesforce stock forecast after key
+        meeting\",\"description\":\"Salesforce is a company that has its software
+        as a service, customer relationship management (CRM) platform as its core
+        business, but also owns Slack and...\",\"url\":\"https://www.thestreet.com/investing/stocks/analysts-revamp-salesforce-stock-forecast-after-key-meeting\",\"urlToImage\":\"https://media.zenfs.com/en/thestreet_881/4466c2af3c6058551ba7554e29a39440\",\"publishedAt\":\"2025-10-20T03:15:23Z\",\"content\":\"Salesforce
+        is a company that has its software as a service, customer relationship management
+        (CRM) platform as its core business, but also owns Slack and many other platforms.\\r\\nThe
+        company has been w\u2026 [+3874 chars]\"},{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"AFP\",\"title\":\"OpenAI big chip orders dwarf
+        its revenues \u2014 for now\",\"description\":\"OpenAI is ordering hundreds
+        of billions of dollars worth of chips in the artificial intelligence race,
+        raising questions among investors about how the startup will finance these
+        purchases. \\\"They will need hundreds of billions of dollars to live up to
+        their ob\u2026\",\"url\":\"https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now/articleshow/124698503.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/width-1200,height-900,imgsize-22330,resizemode-75,msid-124698503/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now.jpg\",\"publishedAt\":\"2025-10-20T03:01:26Z\",\"content\":\"OpenAI
+        is ordering hundreds of billions of dollars worth of chips in the artificial
+        intelligence race, raising questions among investors about how the startup
+        will finance these purchases.In less tha\u2026 [+3255 chars]\"},{\"source\":{\"id\":null,\"name\":\"GlobeNewswire\"},\"author\":\"Body
+        Talk\",\"title\":\"Body Talk Predicts 2026 Will Be the Year Businesses Must
+        Invest in Communication Skills to Stay Competitive\",\"description\":\"London
+        training firm with 120,000+ professionals trained worldwide reveals why communication
+        excellence will be non-negotiable in the year ahead London training firm with
+        120,000+ professionals trained worldwide reveals why communication excellence
+        will be no\u2026\",\"url\":\"https://www.globenewswire.com/news-release/2025/10/20/3169053/0/en/Body-Talk-Predicts-2026-Will-Be-the-Year-Businesses-Must-Invest-in-Communication-Skills-to-Stay-Competitive.html\",\"urlToImage\":\"https://ml.globenewswire.com/Resource/Download/ba746447-4b6d-4508-a4e0-4d8ad3ca110a\",\"publishedAt\":\"2025-10-20T02:56:00Z\",\"content\":\"London
+        , Oct. 19, 2025 (GLOBE NEWSWIRE) -- As businesses prepare their 2026 strategies
+        and training budgets, leading communication and presentation skills specialists
+        Body Talk are urging organisatio\u2026 [+7626 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991da746797af642-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:26:26 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UzyJW0QK8d3vhu7G9Sil4jco1CHTpfUXTNVFfV9QOIz4Wo8y20yhk%2B7c10%2BB9SKc7HHLyZnwKKZRtLnlxIMg3qohDM9teo7q"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2874'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2233,\"articles\":[{\"source\":{\"id\":null,\"name\":\"TheStreet\"},\"author\":\"Vuk
+        Zdinjak\",\"title\":\"Analysts revamp Salesforce stock forecast after key
+        meeting\",\"description\":\"Salesforce is a company that has its software
+        as a service, customer relationship management (CRM) platform as its core
+        business, but also owns Slack and...\",\"url\":\"https://www.thestreet.com/investing/stocks/analysts-revamp-salesforce-stock-forecast-after-key-meeting\",\"urlToImage\":\"https://media.zenfs.com/en/thestreet_881/4466c2af3c6058551ba7554e29a39440\",\"publishedAt\":\"2025-10-20T03:15:23Z\",\"content\":\"Salesforce
+        is a company that has its software as a service, customer relationship management
+        (CRM) platform as its core business, but also owns Slack and many other platforms.\\r\\nThe
+        company has been w\u2026 [+3874 chars]\"},{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"AFP\",\"title\":\"OpenAI big chip orders dwarf
+        its revenues \u2014 for now\",\"description\":\"OpenAI is ordering hundreds
+        of billions of dollars worth of chips in the artificial intelligence race,
+        raising questions among investors about how the startup will finance these
+        purchases. \\\"They will need hundreds of billions of dollars to live up to
+        their ob\u2026\",\"url\":\"https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now/articleshow/124698503.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/width-1200,height-900,imgsize-22330,resizemode-75,msid-124698503/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now.jpg\",\"publishedAt\":\"2025-10-20T03:01:26Z\",\"content\":\"OpenAI
+        is ordering hundreds of billions of dollars worth of chips in the artificial
+        intelligence race, raising questions among investors about how the startup
+        will finance these purchases.In less tha\u2026 [+3255 chars]\"},{\"source\":{\"id\":null,\"name\":\"GlobeNewswire\"},\"author\":\"Body
+        Talk\",\"title\":\"Body Talk Predicts 2026 Will Be the Year Businesses Must
+        Invest in Communication Skills to Stay Competitive\",\"description\":\"London
+        training firm with 120,000+ professionals trained worldwide reveals why communication
+        excellence will be non-negotiable in the year ahead London training firm with
+        120,000+ professionals trained worldwide reveals why communication excellence
+        will be no\u2026\",\"url\":\"https://www.globenewswire.com/news-release/2025/10/20/3169053/0/en/Body-Talk-Predicts-2026-Will-Be-the-Year-Businesses-Must-Invest-in-Communication-Skills-to-Stay-Competitive.html\",\"urlToImage\":\"https://ml.globenewswire.com/Resource/Download/ba746447-4b6d-4508-a4e0-4d8ad3ca110a\",\"publishedAt\":\"2025-10-20T02:56:00Z\",\"content\":\"London
+        , Oct. 19, 2025 (GLOBE NEWSWIRE) -- As businesses prepare their 2026 strategies
+        and training budgets, leading communication and presentation skills specialists
+        Body Talk are urging organisatio\u2026 [+7626 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991da95899e9f207-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:27:51 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=S5TGZIwyYGBB9buDFIrs8FunT2%2Btiii1CY9xRBSMFUbKSYqUCo94g%2FQFmxtcqcFV42bl3x5nMsCnKsk088N83llwETB5B%2BH8"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:31:22 GMT
+      X-Cache-Remaining:
+      - '99'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2874'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2234,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"},{\"source\":{\"id\":null,\"name\":\"TheStreet\"},\"author\":\"Vuk
+        Zdinjak\",\"title\":\"Analysts revamp Salesforce stock forecast after key
+        meeting\",\"description\":\"Salesforce is a company that has its software
+        as a service, customer relationship management (CRM) platform as its core
+        business, but also owns Slack and...\",\"url\":\"https://www.thestreet.com/investing/stocks/analysts-revamp-salesforce-stock-forecast-after-key-meeting\",\"urlToImage\":\"https://media.zenfs.com/en/thestreet_881/4466c2af3c6058551ba7554e29a39440\",\"publishedAt\":\"2025-10-20T03:15:23Z\",\"content\":\"Salesforce
+        is a company that has its software as a service, customer relationship management
+        (CRM) platform as its core business, but also owns Slack and many other platforms.\\r\\nThe
+        company has been w\u2026 [+3874 chars]\"},{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"AFP\",\"title\":\"OpenAI big chip orders dwarf
+        its revenues \u2014 for now\",\"description\":\"OpenAI is ordering hundreds
+        of billions of dollars worth of chips in the artificial intelligence race,
+        raising questions among investors about how the startup will finance these
+        purchases. \\\"They will need hundreds of billions of dollars to live up to
+        their ob\u2026\",\"url\":\"https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now/articleshow/124698503.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/width-1200,height-900,imgsize-22330,resizemode-75,msid-124698503/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now.jpg\",\"publishedAt\":\"2025-10-20T03:01:26Z\",\"content\":\"OpenAI
+        is ordering hundreds of billions of dollars worth of chips in the artificial
+        intelligence race, raising questions among investors about how the startup
+        will finance these purchases.In less tha\u2026 [+3255 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991db91e2d5b2b54-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:38:37 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SVXU9ol7wGKeA1DzUk4B08jRkllXNrdbci3UcI0WCGV0psgVp0aF8OwsWAWo5ki1dMOouN7SDPD%2Fg6NMnpExmu1oxOpuqScuFPE%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2754'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2234,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"},{\"source\":{\"id\":null,\"name\":\"TheStreet\"},\"author\":\"Vuk
+        Zdinjak\",\"title\":\"Analysts revamp Salesforce stock forecast after key
+        meeting\",\"description\":\"Salesforce is a company that has its software
+        as a service, customer relationship management (CRM) platform as its core
+        business, but also owns Slack and...\",\"url\":\"https://www.thestreet.com/investing/stocks/analysts-revamp-salesforce-stock-forecast-after-key-meeting\",\"urlToImage\":\"https://media.zenfs.com/en/thestreet_881/4466c2af3c6058551ba7554e29a39440\",\"publishedAt\":\"2025-10-20T03:15:23Z\",\"content\":\"Salesforce
+        is a company that has its software as a service, customer relationship management
+        (CRM) platform as its core business, but also owns Slack and many other platforms.\\r\\nThe
+        company has been w\u2026 [+3874 chars]\"},{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"AFP\",\"title\":\"OpenAI big chip orders dwarf
+        its revenues \u2014 for now\",\"description\":\"OpenAI is ordering hundreds
+        of billions of dollars worth of chips in the artificial intelligence race,
+        raising questions among investors about how the startup will finance these
+        purchases. \\\"They will need hundreds of billions of dollars to live up to
+        their ob\u2026\",\"url\":\"https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now/articleshow/124698503.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/width-1200,height-900,imgsize-22330,resizemode-75,msid-124698503/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now.jpg\",\"publishedAt\":\"2025-10-20T03:01:26Z\",\"content\":\"OpenAI
+        is ordering hundreds of billions of dollars worth of chips in the artificial
+        intelligence race, raising questions among investors about how the startup
+        will finance these purchases.In less tha\u2026 [+3255 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991dba4c3c2c2a93-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:39:25 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EWleTGciw04CTfXk7tCmBLE1%2FGV7yun42%2BS4TIBa7k9QEUEyANMUArt5NMUCD%2BFiwEvnVJD%2BB9cXQGEKySfeXiEnejpsao7WxV8%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cache-Expires:
+      - Tue, 21 Oct 2025 03:43:33 GMT
+      X-Cache-Remaining:
+      - '99'
+      X-Cached-Result:
+      - 'true'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2754'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2234,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"},{\"source\":{\"id\":null,\"name\":\"TheStreet\"},\"author\":\"Vuk
+        Zdinjak\",\"title\":\"Analysts revamp Salesforce stock forecast after key
+        meeting\",\"description\":\"Salesforce is a company that has its software
+        as a service, customer relationship management (CRM) platform as its core
+        business, but also owns Slack and...\",\"url\":\"https://www.thestreet.com/investing/stocks/analysts-revamp-salesforce-stock-forecast-after-key-meeting\",\"urlToImage\":\"https://media.zenfs.com/en/thestreet_881/4466c2af3c6058551ba7554e29a39440\",\"publishedAt\":\"2025-10-20T03:15:23Z\",\"content\":\"Salesforce
+        is a company that has its software as a service, customer relationship management
+        (CRM) platform as its core business, but also owns Slack and many other platforms.\\r\\nThe
+        company has been w\u2026 [+3874 chars]\"},{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"AFP\",\"title\":\"OpenAI big chip orders dwarf
+        its revenues \u2014 for now\",\"description\":\"OpenAI is ordering hundreds
+        of billions of dollars worth of chips in the artificial intelligence race,
+        raising questions among investors about how the startup will finance these
+        purchases. \\\"They will need hundreds of billions of dollars to live up to
+        their ob\u2026\",\"url\":\"https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now/articleshow/124698503.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/width-1200,height-900,imgsize-22330,resizemode-75,msid-124698503/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now.jpg\",\"publishedAt\":\"2025-10-20T03:01:26Z\",\"content\":\"OpenAI
+        is ordering hundreds of billions of dollars worth of chips in the artificial
+        intelligence race, raising questions among investors about how the startup
+        will finance these purchases.In less tha\u2026 [+3255 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991dc134791728fd-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:44:08 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lnbFgZPTuiVy6Uwh8sGQHvN9ZsEXF7Tb%2BAWeRMzJvKeFtPAbrqWL7FhTOoLZuaWQRedQxaUMfujPLFdZvTE8SI6I%2Bdhe03sl"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2754'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2234,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"},{\"source\":{\"id\":null,\"name\":\"TheStreet\"},\"author\":\"Vuk
+        Zdinjak\",\"title\":\"Analysts revamp Salesforce stock forecast after key
+        meeting\",\"description\":\"Salesforce is a company that has its software
+        as a service, customer relationship management (CRM) platform as its core
+        business, but also owns Slack and...\",\"url\":\"https://www.thestreet.com/investing/stocks/analysts-revamp-salesforce-stock-forecast-after-key-meeting\",\"urlToImage\":\"https://media.zenfs.com/en/thestreet_881/4466c2af3c6058551ba7554e29a39440\",\"publishedAt\":\"2025-10-20T03:15:23Z\",\"content\":\"Salesforce
+        is a company that has its software as a service, customer relationship management
+        (CRM) platform as its core business, but also owns Slack and many other platforms.\\r\\nThe
+        company has been w\u2026 [+3874 chars]\"},{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"AFP\",\"title\":\"OpenAI big chip orders dwarf
+        its revenues \u2014 for now\",\"description\":\"OpenAI is ordering hundreds
+        of billions of dollars worth of chips in the artificial intelligence race,
+        raising questions among investors about how the startup will finance these
+        purchases. \\\"They will need hundreds of billions of dollars to live up to
+        their ob\u2026\",\"url\":\"https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now/articleshow/124698503.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/width-1200,height-900,imgsize-22330,resizemode-75,msid-124698503/tech/artificial-intelligence/openai-big-chip-orders-dwarf-its-revenues-for-now.jpg\",\"publishedAt\":\"2025-10-20T03:01:26Z\",\"content\":\"OpenAI
+        is ordering hundreds of billions of dollars worth of chips in the artificial
+        intelligence race, raising questions among investors about how the startup
+        will finance these purchases.In less tha\u2026 [+3255 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991dcadc285e2b88-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:50:43 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=O01sXnQnnwONS1KzpRwOEzuvgtVoqLMwUxjgRuRKa%2B%2FiQs3bwtJEGtZsJ3DvWhLyYz6c9mJY9SChLdIeuDYYXlHOHE82xhiFpwY%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2754'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2235,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Digitimes\"},\"author\":\"DIGITIMES\",\"title\":\"Weekly
+        news roundup: Nvidia rises as TSMC's top customer; Netherlands seizes Nexperia;
+        Google considers MediaTek for next Pixel\",\"description\":\"Below are the
+        top DIGITIMES Asia stories from October 13 to 19, 2025.\",\"url\":\"https://www.digitimes.com/news/a20251020VL204/digitimes-asia-weekly-news-roundup-tsmc-nexperia-mediatek-nvidia.html\",\"urlToImage\":\"https://img.digitimes.com/newsshow/20251020vl204_files/1_2b.jpg\",\"publishedAt\":\"2025-10-20T03:54:10Z\",\"content\":\"Below
+        are the top DIGITIMES Asia stories from October 13 to 19, 2025.\\r\\nNvidia
+        set to overtake Apple as TSMC's biggest customer in 2025\\r\\nA major shift
+        is underway in the global chip industry. Nvidia i\u2026 [+3825 chars]\"},{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Adam Hejl\",\"title\":\"Automation Software
+        Stocks Q2 Earnings: SoundHound AI (NASDAQ:SOUN) Best of the Bunch\",\"description\":\"Quarterly
+        earnings results are a good time to check in on a company\u2019s progress,
+        especially compared to its peers in the same sector. Today we are looking
+        at ...\",\"url\":\"https://finance.yahoo.com/news/automation-software-stocks-q2-earnings-033351218.html\",\"urlToImage\":\"https://s.yimg.com/ny/api/res/1.2/MsZyaQR3RskJGzdqTSUsOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/stockstory_922/8ed4c6a2243c4010c470b97ef20372b4\",\"publishedAt\":\"2025-10-20T03:33:51Z\",\"content\":\"Quarterly
+        earnings results are a good time to check in on a companys progress, especially
+        compared to its peers in the same sector. Today we are looking at SoundHound
+        AI (NASDAQ:SOUN) and the best an\u2026 [+5962 chars]\"},{\"source\":{\"id\":null,\"name\":\"TheStreet\"},\"author\":\"Vuk
+        Zdinjak\",\"title\":\"Analysts revamp Salesforce stock forecast after key
+        meeting\",\"description\":\"Salesforce is a company that has its software
+        as a service, customer relationship management (CRM) platform as its core
+        business, but also owns Slack and...\",\"url\":\"https://www.thestreet.com/investing/stocks/analysts-revamp-salesforce-stock-forecast-after-key-meeting\",\"urlToImage\":\"https://media.zenfs.com/en/thestreet_881/4466c2af3c6058551ba7554e29a39440\",\"publishedAt\":\"2025-10-20T03:15:23Z\",\"content\":\"Salesforce
+        is a company that has its software as a service, customer relationship management
+        (CRM) platform as its core business, but also owns Slack and many other platforms.\\r\\nThe
+        company has been w\u2026 [+3874 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 991dd7176bb32f1a-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Oct 2025 03:59:04 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=43GVEW3LYLF1werE%2FMYSQJLbwWuckbzD6mvGIaYidg5%2B%2BNsfmUTOO41aypCTrfgXl4lR5Mrhx%2FqbL9CRIhRHUdxfsQQgCD15AUg%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2481'
+    status:
+      code: 200
+      message: OK
+version: 1

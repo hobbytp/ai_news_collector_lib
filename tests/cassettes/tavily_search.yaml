@@ -1,0 +1,830 @@
+interactions:
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.86,"request_id":"921a0ed5-957c-4304-bab7-0040546c1c48"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2898'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:14:10 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"a5bbad90-6b0d-494e-afcd-d5c088cb7f02"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:14:58 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"aa17b5a8-37db-4186-94bf-bcb091168fed"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:15:33 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"1666ee67-9074-4409-8579-10d558a3b82a"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:16:15 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.08,"request_id":"fef1d963-ca97-4f6c-b4bf-8c62435a0821"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2898'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:17:07 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"896c9e67-a517-4e8d-89ad-4c57a42a4887"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:23:05 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"b895fbb7-3c67-40a7-8cf0-0d95e669bb63"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:26:06 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"d71ea28b-a4e3-4370-abcd-ced3342f1a73"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:27:03 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"7ae04457-92ec-418c-9a8b-57a41e6a633b"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:39:07 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"c6f91aa9-d2b2-42cf-b20d-fdd11c3bdecc"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:43:50 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"a793a1d3-a3e2-41ad-bea0-e11b2c708429"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:49:54 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"api_key": "FILTERED", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://api.tavily.com/search
+  response:
+    body:
+      string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence? Definition, Uses, and Types - Coursera","content":"Artificial
+        intelligence (AI) is the theory and development of computer systems capable
+        of performing tasks that historically required human","score":0.8737439,"raw_content":null},{"url":"https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence","title":"A.I.
+        Artificial Intelligence - Wikipedia","content":"***A.I. Artificial Intelligence***
+        (or simply ***A.I.***) is a 2001 American science fiction drama film directed
+        by Steven Spielberg. In 1985, Kubrick asked Steven Spielberg to direct the
+        film, with Kubrick producing. The bonuses also include interviews with Haley
+        Joel Osment, Jude Law, Frances O''Connor, Steven Spielberg and John Williams,
+        two teaser trailers for the film''s original theatrical release, and an extensive
+        photo gallery featuring production stills and Stanley Kubrick''s original
+        storyboards. | Saturn Awards | June 10, 2002 | Best Science Fiction Film |
+        *A.I. Artificial Intelligence* | Won |  | *A.I. Artificial Intelligence: From
+        Stanley Kubrick to Steven Spielberg: The Vision Behind the Film*. *Kubrick''s
+        Story: Spielberg''s Film: A.I. Artificial Intelligence*.","score":0.8524574,"raw_content":null},{"url":"https://cloud.google.com/learn/what-is-artificial-intelligence","title":"What
+        Is Artificial Intelligence (AI)? | Google Cloud","content":"Artificial intelligence
+        (AI) is a set of technologies that enable computers to perform a variety of
+        advanced functions, including the ability to [see](https://cloud.google.com/vision#section-8),
+        understand and [translate spoken and written language](https://cloud.google.com/speech-to-text),
+        [analyze data](https://cloud.google.com/vertex-ai), make recommendations,
+        and more. For example, [optical character recognition (OCR](https://cloud.google.com/use-cases/ocr))
+        uses AI to extract text and data from images and documents, turns unstructured
+        content into business-ready structured data, and unlocks valuable insights.
+        [Deep learning](https://cloud.google.com/discover/what-is-deep-learning),
+        a further specialization, utilizes artificial neural networks with multiple
+        layers to process information, mimicking the structure and function of the
+        human brain. Machine learning is a [subset of artificial intelligence](https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning)
+        that uses algorithms to train data to obtain results. *   [See all AI and
+        machine learning products](https://cloud.google.com/products?pds=CAE#ai-and-machine-learning)
+        *   [Data Analytics](https://cloud.google.com/solutions/data-analytics-and-ai)","score":0.80771893,"raw_content":null}],"response_time":0.0,"request_id":"0cecae77-ab4c-479e-8592-57de2e052f8c"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2897'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Oct 2025 03:58:47 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+version: 1
