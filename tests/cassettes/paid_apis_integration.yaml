@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -77,7 +77,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -139,7 +139,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -205,7 +205,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -271,7 +271,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -337,7 +337,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -399,7 +399,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -465,7 +465,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -527,7 +527,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -593,7 +593,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":511,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Bleeding
@@ -659,7 +659,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":512,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
@@ -724,7 +724,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":512,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
@@ -793,7 +793,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":512,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Yahoo
@@ -858,7 +858,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+    uri: https://newsapi.org/v2/everything?from=2025-10-14&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
   response:
     body:
       string: "{\"status\":\"ok\",\"totalResults\":513,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Digitimes\"},\"author\":\"DIGITIMES\",\"title\":\"Weekly

@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
   response:
     body:
       string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
@@ -269,7 +269,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
   response:
     body:
       string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
@@ -526,7 +526,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
   response:
     body:
       string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
@@ -783,7 +783,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
   response:
     body:
       string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
@@ -1041,7 +1041,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
   response:
     body:
       string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
@@ -1298,7 +1298,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
   response:
     body:
       string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
@@ -1556,7 +1556,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
   response:
     body:
       string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
@@ -1813,7 +1813,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+    uri: https://www.googleapis.com/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
   response:
     body:
       string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":

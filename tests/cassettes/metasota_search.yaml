@@ -17,7 +17,7 @@ interactions:
       User-Agent:
       - AI-News-Collector/1.0
     method: POST
-    uri: https://localhost:33210/api/mcp
+    uri: https://metaso.cn/api/mcp
   response:
     body:
       string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
@@ -91,7 +91,7 @@ interactions:
       User-Agent:
       - AI-News-Collector/1.0
     method: POST
-    uri: https://localhost:33210/api/mcp
+    uri: https://metaso.cn/api/mcp
   response:
     body:
       string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
@@ -165,7 +165,7 @@ interactions:
       User-Agent:
       - AI-News-Collector/1.0
     method: POST
-    uri: https://localhost:33210/api/mcp
+    uri: https://metaso.cn/api/mcp
   response:
     body:
       string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
@@ -239,7 +239,7 @@ interactions:
       User-Agent:
       - AI-News-Collector/1.0
     method: POST
-    uri: https://localhost:33210/api/mcp
+    uri: https://metaso.cn/api/mcp
   response:
     body:
       string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
@@ -313,7 +313,7 @@ interactions:
       User-Agent:
       - AI-News-Collector/1.0
     method: POST
-    uri: https://localhost:33210/api/mcp
+    uri: https://metaso.cn/api/mcp
   response:
     body:
       string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
@@ -387,7 +387,7 @@ interactions:
       User-Agent:
       - AI-News-Collector/1.0
     method: POST
-    uri: https://localhost:33210/api/mcp
+    uri: https://metaso.cn/api/mcp
   response:
     body:
       string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
@@ -465,7 +465,7 @@ interactions:
       User-Agent:
       - AI-News-Collector/1.0
     method: POST
-    uri: https://localhost:33210/api/mcp
+    uri: https://metaso.cn/api/mcp
   response:
     body:
       string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer

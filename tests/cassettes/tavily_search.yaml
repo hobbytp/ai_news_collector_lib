@@ -17,7 +17,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -86,7 +86,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -155,7 +155,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -224,7 +224,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -293,7 +293,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -362,7 +362,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -431,7 +431,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -500,7 +500,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -569,7 +569,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -638,7 +638,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -707,7 +707,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What
@@ -776,7 +776,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://api.tavily.com/search
   response:
     body:
       string: '{"query":"artificial intelligence","follow_up_questions":null,"answer":null,"images":[],"results":[{"url":"https://www.coursera.org/articles/what-is-artificial-intelligence","title":"What

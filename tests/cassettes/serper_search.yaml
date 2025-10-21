@@ -15,7 +15,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -86,7 +86,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -157,7 +157,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -228,7 +228,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"knowledgeGraph":{"title":"Deep
@@ -314,7 +314,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -385,7 +385,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -456,7 +456,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"knowledgeGraph":{"title":"Deep
@@ -530,7 +530,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -601,7 +601,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -672,7 +672,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"knowledgeGraph":{"title":"Deep
@@ -746,7 +746,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -817,7 +817,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
@@ -888,7 +888,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: POST
-    uri: https://localhost:33210/search
+    uri: https://google.serper.dev/search
   response:
     body:
       string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"organic":[{"title":"Deep
