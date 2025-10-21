@@ -1,0 +1,528 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name":
+      "metaso_web_search", "arguments": {"q": "computer vision", "size": 3, "scope":
+      "webpage", "includeSummary": true, "includeRawContent": false}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - AI-News-Collector/1.0
+    method: POST
+    uri: https://localhost:33210/api/mcp
+  response:
+    body:
+      string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
+        vision\\\",\\\"scope\\\":\\\"webpage\\\",\\\"size\\\":3},\\\"total\\\":42,\\\"webpages\\\":[{\\\"date\\\":\\\"2025\u5E7404\u670816\u65E5\\\",\\\"docId\\\":\\\"5baddfa2-bfbf-487c-bd36-afce70677a1b\\\",\\\"link\\\":\\\"https://www.bilibili.com/read/cv41359989\\\",\\\"position\\\":1,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08CV\uFF09\u662F\u4EBA\u5DE5\u667A\u80FD\u9886\u57DF\u7684\u91CD\u8981\u5206\u652F\uFF0C\u65E8\u5728\u8BA9\u8BA1\u7B97\u673A\u201C\u770B\u5230\u201D\u5E76\u201C\u770B\u61C2\u201D\u56FE\u50CF\u548C\u89C6\u9891\u5185\u5BB9\u3002\u5B83\u901A\u8FC7\u6280\u672F\u5E2E\u52A9\u8BA1\u7B97\u673A\u7406\u89E3\u7167\u7247\u6216\u89C6\u9891\u4E2D\u7684\u4FE1\u606F\uFF0C\u5982\u8BC6\u522B\u7269\u4F53\u3001\u884C\u4E3A\u7B49\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5728\u4EBA\u7C7B\u89C6\u89C9\u57FA\u7840\u4E0A\u53D1\u5C55\uFF0C\u56E0\u56FE\u50CF\u5BF9\u8BA1\u7B97\u673A\u539F\u672C\u662F\u201C\u9ED1\u76D2\u201D\uFF0C\u9700\u901A\u8FC7\u7B97\u6CD5\u89E3\u6790\u3002\u968F\u7740\u4E92\u8054\u7F51\u6570\u636E\u589E\u957F\uFF0C\u56FE\u50CF\u548C\u89C6\u9891\u6570\u91CF\u6FC0\u589E\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u53D8\u5F97\u5C24\u4E3A\u91CD\u8981\u3002\u5176\u57FA\u672C\u539F\u7406\u6D89\u53CA\u56FE\u50CF\u5904\u7406\u3001\u989C\u8272\u8BC6\u522B\u53CA\u6DF1\u5EA6\u5B66\u4E60\u6280\u672F\uFF0C\u5982\u5377\u79EF\u795E\u7ECF\u7F51\u7EDC\uFF08CNN\uFF09\u3002\u5178\u578B\u4EFB\u52A1\u5305\u62EC\u56FE\u50CF\u5206\u7C7B\u3001\u76EE\u6807\u68C0\u6D4B\u3001\u8BED\u4E49\u5206\u5272\u3001\u5B9E\u4F8B\u5206\u5272\u548C\u76EE\u6807\u8FFD\u8E2A\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5E7F\u6CDB\u5E94\u7528\u4E8E\u95E8\u7981\u3001\u4EBA\u8138\u8BC6\u522B\u3001\u8F66\u724C\u8BC6\u522B\u3001\u89C6\u9891\u98CE\u9669\u8BC6\u522B\u7B49\u65E5\u5E38\u573A\u666F\u3002\u5C3D\u7BA1\u6280\u672F\u53D1\u5C55\u8FC5\u901F\uFF0C\u4F46\u4ECD\u9762\u4E34\u9886\u57DF\u7ED3\u5408\u3001\u7B97\u6CD5\u5F00\u53D1\u6210\u672C\u9AD8\u3001\u65B0\u578B\u7B97\u6CD5\u8BBE\u8BA1\u7B49\u6311\u6218\u3002\u672A\u6765\uFF0C\u968F\u7740\u7B97\u6CD5\u3001\u786C\u4EF6\u548C\u6570\u636E\u7684\u53D1\u5C55\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u5C06\u5728\u66F4\u591A\u9886\u57DF\u53D1\u6325\u66F4\u5927\u4F5C\u7528\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08Computer
+        Vision\uFF09\\\"},{\\\"date\\\":\\\"2018\u5E7410\u670826\u65E5\\\",\\\"docId\\\":\\\"6dfcc12e-a44a-4637-932a-d032f0a7f272\\\",\\\"link\\\":\\\"https://cloud.tencent.com/developer/news/17136\\\",\\\"position\\\":2,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\u662F\u6307\u7528\u6444\u5F71\u673A\u548C\u7535\u8111\u4EE3\u66FF\u4EBA\u773C\u5BF9\u76EE\u6807\u8FDB\u884C\u8BC6\u522B\u3001\u8DDF\u8E2A\u548C\u6D4B\u91CF\uFF0C\u4ECE\u800C\u83B7\u53D6\u548C\u5904\u7406\u4FE1\u606F\u7684\u80FD\u529B\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u7CFB\u7EDF\u9700\u5C06\u56FE\u50CF\u4FE1\u53F7\u3001\u7EB9\u7406\u3001\u989C\u8272\u5EFA\u6A21\u3001\u7269\u4F53\u51E0\u4F55\u8BC6\u522B\u548C\u5206\u7C7B\u7B49\u7D27\u5BC6\u96C6\u6210\u3002\u901A\u8FC7\u4E00\u5F20\u56FE\u7247\uFF0C\u8BA1\u7B97\u673A\u8BC6\u522B\u51FA\u6C99\u6D32\u6982\u7387\u4E3A44.28%\uFF0C\u6D77\u6EE933.21%\uFF0C\u6C34\u725B1.22%\uFF0C\u60E0\u6BD4\u7279\u72AC1.13%\uFF0C\u6C34\u4E0B\u547C\u5438\u56680.88%\u3002\u8089\u773C\u53EF\u89C1\u524D\u4E09\u4E2A\u6807\u7B7E\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u7B2C2\u30015\u4E2A\u6807\u7B7E\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u5B9E\u9A8C\u57FA\u4E8EPython\u548COpenCV\uFF0C\u4F7F\u7528\u9884\u8BAD\u7EC3\u7684GoogLeNet\u6A21\u578B\u548CImageNet\u7D22\u5F15\u8FDB\u884C\u56FE\u50CF\u5206\u7C7B\u3002\u5B9E\u9A8C\u6B65\u9AA4\u5305\u62EC\u88C1\u526A\u56FE\u7247\u3001\u8BA1\u7B97RGB\u5747\u503C\u3001\u52A0\u8F7D\u6A21\u578B\u3001\u8BA1\u7B97\u6982\u7387\u3002\u7531\u4E8E\u8BAD\u7EC3\u96C6\u6709\u9650\u4E14\u6A21\u578B\u8F83\u65E7\uFF0C\u5BF9\u81EA\u7136\u56FE\u7247\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u5BF9\u65B0\u4E8B\u7269\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u672A\u6765\u5C06\u4F18\u5316\u6A21\u578B\u4EE5\u63D0\u9AD8\u8BC6\u522B\u51C6\u786E\u7387\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08computer
+        vision\uFF09\\\"},{\\\"authors\\\":[\\\"Ihar Rubanau\\\"],\\\"date\\\":\\\"2023\u5E7407\u670824\u65E5\\\",\\\"docId\\\":\\\"8b33332c-040f-4ffa-9772-9b543315fd8c\\\",\\\"link\\\":\\\"http://www.ihash.eu/2023/07/transfer-learning-in-computer-vision/\\\",\\\"position\\\":3,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Computer
+        Vision\\\\nComputer Vision is a field of artificial intelligence (AI) and
+        computer science that focuses on enabling machines to interpret, understand,
+        and analyze visual data from the world around us.\\\\nThe goal of computer
+        vision is to create intelligent systems that can perform tasks that normally
+        require human-level visual perception, such as object detection, recognition,
+        tracking, and segmentation.\\\\nComputer vision involves a wide range of techniques
+        and approaches, enabling models to learn from large amounts of visual data,
+        such as images and videos.\\\\nThere have been many recent achievements in
+        computer vision, driven in large part by advances in deep learning and neural
+        networks.\\\",\\\"title\\\":\\\"Computer Vision\\\"}]}\",\"description\":null}],\"error\":null}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,auth,minipro,metaso-pc,xiezuocat-h5,androidh5,X-E4M-With,Last-Modified,metaso-app,Authorization,xiezuocat-word,metaso-ios,client-type,xiezuocat-app,api,Content-Type,deviceType,No-Cache,iosh5,metaso-h5,X-Requested-With,device-name,Priority,origin-from,Pragma,is-metaso-search-widget,userId,metaso-android,token,metaso-debug,os-version,metapro-windows,xiezuocat-wps,metaso-mini,Distinguish-Origin-from,Cache-Control,If-Modified-Since,Is-Mini-Webview,metaso-aliapp,Expires,wx-app-origin,metalaw-h5
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, PATCH
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:26:23 GMT
+      Set-Cookie:
+      - aliyungf_tc=ab56b50f6bb1b1b18614c9c1a97bbc55e63585d14f1bcbb9030332c272a5b144;
+        Path=/; HttpOnly
+      - JSESSIONID=B089A8EF9689388AEFEA7443FD6635FB; Path=/api; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      XDomainRequestAllowed:
+      - '1'
+      content-length:
+      - '3559'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name":
+      "metaso_web_search", "arguments": {"q": "computer vision", "size": 3, "scope":
+      "webpage", "includeSummary": true, "includeRawContent": false}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - AI-News-Collector/1.0
+    method: POST
+    uri: https://localhost:33210/api/mcp
+  response:
+    body:
+      string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
+        vision\\\",\\\"scope\\\":\\\"webpage\\\",\\\"size\\\":3},\\\"total\\\":42,\\\"webpages\\\":[{\\\"date\\\":\\\"2025\u5E7404\u670816\u65E5\\\",\\\"docId\\\":\\\"5baddfa2-bfbf-487c-bd36-afce70677a1b\\\",\\\"link\\\":\\\"https://www.bilibili.com/read/cv41359989\\\",\\\"position\\\":1,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08CV\uFF09\u662F\u4EBA\u5DE5\u667A\u80FD\u9886\u57DF\u7684\u91CD\u8981\u5206\u652F\uFF0C\u65E8\u5728\u8BA9\u8BA1\u7B97\u673A\u201C\u770B\u5230\u201D\u5E76\u201C\u770B\u61C2\u201D\u56FE\u50CF\u548C\u89C6\u9891\u5185\u5BB9\u3002\u5B83\u901A\u8FC7\u6280\u672F\u5E2E\u52A9\u8BA1\u7B97\u673A\u7406\u89E3\u7167\u7247\u6216\u89C6\u9891\u4E2D\u7684\u4FE1\u606F\uFF0C\u5982\u8BC6\u522B\u7269\u4F53\u3001\u884C\u4E3A\u7B49\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5728\u4EBA\u7C7B\u89C6\u89C9\u57FA\u7840\u4E0A\u53D1\u5C55\uFF0C\u56E0\u56FE\u50CF\u5BF9\u8BA1\u7B97\u673A\u539F\u672C\u662F\u201C\u9ED1\u76D2\u201D\uFF0C\u9700\u901A\u8FC7\u7B97\u6CD5\u89E3\u6790\u3002\u968F\u7740\u4E92\u8054\u7F51\u6570\u636E\u589E\u957F\uFF0C\u56FE\u50CF\u548C\u89C6\u9891\u6570\u91CF\u6FC0\u589E\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u53D8\u5F97\u5C24\u4E3A\u91CD\u8981\u3002\u5176\u57FA\u672C\u539F\u7406\u6D89\u53CA\u56FE\u50CF\u5904\u7406\u3001\u989C\u8272\u8BC6\u522B\u53CA\u6DF1\u5EA6\u5B66\u4E60\u6280\u672F\uFF0C\u5982\u5377\u79EF\u795E\u7ECF\u7F51\u7EDC\uFF08CNN\uFF09\u3002\u5178\u578B\u4EFB\u52A1\u5305\u62EC\u56FE\u50CF\u5206\u7C7B\u3001\u76EE\u6807\u68C0\u6D4B\u3001\u8BED\u4E49\u5206\u5272\u3001\u5B9E\u4F8B\u5206\u5272\u548C\u76EE\u6807\u8FFD\u8E2A\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5E7F\u6CDB\u5E94\u7528\u4E8E\u95E8\u7981\u3001\u4EBA\u8138\u8BC6\u522B\u3001\u8F66\u724C\u8BC6\u522B\u3001\u89C6\u9891\u98CE\u9669\u8BC6\u522B\u7B49\u65E5\u5E38\u573A\u666F\u3002\u5C3D\u7BA1\u6280\u672F\u53D1\u5C55\u8FC5\u901F\uFF0C\u4F46\u4ECD\u9762\u4E34\u9886\u57DF\u7ED3\u5408\u3001\u7B97\u6CD5\u5F00\u53D1\u6210\u672C\u9AD8\u3001\u65B0\u578B\u7B97\u6CD5\u8BBE\u8BA1\u7B49\u6311\u6218\u3002\u672A\u6765\uFF0C\u968F\u7740\u7B97\u6CD5\u3001\u786C\u4EF6\u548C\u6570\u636E\u7684\u53D1\u5C55\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u5C06\u5728\u66F4\u591A\u9886\u57DF\u53D1\u6325\u66F4\u5927\u4F5C\u7528\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08Computer
+        Vision\uFF09\\\"},{\\\"date\\\":\\\"2018\u5E7410\u670826\u65E5\\\",\\\"docId\\\":\\\"6dfcc12e-a44a-4637-932a-d032f0a7f272\\\",\\\"link\\\":\\\"https://cloud.tencent.com/developer/news/17136\\\",\\\"position\\\":2,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\u662F\u6307\u7528\u6444\u5F71\u673A\u548C\u7535\u8111\u4EE3\u66FF\u4EBA\u773C\u5BF9\u76EE\u6807\u8FDB\u884C\u8BC6\u522B\u3001\u8DDF\u8E2A\u548C\u6D4B\u91CF\uFF0C\u4ECE\u800C\u83B7\u53D6\u548C\u5904\u7406\u4FE1\u606F\u7684\u80FD\u529B\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u7CFB\u7EDF\u9700\u5C06\u56FE\u50CF\u4FE1\u53F7\u3001\u7EB9\u7406\u3001\u989C\u8272\u5EFA\u6A21\u3001\u7269\u4F53\u51E0\u4F55\u8BC6\u522B\u548C\u5206\u7C7B\u7B49\u7D27\u5BC6\u96C6\u6210\u3002\u901A\u8FC7\u4E00\u5F20\u56FE\u7247\uFF0C\u8BA1\u7B97\u673A\u8BC6\u522B\u51FA\u6C99\u6D32\u6982\u7387\u4E3A44.28%\uFF0C\u6D77\u6EE933.21%\uFF0C\u6C34\u725B1.22%\uFF0C\u60E0\u6BD4\u7279\u72AC1.13%\uFF0C\u6C34\u4E0B\u547C\u5438\u56680.88%\u3002\u8089\u773C\u53EF\u89C1\u524D\u4E09\u4E2A\u6807\u7B7E\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u7B2C2\u30015\u4E2A\u6807\u7B7E\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u5B9E\u9A8C\u57FA\u4E8EPython\u548COpenCV\uFF0C\u4F7F\u7528\u9884\u8BAD\u7EC3\u7684GoogLeNet\u6A21\u578B\u548CImageNet\u7D22\u5F15\u8FDB\u884C\u56FE\u50CF\u5206\u7C7B\u3002\u5B9E\u9A8C\u6B65\u9AA4\u5305\u62EC\u88C1\u526A\u56FE\u7247\u3001\u8BA1\u7B97RGB\u5747\u503C\u3001\u52A0\u8F7D\u6A21\u578B\u3001\u8BA1\u7B97\u6982\u7387\u3002\u7531\u4E8E\u8BAD\u7EC3\u96C6\u6709\u9650\u4E14\u6A21\u578B\u8F83\u65E7\uFF0C\u5BF9\u81EA\u7136\u56FE\u7247\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u5BF9\u65B0\u4E8B\u7269\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u672A\u6765\u5C06\u4F18\u5316\u6A21\u578B\u4EE5\u63D0\u9AD8\u8BC6\u522B\u51C6\u786E\u7387\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08computer
+        vision\uFF09\\\"},{\\\"authors\\\":[\\\"Ihar Rubanau\\\"],\\\"date\\\":\\\"2023\u5E7407\u670824\u65E5\\\",\\\"docId\\\":\\\"8b33332c-040f-4ffa-9772-9b543315fd8c\\\",\\\"link\\\":\\\"http://www.ihash.eu/2023/07/transfer-learning-in-computer-vision/\\\",\\\"position\\\":3,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Computer
+        Vision\\\\nComputer Vision is a field of artificial intelligence (AI) and
+        computer science that focuses on enabling machines to interpret, understand,
+        and analyze visual data from the world around us.\\\\nThe goal of computer
+        vision is to create intelligent systems that can perform tasks that normally
+        require human-level visual perception, such as object detection, recognition,
+        tracking, and segmentation.\\\\nComputer vision involves a wide range of techniques
+        and approaches, enabling models to learn from large amounts of visual data,
+        such as images and videos.\\\\nThere have been many recent achievements in
+        computer vision, driven in large part by advances in deep learning and neural
+        networks.\\\",\\\"title\\\":\\\"Computer Vision\\\"}]}\",\"description\":null}],\"error\":null}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,auth,minipro,metaso-pc,xiezuocat-h5,androidh5,X-E4M-With,Last-Modified,metaso-app,Authorization,xiezuocat-word,metaso-ios,client-type,xiezuocat-app,api,Content-Type,deviceType,No-Cache,iosh5,metaso-h5,X-Requested-With,device-name,Priority,origin-from,Pragma,is-metaso-search-widget,userId,metaso-android,token,metaso-debug,os-version,metapro-windows,xiezuocat-wps,metaso-mini,Distinguish-Origin-from,Cache-Control,If-Modified-Since,Is-Mini-Webview,metaso-aliapp,Expires,wx-app-origin,metalaw-h5
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, PATCH
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:27:48 GMT
+      Set-Cookie:
+      - aliyungf_tc=90dc7e5f675f085c384fa562ff43f91a1cc5fb75e2f44e1799a5a8427ed166b2;
+        Path=/; HttpOnly
+      - JSESSIONID=D252E71787ED275BB8C20E20563E9855; Path=/api; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      XDomainRequestAllowed:
+      - '1'
+      content-length:
+      - '3559'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name":
+      "metaso_web_search", "arguments": {"q": "computer vision", "size": 3, "scope":
+      "webpage", "includeSummary": true, "includeRawContent": false}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - AI-News-Collector/1.0
+    method: POST
+    uri: https://localhost:33210/api/mcp
+  response:
+    body:
+      string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
+        vision\\\",\\\"scope\\\":\\\"webpage\\\",\\\"size\\\":3},\\\"total\\\":38,\\\"webpages\\\":[{\\\"date\\\":\\\"2025\u5E7404\u670816\u65E5\\\",\\\"docId\\\":\\\"5baddfa2-bfbf-487c-bd36-afce70677a1b\\\",\\\"link\\\":\\\"https://www.bilibili.com/read/cv41359989\\\",\\\"position\\\":1,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08CV\uFF09\u662F\u4EBA\u5DE5\u667A\u80FD\u9886\u57DF\u7684\u91CD\u8981\u5206\u652F\uFF0C\u65E8\u5728\u8BA9\u8BA1\u7B97\u673A\u201C\u770B\u5230\u201D\u5E76\u201C\u770B\u61C2\u201D\u56FE\u50CF\u548C\u89C6\u9891\u5185\u5BB9\u3002\u5B83\u901A\u8FC7\u6280\u672F\u5E2E\u52A9\u8BA1\u7B97\u673A\u7406\u89E3\u7167\u7247\u6216\u89C6\u9891\u4E2D\u7684\u4FE1\u606F\uFF0C\u5982\u8BC6\u522B\u7269\u4F53\u3001\u884C\u4E3A\u7B49\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5728\u4EBA\u7C7B\u89C6\u89C9\u57FA\u7840\u4E0A\u53D1\u5C55\uFF0C\u56E0\u56FE\u50CF\u5BF9\u8BA1\u7B97\u673A\u539F\u672C\u662F\u201C\u9ED1\u76D2\u201D\uFF0C\u9700\u901A\u8FC7\u7B97\u6CD5\u89E3\u6790\u3002\u968F\u7740\u4E92\u8054\u7F51\u6570\u636E\u589E\u957F\uFF0C\u56FE\u50CF\u548C\u89C6\u9891\u6570\u91CF\u6FC0\u589E\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u53D8\u5F97\u5C24\u4E3A\u91CD\u8981\u3002\u5176\u57FA\u672C\u539F\u7406\u6D89\u53CA\u56FE\u50CF\u5904\u7406\u3001\u989C\u8272\u8BC6\u522B\u53CA\u6DF1\u5EA6\u5B66\u4E60\u6280\u672F\uFF0C\u5982\u5377\u79EF\u795E\u7ECF\u7F51\u7EDC\uFF08CNN\uFF09\u3002\u5178\u578B\u4EFB\u52A1\u5305\u62EC\u56FE\u50CF\u5206\u7C7B\u3001\u76EE\u6807\u68C0\u6D4B\u3001\u8BED\u4E49\u5206\u5272\u3001\u5B9E\u4F8B\u5206\u5272\u548C\u76EE\u6807\u8FFD\u8E2A\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5E7F\u6CDB\u5E94\u7528\u4E8E\u95E8\u7981\u3001\u4EBA\u8138\u8BC6\u522B\u3001\u8F66\u724C\u8BC6\u522B\u3001\u89C6\u9891\u98CE\u9669\u8BC6\u522B\u7B49\u65E5\u5E38\u573A\u666F\u3002\u5C3D\u7BA1\u6280\u672F\u53D1\u5C55\u8FC5\u901F\uFF0C\u4F46\u4ECD\u9762\u4E34\u9886\u57DF\u7ED3\u5408\u3001\u7B97\u6CD5\u5F00\u53D1\u6210\u672C\u9AD8\u3001\u65B0\u578B\u7B97\u6CD5\u8BBE\u8BA1\u7B49\u6311\u6218\u3002\u672A\u6765\uFF0C\u968F\u7740\u7B97\u6CD5\u3001\u786C\u4EF6\u548C\u6570\u636E\u7684\u53D1\u5C55\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u5C06\u5728\u66F4\u591A\u9886\u57DF\u53D1\u6325\u66F4\u5927\u4F5C\u7528\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08Computer
+        Vision\uFF09\\\"},{\\\"date\\\":\\\"2018\u5E7410\u670826\u65E5\\\",\\\"docId\\\":\\\"6dfcc12e-a44a-4637-932a-d032f0a7f272\\\",\\\"link\\\":\\\"https://cloud.tencent.com/developer/news/17136\\\",\\\"position\\\":2,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\u662F\u6307\u7528\u6444\u5F71\u673A\u548C\u7535\u8111\u4EE3\u66FF\u4EBA\u773C\u5BF9\u76EE\u6807\u8FDB\u884C\u8BC6\u522B\u3001\u8DDF\u8E2A\u548C\u6D4B\u91CF\uFF0C\u4ECE\u800C\u83B7\u53D6\u548C\u5904\u7406\u4FE1\u606F\u7684\u80FD\u529B\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u7CFB\u7EDF\u9700\u5C06\u56FE\u50CF\u4FE1\u53F7\u3001\u7EB9\u7406\u3001\u989C\u8272\u5EFA\u6A21\u3001\u7269\u4F53\u51E0\u4F55\u8BC6\u522B\u548C\u5206\u7C7B\u7B49\u7D27\u5BC6\u96C6\u6210\u3002\u901A\u8FC7\u4E00\u5F20\u56FE\u7247\uFF0C\u8BA1\u7B97\u673A\u8BC6\u522B\u51FA\u6C99\u6D32\u6982\u7387\u4E3A44.28%\uFF0C\u6D77\u6EE933.21%\uFF0C\u6C34\u725B1.22%\uFF0C\u60E0\u6BD4\u7279\u72AC1.13%\uFF0C\u6C34\u4E0B\u547C\u5438\u56680.88%\u3002\u8089\u773C\u53EF\u89C1\u524D\u4E09\u4E2A\u6807\u7B7E\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u7B2C2\u30015\u4E2A\u6807\u7B7E\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u5B9E\u9A8C\u57FA\u4E8EPython\u548COpenCV\uFF0C\u4F7F\u7528\u9884\u8BAD\u7EC3\u7684GoogLeNet\u6A21\u578B\u548CImageNet\u7D22\u5F15\u8FDB\u884C\u56FE\u50CF\u5206\u7C7B\u3002\u5B9E\u9A8C\u6B65\u9AA4\u5305\u62EC\u88C1\u526A\u56FE\u7247\u3001\u8BA1\u7B97RGB\u5747\u503C\u3001\u52A0\u8F7D\u6A21\u578B\u3001\u8BA1\u7B97\u6982\u7387\u3002\u7531\u4E8E\u8BAD\u7EC3\u96C6\u6709\u9650\u4E14\u6A21\u578B\u8F83\u65E7\uFF0C\u5BF9\u81EA\u7136\u56FE\u7247\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u5BF9\u65B0\u4E8B\u7269\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u672A\u6765\u5C06\u4F18\u5316\u6A21\u578B\u4EE5\u63D0\u9AD8\u8BC6\u522B\u51C6\u786E\u7387\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08computer
+        vision\uFF09\\\"},{\\\"authors\\\":[\\\"Ihar Rubanau\\\"],\\\"date\\\":\\\"2023\u5E7407\u670824\u65E5\\\",\\\"docId\\\":\\\"8b33332c-040f-4ffa-9772-9b543315fd8c\\\",\\\"link\\\":\\\"http://www.ihash.eu/2023/07/transfer-learning-in-computer-vision/\\\",\\\"position\\\":3,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Computer
+        Vision\\\\nComputer Vision is a field of artificial intelligence (AI) and
+        computer science that focuses on enabling machines to interpret, understand,
+        and analyze visual data from the world around us.\\\\nThe goal of computer
+        vision is to create intelligent systems that can perform tasks that normally
+        require human-level visual perception, such as object detection, recognition,
+        tracking, and segmentation.\\\\nComputer vision involves a wide range of techniques
+        and approaches, enabling models to learn from large amounts of visual data,
+        such as images and videos.\\\\nThere have been many recent achievements in
+        computer vision, driven in large part by advances in deep learning and neural
+        networks.\\\",\\\"title\\\":\\\"Computer Vision\\\"}]}\",\"description\":null}],\"error\":null}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,auth,minipro,metaso-pc,xiezuocat-h5,androidh5,X-E4M-With,Last-Modified,metaso-app,Authorization,xiezuocat-word,metaso-ios,client-type,xiezuocat-app,api,Content-Type,deviceType,No-Cache,iosh5,metaso-h5,X-Requested-With,device-name,Priority,origin-from,Pragma,is-metaso-search-widget,userId,metaso-android,token,metaso-debug,os-version,metapro-windows,xiezuocat-wps,metaso-mini,Distinguish-Origin-from,Cache-Control,If-Modified-Since,Is-Mini-Webview,metaso-aliapp,Expires,wx-app-origin,metalaw-h5
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, PATCH
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:37:56 GMT
+      Set-Cookie:
+      - aliyungf_tc=4c575b956f487a03ff50d21428e4cfbfabd34cea580cf244acacdc5ff81f0020;
+        Path=/; HttpOnly
+      - JSESSIONID=F6FADDD68D4F38F06E0460B126684EE7; Path=/api; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      XDomainRequestAllowed:
+      - '1'
+      content-length:
+      - '3559'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name":
+      "metaso_web_search", "arguments": {"q": "computer vision", "size": 3, "scope":
+      "webpage", "includeSummary": true, "includeRawContent": false}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - AI-News-Collector/1.0
+    method: POST
+    uri: https://localhost:33210/api/mcp
+  response:
+    body:
+      string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
+        vision\\\",\\\"scope\\\":\\\"webpage\\\",\\\"size\\\":3},\\\"total\\\":38,\\\"webpages\\\":[{\\\"date\\\":\\\"2025\u5E7404\u670816\u65E5\\\",\\\"docId\\\":\\\"5baddfa2-bfbf-487c-bd36-afce70677a1b\\\",\\\"link\\\":\\\"https://www.bilibili.com/read/cv41359989\\\",\\\"position\\\":1,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08CV\uFF09\u662F\u4EBA\u5DE5\u667A\u80FD\u9886\u57DF\u7684\u91CD\u8981\u5206\u652F\uFF0C\u65E8\u5728\u8BA9\u8BA1\u7B97\u673A\u201C\u770B\u5230\u201D\u5E76\u201C\u770B\u61C2\u201D\u56FE\u50CF\u548C\u89C6\u9891\u5185\u5BB9\u3002\u5B83\u901A\u8FC7\u6280\u672F\u5E2E\u52A9\u8BA1\u7B97\u673A\u7406\u89E3\u7167\u7247\u6216\u89C6\u9891\u4E2D\u7684\u4FE1\u606F\uFF0C\u5982\u8BC6\u522B\u7269\u4F53\u3001\u884C\u4E3A\u7B49\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5728\u4EBA\u7C7B\u89C6\u89C9\u57FA\u7840\u4E0A\u53D1\u5C55\uFF0C\u56E0\u56FE\u50CF\u5BF9\u8BA1\u7B97\u673A\u539F\u672C\u662F\u201C\u9ED1\u76D2\u201D\uFF0C\u9700\u901A\u8FC7\u7B97\u6CD5\u89E3\u6790\u3002\u968F\u7740\u4E92\u8054\u7F51\u6570\u636E\u589E\u957F\uFF0C\u56FE\u50CF\u548C\u89C6\u9891\u6570\u91CF\u6FC0\u589E\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u53D8\u5F97\u5C24\u4E3A\u91CD\u8981\u3002\u5176\u57FA\u672C\u539F\u7406\u6D89\u53CA\u56FE\u50CF\u5904\u7406\u3001\u989C\u8272\u8BC6\u522B\u53CA\u6DF1\u5EA6\u5B66\u4E60\u6280\u672F\uFF0C\u5982\u5377\u79EF\u795E\u7ECF\u7F51\u7EDC\uFF08CNN\uFF09\u3002\u5178\u578B\u4EFB\u52A1\u5305\u62EC\u56FE\u50CF\u5206\u7C7B\u3001\u76EE\u6807\u68C0\u6D4B\u3001\u8BED\u4E49\u5206\u5272\u3001\u5B9E\u4F8B\u5206\u5272\u548C\u76EE\u6807\u8FFD\u8E2A\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5E7F\u6CDB\u5E94\u7528\u4E8E\u95E8\u7981\u3001\u4EBA\u8138\u8BC6\u522B\u3001\u8F66\u724C\u8BC6\u522B\u3001\u89C6\u9891\u98CE\u9669\u8BC6\u522B\u7B49\u65E5\u5E38\u573A\u666F\u3002\u5C3D\u7BA1\u6280\u672F\u53D1\u5C55\u8FC5\u901F\uFF0C\u4F46\u4ECD\u9762\u4E34\u9886\u57DF\u7ED3\u5408\u3001\u7B97\u6CD5\u5F00\u53D1\u6210\u672C\u9AD8\u3001\u65B0\u578B\u7B97\u6CD5\u8BBE\u8BA1\u7B49\u6311\u6218\u3002\u672A\u6765\uFF0C\u968F\u7740\u7B97\u6CD5\u3001\u786C\u4EF6\u548C\u6570\u636E\u7684\u53D1\u5C55\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u5C06\u5728\u66F4\u591A\u9886\u57DF\u53D1\u6325\u66F4\u5927\u4F5C\u7528\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08Computer
+        Vision\uFF09\\\"},{\\\"date\\\":\\\"2018\u5E7410\u670826\u65E5\\\",\\\"docId\\\":\\\"6dfcc12e-a44a-4637-932a-d032f0a7f272\\\",\\\"link\\\":\\\"https://cloud.tencent.com/developer/news/17136\\\",\\\"position\\\":2,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\u662F\u6307\u7528\u6444\u5F71\u673A\u548C\u7535\u8111\u4EE3\u66FF\u4EBA\u773C\u5BF9\u76EE\u6807\u8FDB\u884C\u8BC6\u522B\u3001\u8DDF\u8E2A\u548C\u6D4B\u91CF\uFF0C\u4ECE\u800C\u83B7\u53D6\u548C\u5904\u7406\u4FE1\u606F\u7684\u80FD\u529B\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u7CFB\u7EDF\u9700\u5C06\u56FE\u50CF\u4FE1\u53F7\u3001\u7EB9\u7406\u3001\u989C\u8272\u5EFA\u6A21\u3001\u7269\u4F53\u51E0\u4F55\u8BC6\u522B\u548C\u5206\u7C7B\u7B49\u7D27\u5BC6\u96C6\u6210\u3002\u901A\u8FC7\u4E00\u5F20\u56FE\u7247\uFF0C\u8BA1\u7B97\u673A\u8BC6\u522B\u51FA\u6C99\u6D32\u6982\u7387\u4E3A44.28%\uFF0C\u6D77\u6EE933.21%\uFF0C\u6C34\u725B1.22%\uFF0C\u60E0\u6BD4\u7279\u72AC1.13%\uFF0C\u6C34\u4E0B\u547C\u5438\u56680.88%\u3002\u8089\u773C\u53EF\u89C1\u524D\u4E09\u4E2A\u6807\u7B7E\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u7B2C2\u30015\u4E2A\u6807\u7B7E\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u5B9E\u9A8C\u57FA\u4E8EPython\u548COpenCV\uFF0C\u4F7F\u7528\u9884\u8BAD\u7EC3\u7684GoogLeNet\u6A21\u578B\u548CImageNet\u7D22\u5F15\u8FDB\u884C\u56FE\u50CF\u5206\u7C7B\u3002\u5B9E\u9A8C\u6B65\u9AA4\u5305\u62EC\u88C1\u526A\u56FE\u7247\u3001\u8BA1\u7B97RGB\u5747\u503C\u3001\u52A0\u8F7D\u6A21\u578B\u3001\u8BA1\u7B97\u6982\u7387\u3002\u7531\u4E8E\u8BAD\u7EC3\u96C6\u6709\u9650\u4E14\u6A21\u578B\u8F83\u65E7\uFF0C\u5BF9\u81EA\u7136\u56FE\u7247\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u5BF9\u65B0\u4E8B\u7269\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u672A\u6765\u5C06\u4F18\u5316\u6A21\u578B\u4EE5\u63D0\u9AD8\u8BC6\u522B\u51C6\u786E\u7387\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08computer
+        vision\uFF09\\\"},{\\\"authors\\\":[\\\"Ihar Rubanau\\\"],\\\"date\\\":\\\"2023\u5E7407\u670824\u65E5\\\",\\\"docId\\\":\\\"8b33332c-040f-4ffa-9772-9b543315fd8c\\\",\\\"link\\\":\\\"http://www.ihash.eu/2023/07/transfer-learning-in-computer-vision/\\\",\\\"position\\\":3,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Computer
+        Vision\\\\nComputer Vision is a field of artificial intelligence (AI) and
+        computer science that focuses on enabling machines to interpret, understand,
+        and analyze visual data from the world around us.\\\\nThe goal of computer
+        vision is to create intelligent systems that can perform tasks that normally
+        require human-level visual perception, such as object detection, recognition,
+        tracking, and segmentation.\\\\nComputer vision involves a wide range of techniques
+        and approaches, enabling models to learn from large amounts of visual data,
+        such as images and videos.\\\\nThere have been many recent achievements in
+        computer vision, driven in large part by advances in deep learning and neural
+        networks.\\\",\\\"title\\\":\\\"Computer Vision\\\"}]}\",\"description\":null}],\"error\":null}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,auth,minipro,metaso-pc,xiezuocat-h5,androidh5,X-E4M-With,Last-Modified,metaso-app,Authorization,xiezuocat-word,metaso-ios,client-type,xiezuocat-app,api,Content-Type,deviceType,No-Cache,iosh5,metaso-h5,X-Requested-With,device-name,Priority,origin-from,Pragma,is-metaso-search-widget,userId,metaso-android,token,metaso-debug,os-version,metapro-windows,xiezuocat-wps,metaso-mini,Distinguish-Origin-from,Cache-Control,If-Modified-Since,Is-Mini-Webview,metaso-aliapp,Expires,wx-app-origin,metalaw-h5
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, PATCH
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:39:22 GMT
+      Set-Cookie:
+      - aliyungf_tc=a21b5fdcc840d07433cd0ce5a9471519cfdf0dd26b3cc1dddb76dfd609e34fde;
+        Path=/; HttpOnly
+      - JSESSIONID=7C42D21280CC2940A01CC7761773CD4C; Path=/api; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      XDomainRequestAllowed:
+      - '1'
+      content-length:
+      - '3559'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name":
+      "metaso_web_search", "arguments": {"q": "computer vision", "size": 3, "scope":
+      "webpage", "includeSummary": true, "includeRawContent": false}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - AI-News-Collector/1.0
+    method: POST
+    uri: https://localhost:33210/api/mcp
+  response:
+    body:
+      string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
+        vision\\\",\\\"scope\\\":\\\"webpage\\\",\\\"size\\\":3},\\\"total\\\":38,\\\"webpages\\\":[{\\\"date\\\":\\\"2025\u5E7404\u670816\u65E5\\\",\\\"docId\\\":\\\"5baddfa2-bfbf-487c-bd36-afce70677a1b\\\",\\\"link\\\":\\\"https://www.bilibili.com/read/cv41359989\\\",\\\"position\\\":1,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08CV\uFF09\u662F\u4EBA\u5DE5\u667A\u80FD\u9886\u57DF\u7684\u91CD\u8981\u5206\u652F\uFF0C\u65E8\u5728\u8BA9\u8BA1\u7B97\u673A\u201C\u770B\u5230\u201D\u5E76\u201C\u770B\u61C2\u201D\u56FE\u50CF\u548C\u89C6\u9891\u5185\u5BB9\u3002\u5B83\u901A\u8FC7\u6280\u672F\u5E2E\u52A9\u8BA1\u7B97\u673A\u7406\u89E3\u7167\u7247\u6216\u89C6\u9891\u4E2D\u7684\u4FE1\u606F\uFF0C\u5982\u8BC6\u522B\u7269\u4F53\u3001\u884C\u4E3A\u7B49\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5728\u4EBA\u7C7B\u89C6\u89C9\u57FA\u7840\u4E0A\u53D1\u5C55\uFF0C\u56E0\u56FE\u50CF\u5BF9\u8BA1\u7B97\u673A\u539F\u672C\u662F\u201C\u9ED1\u76D2\u201D\uFF0C\u9700\u901A\u8FC7\u7B97\u6CD5\u89E3\u6790\u3002\u968F\u7740\u4E92\u8054\u7F51\u6570\u636E\u589E\u957F\uFF0C\u56FE\u50CF\u548C\u89C6\u9891\u6570\u91CF\u6FC0\u589E\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u53D8\u5F97\u5C24\u4E3A\u91CD\u8981\u3002\u5176\u57FA\u672C\u539F\u7406\u6D89\u53CA\u56FE\u50CF\u5904\u7406\u3001\u989C\u8272\u8BC6\u522B\u53CA\u6DF1\u5EA6\u5B66\u4E60\u6280\u672F\uFF0C\u5982\u5377\u79EF\u795E\u7ECF\u7F51\u7EDC\uFF08CNN\uFF09\u3002\u5178\u578B\u4EFB\u52A1\u5305\u62EC\u56FE\u50CF\u5206\u7C7B\u3001\u76EE\u6807\u68C0\u6D4B\u3001\u8BED\u4E49\u5206\u5272\u3001\u5B9E\u4F8B\u5206\u5272\u548C\u76EE\u6807\u8FFD\u8E2A\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5E7F\u6CDB\u5E94\u7528\u4E8E\u95E8\u7981\u3001\u4EBA\u8138\u8BC6\u522B\u3001\u8F66\u724C\u8BC6\u522B\u3001\u89C6\u9891\u98CE\u9669\u8BC6\u522B\u7B49\u65E5\u5E38\u573A\u666F\u3002\u5C3D\u7BA1\u6280\u672F\u53D1\u5C55\u8FC5\u901F\uFF0C\u4F46\u4ECD\u9762\u4E34\u9886\u57DF\u7ED3\u5408\u3001\u7B97\u6CD5\u5F00\u53D1\u6210\u672C\u9AD8\u3001\u65B0\u578B\u7B97\u6CD5\u8BBE\u8BA1\u7B49\u6311\u6218\u3002\u672A\u6765\uFF0C\u968F\u7740\u7B97\u6CD5\u3001\u786C\u4EF6\u548C\u6570\u636E\u7684\u53D1\u5C55\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u5C06\u5728\u66F4\u591A\u9886\u57DF\u53D1\u6325\u66F4\u5927\u4F5C\u7528\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08Computer
+        Vision\uFF09\\\"},{\\\"date\\\":\\\"2018\u5E7410\u670826\u65E5\\\",\\\"docId\\\":\\\"6dfcc12e-a44a-4637-932a-d032f0a7f272\\\",\\\"link\\\":\\\"https://cloud.tencent.com/developer/news/17136\\\",\\\"position\\\":2,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\u662F\u6307\u7528\u6444\u5F71\u673A\u548C\u7535\u8111\u4EE3\u66FF\u4EBA\u773C\u5BF9\u76EE\u6807\u8FDB\u884C\u8BC6\u522B\u3001\u8DDF\u8E2A\u548C\u6D4B\u91CF\uFF0C\u4ECE\u800C\u83B7\u53D6\u548C\u5904\u7406\u4FE1\u606F\u7684\u80FD\u529B\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u7CFB\u7EDF\u9700\u5C06\u56FE\u50CF\u4FE1\u53F7\u3001\u7EB9\u7406\u3001\u989C\u8272\u5EFA\u6A21\u3001\u7269\u4F53\u51E0\u4F55\u8BC6\u522B\u548C\u5206\u7C7B\u7B49\u7D27\u5BC6\u96C6\u6210\u3002\u901A\u8FC7\u4E00\u5F20\u56FE\u7247\uFF0C\u8BA1\u7B97\u673A\u8BC6\u522B\u51FA\u6C99\u6D32\u6982\u7387\u4E3A44.28%\uFF0C\u6D77\u6EE933.21%\uFF0C\u6C34\u725B1.22%\uFF0C\u60E0\u6BD4\u7279\u72AC1.13%\uFF0C\u6C34\u4E0B\u547C\u5438\u56680.88%\u3002\u8089\u773C\u53EF\u89C1\u524D\u4E09\u4E2A\u6807\u7B7E\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u7B2C2\u30015\u4E2A\u6807\u7B7E\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u5B9E\u9A8C\u57FA\u4E8EPython\u548COpenCV\uFF0C\u4F7F\u7528\u9884\u8BAD\u7EC3\u7684GoogLeNet\u6A21\u578B\u548CImageNet\u7D22\u5F15\u8FDB\u884C\u56FE\u50CF\u5206\u7C7B\u3002\u5B9E\u9A8C\u6B65\u9AA4\u5305\u62EC\u88C1\u526A\u56FE\u7247\u3001\u8BA1\u7B97RGB\u5747\u503C\u3001\u52A0\u8F7D\u6A21\u578B\u3001\u8BA1\u7B97\u6982\u7387\u3002\u7531\u4E8E\u8BAD\u7EC3\u96C6\u6709\u9650\u4E14\u6A21\u578B\u8F83\u65E7\uFF0C\u5BF9\u81EA\u7136\u56FE\u7247\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u5BF9\u65B0\u4E8B\u7269\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u672A\u6765\u5C06\u4F18\u5316\u6A21\u578B\u4EE5\u63D0\u9AD8\u8BC6\u522B\u51C6\u786E\u7387\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08computer
+        vision\uFF09\\\"},{\\\"authors\\\":[\\\"Ihar Rubanau\\\"],\\\"date\\\":\\\"2023\u5E7407\u670824\u65E5\\\",\\\"docId\\\":\\\"8b33332c-040f-4ffa-9772-9b543315fd8c\\\",\\\"link\\\":\\\"http://www.ihash.eu/2023/07/transfer-learning-in-computer-vision/\\\",\\\"position\\\":3,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Computer
+        Vision\\\\nComputer Vision is a field of artificial intelligence (AI) and
+        computer science that focuses on enabling machines to interpret, understand,
+        and analyze visual data from the world around us.\\\\nThe goal of computer
+        vision is to create intelligent systems that can perform tasks that normally
+        require human-level visual perception, such as object detection, recognition,
+        tracking, and segmentation.\\\\nComputer vision involves a wide range of techniques
+        and approaches, enabling models to learn from large amounts of visual data,
+        such as images and videos.\\\\nThere have been many recent achievements in
+        computer vision, driven in large part by advances in deep learning and neural
+        networks.\\\",\\\"title\\\":\\\"Computer Vision\\\"}]}\",\"description\":null}],\"error\":null}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,auth,minipro,metaso-pc,xiezuocat-h5,androidh5,X-E4M-With,Last-Modified,metaso-app,Authorization,xiezuocat-word,metaso-ios,client-type,xiezuocat-app,api,Content-Type,deviceType,No-Cache,iosh5,metaso-h5,X-Requested-With,device-name,Priority,origin-from,Pragma,is-metaso-search-widget,userId,metaso-android,token,metaso-debug,os-version,metapro-windows,xiezuocat-wps,metaso-mini,Distinguish-Origin-from,Cache-Control,If-Modified-Since,Is-Mini-Webview,metaso-aliapp,Expires,wx-app-origin,metalaw-h5
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, PATCH
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:44:05 GMT
+      Set-Cookie:
+      - aliyungf_tc=392826a4839045dd0841a7be3e70b65c24e2def382546abdf48ca663bc9894de;
+        Path=/; HttpOnly
+      - JSESSIONID=98A16B848019616E4F0601962D178B76; Path=/api; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      XDomainRequestAllowed:
+      - '1'
+      content-length:
+      - '3559'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name":
+      "metaso_web_search", "arguments": {"q": "computer vision", "size": 3, "scope":
+      "webpage", "includeSummary": true, "includeRawContent": false}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - AI-News-Collector/1.0
+    method: POST
+    uri: https://localhost:33210/api/mcp
+  response:
+    body:
+      string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
+        vision\\\",\\\"scope\\\":\\\"webpage\\\",\\\"size\\\":3},\\\"total\\\":38,\\\"webpages\\\":[{\\\"date\\\":\\\"2025\u5E7404\u670816\u65E5\\\",\\\"docId\\\":\\\"5baddfa2-bfbf-487c-bd36-afce70677a1b\\\",\\\"link\\\":\\\"https://www.bilibili.com/read/cv41359989\\\",\\\"position\\\":1,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08CV\uFF09\u662F\u4EBA\u5DE5\u667A\u80FD\u9886\u57DF\u7684\u91CD\u8981\u5206\u652F\uFF0C\u65E8\u5728\u8BA9\u8BA1\u7B97\u673A\u201C\u770B\u5230\u201D\u5E76\u201C\u770B\u61C2\u201D\u56FE\u50CF\u548C\u89C6\u9891\u5185\u5BB9\u3002\u5B83\u901A\u8FC7\u6280\u672F\u5E2E\u52A9\u8BA1\u7B97\u673A\u7406\u89E3\u7167\u7247\u6216\u89C6\u9891\u4E2D\u7684\u4FE1\u606F\uFF0C\u5982\u8BC6\u522B\u7269\u4F53\u3001\u884C\u4E3A\u7B49\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5728\u4EBA\u7C7B\u89C6\u89C9\u57FA\u7840\u4E0A\u53D1\u5C55\uFF0C\u56E0\u56FE\u50CF\u5BF9\u8BA1\u7B97\u673A\u539F\u672C\u662F\u201C\u9ED1\u76D2\u201D\uFF0C\u9700\u901A\u8FC7\u7B97\u6CD5\u89E3\u6790\u3002\u968F\u7740\u4E92\u8054\u7F51\u6570\u636E\u589E\u957F\uFF0C\u56FE\u50CF\u548C\u89C6\u9891\u6570\u91CF\u6FC0\u589E\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u53D8\u5F97\u5C24\u4E3A\u91CD\u8981\u3002\u5176\u57FA\u672C\u539F\u7406\u6D89\u53CA\u56FE\u50CF\u5904\u7406\u3001\u989C\u8272\u8BC6\u522B\u53CA\u6DF1\u5EA6\u5B66\u4E60\u6280\u672F\uFF0C\u5982\u5377\u79EF\u795E\u7ECF\u7F51\u7EDC\uFF08CNN\uFF09\u3002\u5178\u578B\u4EFB\u52A1\u5305\u62EC\u56FE\u50CF\u5206\u7C7B\u3001\u76EE\u6807\u68C0\u6D4B\u3001\u8BED\u4E49\u5206\u5272\u3001\u5B9E\u4F8B\u5206\u5272\u548C\u76EE\u6807\u8FFD\u8E2A\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5E7F\u6CDB\u5E94\u7528\u4E8E\u95E8\u7981\u3001\u4EBA\u8138\u8BC6\u522B\u3001\u8F66\u724C\u8BC6\u522B\u3001\u89C6\u9891\u98CE\u9669\u8BC6\u522B\u7B49\u65E5\u5E38\u573A\u666F\u3002\u5C3D\u7BA1\u6280\u672F\u53D1\u5C55\u8FC5\u901F\uFF0C\u4F46\u4ECD\u9762\u4E34\u9886\u57DF\u7ED3\u5408\u3001\u7B97\u6CD5\u5F00\u53D1\u6210\u672C\u9AD8\u3001\u65B0\u578B\u7B97\u6CD5\u8BBE\u8BA1\u7B49\u6311\u6218\u3002\u672A\u6765\uFF0C\u968F\u7740\u7B97\u6CD5\u3001\u786C\u4EF6\u548C\u6570\u636E\u7684\u53D1\u5C55\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u5C06\u5728\u66F4\u591A\u9886\u57DF\u53D1\u6325\u66F4\u5927\u4F5C\u7528\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08Computer
+        Vision\uFF09\\\"},{\\\"date\\\":\\\"2018\u5E7410\u670826\u65E5\\\",\\\"docId\\\":\\\"6dfcc12e-a44a-4637-932a-d032f0a7f272\\\",\\\"link\\\":\\\"https://cloud.tencent.com/developer/news/17136\\\",\\\"position\\\":2,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\u662F\u6307\u7528\u6444\u5F71\u673A\u548C\u7535\u8111\u4EE3\u66FF\u4EBA\u773C\u5BF9\u76EE\u6807\u8FDB\u884C\u8BC6\u522B\u3001\u8DDF\u8E2A\u548C\u6D4B\u91CF\uFF0C\u4ECE\u800C\u83B7\u53D6\u548C\u5904\u7406\u4FE1\u606F\u7684\u80FD\u529B\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u7CFB\u7EDF\u9700\u5C06\u56FE\u50CF\u4FE1\u53F7\u3001\u7EB9\u7406\u3001\u989C\u8272\u5EFA\u6A21\u3001\u7269\u4F53\u51E0\u4F55\u8BC6\u522B\u548C\u5206\u7C7B\u7B49\u7D27\u5BC6\u96C6\u6210\u3002\u901A\u8FC7\u4E00\u5F20\u56FE\u7247\uFF0C\u8BA1\u7B97\u673A\u8BC6\u522B\u51FA\u6C99\u6D32\u6982\u7387\u4E3A44.28%\uFF0C\u6D77\u6EE933.21%\uFF0C\u6C34\u725B1.22%\uFF0C\u60E0\u6BD4\u7279\u72AC1.13%\uFF0C\u6C34\u4E0B\u547C\u5438\u56680.88%\u3002\u8089\u773C\u53EF\u89C1\u524D\u4E09\u4E2A\u6807\u7B7E\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u7B2C2\u30015\u4E2A\u6807\u7B7E\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u5B9E\u9A8C\u57FA\u4E8EPython\u548COpenCV\uFF0C\u4F7F\u7528\u9884\u8BAD\u7EC3\u7684GoogLeNet\u6A21\u578B\u548CImageNet\u7D22\u5F15\u8FDB\u884C\u56FE\u50CF\u5206\u7C7B\u3002\u5B9E\u9A8C\u6B65\u9AA4\u5305\u62EC\u88C1\u526A\u56FE\u7247\u3001\u8BA1\u7B97RGB\u5747\u503C\u3001\u52A0\u8F7D\u6A21\u578B\u3001\u8BA1\u7B97\u6982\u7387\u3002\u7531\u4E8E\u8BAD\u7EC3\u96C6\u6709\u9650\u4E14\u6A21\u578B\u8F83\u65E7\uFF0C\u5BF9\u81EA\u7136\u56FE\u7247\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u5BF9\u65B0\u4E8B\u7269\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u672A\u6765\u5C06\u4F18\u5316\u6A21\u578B\u4EE5\u63D0\u9AD8\u8BC6\u522B\u51C6\u786E\u7387\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08computer
+        vision\uFF09\\\"},{\\\"date\\\":\\\"2025\u5E7401\u670822\u65E5\\\",\\\"docId\\\":\\\"dbaa976a-b01c-4d94-8791-937acf035bf5\\\",\\\"link\\\":\\\"https://www.digitalocean.com/resources/articles/computer-vision\\\",\\\"position\\\":3,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"What
+        is computer vision?\\\\nComputer vision is a field of artificial intelligence
+        that uses machines to interpret and analyze visual information from the world.\\\\nJust
+        as our brains process what we see through our eyes, computer vision systems
+        analyze digital images and videos to understand their content and context.\\\\nModern
+        computer vision systems can identify objects, faces, text, and motion\u2014they
+        also understand spatial relationships and can even predict behaviors.\\\\nHow
+        does computer vision work?\\\\nComputer vision works through a structured
+        process: first, cameras capture images which are preprocessed to adjust brightness
+        and remove distortions; next, the system identifies key visual elements like
+        edges, shapes, colors, and textures; then trained machine learning models
+        compare extracted features against databases of known patterns using approaches
+        like convolutional neural networks; finally, the system translates its analysis
+        into actionable results, with the entire process often happening in milliseconds.\\\",\\\"title\\\":\\\"Computer
+        Vision\\\"}]}\",\"description\":null}],\"error\":null}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,auth,minipro,metaso-pc,xiezuocat-h5,androidh5,X-E4M-With,Last-Modified,metaso-app,Authorization,xiezuocat-word,metaso-ios,client-type,xiezuocat-app,api,Content-Type,deviceType,No-Cache,iosh5,metaso-h5,X-Requested-With,device-name,Priority,origin-from,Pragma,is-metaso-search-widget,userId,metaso-android,token,metaso-debug,os-version,metapro-windows,xiezuocat-wps,metaso-mini,Distinguish-Origin-from,Cache-Control,If-Modified-Since,Is-Mini-Webview,metaso-aliapp,Expires,wx-app-origin,metalaw-h5
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, PATCH
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:50:41 GMT
+      Set-Cookie:
+      - aliyungf_tc=6bf972b3a938389d3712ddff0a9c4e18598e1613a091c43ea95662e428e583a9;
+        Path=/; HttpOnly
+      - JSESSIONID=FD97EE5CA012A3F6442EB65617B1B4C6; Path=/api; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      XDomainRequestAllowed:
+      - '1'
+      content-length:
+      - '3849'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name":
+      "metaso_web_search", "arguments": {"q": "computer vision", "size": 3, "scope":
+      "webpage", "includeSummary": true, "includeRawContent": false}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - AI-News-Collector/1.0
+    method: POST
+    uri: https://localhost:33210/api/mcp
+  response:
+    body:
+      string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"computer
+        vision\\\",\\\"scope\\\":\\\"webpage\\\",\\\"size\\\":3},\\\"total\\\":38,\\\"webpages\\\":[{\\\"date\\\":\\\"2025\u5E7404\u670816\u65E5\\\",\\\"docId\\\":\\\"5baddfa2-bfbf-487c-bd36-afce70677a1b\\\",\\\"link\\\":\\\"https://www.bilibili.com/read/cv41359989\\\",\\\"position\\\":1,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08CV\uFF09\u662F\u4EBA\u5DE5\u667A\u80FD\u9886\u57DF\u7684\u91CD\u8981\u5206\u652F\uFF0C\u65E8\u5728\u8BA9\u8BA1\u7B97\u673A\u201C\u770B\u5230\u201D\u5E76\u201C\u770B\u61C2\u201D\u56FE\u50CF\u548C\u89C6\u9891\u5185\u5BB9\u3002\u5B83\u901A\u8FC7\u6280\u672F\u5E2E\u52A9\u8BA1\u7B97\u673A\u7406\u89E3\u7167\u7247\u6216\u89C6\u9891\u4E2D\u7684\u4FE1\u606F\uFF0C\u5982\u8BC6\u522B\u7269\u4F53\u3001\u884C\u4E3A\u7B49\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5728\u4EBA\u7C7B\u89C6\u89C9\u57FA\u7840\u4E0A\u53D1\u5C55\uFF0C\u56E0\u56FE\u50CF\u5BF9\u8BA1\u7B97\u673A\u539F\u672C\u662F\u201C\u9ED1\u76D2\u201D\uFF0C\u9700\u901A\u8FC7\u7B97\u6CD5\u89E3\u6790\u3002\u968F\u7740\u4E92\u8054\u7F51\u6570\u636E\u589E\u957F\uFF0C\u56FE\u50CF\u548C\u89C6\u9891\u6570\u91CF\u6FC0\u589E\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u53D8\u5F97\u5C24\u4E3A\u91CD\u8981\u3002\u5176\u57FA\u672C\u539F\u7406\u6D89\u53CA\u56FE\u50CF\u5904\u7406\u3001\u989C\u8272\u8BC6\u522B\u53CA\u6DF1\u5EA6\u5B66\u4E60\u6280\u672F\uFF0C\u5982\u5377\u79EF\u795E\u7ECF\u7F51\u7EDC\uFF08CNN\uFF09\u3002\u5178\u578B\u4EFB\u52A1\u5305\u62EC\u56FE\u50CF\u5206\u7C7B\u3001\u76EE\u6807\u68C0\u6D4B\u3001\u8BED\u4E49\u5206\u5272\u3001\u5B9E\u4F8B\u5206\u5272\u548C\u76EE\u6807\u8FFD\u8E2A\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u5E7F\u6CDB\u5E94\u7528\u4E8E\u95E8\u7981\u3001\u4EBA\u8138\u8BC6\u522B\u3001\u8F66\u724C\u8BC6\u522B\u3001\u89C6\u9891\u98CE\u9669\u8BC6\u522B\u7B49\u65E5\u5E38\u573A\u666F\u3002\u5C3D\u7BA1\u6280\u672F\u53D1\u5C55\u8FC5\u901F\uFF0C\u4F46\u4ECD\u9762\u4E34\u9886\u57DF\u7ED3\u5408\u3001\u7B97\u6CD5\u5F00\u53D1\u6210\u672C\u9AD8\u3001\u65B0\u578B\u7B97\u6CD5\u8BBE\u8BA1\u7B49\u6311\u6218\u3002\u672A\u6765\uFF0C\u968F\u7740\u7B97\u6CD5\u3001\u786C\u4EF6\u548C\u6570\u636E\u7684\u53D1\u5C55\uFF0C\u8BA1\u7B97\u673A\u89C6\u89C9\u5C06\u5728\u66F4\u591A\u9886\u57DF\u53D1\u6325\u66F4\u5927\u4F5C\u7528\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08Computer
+        Vision\uFF09\\\"},{\\\"date\\\":\\\"2018\u5E7410\u670826\u65E5\\\",\\\"docId\\\":\\\"6dfcc12e-a44a-4637-932a-d032f0a7f272\\\",\\\"link\\\":\\\"https://cloud.tencent.com/developer/news/17136\\\",\\\"position\\\":2,\\\"score\\\":\\\"high\\\",\\\"summary\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\u662F\u6307\u7528\u6444\u5F71\u673A\u548C\u7535\u8111\u4EE3\u66FF\u4EBA\u773C\u5BF9\u76EE\u6807\u8FDB\u884C\u8BC6\u522B\u3001\u8DDF\u8E2A\u548C\u6D4B\u91CF\uFF0C\u4ECE\u800C\u83B7\u53D6\u548C\u5904\u7406\u4FE1\u606F\u7684\u80FD\u529B\u3002\u8BA1\u7B97\u673A\u89C6\u89C9\u7CFB\u7EDF\u9700\u5C06\u56FE\u50CF\u4FE1\u53F7\u3001\u7EB9\u7406\u3001\u989C\u8272\u5EFA\u6A21\u3001\u7269\u4F53\u51E0\u4F55\u8BC6\u522B\u548C\u5206\u7C7B\u7B49\u7D27\u5BC6\u96C6\u6210\u3002\u901A\u8FC7\u4E00\u5F20\u56FE\u7247\uFF0C\u8BA1\u7B97\u673A\u8BC6\u522B\u51FA\u6C99\u6D32\u6982\u7387\u4E3A44.28%\uFF0C\u6D77\u6EE933.21%\uFF0C\u6C34\u725B1.22%\uFF0C\u60E0\u6BD4\u7279\u72AC1.13%\uFF0C\u6C34\u4E0B\u547C\u5438\u56680.88%\u3002\u8089\u773C\u53EF\u89C1\u524D\u4E09\u4E2A\u6807\u7B7E\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u7B2C2\u30015\u4E2A\u6807\u7B7E\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u5B9E\u9A8C\u57FA\u4E8EPython\u548COpenCV\uFF0C\u4F7F\u7528\u9884\u8BAD\u7EC3\u7684GoogLeNet\u6A21\u578B\u548CImageNet\u7D22\u5F15\u8FDB\u884C\u56FE\u50CF\u5206\u7C7B\u3002\u5B9E\u9A8C\u6B65\u9AA4\u5305\u62EC\u88C1\u526A\u56FE\u7247\u3001\u8BA1\u7B97RGB\u5747\u503C\u3001\u52A0\u8F7D\u6A21\u578B\u3001\u8BA1\u7B97\u6982\u7387\u3002\u7531\u4E8E\u8BAD\u7EC3\u96C6\u6709\u9650\u4E14\u6A21\u578B\u8F83\u65E7\uFF0C\u5BF9\u81EA\u7136\u56FE\u7247\u8BC6\u522B\u8F83\u51C6\u786E\uFF0C\u4F46\u5BF9\u65B0\u4E8B\u7269\u8BC6\u522B\u4E0D\u51C6\u786E\u3002\u672A\u6765\u5C06\u4F18\u5316\u6A21\u578B\u4EE5\u63D0\u9AD8\u8BC6\u522B\u51C6\u786E\u7387\u3002\\\",\\\"title\\\":\\\"\u8BA1\u7B97\u673A\u89C6\u89C9\uFF08computer
+        vision\uFF09\\\"},{\\\"date\\\":\\\"2025\u5E7401\u670822\u65E5\\\",\\\"docId\\\":\\\"dbaa976a-b01c-4d94-8791-937acf035bf5\\\",\\\"link\\\":\\\"https://www.digitalocean.com/resources/articles/computer-vision\\\",\\\"position\\\":3,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"What
+        is computer vision?\\\\nComputer vision is a field of artificial intelligence
+        that uses machines to interpret and analyze visual information from the world.\\\\nJust
+        as our brains process what we see through our eyes, computer vision systems
+        analyze digital images and videos to understand their content and context.\\\\nModern
+        computer vision systems can identify objects, faces, text, and motion\u2014they
+        also understand spatial relationships and can even predict behaviors.\\\\nHow
+        does computer vision work?\\\\nComputer vision works through a structured
+        process: first, cameras capture images which are preprocessed to adjust brightness
+        and remove distortions; next, the system identifies key visual elements like
+        edges, shapes, colors, and textures; then trained machine learning models
+        compare extracted features against databases of known patterns using approaches
+        like convolutional neural networks; finally, the system translates its analysis
+        into actionable results, with the entire process often happening in milliseconds.\\\",\\\"title\\\":\\\"Computer
+        Vision\\\"}]}\",\"description\":null}],\"error\":null}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,auth,minipro,metaso-pc,xiezuocat-h5,androidh5,X-E4M-With,Last-Modified,metaso-app,Authorization,xiezuocat-word,metaso-ios,client-type,xiezuocat-app,api,Content-Type,deviceType,No-Cache,iosh5,metaso-h5,X-Requested-With,device-name,Priority,origin-from,Pragma,is-metaso-search-widget,userId,metaso-android,token,metaso-debug,os-version,metapro-windows,xiezuocat-wps,metaso-mini,Distinguish-Origin-from,Cache-Control,If-Modified-Since,Is-Mini-Webview,metaso-aliapp,Expires,wx-app-origin,metalaw-h5
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, PATCH
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 21 Oct 2025 03:59:02 GMT
+      Set-Cookie:
+      - aliyungf_tc=09edf5025aa79ebb03ef81e32131c9b486b2bfc2ac534e775b2d2c6232ad3a5b;
+        Path=/; HttpOnly
+      - JSESSIONID=845DED6775F2FEF5535E680FEF429859; Path=/api; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      XDomainRequestAllowed:
+      - '1'
+      content-length:
+      - '3849'
+    status:
+      code: 200
+      message: ''
+version: 1

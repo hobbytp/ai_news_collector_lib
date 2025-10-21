@@ -350,3 +350,70 @@ duckduckgo: completed - 0 篇
 newsapi: completed - 2 篇
 PASSED
 ```
+
+## 付费API测试
+
+### 快速开始
+
+付费API测试使用VCR（视频磁带录制/回放）技术进行离线测试：
+
+1. **首次运行（录制真实API响应）**：
+```bash
+# 在.env中配置API密钥
+export TAVILY_API_KEY="your-key"
+export GOOGLE_SEARCH_API_KEY="your-key"
+# ... 其他API密钥
+
+# 运行测试（会自动录制cassettes）
+python -m pytest tests/test_paid_apis.py -v
+```
+
+2. **后续运行（使用录制的cassettes）**：
+```bash
+# 无需API密钥，直接运行
+python -m pytest tests/test_paid_apis.py -v
+```
+
+### 支持的付费API
+
+| API | 环境变量 | Cassette文件 |
+|-----|---------|------------|
+| Tavily Search | `TAVILY_API_KEY` | tavily_search.yaml |
+| Google Search | `GOOGLE_SEARCH_API_KEY` + `GOOGLE_SEARCH_ENGINE_ID` | google_search.yaml |
+| Serper | `SERPER_API_KEY` | serper_search.yaml |
+| Brave Search | `BRAVE_SEARCH_API_KEY` | brave_search.yaml |
+| MetaSota | `METASOSEARCH_API_KEY` | metasota_search.yaml |
+| NewsAPI | `NEWS_API_KEY` | newsapi_search.yaml |
+
+### 常见问题
+
+**Q: 我没有配置API密钥，测试会怎样？**  
+A: 如果没有配置API密钥且没有对应的cassette文件，测试会被跳过。如果有cassette，测试会使用录制的数据离线运行。
+
+**Q: 如何更新cassette（重新录制API响应）？**  
+A: 删除对应的cassette文件，配置API密钥，再次运行测试即可重新录制。
+
+**Q: cassette文件是什么？**  
+A: cassette是VCR录制的HTTP交互文件（YAML格式），包含了API的请求和响应。这样可以离线测试而不消耗API配额。
+
+### 使用Makefile运行测试
+
+```bash
+# 运行所有测试
+make test
+
+# 只运行基础测试（快速）
+make test-basic
+
+# 只运行付费API测试
+make test-paid
+
+# 运行测试并生成覆盖率报告
+make test-cov
+```
+
+### 详细指南
+
+更多信息请参考：
+- [CI/CD GitHub Actions 指南](../docs/CI_CD_GITHUB_ACTIONS_GUIDE.md)
+- [付费API测试指南](../docs/PAID_API_TESTING_GUIDE.md)
