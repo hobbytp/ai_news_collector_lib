@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -69,7 +69,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -138,7 +138,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -207,7 +207,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -276,7 +276,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -345,7 +345,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -414,7 +414,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -483,7 +483,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -552,7 +552,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -621,7 +621,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -690,7 +690,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:
@@ -759,7 +759,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "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", "query": "artificial
+    body: '{"api_key": "FILTERED", "query": "artificial
       intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
       false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
     headers:

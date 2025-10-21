@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
       X-Subscription-Token:
-      - BSA2qHDHwtrkw1tOswC4Y6hHQQCcUsA
+      - FILTERED
     method: GET
     uri: https://localhost:33210/res/v1/web/search?count=3&mkt=en-US&offset=0&q=neural+networks&safesearch=moderate
   response:
@@ -120,7 +120,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
       X-Subscription-Token:
-      - BSA2qHDHwtrkw1tOswC4Y6hHQQCcUsA
+      - FILTERED
     method: GET
     uri: https://localhost:33210/res/v1/web/search?count=3&mkt=en-US&offset=0&q=neural+networks&safesearch=moderate
   response:
@@ -229,7 +229,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
       X-Subscription-Token:
-      - BSA2qHDHwtrkw1tOswC4Y6hHQQCcUsA
+      - FILTERED
     method: GET
     uri: https://localhost:33210/res/v1/web/search?count=3&mkt=en-US&offset=0&q=neural+networks&safesearch=moderate
   response:
@@ -338,7 +338,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
       X-Subscription-Token:
-      - BSA2qHDHwtrkw1tOswC4Y6hHQQCcUsA
+      - FILTERED
     method: GET
     uri: https://localhost:33210/res/v1/web/search?count=3&mkt=en-US&offset=0&q=neural+networks&safesearch=moderate
   response:
@@ -447,7 +447,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
       X-Subscription-Token:
-      - BSA2qHDHwtrkw1tOswC4Y6hHQQCcUsA
+      - FILTERED
     method: GET
     uri: https://localhost:33210/res/v1/web/search?count=3&mkt=en-US&offset=0&q=neural+networks&safesearch=moderate
   response:
