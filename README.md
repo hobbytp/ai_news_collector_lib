@@ -1,160 +1,80 @@
-# AI News Collector Library
+# 🔰 AI News Collector Library
 
-一个用于收集AI相关新闻的Python库，支持多种搜索源和高级功能。
+> 一个用于收集AI相关新闻的Python库，支持多种搜索源和高级功能。
 
-## 🚀 特性
+[![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-ai--news--collector--lib-blue)](https://pypi.org/project/ai-news-collector-lib/)
+[![Latest Release](https://img.shields.io/badge/Latest-v0.1.2-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.2)
 
-- **多源搜索**: 支持HackerNews、ArXiv、DuckDuckGo、NewsAPI等
-- **内容提取**: 自动提取网页内容
-- **关键词分析**: 智能提取关键词
-- **结果缓存**: 支持结果缓存，提高效率
-- **定时任务**: 支持定时自动收集
-- **报告生成**: 生成多种格式的报告
-- **易于集成**: 简单的API接口
+---
 
-## 📁 项目结构
+## 🚀 最新更新 (v0.1.2 - 安全版本)
 
-```
-ai_news_collector_lib/
-├── __init__.py          # 主模块入口
-├── cli.py              # 命令行接口
-├── config/             # 配置模块
-│   ├── __init__.py
-│   ├── settings.py     # 搜索配置
-│   └── api_keys.py     # API密钥管理
-├── core/               # 核心功能
-│   ├── __init__.py
-│   ├── collector.py    # 基础收集器
-│   └── advanced_collector.py  # 高级收集器
-├── models/             # 数据模型
-│   ├── __init__.py
-│   ├── article.py      # 文章模型
-│   └── result.py       # 结果模型
-├── tools/              # 搜索工具
-│   ├── __init__.py
-│   └── search_tools.py # 各种搜索工具
-├── utils/              # 工具函数
-│   ├── __init__.py
-│   ├── cache.py        # 缓存管理
-│   ├── content_extractor.py  # 内容提取
-│   ├── keyword_extractor.py # 关键词提取
-│   ├── reporter.py     # 报告生成
-│   └── scheduler.py    # 任务调度
-├── tests/              # 测试文件
-├── examples/           # 使用示例
-├── scripts/            # 构建脚本
-├── setup.py           # 安装配置
-├── pyproject.toml     # 项目配置
-└── README.md          # 项目说明
-```
+> **这是一个关键的安全版本更新！** 建议所有用户升级。
+
+### 🔒 安全改进
+- ✅ **全面安全审计** - 清理VCR测试cassettes中的所有敏感数据
+- ✅ **凭证管理改进** - 将所有测试API密钥替换为"FILTERED"占位符
+- ✅ **端点校验** - 更新所有测试cassette的URL为真实API端点
+- ✅ **无凭证泄露** - 确保测试数据中不包含任何有效凭证
+
+### 🧪 测试框架增强
+- ✅ **离线付费API测试** - 使用VCR cassettes实现完全离线的付费API测试
+- ✅ **自动化CI/CD** - GitHub Actions自动化测试和PyPI发布
+- ✅ **覆盖率报告** - 集成pytest-cov提供详细的测试覆盖率
+- ✅ **无依赖测试** - 测试无需真实API密钥即可完成
+
+📋 详见: [安全审计报告](API_KEY_SECURITY_AUDIT.md) | [VCR Cassette说明](VCR_CASSETTE_EXPLANATION.md) | [FAQ](FAQ_PR_TESTING.md)
+
+---
+
+## ✨ 主要特性
+
+### 核心功能
+- 🔥 **多源聚合** - 支持HackerNews、ArXiv、DuckDuckGo等多个搜索源
+- 📰 **付费API集成** - NewsAPI、Tavily、Google Search、Bing Search、Serper等
+- 🤖 **智能内容处理** - 自动提取文章内容和关键词
+- 💾 **智能缓存** - 避免重复搜索，提高效率
+- ⏰ **定时任务** - 支持定时自动收集和报告生成
+- 🔍 **去重处理** - 基于相似度的智能去重
+- 📊 **数据分析** - 生成详细的收集结果报告
+
+### 测试与质量
+- 🧪 **离线测试** - 使用VCR cassettes实现完全离线的付费API测试
+- 🔐 **安全优先** - 所有测试数据中的凭证已清理
+- 📈 **覆盖率** - pytest-cov集成，详细的测试覆盖率报告
+- 🤖 **自动化** - GitHub Actions自动化测试和发布
+
+---
 
 ## 📦 安装
 
-### 基础安装
+### 从PyPI安装（推荐）
 
 ```bash
+# 基础安装
 pip install ai-news-collector-lib
+
+# 安装开发/测试依赖
+pip install ai-news-collector-lib[dev]
+
+# 或从源代码安装
+pip install -e .[dev]
 ```
 
-### 高级功能安装
+### 系统要求
+- Python 3.9+
+- pip 或 conda
+
+---
+
+## 🔑 配置API密钥
+
+创建 `.env` 文件并配置API密钥（可选，仅用于付费API）：
 
 ```bash
-pip install ai-news-collector-lib[advanced]
-```
-
-### 开发安装
-
-```bash
-git clone https://github.com/ai-news-collector/ai-news-collector-lib.git
-cd ai-news-collector-lib
-pip install -e .
-```
-
-## 🔧 快速开始
-
-### 基础使用
-
-```python
-import asyncio
-from ai_news_collector_lib import AINewsCollector, SearchConfig
-
-# 创建配置
-config = SearchConfig(
-    enable_hackernews=True,
-    enable_arxiv=True,
-    enable_duckduckgo=True,
-    max_articles_per_source=10
-)
-
-# 创建搜集器
-collector = AINewsCollector(config)
-
-# 收集新闻
-async def main():
-    result = await collector.collect_news("artificial intelligence")
-    print(f"收集到 {result.total_articles} 篇文章")
-    return result.articles
-
-# 运行
-articles = asyncio.run(main())
-```
-
-### 高级使用
-
-```python
-from ai_news_collector_lib import AdvancedAINewsCollector, AdvancedSearchConfig
-
-# 创建高级配置
-config = AdvancedSearchConfig(
-    enable_hackernews=True,
-    enable_arxiv=True,
-    enable_duckduckgo=True,
-    enable_content_extraction=True,
-    enable_keyword_extraction=True,
-    cache_results=True
-)
-
-# 创建高级搜集器
-collector = AdvancedAINewsCollector(config)
-
-# 收集增强新闻
-async def main():
-    result = await collector.collect_news_advanced("machine learning")
-    
-    # 分析结果
-    total_words = sum(article['word_count'] for article in result['articles'])
-    print(f"总字数: {total_words}")
-    
-    return result
-
-# 运行
-enhanced_result = asyncio.run(main())
-```
-
-## 📊 支持的搜索源
-
-### 免费源
-
-- 🔥 **HackerNews** - 技术社区讨论
-- 📚 **ArXiv** - 学术论文和预印本
-- 🦆 **DuckDuckGo** - 隐私保护的网页搜索
-
-### 付费源 (需要API密钥)
-
-- 📡 **NewsAPI** - 多源新闻聚合
-- 🔍 **Tavily** - AI驱动的搜索API
-- 🌐 **Google Search** - Google自定义搜索API
-- 🔵 **Bing Search** - 微软Bing搜索API
-- ⚡ **Serper** - 快速Google搜索API
-- 🦁 **Brave Search** - 独立隐私搜索API
-- 🔬 **MetaSota Search** - 基于MCP协议的智能搜索服务
-
-## ⚙️ 配置
-
-### 环境变量
-
-```bash
-# API密钥
+# API密钥配置
 NEWS_API_KEY=your_newsapi_key
 TAVILY_API_KEY=your_tavily_key
 GOOGLE_SEARCH_API_KEY=your_google_key
@@ -165,42 +85,190 @@ BRAVE_SEARCH_API_KEY=your_brave_key
 METASOSEARCH_API_KEY=your_metasota_key
 ```
 
-### 配置文件
+> ⚠️ **重要**：请勿将 `.env` 文件提交到版本控制。参见 [API密钥安全指南](API_KEY_SECURITY_AUDIT.md)。
+
+---
+
+## 🎯 快速开始
+
+### 基础使用（免费源）
 
 ```python
-from ai_news_collector_lib import SearchConfig
+import asyncio
+from ai_news_collector_lib import AINewsCollector, SearchConfig
 
-config = SearchConfig(
+async def main():
+    # 创建配置
+    config = SearchConfig(
+        enable_hackernews=True,
+        enable_arxiv=True,
+        enable_duckduckgo=True,
+        max_articles_per_source=10,
+        days_back=7
+    )
+    
+    # 创建收集器
+    collector = AINewsCollector(config)
+    
+    # 收集新闻
+    result = await collector.collect_news("machine learning")
+    
+    # 输出结果
+    print(f"收集 {result.total_articles} 篇文章（去重后 {result.unique_articles} 篇）")
+    for article in result.articles[:5]:
+        print(f"- {article.title}")
+    
+    return result
+
+# 运行
+asyncio.run(main())
+```
+
+### 高级使用（包含内容提取和关键词提取）
+
+```python
+import asyncio
+from ai_news_collector_lib import AdvancedAINewsCollector, AdvancedSearchConfig
+
+async def main():
+    # 创建高级配置
+    config = AdvancedSearchConfig(
+        enable_hackernews=True,
+        enable_arxiv=True,
+        enable_duckduckgo=True,
+        enable_content_extraction=True,      # 自动提取内容
+        enable_keyword_extraction=True,      # 自动提取关键词
+        cache_results=True,                  # 启用缓存
+        max_articles_per_source=10
+    )
+    
+    # 创建高级收集器
+    collector = AdvancedAINewsCollector(config)
+    
+    # 收集增强新闻
+    result = await collector.collect_news_advanced("artificial intelligence")
+    
+    # 分析结果
+    total_words = sum(article.get('word_count', 0) for article in result['articles'])
+    print(f"总字数: {total_words}")
+    print(f"关键词: {', '.join(result.get('top_keywords', [])[:10])}")
+    
+    return result
+
+# 运行
+asyncio.run(main())
+```
+
+### 付费API使用（带缓存）
+
+```python
+import asyncio
+from ai_news_collector_lib import AdvancedAINewsCollector, AdvancedSearchConfig
+
+async def main():
+    # 创建配置 - 混合使用免费和付费源
+    config = AdvancedSearchConfig(
+        enable_hackernews=True,
+        enable_arxiv=True,
+        enable_tavily=True,              # 付费搜索API
+        enable_google_search=True,       # 谷歌自定义搜索
+        enable_serper=True,              # Serper搜索API
+        cache_results=True,              # 启用缓存减少API调用
+        max_articles_per_source=15,
+        similarity_threshold=0.85
+    )
+    
+    collector = AdvancedAINewsCollector(config)
+    result = await collector.collect_news_advanced("deep learning")
+    
+    return result
+
+asyncio.run(main())
+```
+
+---
+
+## 📊 支持的搜索源
+
+### ✅ 免费源（无需API密钥）
+
+| 源 | 描述 | 特点 |
+|---|---|---|
+| 🔥 **HackerNews** | 技术社区讨论 | 实时热点，开发者友好 |
+| 📚 **ArXiv** | 学术论文预印本 | 学术质量，多学科覆盖 |
+| 🦆 **DuckDuckGo** | 隐私搜索引擎 | 隐私保护，广泛覆盖 |
+
+### 💰 付费源（需要API密钥）
+
+| 源 | API | 特点 | 免费额度 |
+|---|---|---|---|
+| 📡 **NewsAPI** | newsapi.org | 多源聚合、新闻分类 | 100 请求/天 |
+| 🔍 **Tavily** | tavily.com | AI驱动搜索、实时 | 1000 请求/月 |
+| 🌐 **Google Search** | googleapis.com | 精准搜索、覆盖广 | 100 请求/天 |
+| 🔵 **Bing Search** | bing.com | 多媒体支持、国际化 | 3000 请求/月 |
+| ⚡ **Serper** | serper.dev | 高速、便宜 | 100 请求/月 |
+| 🦁 **Brave Search** | search.brave.com | 独立隐私搜索 | 100 请求/月 |
+| 🔬 **MetaSota** | metaso.cn | MCP协议搜索 | 按配额 |
+
+---
+
+## ⚙️ 详细配置
+
+### 搜索配置选项
+
+```python
+from ai_news_collector_lib import AdvancedSearchConfig
+
+config = AdvancedSearchConfig(
     # 传统源
     enable_hackernews=True,
     enable_arxiv=True,
-    enable_newsapi=False,
-    enable_rss_feeds=True,
+    enable_rss_feeds=False,
     
-    # 搜索引擎源
-    enable_duckduckgo=True,
+    # 付费搜索源
     enable_tavily=False,
     enable_google_search=False,
     enable_bing_search=False,
     enable_serper=False,
     enable_brave_search=False,
     enable_metasota_search=False,
+    enable_newsapi=False,
+    
+    # 网页搜索
+    enable_duckduckgo=True,
+    
+    # 高级功能
+    enable_content_extraction=False,     # 自动提取文章内容
+    enable_keyword_extraction=False,     # 自动提取关键词
+    cache_results=False,                 # 缓存结果
     
     # 搜索参数
     max_articles_per_source=10,
     days_back=7,
-    similarity_threshold=0.85
+    similarity_threshold=0.85,
+    timeout_seconds=30
 )
 ```
 
+---
+
 ## 🛠️ 高级功能
 
-### 定时任务
+### 定时收集
 
 ```python
-from ai_news_collector_lib import DailyScheduler
+from ai_news_collector_lib import DailyScheduler, AdvancedAINewsCollector, AdvancedSearchConfig
 
-# 创建调度器
+async def collect_news():
+    config = AdvancedSearchConfig(
+        enable_hackernews=True,
+        enable_arxiv=True,
+        cache_results=True
+    )
+    collector = AdvancedAINewsCollector(config)
+    return await collector.collect_news_advanced("AI")
+
+# 创建定时任务 - 每天上午9点
 scheduler = DailyScheduler(
     collector_func=collect_news,
     schedule_time="09:00",
@@ -219,15 +287,17 @@ from ai_news_collector_lib import CacheManager
 # 创建缓存管理器
 cache = CacheManager(cache_dir="./cache", default_ttl_hours=24)
 
-# 检查缓存
-cache_key = cache.get_cache_key("ai news", ["hackernews", "arxiv"])
+# 获取缓存
+cache_key = cache.get_cache_key("AI news", ["hackernews", "arxiv"])
 cached_result = cache.get_cached_result(cache_key)
 
 if cached_result:
     print("使用缓存结果")
+    result = cached_result
 else:
-    # 执行搜索并缓存结果
-    result = await collector.collect_news("ai news")
+    # 执行搜索
+    result = await collector.collect_news("AI news")
+    # 缓存结果
     cache.cache_result(cache_key, result)
 ```
 
@@ -239,140 +309,250 @@ from ai_news_collector_lib import ReportGenerator
 # 创建报告生成器
 reporter = ReportGenerator(output_dir="./reports")
 
-# 生成报告
+# 生成Markdown报告
 report = reporter.generate_daily_report(result, format="markdown")
 reporter.save_report(result, filename="daily_report.md")
+
+# 生成CSV报告
+reporter.generate_daily_report(result, format="csv")
 ```
 
-## 📈 使用示例
-
-### 每日收集脚本
-
-```python
-#!/usr/bin/env python3
-import asyncio
-from ai_news_collector_lib import AdvancedAINewsCollector, AdvancedSearchConfig
-
-async def daily_collection():
-    # 配置
-    config = AdvancedSearchConfig(
-        enable_hackernews=True,
-        enable_arxiv=True,
-        enable_duckduckgo=True,
-        enable_content_extraction=True,
-        cache_results=True
-    )
-    
-    # 创建搜集器
-    collector = AdvancedAINewsCollector(config)
-    
-    # 收集多个主题
-    topics = ["artificial intelligence", "machine learning", "deep learning"]
-    result = await collector.collect_multiple_topics(topics)
-    
-    print(f"收集完成: {result['unique_articles']} 篇独特文章")
-    return result
-
-if __name__ == "__main__":
-    asyncio.run(daily_collection())
-```
-
-### Web API集成
-
-```python
-from fastapi import FastAPI
-from ai_news_collector_lib import AINewsCollector, SearchConfig
-
-app = FastAPI()
-collector = AINewsCollector(SearchConfig())
-
-@app.get("/ai-news")
-async def get_ai_news(query: str = "artificial intelligence"):
-    result = await collector.collect_news(query)
-    return {
-        "total": result.total_articles,
-        "unique": result.unique_articles,
-        "articles": [article.to_dict() for article in result.articles]
-    }
-```
+---
 
 ## 🧪 测试
 
+### 运行所有测试
+
 ```bash
-# 运行测试
+# 运行基础测试
 pytest
 
-# 运行异步测试
+# 运行所有测试（包括付费API测试）
 pytest -v
 
-# 运行特定测试
-pytest tests/test_collector.py
+# 生成覆盖率报告
+pytest --cov=ai_news_collector_lib --cov-report=html
 ```
 
-## 🗓️ ArXiv 日期解析与回退
+### 离线付费API测试（使用VCR Cassettes）
 
-- 默认采用 `BeautifulSoup` 的 XML 解析获取 `published` 字段；若解析异常则回退到 `feedparser`。
-- 在 `feedparser` 分支中，日期字段可能仅存在其一：`published_parsed` 或 `updated_parsed`，两者类型均为 `time.struct_time`。
-- 回退顺序为：`published_parsed` → `updated_parsed` → `datetime.now()`，以尽量保持条目的时间接近真实发布时间。
-- 将 `struct_time` 转换为 `datetime` 时仅取到秒位：`datetime(*entry.published_parsed[:6])` 或 `datetime(*entry.updated_parsed[:6])`。
-- 时区说明：Atom 中尾部 `Z` 表示 UTC。BS4 分支使用 `published_str.replace('Z', '+00:00')` 后通过 `datetime.fromisoformat` 解析；`feedparser` 分支直接由 `struct_time` 构建 `datetime`。
+项目包含预录制的VCR cassettes，允许在完全离线状态下测试所有付费API集成 - **无需真实API密钥**。
 
-实现节选（位于 `ai_news_collector_lib/tools/search_tools.py` 的 `ArxivTool`）：
+```bash
+# 运行付费API测试（使用cassettes，完全离线）
+pytest tests/test_integration_advanced.py -v
+
+# 查看cassette记录详情
+cat tests/cassettes/advanced_ml_hn_ddg.yaml
+```
+
+### VCR Cassette原理
+
+VCR库记录真实的HTTP请求/响应，然后在测试中重放（无需真实API调用）：
 
 ```python
-feed = feedparser.parse(response.content)
-for entry in feed.entries:
-    # 说明：feedparser 可能仅提供 published_parsed 或 updated_parsed
-    # 回退顺序：published_parsed > updated_parsed > 当前时间
-    try:
-        if hasattr(entry, 'published_parsed') and entry.published_parsed:
-            published_date = datetime(*entry.published_parsed[:6])
-        elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
-            published_date = datetime(*entry.updated_parsed[:6])
-        else:
-            published_date = datetime.now()
-    except Exception:
-        published_date = datetime.now()
+import pytest
+from vcr import VCR
+
+# 使用cassette进行测试
+@pytest.mark.vcr
+def test_with_cassette(vcr):
+    # 首次运行记录HTTP交互，后续测试直接重放
+    result = collector.search(query="AI")
+    assert len(result) > 0
 ```
 
-最小验证脚本：`scripts/min_check_feedparser_fallback.py`
+详见: [VCR Cassette详解](VCR_CASSETTE_EXPLANATION.md) | [测试指南](TESTING_GUIDE.md) | [FAQ](FAQ_PR_TESTING.md)
+
+---
+
+## 🔄 CI/CD 与自动化
+
+### GitHub Actions 工作流
+
+项目使用GitHub Actions实现完整的自动化测试和发布：
+
+| 工作流 | 触发条件 | 功能 |
+|---|---|---|
+| **test-paid-apis** | Push到任何分支 | 运行所有测试，生成覆盖率报告 |
+| **publish** | Push git标签 (v*) | 自动构建并发布到PyPI |
+| **release** | 发布时 | 创建GitHub Release页面 |
+
+### 发布新版本
+
+```bash
+# 1. 确保所有测试通过
+pytest
+
+# 2. 创建版本标签
+git tag -a v0.1.3 -m "Release v0.1.3"
+
+# 3. 推送标签（自动触发发布工作流）
+git push origin v0.1.3
+```
+
+详见: [发布指南](RELEASE_GUIDE.md) | [快速发布](QUICK_RELEASE.md)
+
+---
+
+## 📚 文档
+
+### 核心文档
+- [架构设计](ARCHITECTURE.md) - 项目结构和设计理念
+- [安全审计](API_KEY_SECURITY_AUDIT.md) - v0.1.2安全改进详情
+- [VCR说明](VCR_CASSETTE_EXPLANATION.md) - 离线测试机制解析
+- [测试指南](TESTING_GUIDE.md) - 完整测试说明
+- [使用指南](USAGE_GUIDE.md) - 详细使用文档
+
+### 快速参考
+- [发布指南](RELEASE_GUIDE.md) - 版本发布流程
+- [快速发布](QUICK_RELEASE.md) - 快速发布清单
+- [PyPI指南](PYPI_RELEASE_GUIDE.md) - PyPI发布说明
+- [FAQ](FAQ_PR_TESTING.md) - 常见问题解答
+
+### API参考
+- [搜索配置](ai_news_collector_lib/config/) - 配置选项说明
+- [模型对象](ai_news_collector_lib/models/) - 数据模型定义
+- [搜索工具](ai_news_collector_lib/tools/) - 各源工具实现
+
+---
+
+## 🗓️ ArXiv 日期处理
+
+ArXiv日期解析包含完整的回退机制：
+
+- 默认使用BeautifulSoup的XML解析获取`published`字段
+- 若解析异常则回退到feedparser
+- 在feedparser中支持`published_parsed`和`updated_parsed`字段
+- 回退顺序: `published_parsed` → `updated_parsed` → `datetime.now()`
+- 时区处理: Atom格式中`Z`表示UTC，使用`datetime.fromisoformat`解析
+
+最小验证脚本：
 
 ```bash
 python scripts/min_check_feedparser_fallback.py
 ```
 
-该脚本分别构造 RSS (`pubDate`) 与 Atom (`updated`) 的示例，在仅存在其中一个日期字段时验证回退逻辑能够正常运行且不抛异常。
+该脚本验证RSS和Atom格式在缺少日期字段时的回退逻辑。
 
-## 📚 文档
-
-- [完整文档](https://ai-news-collector-lib.readthedocs.io/)
-- [API参考](https://ai-news-collector-lib.readthedocs.io/api/)
-- [示例代码](https://github.com/ai-news-collector/ai-news-collector-lib/tree/main/examples)
+---
 
 ## 🤝 贡献
 
-欢迎贡献代码！请查看 [贡献指南](CONTRIBUTING.md) 了解详细信息。
+欢迎贡献代码和改进建议！
+
+### 贡献流程
+1. Fork本项目
+2. 创建特性分支 (`git checkout -b feature/amazing-feature`)
+3. 提交更改 (`git commit -m 'Add amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 开启Pull Request
+
+### 开发指南
+- 遵循PEP 8代码风格
+- 添加测试用例
+- 更新相关文档
+
+详见: [完整贡献指南](CONTRIBUTING.md)
+
+---
 
 ## 📄 许可证
 
-本项目采用 MIT 许可证。查看 [LICENSE](LICENSE) 文件了解详细信息。
+本项目采用 MIT 许可证。详见 [LICENSE](LICENSE) 文件。
+
+---
 
 ## 🆘 支持
 
-- [问题报告](https://github.com/ai-news-collector/ai-news-collector-lib/issues)
-- [讨论区](https://github.com/ai-news-collector/ai-news-collector-lib/discussions)
-- [邮件支持](mailto:support@ai-news-collector.com)
+### 获取帮助
 
-## 🔄 更新日志
+- 📖 [完整文档](https://ai-news-collector-lib.readthedocs.io/)
+- 🐛 [提交Issue](https://github.com/ai-news-collector/ai-news-collector-lib/issues)
+- 💬 [讨论区](https://github.com/ai-news-collector/ai-news-collector-lib/discussions)
+- 📧 [邮件支持](mailto:support@ai-news-collector.com)
+
+### 常见问题
+
+**Q: 如何不使用API密钥运行测试？**
+A: 使用VCR cassettes！测试会自动使用预录制的HTTP响应。详见[VCR说明](VCR_CASSETTE_EXPLANATION.md)。
+
+**Q: 是否可以在生产环境中使用此库？**
+A: 可以，但请确保：
+   - 安全地管理API密钥（使用.env文件）
+   - 合理设置缓存TTL避免过时数据
+   - 监控API调用限制
+
+**Q: 如何贡献新的搜索源？**
+A: 详见[架构设计](ARCHITECTURE.md)中的"添加新搜索源"部分。
+
+详见: [完整FAQ](FAQ_PR_TESTING.md)
+
+---
+
+## 📈 更新日志
+
+### v0.1.2 (2025-01-20) - 🔒 安全版本
+- ✅ 全面安全审计 - 清理VCR cassettes中的所有凭证
+- ✅ 将测试API密钥替换为"FILTERED"占位符
+- ✅ 更新所有cassette URL为真实API端点
+- ✅ 集成pytest-cov提供覆盖率报告
+- ✅ GitHub Actions自动化测试和PyPI发布
 
 ### v0.1.0 (2025-10-07)
-
 - 初始预发布版本
 - 支持基础搜索功能
 - 支持多种搜索源
 - 支持高级功能（内容提取、关键词分析、缓存等）
-- ⚠️ 注意：这是预发布版本，功能可能不稳定
+
+---
+
+## 📊 项目结构
+
+```
+ai_news_collector_lib/
+├── __init__.py                    # 主模块入口
+├── cli.py                        # 命令行接口
+├── config/                       # 配置模块
+│   ├── __init__.py
+│   ├── settings.py              # 搜索配置
+│   └── api_keys.py              # API密钥管理
+├── core/                        # 核心功能
+│   ├── __init__.py
+│   ├── collector.py             # 基础收集器
+│   └── advanced_collector.py    # 高级收集器
+├── models/                      # 数据模型
+│   ├── __init__.py
+│   ├── article.py              # 文章模型
+│   └── result.py               # 结果模型
+├── tools/                       # 搜索工具
+│   ├── __init__.py
+│   └── search_tools.py         # 各种搜索工具
+├── utils/                       # 工具函数
+│   ├── __init__.py
+│   ├── cache.py                # 缓存管理
+│   ├── content_extractor.py    # 内容提取
+│   ├── keyword_extractor.py    # 关键词提取
+│   ├── reporter.py             # 报告生成
+│   └── scheduler.py            # 定时任务
+└── examples/                    # 使用示例
+    ├── basic_usage.py
+    └── advanced_usage.py
+
+tests/
+├── conftest.py                 # pytest配置
+├── test_basic.py               # 基础功能测试
+├── test_integration_basic.py    # 基础集成测试
+├── test_integration_advanced.py # 付费API集成测试
+├── cassettes/                  # VCR cassette文件
+│   ├── basic_ai_hn_ddg.yaml
+│   ├── advanced_ml_hn_ddg.yaml
+│   └── ...
+└── test_arxiv_fallback_offline.py # ArXiv特殊测试
+```
 
 ---
 
 **祝你使用愉快！** 🎉
+
+如有问题或建议，欢迎[提交Issue](https://github.com/ai-news-collector/ai-news-collector-lib/issues)或加入[讨论区](https://github.com/ai-news-collector/ai-news-collector-lib/discussions)。
