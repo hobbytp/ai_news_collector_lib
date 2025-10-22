@@ -9,7 +9,7 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
@@ -37,20 +37,18 @@ jobs:
         run: twine upload dist/*
 
       - name: Create GitHub Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
           body: |
             ## Release Notes
-
+            
             This release is available on PyPI:
             - Package: `ai-news-collector-lib`
-            - Version: `${{ github.ref }}`
-            - PyPI: https://pypi.org/project/ai-news-collector-lib/${{ github.ref }}/
-
+            - Version: `${{ github.ref_name }}`
+            - PyPI: https://pypi.org/project/ai-news-collector-lib/
+            
             See [CHANGELOG.md](https://github.com/hobbytp/ai_news_collector_lib/blob/master/CHANGELOG.md) for details.
           draft: false
           prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
