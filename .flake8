@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 100
+extend-ignore = E203, W503
+exclude = .git,__pycache__,docs,build,dist,.venv
+per-file-ignores =
+    ai_news_collector_lib/utils/query_enhancer.py:E501

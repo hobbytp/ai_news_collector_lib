@@ -510,4 +510,77 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v2/everything?from=2025-10-15&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2225,\"articles\":[{\"source\":{\"id\":null,\"name\":\"Rolling
+        Out\"},\"author\":\"Jess Sobrevinas\",\"title\":\"Apple\u2019s iPhone 17 surges
+        as buyers leave 16 behind\",\"description\":\"The early verdict is in, and
+        Apple\u2019s latest smartphone lineup is resonating with consumers in ways
+        its predecessor couldn\u2019t quite manage. The iPhone 17 series is outpacing
+        last year\u2019s model by a significant margin in both the United States and
+        China, signalin\u2026\",\"url\":\"https://rollingout.com/2025/10/21/iphone-17-surges-buyers-leave-16-behind/\",\"urlToImage\":\"https://rollingout.com/wp-content/uploads/2025/10/iPhone-17.png\",\"publishedAt\":\"2025-10-21T14:17:48Z\",\"content\":\"The
+        early verdict is in, and Apple\u2019s latest smartphone lineup is resonating
+        with consumers in ways its predecessor couldn\u2019t quite manage. The iPhone
+        17 series is outpacing last year\u2019s model by a sign\u2026 [+4641 chars]\"},{\"source\":{\"id\":null,\"name\":\"Yahoo
+        Entertainment\"},\"author\":\"Paula Tudoran\",\"title\":\"AI Scribe Rolls
+        Out To 5,700 Clinics Nationwide As Experity Launches The First Touchless EMR
+        For Urgent Care Providers\",\"description\":\"A sprint to reduce after-hours
+        charting just reached urgent care exam rooms, as on-demand healthcare solution
+        provider Experity introduced AI Scribe to...\",\"url\":\"https://finance.yahoo.com/news/ai-scribe-rolls-5-700-141611951.html\",\"urlToImage\":\"https://media.zenfs.com/en/benzinga_79/fc9a64023f1d12f050a36c3318420ec4\",\"publishedAt\":\"2025-10-21T14:16:11Z\",\"content\":\"Benzinga
+        and Yahoo Finance LLC may earn commission or revenue on some items through
+        the links below.\\r\\nA sprint to reduce after-hours charting just reached
+        urgent care exam rooms, as on-demand healthc\u2026 [+4710 chars]\"},{\"source\":{\"id\":\"fortune\",\"name\":\"Fortune\"},\"author\":\"Safiyah
+        Riddle, Matt O'Brien, The Associated Press\",\"title\":\"\u2018The reality
+        is it\u2019s all very concentrated\u2019: AWS outage exposes the world\u2019s
+        internet chokepoint, one data-center cluster in Virginia\",\"description\":\"The
+        Virginia cluster known as US-East-1 is responsible for \u201Corders of magnitude\u201D
+        more data than AWS' other hubs, says Kentik's Doug Madory.\",\"url\":\"https://fortune.com/2025/10/21/why-did-amazon-web-services-fail-virginia-data-center-outage-internet/\",\"urlToImage\":\"https://fortune.com/img-assets/wp-content/uploads/2025/10/AP25293763681231-e1761056018140.jpg?resize=1200%2C630\",\"publishedAt\":\"2025-10-21T14:16:03Z\",\"content\":\"A
+        massive internet outage stemming from\_errors in Amazon cloud services\_on
+        Monday morning demonstrated just how many people rely on the corporate behemoths
+        computational infrastructure everyday and l\u2026 [+3451 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 9929a3e65ab86e62-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:21:17 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Nh1PVi6HdHgaJAzVlvCfb%2ByHU1rDAUqj%2BtPXRcv1H7Uh7UKyRI%2FkAy9p9KcMaHe2LXxnyPGoyvdUMdZUVVoqyP02f7RDZho0u98%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2632'
+    status:
+      code: 200
+      message: OK
 version: 1

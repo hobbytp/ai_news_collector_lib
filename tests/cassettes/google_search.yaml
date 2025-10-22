@@ -2058,4 +2058,360 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"12300000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"12300000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.303811,\n    \"formattedSearchTime\":
+        \"0.30\",\n    \"totalResults\": \"12300000\",\n    \"formattedTotalResults\":
+        \"12,300,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Machine learning - Latest research and news | Nature\",\n
+        \     \"htmlTitle\": \"\\u003cb\\u003eMachine learning\\u003c/b\\u003e - Latest
+        research and news | Nature\",\n      \"link\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"displayLink\": \"www.nature.com\",\n      \"snippet\": \"14 hours
+        ago ... Machine learning is the ability of a machine to improve its performance
+        based on previous results. Machine learning methods enable computers to learn
+        without\_...\",\n      \"htmlSnippet\": \"14 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        \\u003cb\\u003eMachine learning\\u003c/b\\u003e is the ability of a machine
+        to improve its performance based on previous results. \\u003cb\\u003eMachine
+        learning\\u003c/b\\u003e methods enable computers to learn without&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://www.nature.com/subjects/machine-learning\",\n
+        \     \"htmlFormattedUrl\": \"https://www.nature.com/subjects/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWYK7rQQdYT1-xz9Nn4XQzstxY8MF0k_UmiljWEdg8KJqpk2ibnbWtS-o&s\",\n
+        \           \"width\": \"290\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"person\": [\n          {\n            \"name\": \"Long-Chen
+        Shen\"\n          },\n          {\n            \"name\": \"Dong-Jun Yu\"\n
+        \         },\n          {\n            \"name\": \"Jiangning Song\"\n          },\n
+        \         {\n            \"name\": \"Johannes C. Hingerl\"\n          },\n
+        \         {\n            \"name\": \"Laura D. Martens\"\n          },\n          {\n
+        \           \"name\": \"Julien Gagneur\"\n          },\n          {\n            \"name\":
+        \"David Graber\"\n          },\n          {\n            \"name\": \"Peter
+        Stockinger\"\n          },\n          {\n            \"name\": \"Rebecca Buller\"\n
+        \         },\n          {\n            \"name\": \"Efe Onojete\"\n          },\n
+        \         {\n            \"name\": \"Ebuka Ibeke\"\n          },\n          {\n
+        \           \"name\": \"Imed B. Dhaou\"\n          },\n          {\n            \"name\":
+        \"Amin Naghdloo\"\n          },\n          {\n            \"name\": \"Dean
+        Tessone\"\n          },\n          {\n            \"name\": \"Peter Kuhn\"\n
+        \         },\n          {\n            \"name\": \"Abubakr Shafique\"\n          },\n
+        \         {\n            \"name\": \"Amanda Dy\"\n          },\n          {\n
+        \           \"name\": \"April Khademi\"\n          },\n          {\n            \"name\":
+        \"Igor Bibi\"\n          },\n          {\n            \"name\": \"Daniel Schaffert\"\n
+        \         },\n          {\n            \"name\": \"Victor Olsavszky\"\n          },\n
+        \         {\n            \"name\": \"Sam Illingworth\"\n          },\n          {\n
+        \           \"name\": \"Helen Pearson\"\n          },\n          {\n            \"name\":
+        \"Elizabeth Gibney\"\n          },\n          {\n            \"name\": \"Michael
+        Attwaters\"\n          },\n          {\n            \"name\": \"Rita Strack\"\n
+        \         },\n          {\n            \"name\": \"Shamini Bundell\"\n          }\n
+        \       ],\n        \"periodical\": [\n          {\n            \"name\":
+        \"Nature.com\",\n            \"publisher\": \"Springer Nature\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"msapplication-tilecolor\":
+        \"#000000\",\n            \"application-name\": \"Nature\",\n            \"360-site-verification\":
+        \"5a2dc4ab3fcb9b0393241ffbbb490480\",\n            \"msapplication-config\":
+        \"/static/browserconfig.xml\",\n            \"theme-color\": \"#000000\",\n
+        \           \"access\": \"Yes\",\n            \"viewport\": \"width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes\",\n
+        \           \"applicable-device\": \"pc,mobile\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\"\n
+        \         }\n        ],\n        \"scholarlyarticle\": [\n          {\n            \"image\":
+        \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01133-4/MediaObjects/42256_2025_1133_Fig1_HTML.png\",\n
+        \           \"name\": \"Learning conformational flexibility of immune receptors\",\n
+        \           \"description\": \"Although it is possible to use deep learning
+        models to predict static protein conformations from sequencing data, proteins
+        are not static biochemical artefacts. ItsFlexible is a graph-based...\",\n
+        \           \"headline\": \"Learning conformational flexibility of immune
+        receptors\",\n            \"url\": \"Learning conformational flexibility of
+        immune receptors\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41587-025-02860-0/MediaObjects/41587_2025_2860_Fig1_HTML.png\",\n
+        \           \"name\": \"Improving somatic variant calling with long-read technologies
+        and public datasets\",\n            \"description\": \"Challenges in somatic
+        variant calling include a lack of long-read variant callers and of publicly
+        available benchmarking datasets. We developed DeepSomatic, a somatic variant
+        caller for short-...\",\n            \"headline\": \"Improving somatic variant
+        calling with long-read technologies and public datasets\",\n            \"url\":
+        \"Improving somatic variant calling with long-read technologies and public
+        datasets\",\n            \"datepublished\": \"2025-10-16\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02851-8/MediaObjects/41592_2025_2851_Fig1_HTML.png\",\n
+        \           \"name\": \"Deciphering single-cell epigenomic language with a
+        foundation model\",\n            \"description\": \"EpiAgent, a transformer-based
+        foundation model pretrained on approximately 5 million cells and over 35 billion
+        tokens, has advanced single-cell epigenomics by encoding chromatin accessibility...\",\n
+        \           \"headline\": \"Deciphering single-cell epigenomic language with
+        a foundation model\",\n            \"url\": \"Deciphering single-cell epigenomic
+        language with a foundation model\",\n            \"datepublished\": \"2025-10-10\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41592-025-02854-5/MediaObjects/41592_2025_2854_Fig1_HTML.png\",\n
+        \           \"name\": \"scooby: modeling multimodal genomic profiles from
+        DNA sequence at single-cell resolution\",\n            \"description\": \"scooby
+        achieves DNA sequence-based single-cell level modeling of RNA-sequencing coverage
+        and ATAC-sequencing insertion profiles by adapting a deep learning model that
+        predicts bulk RNA-sequencing...\",\n            \"headline\": \"scooby: modeling
+        multimodal genomic profiles from DNA sequence at single-cell resolution\",\n
+        \           \"url\": \"scooby: modeling multimodal genomic profiles from DNA
+        sequence at single-cell resolution\",\n            \"datepublished\": \"2025-10-22\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs42256-025-01124-5/MediaObjects/42256_2025_1124_Fig1_HTML.png\",\n
+        \           \"name\": \"Resolving data bias improves generalization in binding
+        affinity prediction\",\n            \"description\": \"Graber et al. characterize
+        biases and data leakage in protein\u2013ligand datasets and show that a cleanly
+        filtered training\u2013test split leads to improved generalization in binding
+        affinity predictio...\",\n            \"headline\": \"Resolving data bias
+        improves generalization in binding affinity prediction\",\n            \"url\":
+        \"Resolving data bias improves generalization in binding affinity prediction\",\n
+        \           \"datepublished\": \"2025-10-21\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20382-2/MediaObjects/41598_2025_20382_Fig1_HTML.png\",\n
+        \           \"name\": \"Enhancing disease clustering through symptom-based
+        analysis and large language model interpretations\",\n            \"headline\":
+        \"Enhancing disease clustering through symptom-based analysis and large language
+        model interpretations\",\n            \"url\": \"Enhancing disease clustering
+        through symptom-based analysis and large language model interpretations\",\n
+        \           \"datepublished\": \"2025-10-21\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20514-8/MediaObjects/41598_2025_20514_Fig1_HTML.png\",\n
+        \           \"name\": \"Representation learning enables robust single cell
+        phenotyping in whole slide liquid biopsy imaging\",\n            \"headline\":
+        \"Representation learning enables robust single cell phenotyping in whole
+        slide liquid biopsy imaging\",\n            \"url\": \"Representation learning
+        enables robust single cell phenotyping in whole slide liquid biopsy imaging\",\n
+        \           \"datepublished\": \"2025-10-21\"\n          },\n          {\n
+        \           \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-20411-0/MediaObjects/41598_2025_20411_Fig1_HTML.png\",\n
+        \           \"name\": \"Lightweight self supervised learning framework for
+        domain generalization in histopathology\",\n            \"headline\": \"Lightweight
+        self supervised learning framework for domain generalization in histopathology\",\n
+        \           \"url\": \"Lightweight self supervised learning framework for
+        domain generalization in histopathology\",\n            \"datepublished\":
+        \"2025-10-21\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41598-025-24189-z/MediaObjects/41598_2025_24189_Fig1_HTML.png\",\n
+        \           \"name\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"headline\": \"Cardiovascular
+        risk assessment enhanced by automated machine learning in a multi-phase study\",\n
+        \           \"url\": \"Cardiovascular risk assessment enhanced by automated
+        machine learning in a multi-phase study\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Take the
+        time to ensure that AI is safe\",\n            \"headline\": \"Take the time
+        to ensure that AI is safe\",\n            \"url\": \"Take the time to ensure
+        that AI is safe\",\n            \"datepublished\": \"2025-10-21\"\n          },\n
+        \         {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03340-w/d41586-025-03340-w_51595892.jpg\",\n
+        \           \"name\": \"Universities are embracing AI: will students get smarter
+        or stop thinking?\",\n            \"description\": \"Millions of students
+        arriving at campuses are now using artificial intelligence. Worries abound.\",\n
+        \           \"headline\": \"Universities are embracing AI: will students get
+        smarter or stop thinking?\",\n            \"url\": \"Universities are embracing
+        AI: will students get smarter or stop thinking?\",\n            \"datepublished\":
+        \"2025-10-21\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03386-w/d41586-025-03386-w_51577988.jpg\",\n
+        \           \"name\": \"AI language models killed the Turing test: do we even
+        need a replacement?\",\n            \"description\": \"Chatbots now ace the
+        mathematician's famous imitation game, but imitation never equalled intelligence.\",\n
+        \           \"headline\": \"AI language models killed the Turing test: do
+        we even need a replacement?\",\n            \"url\": \"AI language models
+        killed the Turing test: do we even need a replacement?\",\n            \"datepublished\":
+        \"2025-10-20\"\n          },\n          {\n            \"name\": \"Predicting
+        vaccine effectiveness\",\n            \"headline\": \"Predicting vaccine effectiveness\",\n
+        \           \"url\": \"Predicting vaccine effectiveness\",\n            \"datepublished\":
+        \"2025-10-17\"\n          },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/springer-static/image/art%3A10.1038%2Fs41551-025-01546-x/MediaObjects/41551_2025_1546_Figa_HTML.png\",\n
+        \           \"name\": \"Autonomous ultrasound with UltraBot\",\n            \"headline\":
+        \"Autonomous ultrasound with UltraBot\",\n            \"url\": \"Autonomous
+        ultrasound with UltraBot\",\n            \"datepublished\": \"2025-10-17\"\n
+        \         },\n          {\n            \"image\": \"https://media.springernature.com/w290h158/magazine-assets/d41586-025-03413-w/d41586-025-03413-w_51587252.jpg\",\n
+        \           \"name\": \"Would ChatGPT hire you? Your age and gender matter\",\n
+        \           \"description\": \"Online stereotypes about younger women and
+        older men could impact real-world hiring decisions.\",\n            \"headline\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"url\":
+        \"Would ChatGPT hire you? Your age and gender matter\",\n            \"datepublished\":
+        \"2025-10-17\"\n          }\n        ],\n        \"listitem\": [\n          {\n
+        \           \"item\": \"nature\",\n            \"name\": \"nature\",\n            \"position\":
+        \"1\"\n          },\n          {\n            \"item\": \"subjects\",\n            \"name\":
+        \"subjects\",\n            \"position\": \"2\"\n          },\n          {\n
+        \           \"name\": \"machine learning\",\n            \"position\": \"3\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Artificial Intelligence\",\n      \"htmlTitle\": \"Artificial
+        \\u003cb\\u003eIntelligence\\u003c/b\\u003e\",\n      \"link\": \"https://aws.amazon.com/blogs/machine-learning/\",\n
+        \     \"displayLink\": \"aws.amazon.com\",\n      \"snippet\": \"14 hours
+        ago ... In this post, we demonstrate how to deploy and manage machine learning
+        training workloads using the Amazon SageMaker HyperPod training operator,
+        which enhances\_...\",\n      \"htmlSnippet\": \"14 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        In this post, we demonstrate how to deploy and manage \\u003cb\\u003emachine
+        learning\\u003c/b\\u003e training workloads using the Amazon SageMaker HyperPod
+        training operator, which enhances&nbsp;...\",\n      \"formattedUrl\": \"https://aws.amazon.com/blogs/machine-learning/\",\n
+        \     \"htmlFormattedUrl\": \"https://aws.amazon.com/blogs/\\u003cb\\u003emachine\\u003c/b\\u003e-\\u003cb\\u003elearning\\u003c/b\\u003e/\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlicu5lZhKv-sOpni15s5OpMyifd16-3_-a049iE8fQCgGKGK5-0q3vUb&s\",\n
+        \           \"width\": \"275\",\n            \"height\": \"183\"\n          }\n
+        \       ],\n        \"TechArticle\": [\n          {\n            \"datePublished\":
+        \"2025-07-16T07:04:04-08:00\",\n            \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/07/16/2025-0716_middle-grey-studios_aws-amers_preview-001_websize-945x630.jpg\",\n
+        \           \"bookmark\": \"Enabling customers to deliver production-ready
+        AI agents at scale\",\n            \"name\": \"Enabling customers to deliver
+        production-ready AI agents at scale\",\n            \"inLanguage\": \"en-US\",\n
+        \           \"description\": \"Today, I\u2019m excited to share how we\u2019re
+        bringing this vision to life with new capabilities that address the fundamental
+        aspects of building and deploying agents at scale. These innovations...\",\n
+        \           \"headline\": \"Enabling customers to deliver production-ready
+        AI agents at scale\",\n            \"articleSection\": \"Amazon Bedrock\",\n
+        \           \"url\": \"Enabling customers to deliver production-ready AI agents
+        at scale\"\n          },\n          {\n            \"datePublished\": \"2025-10-21T11:03:19-08:00\",\n
+        \           \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/09/15/ml-18479-2-1120x630.jpg\",\n
+        \           \"bookmark\": \"Serverless deployment for your Amazon SageMaker
+        Canvas models\",\n            \"name\": \"Serverless deployment for your Amazon
+        SageMaker Canvas models\",\n            \"inLanguage\": \"en-US\",\n            \"description\":
+        \"In this post, we walk through how to take an ML model built in SageMaker
+        Canvas and deploy it using SageMaker Serverless Inference, helping you go
+        from model creation to production-ready prediction...\",\n            \"headline\":
+        \"Serverless deployment for your Amazon SageMaker Canvas models\",\n            \"articleSection\":
+        \"Amazon SageMaker Canvas\",\n            \"url\": \"Serverless deployment
+        for your Amazon SageMaker Canvas models\"\n          },\n          {\n            \"datePublished\":
+        \"2025-10-21T09:31:05-08:00\",\n            \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/10/09/ml-19759-diargam.png\",\n
+        \           \"bookmark\": \"Building a multi-agent voice assistant with Amazon
+        Nova Sonic and Amazon Bedrock AgentCore\",\n            \"name\": \"Building
+        a multi-agent voice assistant with Amazon Nova Sonic and Amazon Bedrock AgentCore\",\n
+        \           \"inLanguage\": \"en-US\",\n            \"description\": \"In
+        this post, we explore how Amazon Nova Sonic\u2019s speech-to-speech capabilities
+        can be combined with Amazon Bedrock AgentCore to create sophisticated multi-agent
+        voice assistants that break...\",\n            \"headline\": \"Building a
+        multi-agent voice assistant with Amazon Nova Sonic and Amazon Bedrock AgentCore\",\n
+        \           \"articleSection\": \"Amazon Bedrock\",\n            \"url\":
+        \"Building a multi-agent voice assistant with Amazon Nova Sonic and Amazon
+        Bedrock AgentCore\"\n          },\n          {\n            \"datePublished\":
+        \"2025-10-21T09:26:32-08:00\",\n            \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/10/13/image-1-1-590x630.jpg\",\n
+        \           \"bookmark\": \"Accelerate large-scale AI training with Amazon
+        SageMaker HyperPod training operator\",\n            \"name\": \"Accelerate
+        large-scale AI training with Amazon SageMaker HyperPod training operator\",\n
+        \           \"inLanguage\": \"en-US\",\n            \"description\": \"In
+        this post, we demonstrate how to deploy and manage machine learning training
+        workloads using the Amazon SageMaker HyperPod training operator, which enhances
+        training resilience for Kubernetes...\",\n            \"headline\": \"Accelerate
+        large-scale AI training with Amazon SageMaker HyperPod training operator\",\n
+        \           \"articleSection\": \"Amazon Elastic Kubernetes Service\",\n            \"url\":
+        \"Accelerate large-scale AI training with Amazon SageMaker HyperPod training
+        operator\"\n          },\n          {\n            \"datePublished\": \"2025-10-17T08:15:25-08:00\",\n
+        \           \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/09/30/image-2-22-1260x549.png\",\n
+        \           \"bookmark\": \"How TP ICAP transformed CRM data into real-time
+        insights with Amazon Bedrock\",\n            \"name\": \"How TP ICAP transformed
+        CRM data into real-time insights with Amazon Bedrock\",\n            \"inLanguage\":
+        \"en-US\",\n            \"description\": \"This post shows how TP ICAP used
+        Amazon Bedrock Knowledge Bases and Amazon Bedrock Evaluations to build ClientIQ,
+        an enterprise-grade solution with enhanced security features for extracting...\",\n
+        \           \"headline\": \"How TP ICAP transformed CRM data into real-time
+        insights with Amazon Bedrock\",\n            \"articleSection\": \"Amazon
+        Bedrock\",\n            \"url\": \"How TP ICAP transformed CRM data into real-time
+        insights with Amazon Bedrock\"\n          },\n          {\n            \"datePublished\":
+        \"2025-10-17T08:13:18-08:00\",\n            \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/10/07/test_workebnech_diagrams.png\",\n
+        \           \"bookmark\": \"Principal Financial Group accelerates build, test,
+        and deployment of Amazon Lex V2 bots through automation\",\n            \"name\":
+        \"Principal Financial Group accelerates build, test, and deployment of Amazon
+        Lex V2 bots through automation\",\n            \"inLanguage\": \"en-US\",\n
+        \           \"description\": \"In the post Principal Financial Group increases
+        Voice Virtual Assistant performance using Genesys, Amazon Lex, and Amazon
+        QuickSight, we discussed the overall Principal Virtual Assistant solution...\",\n
+        \           \"headline\": \"Principal Financial Group accelerates build, test,
+        and deployment of Amazon Lex V2 bots through automation\",\n            \"articleSection\":
+        \"Amazon DynamoDB\",\n            \"url\": \"Principal Financial Group accelerates
+        build, test, and deployment of Amazon Lex V2 bots through automation\"\n          },\n
+        \         {\n            \"datePublished\": \"2025-10-17T08:09:22-08:00\",\n
+        \           \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/10/14/ml-19279-11.png\",\n
+        \           \"bookmark\": \"Beyond vibes: How to properly select the right
+        LLM for the right task\",\n            \"name\": \"Beyond vibes: How to properly
+        select the right LLM for the right task\",\n            \"inLanguage\": \"en-US\",\n
+        \           \"description\": \"In this post, we discuss an approach that can
+        guide you to build comprehensive and empirically driven evaluations that can
+        help you make better decisions when selecting the right model for your task.\",\n
+        \           \"headline\": \"Beyond vibes: How to properly select the right
+        LLM for the right task\",\n            \"articleSection\": \"Best Practices\",\n
+        \           \"url\": \"Beyond vibes: How to properly select the right LLM
+        for the right task\"\n          },\n          {\n            \"datePublished\":
+        \"2025-10-17T08:06:01-08:00\",\n            \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/09/26/splash-aws.png\",\n
+        \           \"bookmark\": \"Splash Music transforms music generation using
+        AWS Trainium and Amazon SageMaker HyperPod\",\n            \"name\": \"Splash
+        Music transforms music generation using AWS Trainium and Amazon SageMaker
+        HyperPod\",\n            \"inLanguage\": \"en-US\",\n            \"description\":
+        \"In this post, we show how Splash Music is setting a new standard for AI-powered
+        music creation by using its advanced HummingLM model with AWS Trainium on
+        Amazon SageMaker HyperPod. As a selected...\",\n            \"headline\":
+        \"Splash Music transforms music generation using AWS Trainium and Amazon SageMaker
+        HyperPod\",\n            \"articleSection\": \"Amazon Elastic Container Service\",\n
+        \           \"url\": \"Splash Music transforms music generation using AWS
+        Trainium and Amazon SageMaker HyperPod\"\n          },\n          {\n            \"datePublished\":
+        \"2025-10-16T15:11:28-08:00\",\n            \"image\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/10/16/19864_AWS_Blog_FeaturedImg.png\",\n
+        \           \"bookmark\": \"Iterative fine-tuning on Amazon Bedrock for strategic
+        model improvement\",\n            \"name\": \"Iterative fine-tuning on Amazon
+        Bedrock for strategic model improvement\",\n            \"inLanguage\": \"en-US\",\n
+        \           \"description\": \"Organizations often face challenges when implementing
+        single-shot fine-tuning approaches for their generative AI models. The single-shot
+        fine-tuning method involves selecting training data,...\",\n            \"headline\":
+        \"Iterative fine-tuning on Amazon Bedrock for strategic model improvement\",\n
+        \           \"articleSection\": \"Amazon Bedrock\",\n            \"url\":
+        \"Iterative fine-tuning on Amazon Bedrock for strategic model improvement\"\n
+        \         }\n        ],\n        \"metatags\": [\n          {\n            \"image\":
+        \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/07/16/2025-0716_middle-grey-studios_aws-amers_preview-001_websize-945x630.jpg\",\n
+        \           \"inlanguage\": \"en-US\",\n            \"viewport\": \"width=device-width,
+        initial-scale=1\"\n          }\n        ],\n        \"cse_image\": [\n          {\n
+        \           \"src\": \"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/07/16/2025-0716_middle-grey-studios_aws-amers_preview-001_websize-1024x683.jpg\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Journal of Chemical Information and Modeling - ACS Publications\",\n
+        \     \"htmlTitle\": \"Journal of Chemical Information and Modeling - ACS
+        Publications\",\n      \"link\": \"https://pubs.acs.org/journal/jcisd8\",\n
+        \     \"displayLink\": \"pubs.acs.org\",\n      \"snippet\": \"14 hours ago
+        ... Modeling Reactions from Chemical Theories to Machine Learning. This Virtual
+        Special Issue will spotlight remarkable advancements in theoretical and\_...\",\n
+        \     \"htmlSnippet\": \"14 hours ago \\u003cb\\u003e...\\u003c/b\\u003e Modeling
+        Reactions from Chemical Theories to \\u003cb\\u003eMachine Learning\\u003c/b\\u003e.
+        This Virtual Special Issue will spotlight remarkable advancements in theoretical
+        and&nbsp;...\",\n      \"formattedUrl\": \"https://pubs.acs.org/journal/jcisd8\",\n
+        \     \"htmlFormattedUrl\": \"https://pubs.acs.org/journal/jcisd8\",\n      \"pagemap\":
+        {\n        \"cse_thumbnail\": [\n          {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW9HZ34RiRfrMC7eRwv8r1Dlp29Ttdkg_QDZdyKbyS2gM_NxQtUoi-3Q&s\",\n
+        \           \"width\": \"302\",\n            \"height\": \"167\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width,initial-scale=1,maximum-scale=10, user-scalable=1\",\n
+        \           \"pbcontext\": \";journal:journal:jcisd8;page:string:Journal Home;ctype:string:Journal
+        Content;wgroup:string:ACHS website Group;website:website:acspubs;requestedJournal:journal:jcisd8;pageGroup:string:Publication
+        Pages\",\n            \"publication_doi\": \"10.1021/jcisd8\",\n            \"dc.identifier\":
+        \"10.1021/jcisd8\",\n            \"format-detection\": \"telephone=no\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://pubs.acs.org/cms/10.1021/acs.jcim.5c01396/asset/images/medium/ci5c01396_0008.gif\"\n
+        \         }\n        ]\n      }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Oct 2025 14:21:00 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '27225'
+    status:
+      code: 200
+      message: OK
 version: 1

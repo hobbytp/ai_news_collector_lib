@@ -941,4 +941,79 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"q": "deep learning", "num": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://localhost:33210/search
+  response:
+    body:
+      string: '{"searchParameters":{"q":"deep learning","type":"search","num":3,"engine":"google"},"knowledgeGraph":{"title":"Deep
+        learning","type":"Field of study","imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUjDX9XJ9LJSHLpLo0BZx3lMpJE5pLhhEnWNY8i0Q&s=0","description":"In
+        machine learning, deep learning focuses on utilizing multilayered neural networks
+        to perform tasks such as classification, regression, and representation learning.","descriptionSource":"Wikipedia","descriptionLink":"https://en.wikipedia.org/wiki/Deep_learning"},"organic":[{"title":"Deep
+        learning - Wikipedia","link":"https://en.wikipedia.org/wiki/Deep_learning","snippet":"In
+        machine learning, deep learning focuses on utilizing multilayered neural networks
+        to perform tasks such as classification, regression, and representation ...","sitelinks":[{"title":"Comparison","link":"https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software"},{"title":"Feature
+        learning","link":"https://en.wikipedia.org/wiki/Feature_learning"},{"title":"Deep
+        belief network","link":"https://en.wikipedia.org/wiki/Deep_belief_network"},{"title":"Transformer","link":"https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"}],"position":1},{"title":"DeepLearning.AI:
+        Start or Advance Your Career in AI","link":"https://www.deeplearning.ai/","snippet":"Join
+        over 7 million people learning how to use and build AI. AI Courses and Specializations.
+        Build a foundation of machine learning and AI skills.","sitelinks":[{"title":"All
+        Courses","link":"https://www.deeplearning.ai/courses/"},{"title":"Careers","link":"https://www.deeplearning.ai/careers/"},{"title":"Learning
+        Platform","link":"https://learn.deeplearning.ai/"},{"title":"Machine Learning
+        Specialization","link":"https://www.deeplearning.ai/courses/machine-learning-specialization/"}],"position":2},{"title":"What
+        Is Deep Learning? | IBM","link":"https://www.ibm.com/think/topics/deep-learning","snippet":"Deep
+        learning is a subset of machine learning driven by multilayered neural networks
+        whose design is inspired by the structure of the human brain.","position":3}],"peopleAlsoAsk":[{"question":"What
+        is deep learning vs CNN?","snippet":"Within Deep Learning, a Convolutional
+        Neural Network or CNN is a type of artificial neural network, which is widely
+        used for image/object recognition and classification. Deep Learning thus recognizes
+        objects in an image by using a CNN.","title":"Convolutional Neural Networks
+        (CNN) with Deep Learning","link":"https://www.happiestminds.com/insights/convolutional-neural-networks-cnns/"}],"relatedSearches":[{"query":"Natural
+        language p..."},{"query":"Deep learning book"},{"query":"Deep learning AI"},{"query":"Deep
+        learning vs machine learning"},{"query":"Deep Learning Tutorial"},{"query":"Deep
+        learning examples"},{"query":"Deep learning algorithms"},{"query":"Deep learning
+        notes"},{"query":"Deep Learning course"}],"credits":1}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Length:
+      - '2914'
+      access-control-allow-origin:
+      - '*'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 22 Oct 2025 14:21:03 GMT
+      server:
+      - Google Frontend
+      set-cookie:
+      - GAESA=CqYBMDA2OWM3YTk4OGRmNzE2Y2Q1NTQ2NDUzZTVmYjZmZWRmYmMzMGE1OGU0ODViZmVmZWM5OTNmNDMzYjIwNDZjZTE3NmEzMzdiZDdmMjA3OWExNzFjOGQ5N2Y3ZTgwYjJjMGNlNGVjYmY1NjkxMDdjOWRkNjkyNmQ3YjlhZWZkODNmOGNmODlhNThiMTg3MzFmNjdkOWE3YmVlYzIxOTZlMWZlNTAyMBCI8K3ioDM;
+        expires=Fri, 21-Nov-2025 14:21:03 GMT; path=/
+      via:
+      - 1.1 google
+      x-cloud-trace-context:
+      - e676ad6b7a237ae122c5441209bff900
+      x-ratelimit-limit:
+      - '500'
+      x-ratelimit-remaining:
+      - '499'
+      x-ratelimit-reset:
+      - '1761142865'
+    status:
+      code: 200
+      message: OK
 version: 1

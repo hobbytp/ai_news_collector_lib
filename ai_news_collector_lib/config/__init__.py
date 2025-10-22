@@ -6,4 +6,4 @@
 from .settings import SearchConfig, AdvancedSearchConfig
 from .api_keys import APIKeyManager
 
-__all__ = ['SearchConfig', 'AdvancedSearchConfig', 'APIKeyManager']
+__all__ = ["SearchConfig", "AdvancedSearchConfig", "APIKeyManager"]

@@ -5795,4 +5795,1925 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/topstories.json
+  response:
+    body:
+      string: '[45668408,45668453,45669142,45665452,45620330,45668561,45668990,45667866,45668022,45565793,45667770,45664848,45566730,45668008,45665311,45666510,45669195,45666327,45610939,45668805,45667458,45543746,45661638,45656223,45605556,45668469,45526766,45657345,45655188,45588752,45655161,45662668,45604013,45661253,45667949,45661306,45606853,45668882,45646559,45659883,45658479,45649510,45664147,45580683,45564821,45661462,45667960,45657260,45584680,45657287,45651485,45656952,45655190,45654512,45668106,45653143,45655263,45548125,45578016,45661084,45575165,45667456,45633386,45621020,45664791,45621571,45664431,45654660,45668036,45653330,45652859,45578935,45668010,45652307,45658019,45640226,45657595,45661112,45657431,45665271,45646414,45665220,45583019,45657302,45557599,45556772,45666239,45647133,45657922,45656247,45665796,45640594,45661547,45632429,45662006,45580559,45529120,45567443,45668712,45663435,45657531,45664699,45643163,45658056,45665217,45617948,45656044,45558913,45661477,45621557,45667319,45578080,45650792,45658687,45645349,45660753,45582958,45646958,45645120,45660422,45655519,45666703,45661698,45654955,45659812,45644328,45590743,45642911,45649178,45657428,45657827,45662656,45646691,45556374,45645172,45640838,45662431,45571423,45661046,45645510,45663681,45653350,45655393,45660634,45665830,45661545,45666162,45639995,45665752,45666058,45664765,45635533,45665960,45663676,45662021,45655206,45623509,45667253,45556413,45640877,45589156,45667174,45663045,45577086,45647166,45567746,45656916,45653393,45639250,45655179,45637744,45600132,45560864,45564696,45619329,45589715,45663398,45660404,45610226,45637880,45663219,45546250,45633815,45658172,45648258,45583116,45559573,45661399,45658268,45612223,45626910,45526845,45648266,45643357,45661479,45638986,45636285,45656995,45656836,45656733,45657747,45545753,45656734,45613898,45664323,45591288,45657625,45619537,45642979,45634026,45634310,45652282,45663427,45642528,45631678,45639157,45638588,45638966,45658722,45633958,45555960,45633642,45626037,45639860,45662053,45569787,45623917,45637133,45636365,45622365,45648249,45562849,45650015,45577181,45640678,45635069,45609986,45570758,45586339,45627394,45591799,45573626,45614713,45634638,45594403,45556911,45557272,45628283,45576536,45626961,45532971,45618790,45643776,45613567,45638702,45632976,45626349,45653543,45560738,45633482,45634528,45625229,45635940,45580981,45577266,45648306,45625848,45567050,45663644,45578115,45627324,45607117,45658928,45593358,45646561,45663624,45652968,45658323,45626130,45583999,45634367,45639654,45633921,45653981,45550969,45613047,45622604,45600470,45633453,45620653,45653818,45657706,45652000,45580347,45647853,45587546,45629970,45639498,45633081,45627692,45633513,45610523,45615863,45652254,45557596,45570517,45621074,45646572,45614148,45655177,45648892,45642923,45552358,45654540,45635734,45614922,45625251,45628391,45611252,45615237,45555709,45561382,45615931,45588689,45528813,45612987,45631328,45595403,45655485,45583243,45662136,45635530,45626985,45624888,45588116,45657190,45661840,45563576,45601834,45601750,45563021,45606986,45619108,45556104,45582370,45610996,45654087,45559040,45636116,45642051,45645692,45652621,45638739,45545220,45581602,45604700,45652639,45610266,45581988,45602428,45609922,45663162,45639391,45629299,45604451,45627048,45663052,45563589,45539079,45558820,45574106,45575934,45540398,45544330,45642562,45596059,45569692,45638096,45605501,45647003,45605153,45666070,45628190,45634797,45662423,45621972,45637548,45652107,45590756,45632633,45650617,45643553,45566644,45634678,45656788,45569350,45588959,45638514,45542536,45557591,45583786,45615449,45546575,45661900,45631503,45664010,45661823,45635870,45656910,45624186,45586776,45559145,45583180,45618536,45578540,45606698,45604673,45649734,45556827,45590681,45545017,45591902,45583767,45529534,45539262,45629522,45634641,45652567,45644654,45568915,45613667,45598590,45590949,45543546,45599727,45566638,45581288,45535622,45660412,45545980,45641864,45572478,45542245,45529587,45553422,45590935,45607758,45601982,45636259,45614547,45584464,45599084,45633591,45643976,45635669,45659481,45583336,45589327,45651570,45620394,45567877,45608456,45604779,45645366,45559857,45565977,45601177,45648743,45632836,45602676,45547891,45638058,45568700,45529255,45566441,45634055,45547346,45611851,45566766,45603876,45633954,45602197,45632943,45593213,45622944,45626010,45583787,45550908,45599567,45564619,45547566,45557157,45575391,45642874,45556536,45597006,45647097,45567382,45592271,45644921]'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4501'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:24 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668408.json
+  response:
+    body:
+      string: '{"by":"thatxliner","descendants":17,"id":45668408,"kids":[45669533,45669078,45669162,45669370,45669209,45669307,45669371,45669164,45669206,45669342,45669097],"score":76,"time":1761138008,"title":"A
+        Brain-like LLM to replace Transformers","type":"story","url":"https://arxiv.org/abs/2509.26507"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '294'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:27 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668453.json
+  response:
+    body:
+      string: '{"by":"speckx","descendants":25,"id":45668453,"kids":[45669335,45669279,45669439,45669453,45669260,45669129,45669281,45669247,45669199],"score":71,"time":1761138186,"title":"Democracy
+        and the open internet die in daylight","type":"story","url":"https://heatherburns.tech/2025/10/22/democracy-and-the-open-internet-die-in-daylight/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '332'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:30 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45669142.json
+  response:
+    body:
+      string: '{"by":"Harvesterify","descendants":0,"id":45669142,"score":9,"time":1761141020,"title":"Linux
+        Capabilities Revisited","type":"story","url":"https://dfir.ch/posts/linux_capabilities/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '183'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:33 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45665452.json
+  response:
+    body:
+      string: '{"by":"LexSiga","descendants":190,"id":45665452,"kids":[45667259,45666563,45666513,45666939,45669428,45667316,45666465,45666793,45669228,45669026,45668391,45666441,45667987,45668400,45666771,45666519,45667080,45669270,45666555,45666644,45667228,45668080,45668087,45666599,45667345,45667715,45668978,45666503,45667893,45666912,45666776,45667101,45667608,45666985,45669099,45667082,45666713,45668940,45666820,45667283,45667540,45666496,45665458,45667889,45669239,45666757,45668488,45668474,45666637,45666807],"score":320,"time":1761113838,"title":"MinIO
+        stops distributing free Docker images","type":"story","url":"https://github.com/minio/minio/issues/21647#issuecomment-3418675115"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '682'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:36 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45620330.json
+  response:
+    body:
+      string: '{"by":"uticus","descendants":16,"id":45620330,"kids":[45668885,45667857,45667584,45668959,45668103,45667579,45668552,45668536,45668934,45667643,45667814,45667778],"score":96,"time":1760726362,"title":"Die
+        shots of as many CPUs and other interesting chips as possible","type":"story","url":"https://commons.wikimedia.org/wiki/User:Birdman86"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '341'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:39 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668561.json
+  response:
+    body:
+      string: '{"by":"singiamtel","descendants":1,"id":45668561,"kids":[45668562],"score":5,"time":1761138626,"title":"Chezmoi
+        introduces ban on LLM-generated contributions","type":"story","url":"https://www.chezmoi.io/developer-guide/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '222'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:42 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668990.json
+  response:
+    body:
+      string: '{"by":"sohkamyung","descendants":8,"id":45668990,"kids":[45669518,45669456,45669426,45669488],"score":22,"time":1761140366,"title":"AI
+        assistants misrepresent news content 45% of the time","type":"story","url":"https://www.bbc.co.uk/mediacentre/2025/new-ebu-research-ai-assistants-news-content"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '295'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:45 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45667866.json
+  response:
+    body:
+      string: '{"by":"SweetSoftPillow","descendants":277,"id":45667866,"kids":[45668112,45668037,45668002,45668288,45668075,45668976,45668044,45668040,45668256,45668907,45669324,45668405,45668658,45669305,45668410,45668874,45668163,45668396,45668791,45668368,45668493,45668838,45668884,45668777,45668383,45668046,45668440,45668663,45668182,45668535,45668903,45668504,45668473,45668178,45668785,45668748,45668099,45669008,45668356,45669155,45668102,45668845,45669212,45668068,45668261,45668541,45668014,45668016,45668967,45668721,45668539,45668043,45668098,45668134,45669015,45669509,45668403,45668763,45668146,45668786,45668407,45668233,45668110,45668362,45668434,45668074,45668243,45668000,45668090],"score":225,"time":1761135148,"title":"Internet''s
+        biggest annoyance: Cookie laws should target browsers, not websites","type":"story","url":"https://nednex.com/en/the-internets-biggest-annoyance-why-cookie-laws-should-target-browsers-not-websites/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '935'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:48 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668022.json
+  response:
+    body:
+      string: '{"by":"zerosizedweasle","descendants":26,"id":45668022,"kids":[45668023,45669128,45668727,45668462],"score":54,"time":1761136093,"title":"Tesla
+        Recalls Almost 13,000 EVs over Risk of Battery Power Loss","type":"story","url":"https://www.bloomberg.com/news/articles/2025-10-22/tesla-recalls-almost-13-000-evs-over-risk-of-battery-power-loss"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '341'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:51 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45565793.json
+  response:
+    body:
+      string: '{"by":"darccio","descendants":67,"id":45565793,"kids":[45667905,45667272,45666643,45667140,45666280,45667382,45666258,45667443,45667467,45666915],"score":126,"time":1760341363,"title":"Go
+        subtleties","type":"story","url":"https://harrisoncramer.me/15-go-sublteties-you-may-not-already-know/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '292'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:54 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45667770.json
+  response:
+    body:
+      string: '{"by":"akh","id":45667770,"score":1,"time":1761134522,"title":"Infracost
+        (YC W21) Hiring First Dev Advocate to Shift FinOps Left","type":"job","url":"https://www.ycombinator.com/companies/infracost/jobs/NzwUQ7c-senior-developer-advocate"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '238'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:18:57 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45664848.json
+  response:
+    body:
+      string: '{"by":"zdw","descendants":46,"id":45664848,"kids":[45665182,45665436,45665124,45666422],"score":116,"time":1761106809,"title":"Evaluating
+        the Infinity Cache in AMD Strix Halo","type":"story","url":"https://chipsandcheese.com/p/evaluating-the-infinity-cache-in"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '261'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:00 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45566730.json
+  response:
+    body:
+      string: "{\"by\":\"apizon\",\"descendants\":18,\"id\":45566730,\"kids\":[45669479,45669435,45669201,45667364,45668270,45668164,45668871,45666799,45667422,45667920,45666778,45666889,45667069,45667022,45668050,45667878,45667707,45667200],\"score\":103,\"text\":\"Hello
+        HN, I just released this music theory and ear training mobile app for guitar
+        which I&#x27;ve been working on for a bit more than a year on the side.<p>The
+        idea was to make something for the eternally &quot;intermediate&quot; guitarist
+        (myself included). There are a lot of beginner apps which rely on learning
+        songs, toolkits which give you a bunch of stuff with no explanation but not
+        many in-between apps to actually learn and practice more generic and somewhat
+        advanced stuff.<p>The app contains short lessons, recaps and most importantly
+        challenges (visual, audio and pure theory) along with a very complete library.<p>The
+        challenges are made for practicing, they will get increasingly harder and
+        getting to the max score is supposed to be quite hard. The idea being that
+        you have to repeat them regularly until your brain has integrated the info
+        and it flows naturally rather than being a one time quick dopamine shot. This
+        is partly inspired by how language learning apps work.<p>It has no ads, a
+        lifetime purchase option and you can use it without an account if you don&#x27;t
+        care about multi-device sync or backing up your progress.<p>Android: <a href=\\\"https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id=com.apizon.cadence.android\\\">https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id=com.apizon.cad...</a><p>iOS:
+        <a href=\\\"https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;cadence-guitar-theory&#x2F;id6747011447?platform=iphone\\\">https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;cadence-guitar-theory&#x2F;id674701...</a><p>(This
+        is my second and last post about this sorry for spam. My first post a few
+        weeks ago didn&#x27;t get any views and posting on a saturday might not have
+        helped...)\",\"time\":1760350709,\"title\":\"Show HN: Cadence \u2013 A Guitar
+        Theory App\",\"type\":\"story\",\"url\":\"https://cadenceguitar.com/\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2117'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:03 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668008.json
+  response:
+    body:
+      string: '{"by":"giuliomagnifico","descendants":51,"id":45668008,"kids":[45668420,45668983,45668713,45669261,45668565,45668286,45668321],"score":51,"time":1761136036,"title":"Jaguar
+        Land Rover hack cost UK economy an estimated $2.5B","type":"story","url":"https://www.reuters.com/sustainability/boards-policy-regulation/jaguar-land-rover-hack-cost-uk-economy-25-billion-report-says-2025-10-22/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '385'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:06 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45665311.json
+  response:
+    body:
+      string: '{"by":"begueradj","descendants":263,"id":45665311,"kids":[45666908,45666375,45668359,45668825,45666185,45666187,45666257,45666221,45668594,45667963,45666006,45665733,45666571,45665963,45666384,45666466,45666283,45665583,45665519,45666191,45666910,45665521],"score":202,"time":1761112198,"title":"French
+        ex-president Sarkozy begins jail sentence","type":"story","url":"https://www.bbc.com/news/articles/cvgkm2j0xelo"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '416'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:09 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45666510.json
+  response:
+    body:
+      string: '{"by":"ron_k","descendants":47,"id":45666510,"kids":[45669291,45667656,45667847,45669178,45667416,45668029,45667731,45667831,45667702,45667942,45667868],"score":273,"time":1761123921,"title":"Greg
+        Newby, CEO of Project Gutenberg Literary Archive Foundation, has died","type":"story","url":"https://www.pgdp.net/wiki/In_Memoriam/gbnewby"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '337'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:12 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45669195.json
+  response:
+    body:
+      string: '{"by":"nodumbideas","descendants":2,"id":45669195,"kids":[45669507,45669491],"score":11,"time":1761141197,"title":"Tiny
+        sugar spoons are popping up on NYC fast-food menus","type":"story","url":"https://gothamist.com/news/tiny-sugar-spoons-are-popping-up-on-nyc-fast-food-menus-youre-being-warned"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '297'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:15 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45666327.json
+  response:
+    body:
+      string: '{"by":"xlmnxp","descendants":65,"id":45666327,"kids":[45668433,45666685,45666911,45666742,45667182,45667322,45666797,45667699,45666860,45667049,45666781,45666900,45667334,45667425,45667944,45666994,45667075],"score":40,"time":1761122251,"title":"Knocker,
+        a knock based access control system for your homelab","type":"story","url":"https://github.com/FarisZR/knocker"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '367'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:18 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45610939.json
+  response:
+    body:
+      string: '{"by":"ibobev","descendants":6,"id":45610939,"kids":[45668543,45668921],"score":14,"time":1760650347,"title":"Distributed
+        Ray-Tracing","type":"story","url":"https://www.4rknova.com//blog/2019/02/24/distributed-raytracing"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '222'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:21 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668805.json
+  response:
+    body:
+      string: '{"by":"n1b0m","descendants":0,"id":45668805,"score":11,"time":1761139551,"title":"Cigarette-smuggling
+        balloons force closure of Lithuanian airport","type":"story","url":"https://www.theguardian.com/world/2025/oct/22/cigarette-smuggling-balloons-force-closure-vilnius-airport-lithuania"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '286'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:24 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45667458.json
+  response:
+    body:
+      string: '{"by":"jonbaer","descendants":116,"id":45667458,"kids":[45667544,45669496,45667812,45667922,45668989,45669464,45669194,45669334,45667757,45667782,45667697,45667836,45669242,45667919,45669255,45667843,45667753,45668900,45668933,45667752,45668952,45669386,45667861,45667479,45667724,45667692,45669223,45667644,45667668,45667746,45669140,45669104,45667677,45668728,45667810,45667665,45667616,45667653,45667547,45667690,45667862,45667856],"score":89,"time":1761132213,"title":"Starcloud","type":"story","url":"https://blogs.nvidia.com/blog/starcloud/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '548'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:27 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45543746.json
+  response:
+    body:
+      string: '{"by":"hasheddan","descendants":5,"id":45543746,"kids":[45547992],"score":34,"time":1760130120,"title":"Patina:
+        a Rust implementation of UEFI firmware","type":"story","url":"https://github.com/OpenDevicePartnership/patina"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '223'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:30 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45661638.json
+  response:
+    body:
+      string: "{\"by\":\"fschuett\",\"descendants\":78,\"id\":45661638,\"kids\":[45662771,45665005,45664365,45662711,45663146,45666926,45662996,45662067,45663181,45662946],\"score\":218,\"time\":1761080410,\"title\":\"rlsw
+        \u2013 Raylib software OpenGL renderer in less than 5k LOC\",\"type\":\"story\",\"url\":\"https://github.com/raysan5/raylib/blob/master/src/external/rlsw.h\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '337'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:33 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45656223.json
+  response:
+    body:
+      string: '{"by":"tamnd","descendants":256,"id":45656223,"kids":[45658886,45659285,45665703,45666095,45661494,45669259,45658984,45657074,45665818,45657938,45664443,45662192,45657408,45659454,45665928,45667594,45657901,45663570,45664523,45664195,45659105,45659777,45664211,45666151,45665472,45656299,45666843,45657123,45659635,45657798,45660313,45660257,45659937,45657590,45657869,45668957,45657690,45657375,45658159,45660861,45657176,45659526,45660475],"score":425,"time":1761056666,"title":"LLMs
+        can get \"brain rot\"","type":"story","url":"https://llm-brain-rot.github.io/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '565'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:36 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45605556.json
+  response:
+    body:
+      string: '{"by":"voxadam","descendants":151,"id":45605556,"kids":[45663732,45669180,45664020,45669135,45665188,45663921,45665919,45664343,45667614,45666136,45664741,45664854,45665327,45667995,45663444,45663665,45664272,45667932,45669238,45669229,45664866],"score":202,"time":1760623761,"title":"Power
+        over Ethernet (PoE) basics and beyond","type":"story","url":"https://www.edn.com/poe-basics-and-beyond-what-every-engineer-should-know/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '428'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:39 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668469.json
+  response:
+    body:
+      string: '{"by":"csomar","descendants":2,"id":45668469,"kids":[45668787,45669421],"score":19,"time":1761138297,"title":"The
+        Stagnant Order. and the End of Rising Powers","type":"story","url":"https://www.foreignaffairs.com/united-states/stagnant-order-michael-beckley"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '259'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:42 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45526766.json
+  response:
+    body:
+      string: '{"by":"WaitWaitWha","descendants":5,"id":45526766,"kids":[45669517,45667940,45527012],"score":9,"time":1760013408,"title":"Ghostly
+        swamp will-O''-the-wisps may be explained by science","type":"story","url":"https://www.snexplores.org/article/swamp-gas-methane-will-o-wisp-chemistry"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '282'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:45 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45657345.json
+  response:
+    body:
+      string: "{\"by\":\"kinj28\",\"descendants\":83,\"id\":45657345,\"kids\":[45658257,45659367,45665081,45665892,45657872,45657982,45657814,45663361,45664364,45663175,45658133,45659636,45657644,45664999,45667480,45660803,45659413,45662871,45662902,45663241,45664015,45662838,45657651],\"score\":347,\"text\":\"Could
+        there be any link between the two events?<p>Here is what happened:<p>Some
+        600 instances were spawned within 3 hours before AWS flagged it off and sent
+        us a health event. There were numerous domains verified and we could see SES
+        quota increase request was made.<p>We are still investigating the vulnerability
+        at our end. our initial suspect list has 2 suspects.  api key or console access
+        where MFA wasn\u2019t enabled.\",\"time\":1761062141,\"title\":\"Ask HN: Our
+        AWS account got compromised after their outage\",\"type\":\"story\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '807'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:48 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45655188.json
+  response:
+    body:
+      string: '{"by":"voxleone","descendants":967,"id":45655188,"kids":[45661384,45667854,45660320,45663900,45660311,45660624,45655638,45656341,45663777,45657019,45655419,45655837,45659875,45656096,45662338,45656550,45655443,45661013,45664868,45662482,45660425,45655634,45655865,45662849,45656320,45662248,45663704,45655645,45655790,45656129,45657389,45656053,45661328,45664191,45666717,45661339,45656038,45663493,45666048,45667284,45660772,45663959,45660647,45666090,45663520,45655770,45655585,45656099,45663699,45662709,45657790,45661923,45661104,45665505,45668492,45656805,45655728,45655517,45655541,45661192,45655366,45655449,45656083,45655736,45660808,45661041,45660033],"score":365,"time":1761051523,"title":"NASA
+        chief suggests SpaceX may be booted from moon mission","type":"story","url":"https://www.cnn.com/2025/10/20/science/nasa-spacex-moon-landing-contract-sean-duffy"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '867'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:51 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45588752.json
+  response:
+    body:
+      string: '{"by":"pregnenolone","descendants":10,"id":45588752,"kids":[45669484,45667846,45668390,45667165,45667925],"score":22,"time":1760509758,"title":"Evaluating
+        Argon2 adoption and effectiveness in real-world software","type":"story","url":"https://arxiv.org/abs/2504.17121"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '269'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:54 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45655161.json
+  response:
+    body:
+      string: '{"by":"karimf","descendants":114,"id":45655161,"kids":[45656279,45657955,45656123,45655853,45655616,45668526,45659597,45656005,45666380,45659944,45655278,45659024,45664511,45660932,45659943,45655505,45657188,45662867,45655666,45656134,45666646,45656300],"score":405,"time":1761051359,"title":"Neural
+        audio codecs: how to get audio into LLMs","type":"story","url":"https://kyutai.org/next/codec-explainer"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '405'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:19:57 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45662668.json
+  response:
+    body:
+      string: '{"by":"chmaynard","descendants":16,"id":45662668,"kids":[45668475,45665591,45664409,45667413,45667161,45668412,45667508,45665085,45665711,45666268,45667915,45667881],"score":155,"time":1761086587,"title":"The
+        Hidden Engineering of Niagara Falls","type":"story","url":"https://practical.engineering/blog/2025/10/21/the-hidden-engineering-of-niagara-falls"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '355'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:00 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45604013.json
+  response:
+    body:
+      string: "{\"by\":\"joouha\",\"descendants\":23,\"id\":45604013,\"kids\":[45666046,45667582,45665197,45668272,45664756,45667329,45665116,45607185,45664849,45665664,45665540,45664919,45665661],\"score\":93,\"text\":\"I&#x27;ve
+        invented a new alternative to forking &#x2F; vendoring &#x2F; monkey-patching
+        packages in Python.<p>It&#x27;s a bit like OverlayFS for Python modules -
+        it allows you write modifications for a target module (lower) in a new module
+        (upper), and have these combined in a new virtual module (mount).<p>It works
+        by rewriting imports using AST transformations, then running both the lower
+        and upper module&#x27;s code in the new Python module.<p>This prevents polluting
+        the global namespace when monkey-patching, and means if you want to make changes
+        to a third-party package, you don&#x27;t have to take on the maintenance burden
+        of forking, you can package and distribute just your changes.\",\"time\":1760613476,\"title\":\"Show
+        HN: Modshim \u2013 A new alternative to monkey-patching in Python\",\"type\":\"story\",\"url\":\"https://github.com/joouha/modshim\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1042'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:03 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45661253.json
+  response:
+    body:
+      string: '{"by":"jryio","descendants":496,"id":45661253,"kids":[45661785,45665715,45662112,45661573,45661376,45661622,45665626,45669402,45663555,45662239,45665812,45661779,45661720,45667001,45667860,45666116,45663244,45662029,45662369,45665553,45665545,45663150,45662364,45666367,45665301,45667641,45661656,45661730,45666285,45665434,45664933,45662465,45661873,45662573,45661847,45662511,45662285,45661699,45664204,45662835,45663051,45666301,45662175,45661917,45663173,45665517,45661614,45662715,45662591,45661592,45665428,45665280,45661701,45661643,45662737,45661676,45662153,45665319,45661602,45664044,45662990,45662173,45664235,45662655,45661684,45663274,45661882,45661736],"score":735,"time":1761078495,"title":"Replacing
+        a $3000/mo Heroku bill with a $55/mo server","type":"story","url":"https://disco.cloud/blog/how-idealistorg-replaced-a-3000mo-heroku-bill-with-a-55-server/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '873'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:06 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45667949.json
+  response:
+    body:
+      string: '{"by":"zerosizedweasle","descendants":14,"id":45667949,"kids":[45667982,45668418,45668566],"score":31,"time":1761135699,"title":"Subprime
+        Lender PrimaLend Enters Bankruptcy After Bond Default","type":"story","url":"https://www.bloomberg.com/news/articles/2025-10-22/subprime-lender-primalend-enters-bankruptcy-after-bond-default"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '330'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:08 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45661306.json
+  response:
+    body:
+      string: '{"by":"slow_typist","descendants":30,"id":45661306,"kids":[45665743,45668435,45664724,45665403,45667340,45665304,45666840,45666917,45665411],"score":149,"time":1761078707,"title":"Erowid
+        - Documenting the Complex Relationship Between Humans and Psychoactives","type":"story","url":"https://www.erowid.org"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '306'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:11 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45606853.json
+  response:
+    body:
+      string: '{"by":"mikhael","descendants":102,"id":45606853,"kids":[45664314,45666335,45660268,45663355,45662412,45669392,45660985,45666290,45665053,45661035,45664491,45661522,45662647,45665779,45660408,45664676,45662456,45661238,45663132,45661800,45665252,45661221,45661030,45659938,45610258,45660611,45662830,45612739,45660748],"score":167,"time":1760629637,"title":"Mathematicians
+        have found a hidden ''reset button'' for undoing rotation","type":"story","url":"https://www.newscientist.com/article/2499647-mathematicians-have-found-a-hidden-reset-button-for-undoing-rotation/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '567'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:14 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45668882.json
+  response:
+    body:
+      string: '{"by":"lysandre","descendants":2,"id":45668882,"kids":[45669022],"score":7,"time":1761139877,"title":"Sentence
+        Transformers is joining Hugging Face","type":"story","url":"https://huggingface.co/blog/sentence-transformers-joins-hf"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '231'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:17 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45646559.json
+  response:
+    body:
+      string: '{"by":"simonw","descendants":42,"id":45646559,"kids":[45668961,45665955,45662877,45665128,45664936,45663407,45660269,45661063,45662944,45649620,45662806,45665033],"score":190,"time":1760981089,"title":"Getting
+        DeepSeek-OCR working on an Nvidia Spark via brute force with Claude Code","type":"story","url":"https://simonwillison.net/2025/Oct/20/deepseek-ocr-claude-code/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '371'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:20 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45659883.json
+  response:
+    body:
+      string: '{"by":"mustaphah","descendants":69,"id":45659883,"kids":[45663701,45664447,45665503,45663903,45665809,45668698,45663797,45663839,45665723,45665671,45664130,45668148,45663782,45665305,45664132,45667099,45667794,45664675,45663673,45664370,45664302,45664638,45664694],"score":83,"text":"Study:
+        <a href=\"https:&#x2F;&#x2F;www.cell.com&#x2F;med&#x2F;abstract&#x2F;S2666-6340(25)00314-9\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;www.cell.com&#x2F;med&#x2F;abstract&#x2F;S2666-6340(25)00314-9</a>","time":1761072279,"title":"Researchers
+        complete first human trial on viability of enteral ventilation","type":"story","url":"https://newatlas.com/disease/butt-breathing-ignobel-prize/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '672'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:23 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45658479.json
+  response:
+    body:
+      string: '{"by":"easton","descendants":691,"id":45658479,"kids":[45669527,45659245,45663810,45658540,45665977,45661933,45665741,45664101,45666521,45659580,45664427,45660665,45664989,45658614,45658607,45664914,45660092,45659747,45658713,45658890,45659515,45667954,45658790,45658836,45658630,45669175,45667966,45658838,45658880,45658670,45662609,45658871,45658814,45663913,45660016,45668621,45665660,45658626,45660903,45658732,45666655,45660557,45662229,45658648,45659896,45659470,45663599,45664626,45662770,45661032,45658878,45662925,45664861,45659688,45665884,45660213,45663373,45659400,45659591,45663456,45663225,45659599,45658633,45658791,45658914,45659364,45660735,45664192,45659459,45665123,45658819,45659561,45664890,45659060,45659901,45660282,45661758,45667797,45659214,45659334,45663137,45663564,45658864,45659036,45660819,45660380,45659261,45659236,45660702,45663311,45658937,45663532,45660923,45659904,45660283,45658534,45664770,45658609,45664707,45658943,45663977,45660762,45658803,45658663,45664584,45658843,45660965,45661264,45659061,45658776,45659934,45659759,45667212,45662557,45658556,45659221,45659102,45658941,45659311,45659406,45666934,45659966,45663720,45662001,45663783,45659094,45659436,45659055,45663482,45659258,45658726,45660626,45658677,45663464,45658835,45662380,45658688,45658672,45665539,45658515,45659350,45659680,45659038,45658988,45663608,45658601,45665499,45661773,45660579,45659879,45660202,45658853,45658852,45658851,45658737,45658640,45658587,45660055,45663139,45663723,45658723,45660170,45663714,45658744,45659870,45658730,45665000,45664658,45658526,45658568,45665693],"score":722,"time":1761067093,"title":"ChatGPT
+        Atlas","type":"story","url":"https://chatgpt.com/atlas"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1698'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:26 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45649510.json
+  response:
+    body:
+      string: '{"by":"ibobev","descendants":61,"id":45649510,"kids":[45653379,45660889,45652410,45665794,45664267,45665656,45665223,45660156,45655966,45663121,45653679],"score":139,"time":1760995159,"title":"The
+        death of thread per core","type":"story","url":"https://buttondown.com/jaffray/archive/the-death-of-thread-per-core/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '315'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:29 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45664147.json
+  response:
+    body:
+      string: '{"by":"paulnpace","descendants":100,"id":45664147,"kids":[45666352,45664811,45666669,45664663,45664845,45666996,45666057,45664338,45665171,45666491,45664435,45666866,45664784,45664894,45668346,45666984,45665373,45666148,45664664,45667908,45667917,45666869,45664442,45666585],"score":244,"time":1761098578,"title":"OpenBSD
+        7.8","type":"story","url":"https://cdn.openbsd.org/pub/OpenBSD/7.8/ANNOUNCEMENT"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '403'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:32 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45580683.json
+  response:
+    body:
+      string: '{"by":"blakepelton","descendants":0,"id":45580683,"score":20,"time":1760453025,"title":"Principles
+        and Methodologies for Serial Performance Optimization","type":"story","url":"https://danglingpointers.substack.com/p/principles-and-methodologies-for"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '250'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:35 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45564821.json
+  response:
+    body:
+      string: '{"by":"measurablefunc","descendants":41,"id":45564821,"kids":[45665008,45666432,45668531,45666011,45663726,45664061,45662618,45663877,45663348,45662909,45663402],"score":95,"time":1760331671,"title":"Minds,
+        brains, and programs (1980) [pdf]","type":"story","url":"https://home.csulb.edu/~cwallis/382/readings/482/searle.minds.brains.programs.bbs.1980.pdf"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '356'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:38 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45661462.json
+  response:
+    body:
+      string: '{"by":"Caiero","descendants":19,"id":45661462,"kids":[45669498,45667670,45667837,45666324],"score":55,"time":1761079479,"title":"The
+        Gypsy Life of Robert Louis Stevenson","type":"story","url":"https://hudsonreview.com/2025/10/the-gypsy-life-of-robert-louis-stevenson/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '269'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:41 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45667960.json
+  response:
+    body:
+      string: '{"by":"petecooper","descendants":1,"id":45667960,"kids":[45669381],"score":8,"time":1761135747,"title":"Amazon
+        Allegedly Replaced 40% of AWS DevOps Workers with AI Days Before Crash","type":"story","url":"https://80.lv/articles/amazon-allegedly-replaced-40-of-aws-devops-workers-with-ai-days-before-crash"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '306'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:44 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45657260.json
+  response:
+    body:
+      string: '{"by":"smooke","descendants":12,"id":45657260,"kids":[45663216,45663471,45666569,45658183],"score":88,"time":1761061730,"title":"20,858
+        Public Domain Audio Books","type":"story","url":"https://librivox.org/search"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:47 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45584680.json
+  response:
+    body:
+      string: '{"by":"hpaone","descendants":90,"id":45584680,"kids":[45655020,45654853,45653702,45656224,45653788,45657313,45657766,45663331,45657517,45657449,45657182,45660873,45656632,45656560],"score":183,"time":1760475050,"title":"Bare
+        Metal (The Emacs Essay)","type":"story","url":"https://waxbanks.wordpress.com/2025/08/01/bare-metal-the-emacs-essay/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '343'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:50 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45657287.json
+  response:
+    body:
+      string: '{"by":"zdw","descendants":339,"id":45657287,"kids":[45660666,45660335,45659480,45660801,45666316,45659329,45664535,45659649,45666156,45666607,45660605,45665738,45657388,45665645,45659779,45659398,45658455,45659816,45657346,45661506,45666645,45660324,45664217,45661027,45664225,45657307,45658840,45661075,45660306,45659732,45664997,45664996,45660058],"score":408,"time":1761061893,"title":"Foreign
+        hackers breached a US nuclear weapons plant via SharePoint flaws","type":"story","url":"https://www.csoonline.com/article/4074962/foreign-hackers-breached-a-us-nuclear-weapons-plant-via-sharepoint-flaws.html"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '606'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:20:53 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
 version: 1

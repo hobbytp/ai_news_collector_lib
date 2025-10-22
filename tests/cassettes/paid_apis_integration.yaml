@@ -908,4 +908,69 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v2/everything?from=2025-10-15&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":512,\"articles\":[{\"source\":{\"id\":\"financial-post\",\"name\":\"Financial
+        Post\"},\"author\":\"Bloomberg News\",\"title\":\"Saudi Arabia\u2019s Crown
+        Prince MBS Said to Visit Trump at White House on Nov. 18\",\"description\":\"Saudi
+        Arabia\u2019s Crown Prince Mohammed bin Salman is set to meet US President
+        Donald Trump at the White House on Nov. 18 and sign agreements on artificial
+        intelligence, defense, nuclear cooperation and trade, according to a person
+        familiar with the matter.\",\"url\":\"https://financialpost.com/pmn/business-pmn/saudi-arabias-crown-prince-mbs-said-to-visit-trump-at-white-house-on-nov-18\",\"urlToImage\":\"https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2025/10/776320900.jpg\",\"publishedAt\":\"2025-10-21T14:05:37Z\",\"content\":\"(Bloomberg)
+        Saudi Arabias Crown Prince Mohammed bin Salman is set to meet US President
+        Donald Trump at the White House on Nov. 18 and sign agreements on artificial
+        intelligence, defense, nuclear coop\u2026 [+3785 chars]\"},{\"source\":{\"id\":null,\"name\":\"Catholicnewsagency.com\"},\"author\":\"Tessa
+        Gervasini\",\"title\":\"Instagram revamps restrictions on teen accounts\",\"description\":\"null
+        / Credit: Antonio Salaverry/Shutterstock\\n\\nWashington, D.C. Newsroom, Oct
+        21, 2025 / 10:00 am (CNA).\\nInstagram updated restrictions on teen accounts
+        to be guided by PG-13 movie ratings to prevent teenage users from accessing
+        mature and inappropriate conte\u2026\",\"url\":\"https://www.catholicnewsagency.com/news/267293/instagram-revamps-restrictions-on-teen-accounts\",\"urlToImage\":\"https://www.catholicnewsagency.com/images/shutterstock_1714022380.jpg?jpg\",\"publishedAt\":\"2025-10-21T14:00:00Z\",\"content\":\"Washington,
+        D.C. Newsroom, Oct 21, 2025 /\\r\\n 10:00 am\\r\\nInstagram updated restrictions
+        on teen accounts to be guided by PG-13 movie ratings to prevent teenage users
+        from accessing mature and inappropri\u2026 [+3178 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 9929a40aae073233-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 Oct 2025 14:21:23 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4QT1JGv0l%2By8sMdgCaSOZE22S8n%2F2vTelvm2u%2B2El4dOTEBcKATAWaqNi1LXr%2FwvglgpwFnHmRwR1d6h1OBbkdKySx6g05h0ZFE%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1883'
+    status:
+      code: 200
+      message: OK
 version: 1

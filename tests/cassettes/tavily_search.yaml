@@ -1,8 +1,8 @@
 interactions:
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -69,9 +69,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -138,9 +138,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -207,9 +207,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -276,9 +276,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -345,9 +345,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -414,9 +414,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -483,9 +483,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -552,9 +552,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -621,9 +621,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -690,9 +690,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -759,9 +759,9 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"api_key": "FILTERED", "query": "artificial
-      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
-      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    body: '{"api_key": "FILTERED", "query": "artificial intelligence", "search_depth":
+      "basic", "include_answer": false, "include_raw_content": false, "max_results":
+      3, "include_domains": [], "exclude_domains": []}'
     headers:
       Accept:
       - '*/*'
@@ -827,4 +827,44 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"api_key": "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", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://localhost:33210/search
+  response:
+    body:
+      string: '{"detail":{"error":"Unauthorized: missing or invalid API key."}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 22 Oct 2025 14:20:56 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 401
+      message: Unauthorized
 version: 1

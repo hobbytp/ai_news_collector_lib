@@ -28,7 +28,7 @@ ATOM_UPDATED = (
     <id>http://arxiv.org/abs/1234.5678</id>
     <title>Test Atom updated only</title>
     <summary>Summary</summary>
-    <updated>2024-10-01T12:34:56Z</updated>
+    <updated>2025-10-01T12:34:56Z</updated>
   </entry>
 </feed>
 """
@@ -87,7 +87,7 @@ def test_arxiv_fallback_updated(monkeypatch):
     assert len(articles) == 1
     a = articles[0]
     # feedparser.updated_parsed -> datetime(*struct_time[:6])
-    assert a.published.startswith("2024-10-01T12:34:56"), a.published
+    assert a.published.startswith("2025-10-01T12:34:56"), a.published
     assert a.source == "arxiv"
     assert a.source_name == "ArXiv"
 
