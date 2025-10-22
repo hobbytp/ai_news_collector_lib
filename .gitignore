@@ -143,3 +143,16 @@ Thumbs.db
 *.log
 temp/
 tmp/
+
+
+openspec/
+.github/prompts/
+.serena/
+
+OPENSPEC*.md
+QUERY_*.md
+QUICK_RELEASE.md
+
+SECURITY_*.md
+AGENTS.md
+

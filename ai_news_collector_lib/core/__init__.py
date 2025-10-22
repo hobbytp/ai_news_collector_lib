@@ -6,6 +6,4 @@
 from .collector import AINewsCollector
 from .advanced_collector import AdvancedAINewsCollector
 
-__all__ = ['AINewsCollector', 'AdvancedAINewsCollector']
-
-
+__all__ = ["AINewsCollector", "AdvancedAINewsCollector"]

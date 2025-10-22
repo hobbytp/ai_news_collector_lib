@@ -5,27 +5,27 @@
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![PyPI](https://img.shields.io/badge/PyPI-ai--news--collector--lib-blue)](https://pypi.org/project/ai-news-collector-lib/)
-[![Latest Release](https://img.shields.io/badge/Latest-v0.1.2-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.2)
+[![Latest Release](https://img.shields.io/badge/Latest-v0.1.3-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.3)
 
 ---
 
-## 🚀 最新更新 (v0.1.2 - 安全版本)
+## 🚀 最新更新 (v0.1.3 - LLM 查询增强)
 
-> **这是一个关键的安全版本更新！** 建议所有用户升级。
+> **这是 v0.1.3 版本的重大更新！** 引入了 AI 驱动的查询增强功能。强烈建议所有用户升级。
 
-### 🔒 安全改进
-- ✅ **全面安全审计** - 清理VCR测试cassettes中的所有敏感数据
-- ✅ **凭证管理改进** - 将所有测试API密钥替换为"FILTERED"占位符
-- ✅ **端点校验** - 更新所有测试cassette的URL为真实API端点
-- ✅ **无凭证泄露** - 确保测试数据中不包含任何有效凭证
+### 🤖 LLM 查询增强（新功能）
+- ✅ **AI 驱动查询优化** - 集成 Google Gemini LLM，智能优化用户查询
+- ✅ **多引擎支持** - 为所有 11 个搜索引擎生成优化查询（单一 LLM 调用）
+- ✅ **智能缓存** - 24 小时缓存，避免重复 LLM 调用
+- ✅ **灵活配置** - 可选启用/禁用，支持自定义 LLM 提供商和模型
+- ✅ **优雅降级** - LLM 调用失败时自动使用原始查询，确保服务可用性
 
-### 🧪 测试框架增强
-- ✅ **离线付费API测试** - 使用VCR cassettes实现完全离线的付费API测试
-- ✅ **自动化CI/CD** - GitHub Actions自动化测试和PyPI发布
-- ✅ **覆盖率报告** - 集成pytest-cov提供详细的测试覆盖率
-- ✅ **无依赖测试** - 测试无需真实API密钥即可完成
+### 🔧 核心改进
+- ✅ **增强的查询对象** - 新增 `EnhancedQuery` 模型（支持 11 个搜索引擎）
+- ✅ **查询优化器** - 新增 `QueryEnhancer` 工具类（500+ 行高质量代码）
+- ✅ **集成优化** - AdvancedAINewsCollector 无缝集成查询增强
 
-📋 详见: [安全审计报告](API_KEY_SECURITY_AUDIT.md) | [VCR Cassette说明](VCR_CASSETTE_EXPLANATION.md) | [FAQ](FAQ_PR_TESTING.md)
+📋 详见: [实现总结](IMPLEMENTATION_SUMMARY.md) | [LLM 配置指南](docs/README_BADGES.md) | [完整指南](USAGE_GUIDE.md)
 
 ---
 
@@ -123,6 +123,56 @@ async def main():
 # 运行
 asyncio.run(main())
 ```
+
+### 🤖 LLM 查询增强（新）
+
+```python
+import asyncio
+from ai_news_collector_lib import AdvancedAINewsCollector, AdvancedSearchConfig
+
+async def main():
+    # 创建带 LLM 查询增强的配置
+    config = AdvancedSearchConfig(
+        enable_hackernews=True,
+        enable_arxiv=True,
+        enable_tavily=True,
+        enable_query_enhancement=True,        # ✨ 启用 LLM 查询增强
+        llm_provider="google",                # 使用 Google Gemini
+        llm_model="gemini-1.5-flash",         # 高性能模型
+        llm_api_key="your-google-api-key",    # 从环境变量设置更安全
+        query_enhancement_cache_ttl=86400,    # 24 小时缓存
+        max_articles_per_source=10
+    )
+    
+    # 创建收集器
+    collector = AdvancedAINewsCollector(config)
+    
+    # LLM 会自动为各个搜索引擎优化查询
+    # 例如：输入 "machine learning" → 
+    #   HackerNews: "machine learning frameworks algorithms"
+    #   ArXiv: "machine learning optimization techniques"
+    #   Tavily: "latest machine learning applications 2024"
+    result = await collector.collect_news_advanced("machine learning")
+    
+    # 查看增强后的查询
+    if result.get('enhanced_query'):
+        enhanced = result['enhanced_query']
+        print(f"原始查询: {enhanced.original_query}")
+        print(f"增强查询数: {len(enhanced.get_enabled_engines())}")
+        for engine in enhanced.get_enabled_engines():
+            print(f"  - {engine}: {getattr(enhanced, engine)}")
+    
+    return result
+
+asyncio.run(main())
+```
+
+**LLM 查询增强的优势：**
+- 🎯 **精准搜索** - AI 自动为不同搜索引擎生成最优查询
+- ⚡ **智能缓存** - 相同查询在 24 小时内无需重新调用 LLM
+- 💰 **经济高效** - 单一 LLM 调用处理所有搜索引擎
+- 🔄 **灵活降级** - LLM 不可用时自动使用原始查询
+- 📊 **完整支持** - 支持所有 11 个搜索引擎（HackerNews、ArXiv、DuckDuckGo、NewsAPI、Tavily、Google Search、Bing Search、Serper、Reddit、Hacker News API、Medium）
 
 ### 高级使用（包含内容提取和关键词提取）
 
@@ -399,7 +449,7 @@ git push origin v0.1.3
 
 ### 核心文档
 - [架构设计](ARCHITECTURE.md) - 项目结构和设计理念
-- [安全审计](API_KEY_SECURITY_AUDIT.md) - v0.1.2安全改进详情
+- [实现总结](IMPLEMENTATION_SUMMARY.md) - v0.1.3 LLM 查询增强实现详情
 - [VCR说明](VCR_CASSETTE_EXPLANATION.md) - 离线测试机制解析
 - [测试指南](TESTING_GUIDE.md) - 完整测试说明
 - [使用指南](USAGE_GUIDE.md) - 详细使用文档
@@ -492,7 +542,17 @@ A: 详见[架构设计](ARCHITECTURE.md)中的"添加新搜索源"部分。
 
 ## 📈 更新日志
 
-### v0.1.2 (2025-01-20) - 🔒 安全版本
+### v0.1.3 (2025-10-22) - 🤖 LLM 查询增强
+- ✨ **AI 驱动查询优化** - 集成 Google Gemini LLM，为所有搜索引擎生成优化查询
+- ✅ 新增 `EnhancedQuery` 数据模型（支持 11 个搜索引擎）
+- ✅ 新增 `QueryEnhancer` 工具类（500+ 行，单一 LLM 调用架构）
+- ✅ 智能缓存 - 24 小时 TTL 避免重复 LLM 调用
+- ✅ 灵活配置 - 可选启用/禁用，支持自定义 LLM 提供商
+- ✅ 优雅降级 - LLM 不可用时自动使用原始查询
+- ✅ 完整测试 - 8 个单元测试，81% 代码覆盖率
+- ✅ 代码质量 - Black & Flake8 检查通过
+
+### v0.1.2 (2025-10-21) - 🔒 安全版本
 - ✅ 全面安全审计 - 清理VCR cassettes中的所有凭证
 - ✅ 将测试API密钥替换为"FILTERED"占位符
 - ✅ 更新所有cassette URL为真实API端点

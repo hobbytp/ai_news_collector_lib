@@ -11,8 +11,15 @@ from difflib import SequenceMatcher
 from ..models.article import Article
 from ..models.result import SearchResult
 from ..tools.search_tools import (
-    HackerNewsTool, ArxivTool, DuckDuckGoTool, NewsAPITool,
-    TavilyTool, GoogleSearchTool, SerperTool, BraveSearchTool, MetaSotaSearchTool
+    HackerNewsTool,
+    ArxivTool,
+    DuckDuckGoTool,
+    NewsAPITool,
+    TavilyTool,
+    GoogleSearchTool,
+    SerperTool,
+    BraveSearchTool,
+    MetaSotaSearchTool,
 )
 from ..config.settings import SearchConfig
 
@@ -36,30 +43,26 @@ class AINewsCollector:
     def _initialize_tools(self):
         """初始化搜索工具"""
         if self.config.enable_hackernews:
-            self.tools['hackernews'] = HackerNewsTool(
+            self.tools["hackernews"] = HackerNewsTool(
                 max_articles=self.config.max_articles_per_source
             )
 
         if self.config.enable_arxiv:
-            self.tools['arxiv'] = ArxivTool(
-                max_articles=self.config.max_articles_per_source
-            )
+            self.tools["arxiv"] = ArxivTool(max_articles=self.config.max_articles_per_source)
 
         if self.config.enable_duckduckgo:
-            self.tools['duckduckgo'] = DuckDuckGoTool(
+            self.tools["duckduckgo"] = DuckDuckGoTool(
                 max_articles=self.config.max_articles_per_source
             )
 
         if self.config.enable_newsapi and self.config.newsapi_key:
-            self.tools['newsapi'] = NewsAPITool(
-                api_key=self.config.newsapi_key,
-                max_articles=self.config.max_articles_per_source
+            self.tools["newsapi"] = NewsAPITool(
+                api_key=self.config.newsapi_key, max_articles=self.config.max_articles_per_source
             )
 
         if self.config.enable_tavily and self.config.tavily_api_key:
-            self.tools['tavily'] = TavilyTool(
-                api_key=self.config.tavily_api_key,
-                max_articles=self.config.max_articles_per_source
+            self.tools["tavily"] = TavilyTool(
+                api_key=self.config.tavily_api_key, max_articles=self.config.max_articles_per_source
             )
 
         google_enabled = (
@@ -68,43 +71,36 @@ class AINewsCollector:
             and self.config.google_search_engine_id
         )
         if google_enabled:
-            self.tools['google_search'] = GoogleSearchTool(
+            self.tools["google_search"] = GoogleSearchTool(
                 api_key=self.config.google_search_api_key,
                 search_engine_id=self.config.google_search_engine_id,
-                max_articles=self.config.max_articles_per_source
+                max_articles=self.config.max_articles_per_source,
             )
 
         if self.config.enable_serper and self.config.serper_api_key:
-            self.tools['serper'] = SerperTool(
-                api_key=self.config.serper_api_key,
-                max_articles=self.config.max_articles_per_source
+            self.tools["serper"] = SerperTool(
+                api_key=self.config.serper_api_key, max_articles=self.config.max_articles_per_source
             )
 
-        brave_enabled = (
-            self.config.enable_brave_search
-            and self.config.brave_search_api_key
-        )
+        brave_enabled = self.config.enable_brave_search and self.config.brave_search_api_key
         if brave_enabled:
-            self.tools['brave_search'] = BraveSearchTool(
+            self.tools["brave_search"] = BraveSearchTool(
                 api_key=self.config.brave_search_api_key,
-                max_articles=self.config.max_articles_per_source
+                max_articles=self.config.max_articles_per_source,
             )
 
         metasota_enabled = (
-            self.config.enable_metasota_search
-            and self.config.metasota_search_api_key
+            self.config.enable_metasota_search and self.config.metasota_search_api_key
         )
         if metasota_enabled:
-            self.tools['metasota_search'] = MetaSotaSearchTool(
+            self.tools["metasota_search"] = MetaSotaSearchTool(
                 api_key=self.config.metasota_search_api_key,
-                max_articles=self.config.max_articles_per_source
+                max_articles=self.config.max_articles_per_source,
             )
 
         logger.info(f"初始化了 {len(self.tools)} 个搜索工具")
 
-    def _deduplicate_articles(
-        self, articles: List[Article]
-    ) -> List[Article]:
+    def _deduplicate_articles(self, articles: List[Article]) -> List[Article]:
         """去重文章"""
         unique_articles = []
         seen_titles = set()
@@ -114,9 +110,7 @@ class AINewsCollector:
             is_duplicate = False
             for seen_title in seen_titles:
                 similarity = SequenceMatcher(
-                    None,
-                    article.title.lower(),
-                    seen_title.lower()
+                    None, article.title.lower(), seen_title.lower()
                 ).ratio()
                 if similarity > self.config.similarity_threshold:
                     is_duplicate = True
@@ -132,7 +126,7 @@ class AINewsCollector:
         self,
         query: str = "artificial intelligence",
         sources: Optional[List[str]] = None,
-        progress_callback: Optional[Callable] = None
+        progress_callback: Optional[Callable] = None,
     ) -> SearchResult:
         """
         收集AI新闻
@@ -155,36 +149,29 @@ class AINewsCollector:
         tasks = {}
         for source in sources:
             if source in self.tools:
-                task = self._search_single_source(
-                    source, query, progress_callback
-                )
+                task = self._search_single_source(source, query, progress_callback)
                 tasks[source] = task
-                source_progress[source] = {
-                    'status': 'pending',
-                    'articles_found': 0
-                }
+                source_progress[source] = {"status": "pending", "articles_found": 0}
 
         # 并发执行所有搜索任务
         if tasks:
-            results = await asyncio.gather(
-                *tasks.values(), return_exceptions=True
-            )
+            results = await asyncio.gather(*tasks.values(), return_exceptions=True)
 
             for source, result in zip(tasks.keys(), results):
                 try:
                     if isinstance(result, Exception):
                         logger.error(f"搜索失败 {source}: {result}")
                         source_progress[source] = {
-                            'status': 'failed',
-                            'articles_found': 0,
-                            'error': str(result)
+                            "status": "failed",
+                            "articles_found": 0,
+                            "error": str(result),
                         }
                     else:
                         articles = result
                         all_articles.extend(articles)
                         source_progress[source] = {
-                            'status': 'completed',
-                            'articles_found': len(articles)
+                            "status": "completed",
+                            "articles_found": len(articles),
                         }
                         if progress_callback:
                             msg = f"完成 {source}: {len(articles)} 篇文章"
@@ -192,9 +179,9 @@ class AINewsCollector:
                 except Exception as e:
                     logger.error(f"处理搜索结果失败 {source}: {e}")
                     source_progress[source] = {
-                        'status': 'failed',
-                        'articles_found': 0,
-                        'error': str(e)
+                        "status": "failed",
+                        "articles_found": 0,
+                        "error": str(e),
                     }
 
         # 去重
@@ -205,14 +192,11 @@ class AINewsCollector:
             unique_articles=len(unique_articles),
             duplicates_removed=len(all_articles) - len(unique_articles),
             articles=unique_articles,
-            source_progress=source_progress
+            source_progress=source_progress,
         )
 
     async def _search_single_source(
-        self,
-        source: str,
-        query: str,
-        progress_callback: Optional[Callable] = None
+        self, source: str, query: str, progress_callback: Optional[Callable] = None
     ):
         """搜索单个源
 
@@ -224,11 +208,7 @@ class AINewsCollector:
 
         tool = self.tools[source]
         # 将同步的搜索调用转移到线程池，避免阻塞事件循环
-        articles = await asyncio.to_thread(
-            tool.search,
-            query,
-            self.config.days_back
-        )
+        articles = await asyncio.to_thread(tool.search, query, self.config.days_back)
 
         return articles
 
@@ -242,9 +222,9 @@ class AINewsCollector:
 
         for source, tool in self.tools.items():
             source_info[source] = {
-                'name': tool.__class__.__name__,
-                'description': getattr(tool, 'description', ''),
-                'max_articles': getattr(tool, 'max_articles', 0)
+                "name": tool.__class__.__name__,
+                "description": getattr(tool, "description", ""),
+                "max_articles": getattr(tool, "max_articles", 0),
             }
 
         return source_info
