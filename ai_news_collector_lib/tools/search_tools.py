@@ -57,11 +57,14 @@ class BaseSearchTool:
                     published_str = published_str[:-1] + "+00:00"
 
                 published_time = datetime.fromisoformat(published_str)
+                # 如果解析得到的是naive时间，默认视为UTC
+                if published_time.tzinfo is None:
+                    published_time = published_time.replace(tzinfo=timezone.utc)
                 if published_time >= cutoff_date:
                     filtered_articles.append(article)
             except (ValueError, TypeError):
-                # 如果时间解析失败，保留文章
-                filtered_articles.append(article)
+                # 如果时间解析失败，跳过该文章以避免污染准确率
+                continue
 
         return filtered_articles
 
@@ -92,7 +95,10 @@ class HackerNewsTool(BaseSearchTool):
                     story_data = story_response.json()
 
                     if story_data and story_data.get("type") == "story":
-                        story_time = datetime.fromtimestamp(story_data.get("time", 0))
+                        # HN时间戳为UTC秒，将其转换为带时区的UTC时间
+                        story_time = datetime.fromtimestamp(
+                            story_data.get("time", 0), tz=timezone.utc
+                        )
 
                         # 检查是否包含查询关键词
                         title = story_data.get("title", "").lower()
@@ -101,7 +107,7 @@ class HackerNewsTool(BaseSearchTool):
                                 title=story_data.get("title", "No title"),
                                 url=story_data.get("url", ""),
                                 summary=f"Score: {story_data.get('score', 0)} | Comments: {story_data.get('descendants', 0)}",
-                                published=story_time.isoformat(),
+                                published=story_time.astimezone(timezone.utc).isoformat(),
                                 author=story_data.get("by", "Unknown"),
                                 source_name="HackerNews",
                                 source="hackernews",
