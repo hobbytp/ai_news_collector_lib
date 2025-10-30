@@ -79,4 +79,85 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"q": "deep learning", "num": 5}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://localhost:33210/search
+  response:
+    body:
+      string: '{"searchParameters":{"q":"deep learning","type":"search","num":5,"engine":"google"},"organic":[{"title":"Deep
+        learning - Wikipedia","link":"https://en.wikipedia.org/wiki/Deep_learning","snippet":"In
+        machine learning, deep learning focuses on utilizing multilayered neural networks
+        to perform tasks such as classification, regression, and representation ...","sitelinks":[{"title":"Comparison","link":"https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software"},{"title":"Feature
+        learning","link":"https://en.wikipedia.org/wiki/Feature_learning"},{"title":"Deep
+        belief network","link":"https://en.wikipedia.org/wiki/Deep_belief_network"},{"title":"Transformer","link":"https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"}],"position":1},{"title":"DeepLearning.AI:
+        Start or Advance Your Career in AI","link":"https://www.deeplearning.ai/","snippet":"Join
+        over 7 million people learning how to use and build AI. AI Courses and Specializations.
+        Build a foundation of machine learning and AI skills.","sitelinks":[{"title":"All
+        Courses","link":"https://www.deeplearning.ai/courses/"},{"title":"Careers","link":"https://www.deeplearning.ai/careers/"},{"title":"Generative
+        AI for Everyone","link":"https://www.deeplearning.ai/courses/generative-ai-for-everyone/"},{"title":"Machine
+        Learning Research","link":"https://www.deeplearning.ai/the-batch/tag/research/"}],"position":2},{"title":"Deep
+        Learning","link":"https://www.deeplearningbook.org/","snippet":"The Deep Learning
+        textbook is a resource intended to help students and practitioners enter the
+        field of machine learning in general and deep learning in ...","position":3},{"title":"Deep
+        Learning Specialization - Coursera","link":"https://www.coursera.org/specializations/deep-learning","snippet":"Become
+        a Machine Learning expert. Master the fundamentals of deep learning and break
+        into AI. Recently updated with cutting-edge techniques!","position":4},{"title":"Introduction
+        to Deep Learning - GeeksforGeeks","link":"https://www.geeksforgeeks.org/deep-learning/introduction-deep-learning/","snippet":"Deep
+        Learning is transforming the way machines understand, learn and interact with
+        complex data. Deep learning mimics neural networks of the ...","date":"Sep
+        24, 2025","sitelinks":[{"title":"What is Transfer Learning?","link":"https://www.geeksforgeeks.org/machine-learning/ml-introduction-to-transfer-learning/"},{"title":"Generative
+        Adversarial...","link":"https://www.geeksforgeeks.org/deep-learning/generative-adversarial-network-gan/"},{"title":"What
+        is Perceptron","link":"https://www.geeksforgeeks.org/machine-learning/what-is-perceptron-the-simplest-artificial-neural-network/"}],"position":5}],"peopleAlsoAsk":[{"question":"What
+        is deep learning vs CNN?","snippet":"Within Deep Learning, a Convolutional
+        Neural Network or CNN is a type of artificial neural network, which is widely
+        used for image/object recognition and classification. Deep Learning thus recognizes
+        objects in an image by using a CNN.","title":"Convolutional Neural Networks
+        (CNN) with Deep Learning","link":"https://www.happiestminds.com/insights/convolutional-neural-networks-cnns/"}],"relatedSearches":[{"query":"Natural
+        language p..."},{"query":"Deep learning book"},{"query":"Deep learning AI"},{"query":"Deep
+        learning vs machine learning"},{"query":"Deep learning algorithms"},{"query":"Deep
+        learning examples"},{"query":"Deep Learning Tutorial"},{"query":"Deep learning
+        notes"},{"query":"Deep learning types"}],"credits":1}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Length:
+      - '3488'
+      access-control-allow-origin:
+      - '*'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 30 Oct 2025 10:49:41 GMT
+      server:
+      - Google Frontend
+      set-cookie:
+      - GAESA=CqoBMDAxNDc3ODI5NmI2MzFjMmRjOWYyNWU5MDYxZjY0YjdkODRlZDg5MzJmNmE4ZThkNThjY2FjNmIyNTc1MjMzYTM1ODc5NGQ1OGI3MWYwNjNiYTA1OTc3YTIwNjA0ZjZmYTExYTE2Y2ZkYTE1YzRlYmVkMzk3NmZiZjI0NjgxOTAzMGY2MzYwNTAyNzJkY2RlODEzMmQwZjdhZGU0NTI0ZjdiMWMwZDhhNjgQy6PzpaMz;
+        expires=Sat, 29-Nov-2025 10:49:41 GMT; path=/
+      via:
+      - 1.1 google
+      x-cloud-trace-context:
+      - 3193a0985c859898e19a9b9edc125712
+      x-ratelimit-limit:
+      - '500'
+      x-ratelimit-remaining:
+      - '499'
+      x-ratelimit-reset:
+      - '1761821385'
+    status:
+      code: 200
+      message: OK
 version: 1

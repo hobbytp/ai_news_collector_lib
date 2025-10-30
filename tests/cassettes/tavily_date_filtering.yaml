@@ -102,4 +102,102 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"api_key": "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", "query": "machine
+      learning", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 5, "include_domains": [], "exclude_domains": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '229'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://localhost:33210/search
+  response:
+    body:
+      string: "{\"query\":\"machine learning\",\"follow_up_questions\":null,\"answer\":null,\"images\":[],\"results\":[{\"url\":\"https://www.ibm.com/think/topics/machine-learning\",\"title\":\"What
+        is Machine Learning? | IBM\",\"content\":\"Machine learning is the subset
+        of artificial intelligence (AI) focused on algorithms that can \u201Clearn\u201D
+        the patterns of training data and, subsequently, make accurate\_*inferences*\_about
+        new data. The central premise of machine learning (ML) is that if you optimize
+        a model\u2019s performance on a dataset of tasks that adequately resemble
+        the real-world problems it will be used for\u2014through a process called\_model
+        training\u2014the model can make accurate predictions on the\_new\_data it
+        sees in its ultimate use case. In essence, a trained model is applying patterns
+        it learned from training data to\_infer\_the correct output for a real-world
+        task: the deployment of an\_AI model\_is therefore called\_AI inference.\",\"score\":0.8740022,\"raw_content\":null},{\"url\":\"https://www.sas.com/en_us/insights/analytics/machine-learning.html\",\"title\":\"Machine
+        Learning: What it is and why it matters | SAS\",\"content\":\"Machine learning
+        is a method of data analysis that automates analytical model building. See
+        why SAS is a leader in the 2024 Gartner\xAE Magic Quadrant\u2122 for Data
+        Science and Machine Learning. Banks and others in the financial industry can
+        use machine learning to improve accuracy and efficiency, identify important
+        insights in data, detect and prevent fraud, and assist with anti-money laundering.
+        Our comprehensive selection of machine learning algorithms are included in
+        many SAS products and can help you quickly get value from your big data \u2013
+        including data from the Internet of Things. SAS machine learning algorithms
+        include: Purpose-built for developers and modelers, SAS\xAE Viya\xAE Workbench
+        is a self-service, on-demand compute environment for analytical development,
+        including building AI and machine learning models for better data analysis.\",\"score\":0.8215175,\"raw_content\":null},{\"url\":\"https://www.ml.cmu.edu/\",\"title\":\"Carnegie
+        Mellon University: Machine Learning - CMU\",\"content\":\"## What is Machine
+        Learning? Machine learning (ML) is a fascinating field of artificial intelligence
+        research and practice where we investigate how computer agents can improve
+        their perception, cognition and action with experience. In our Machine Learning
+        Department, we study and research the theoretical foundations of machine learning,
+        as well as the contributions to the general intelligence of the field of artificial
+        intelligence. # Apply to a Machine Learning Program * Ph.D. in Machine Learning
+        * Joint Ph.D. in Statistics and Machine Learning * Joint Ph.D. in Machine
+        Learning and Public Policy * Joint Ph.D. in Neural Computation and Machine
+        Learning * Primary Master's in Machine Learning * Secondary Master's in Machine
+        Learning\",\"score\":0.8127637,\"raw_content\":null},{\"url\":\"https://www.datacamp.com/blog/what-is-machine-learning\",\"title\":\"What
+        is Machine Learning? Definition, Types, Tools & More\",\"content\":\"# What
+        is Machine Learning? ## What is Machine Learning? **Machine learning** is
+        a subset of AI, which uses algorithms that learn from data to make predictions.
+        Our course, Preprocessing for Machine Learning in Python, explores how to
+        get your cleaned data ready for modeling. Once the data is prepared, the next
+        step is to choose a machine learning model. * Machine learning | **Data Scientist**
+        | Statistical analysis, Programming (Python, R), Machine learning, Data visualization,
+        Problem-solving | Python, R, SQL, Hadoop, Spark, Tableau, | | **Research Scientist**
+        | Deep understanding of machine learning algorithms, Programming (Python,
+        R), Research methodology, Strong mathematical skills | Python, R, TensorFlow,
+        PyTorch, MATLAB,\_Hugging Face Model Hub | ### What is machine learning? ###
+        What is a machine learning model?\",\"score\":0.7915799,\"raw_content\":null},{\"url\":\"https://www.coursera.org/learn/machine-learning\",\"title\":\"Supervised
+        Machine Learning: Regression and Classification\",\"content\":\"\u2022 Build
+        and train supervised machine learning models for prediction and binary classification
+        tasks, including linear regression and logistic regression The Machine Learning
+        Specialization is a foundational online program created in collaboration between
+        DeepLearning.AI and Stanford Online. It provides a broad introduction to modern
+        machine learning, including supervised learning (multiple linear regression,
+        logistic regression, neural networks, and decision trees), unsupervised learning
+        (clustering, dimensionality reduction, recommender systems), and some of the
+        best practices used in Silicon Valley for artificial intelligence and machine
+        learning innovation (evaluating and tuning models, taking a data-centric approach
+        to improving performance, and more.) By the end of this Specialization, you
+        will have mastered key concepts and gained the practical know-how to quickly
+        and powerfully apply machine learning to challenging real-world problems.\",\"score\":0.6917478,\"raw_content\":null}],\"response_time\":0.65,\"request_id\":\"5d76ae9a-1f01-45d9-a131-3366a575d44c\"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5113'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 10:49:37 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
 version: 1

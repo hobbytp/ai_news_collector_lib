@@ -132,4 +132,271 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+      X-Subscription-Token:
+      - BSACKDVHAf31lTCeMtxOVO-mvEFiTIg
+    method: GET
+    uri: https://localhost:33210/res/v1/web/search?count=5&mkt=en-US&offset=0&q=artificial+intelligence&safesearch=moderate
+  response:
+    body:
+      string: "{\"query\":{\"original\":\"artificial intelligence\",\"show_strict_warning\":false,\"is_navigational\":false,\"is_news_breaking\":false,\"spellcheck_off\":true,\"country\":\"us\",\"bad_results\":false,\"should_fallback\":false,\"postal_code\":\"\",\"city\":\"\",\"header_country\":\"\",\"more_results_available\":true,\"state\":\"\"},\"mixed\":{\"type\":\"mixed\",\"main\":[{\"type\":\"news\",\"all\":true},{\"type\":\"web\",\"index\":0,\"all\":false},{\"type\":\"videos\",\"all\":true},{\"type\":\"web\",\"index\":1,\"all\":false},{\"type\":\"web\",\"index\":2,\"all\":false},{\"type\":\"web\",\"index\":3,\"all\":false},{\"type\":\"web\",\"index\":4,\"all\":false},{\"type\":\"web\",\"index\":5,\"all\":false},{\"type\":\"web\",\"index\":6,\"all\":false},{\"type\":\"web\",\"index\":7,\"all\":false},{\"type\":\"web\",\"index\":8,\"all\":false},{\"type\":\"web\",\"index\":9,\"all\":false},{\"type\":\"web\",\"index\":10,\"all\":false},{\"type\":\"web\",\"index\":11,\"all\":false},{\"type\":\"web\",\"index\":12,\"all\":false},{\"type\":\"web\",\"index\":13,\"all\":false},{\"type\":\"web\",\"index\":14,\"all\":false},{\"type\":\"web\",\"index\":15,\"all\":false},{\"type\":\"web\",\"index\":16,\"all\":false},{\"type\":\"web\",\"index\":17,\"all\":false},{\"type\":\"web\",\"index\":18,\"all\":false},{\"type\":\"web\",\"index\":19,\"all\":false}],\"top\":[],\"side\":[]},\"news\":{\"type\":\"news\",\"results\":[{\"title\":\"Amazon
+        confirms 14,000 corporate job losses as it focuses on AI\",\"url\":\"https://www.bbc.com/news/articles/c1m3zm9jnl1o?at_medium=RSS&at_campaign=rss\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"\",\"page_age\":\"2025-10-28T12:37:16\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"bbc.com\",\"hostname\":\"www.bbc.com\",\"favicon\":\"https://imgs.search.brave.com/-9uoAONEhH31ac708C2NinDM9OjKbNcruJo3O1baQTM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTljMGQ4ZTFj/YzcwNTIyYTU4ZDk4/ZTg5NTQ0NGQyYjQy/NzU3NTMxNDRjZGFi/NjFkMmRiNGE1MGE5/ZDhhOWMyZS93d3cu/YmJjLmNvbS8\",\"path\":\"\u203A
+        news  \u203A articles  \u203A c1m3zm9jnl1o\"},\"source\":\"https://www.bbc.com/news/articles/c1m3zm9jnl1o?at_medium=RSS&at_campaign=rss\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/unTuHsEC1FnCXYD9H2H-B7RaMcGLV06ycj3ySexCaS4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vZ3FrS2Jz/UHEwVFpxZ085clhY/RmlUQXJhMV84dXl5/QTh6RlhnYVA3UTdw/OC9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OXBZMmhsL1ppNWlZ/bU5wTG1OdkxuVnIv/TDI1bGQzTXZNVEF5/TkM5aS9jbUZ1WkdW/a1gyNWxkM012L01U/TXdaaTlzYVhabEx6/STIvT1RoaE9USXdM/V0l6WldZdC9NVEZt/TUMxaVpUQTFMVE01/L01qaGhNR1V3Wmpr/eU9DNXEvY0dj\",\"original\":\"https://imgs.search.brave.com/gqkKbsPq0TZqgO9rXXFiTAra1_8uyyA8zFXgaP7Q7p8/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L25ld3MvMTAyNC9i/cmFuZGVkX25ld3Mv/MTMwZi9saXZlLzI2/OThhOTIwLWIzZWYt/MTFmMC1iZTA1LTM5/MjhhMGUwZjkyOC5q/cGc\"},\"age\":\"2
+        days ago\",\"extra_snippets\":[]},{\"title\":\"Amazon lays off thousands of
+        corporate workers as it spends big on AI\",\"url\":\"https://www.npr.org/2025/10/28/nx-s1-5588545/amazon-layoffs-corporate-workers-ai\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"News
+        reports, citing company insiders, previously suggested layoffs could affect
+        as many as 30,000 corporate jobs across human resources, cloud computing and
+        many other divisions. Amazon's corporate layoffs come on the heels of nearly
+        2,000 corporate job cuts at Starbucks as part of the ...\",\"page_age\":\"2025-10-28T15:02:36\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"npr.org\",\"hostname\":\"www.npr.org\",\"favicon\":\"https://imgs.search.brave.com/Y1l6Dzd6VM4_ltfNpwB9Esia4wtA5Fyy600GWlxTPcY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGY0NTM3MmEx/MjJkYTQ5YTlmYjFk/YTJhYmNjNGM5M2Q2/NThjYjg0YWMxY2My/YmU5NDlmMTQ0YzJi/YzNjNGFlMS93d3cu/bnByLm9yZy8\",\"path\":\"\u203A
+        2025  \u203A 10  \u203A 28  \u203A nx-s1-5588545  \u203A amazon-layoffs-corporate-workers-ai\"},\"source\":\"https://www.npr.org/2025/10/28/nx-s1-5588545/amazon-layoffs-corporate-workers-ai\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/g7ZJqXdux64rO5QRmLnAK-3syDRBbBC7bz7DzBaf9cc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vdEdJckV3/Q3pNUG9jSFlaamw4/ZkFPOWRjTmpITDZL/R3hYa3ZTZUktalZT/NC9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OXVjSEl1L1luSnBa/MmgwYzNCdmRHTmsv/Ymk1amIyMHZaR2x0/Y3pNdi9aR1ZtWVhW/c2RDOXpkSEpwL2ND/OW1ZV3h6WlM5amNt/OXcvTHpjMU1UTjRO/RGMxTXlzdy9LekF2/Y21WemFYcGxMemMx/L01UTjRORGMxTXlF/dlAzVnkvYkQxb2RI/UndKVE5CSlRKRy9K/VEpHYm5CeUxXSnlh/V2RvL2RITndiM1F1/Y3pNdVlXMWgvZW05/dVlYZHpMbU52YlNV/eS9Sall6SlRKR1pU/a2xNa1kzL01qZzFN/VFppT0RRek9EWmkv/TlRsbVlqSTFNamsw/WXprMC9NelkzSlRK/R1oyVjBkSGxwL2JX/Rm5aWE10TVRZM09E/QTMvT1RVNU5DNXFj/R2M\",\"original\":\"https://imgs.search.brave.com/tGIrEwCzMPocHYZjl8fAO9dcNjHL6KGxXkvSeI-jVS4/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9ucHIu/YnJpZ2h0c3BvdGNk/bi5jb20vZGltczMv/ZGVmYXVsdC9zdHJp/cC9mYWxzZS9jcm9w/Lzc1MTN4NDc1Mysw/KzAvcmVzaXplLzc1/MTN4NDc1MyEvP3Vy/bD1odHRwJTNBJTJG/JTJGbnByLWJyaWdo/dHNwb3QuczMuYW1h/em9uYXdzLmNvbSUy/RjYzJTJGZTklMkY3/Mjg1MTZiODQzODZi/NTlmYjI1Mjk0Yzk0/MzY3JTJGZ2V0dHlp/bWFnZXMtMTY3ODA3/OTU5NC5qcGc\"},\"age\":\"2
+        days ago\",\"extra_snippets\":[\"News reports, citing company insiders, previously
+        suggested layoffs could affect as many as 30,000 corporate jobs across human
+        resources, cloud computing and many other divisions. Amazon's corporate layoffs
+        come on the heels of nearly 2,000 corporate job cuts at Starbucks as part
+        of the coffee-chain's turnaround plan, prompted by declining sales.\",\"Amazon
+        has faced pressure from investors to tighten its finances as it spends big
+        on the AI race. The company says it will cut 14,000 jobs, citing a goal of
+        \\\"reducing bureaucracy, removing layers.\\\"\",\"Amazon CEO Andy Jassy in
+        June wrote to employees about his thoughts on generative AI, saying: \\\"We
+        will need fewer people doing some of the jobs that are being done today, and
+        more people doing other types of jobs.\",\"Amazon lays off thousands of corporate
+        workers as it spends on AI Amazon has faced pressure from investors to tighten
+        its finances as it spends big on the AI race.\"]},{\"title\":\"The AI job
+        cuts are here - or are they?\",\"url\":\"https://www.bbc.com/news/articles/clyk7zg0gzvo?at_medium=RSS&at_campaign=rss\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"\",\"page_age\":\"2025-10-29T00:09:22\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"bbc.com\",\"hostname\":\"www.bbc.com\",\"favicon\":\"https://imgs.search.brave.com/-9uoAONEhH31ac708C2NinDM9OjKbNcruJo3O1baQTM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTljMGQ4ZTFj/YzcwNTIyYTU4ZDk4/ZTg5NTQ0NGQyYjQy/NzU3NTMxNDRjZGFi/NjFkMmRiNGE1MGE5/ZDhhOWMyZS93d3cu/YmJjLmNvbS8\",\"path\":\"\u203A
+        news  \u203A articles  \u203A clyk7zg0gzvo\"},\"source\":\"https://www.bbc.com/news/articles/clyk7zg0gzvo?at_medium=RSS&at_campaign=rss\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/vjixS9WtnDFA-ZgrRdkTod8sk8nWcpLtIVv4vw8Isfo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vanV3Q09X/NXJOaDR4NjJya0FU/a1o5WmRDaXNuT09S/aTdvd2lsNS00S1Vv/dy9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OXBZMmhsL1ppNWlZ/bU5wTG1OdkxuVnIv/TDI1bGQzTXZNVEF5/TkM5aS9jbUZ1WkdW/a1gyNWxkM012L016/TTBNeTlzYVhabEwy/SmovTm1FNFpqY3dM/V0kwTXpJdC9NVEZt/TUMwNFpqSXdMV05t/L09XTmhOalF5T0Rn/NE5pNXEvY0dj\",\"original\":\"https://imgs.search.brave.com/juwCOW5rNh4x62rkATkZ9ZdCisnOORi7owil5-4KUow/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L25ld3MvMTAyNC9i/cmFuZGVkX25ld3Mv/MzM0My9saXZlL2Jj/NmE4ZjcwLWI0MzIt/MTFmMC04ZjIwLWNm/OWNhNjQyODg4Ni5q/cGc\"},\"age\":\"1
+        day ago\",\"extra_snippets\":[]},{\"title\":\"Why the no hire, no fire job
+        market may no longer be a thing\",\"url\":\"https://www.cbsnews.com/news/amazon-ups-layoffs-labor-market-jobs-economy/\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"For
+        most of 2025, the job market was described by economists as \\\"no hire, no
+        fire\\\" \u2014 a stretch of time when job seekers faced slim prospects, but
+        workers could count on job security. But that fragile balance may now be shifting,
+        labor experts warn, as mass layoffs at companies like Amazon and ...\",\"page_age\":\"2025-10-29T13:43:01\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"cbsnews.com\",\"hostname\":\"www.cbsnews.com\",\"favicon\":\"https://imgs.search.brave.com/WMJ84WFf8h1hcjjVVUUmzl0nnJIhOkOa5cdJGjXcdWk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDUwNTNjY2I0/ZTJkMTA1NjkzNzQ3/Mzg4OGQ4ZDNmZjg0/YTFmYzhhZjBkMTU2/N2ZkNDA4MmZjZTM4/YTI3MTllMS93d3cu/Y2JzbmV3cy5jb20v\",\"path\":\"\u203A
+        news  \u203A amazon-ups-layoffs-labor-market-jobs-economy\"},\"source\":\"https://www.cbsnews.com/news/amazon-ups-layoffs-labor-market-jobs-economy/\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/eejXdMH-FFn0uQGG86xjPY_OXm9Qvwsksl1xUK9BwGU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20veFZMbzFh/Z0cxM0FDSjg1OGpU/WHdTMFJZMzEwOVhU/N0F4SGQ5LTcxMHh1/RS9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OWhjM05sL2RITXhM/bU5pYzI1bGQzTnov/ZEdGMGFXTXVZMjl0/TDJoMS9ZaTlwTDNJ/dk1qQXlOQzh4L01T/OHhNeTh3Tm1SbVpU/bGovTUMxak1UUXdM/VFJqTUdNdC9PV05t/WVMweU5qaGpNekUw/L1pEa3pZMlV2ZEdo/MWJXSnUvWVdsc0x6/RXlNREI0TmpNdy9M/MlEwWXpnM00ySTNO/elJoL01tVmlZakk0/T0dNd00yWTUvTlRB/eFkyUTJNek16TDJk/bC9kSFI1YVcxaFoy/VnpMVEl4L09EQXhO/RFl3TlRNdWFuQm4\",\"original\":\"https://imgs.search.brave.com/xVLo1agG13ACJ858jTXwS0RY3109XT7AxHd9-710xuE/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMxLmNic25ld3Nz/dGF0aWMuY29tL2h1/Yi9pL3IvMjAyNC8x/MS8xMy8wNmRmZTlj/MC1jMTQwLTRjMGMt/OWNmYS0yNjhjMzE0/ZDkzY2UvdGh1bWJu/YWlsLzEyMDB4NjMw/L2Q0Yzg3M2I3NzRh/MmViYjI4OGMwM2Y5/NTAxY2Q2MzMzL2dl/dHR5aW1hZ2VzLTIx/ODAxNDYwNTMuanBn\"},\"age\":\"1
+        day ago\",\"extra_snippets\":[\"For most of 2025, the job market was described
+        by economists as \\\"no hire, no fire\\\" \u2014 a stretch of time when job
+        seekers faced slim prospects, but workers could count on job security. But
+        that fragile balance may now be shifting, labor experts warn, as mass layoffs
+        at companies like Amazon and UPS signal a possible turning point for the labor
+        market.\",\"The mass layoffs come as the Federal Reserve scrutinizes the labor
+        market for signs of weakness, with Fed Chair Jerome Powell last month citing
+        concerns about slower hiring in announcing the central bank's first interest-rate
+        cut of 2025. The announcements from Amazon and UPS could signal that the Fed
+        has good reason to be worried, experts said.\",\"\\\"Amazon really pointed
+        to robotics, AI and new technology \u2014 and being on the cutting edge of
+        that technology \u2014 for shifting jobs,\\\" Challenger said. About one-quarter
+        of technology industry workers said they had experienced layoffs or role eliminations
+        due to AI adoption during the past two years, according to a new study from
+        career site Indeed.\",\"Amazon and UPS on Tuesday announced tens of thousands
+        of job cuts, the latest signal that the U.S. labor market is downshifting.\"]},{\"title\":\"Amazon
+        cutting 14,000 corporate jobs to spend more on AI\",\"url\":\"https://www.cbc.ca/news/business/amazon-14000-corporate-layoffs-artificial-intelligence-9.6956357?cmp=rss\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"It
+        was the biggest culling at Amazon since 2023, when the company cut 27,000
+        jobs. Amazon has not said if more job cuts are coming. Yet the jobs market,
+        which has for years been a pillar in the U.S. economy, is showing signs of
+        weakening. Layoffs have been limited, but the same can be said ...\",\"page_age\":\"2025-10-28T12:56:49\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"cbc.ca\",\"hostname\":\"www.cbc.ca\",\"favicon\":\"https://imgs.search.brave.com/yey-njz8kIibdr_wAHQkfp2YGnu-f1yKQM1TH4nPg0M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjQ4NDdkOWE4/MjU4YjBlYTU4MjEw/YTkxM2Q0ZjE5MzFl/MGZlODlhMzNhOWIy/ZTlhMjNhMmI4YjIy/NjNmZGQ5OC93d3cu/Y2JjLmNhLw\",\"path\":\"\u203A
+        news  \u203A business  \u203A amazon-14000-corporate-layoffs-artificial-intelligence-9.6956357\"},\"source\":\"https://www.cbc.ca/news/business/amazon-14000-corporate-layoffs-artificial-intelligence-9.6956357?cmp=rss\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/Z5hrjd7UiUl4tFnFBMCXUWS2D-D9-iqZV7a_Gi0Mc6w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vQ3MtTWtk/VlpMb2JHQWU1dVlU/RENfTTBuVXY1VzFv/TkNNWXVWTF93b3c5/NC9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OXBMbU5pL1l5NWpZ/UzloYVhNdk1tUmsv/TkdFeE5Ea3RNamRt/WkMwMC9aR1ptTFRn/ME5tWXRaakZtL01t/Wm1OR1k0TkdNMUxE/RTMvTmpFMk5UUTBO/ek0xTkRrdi9ablZz/YkM5dFlYZ3ZNQzlr/L1pXWmhkV3gwTG1w/d1p6OXAvYlQxRGNt/OXdKVEpEY21Wai9k/Q1V6UkNVeU9EQWxN/a014L05qTWxNa00y/TlRBd0pUSkQvTXpZ/MU5pVXlPU1V6UWxK/bC9jMmw2WlNVelJD/VXlPRFl5L01DVXlP/UQ\",\"original\":\"https://imgs.search.brave.com/Cs-MkdVZLobGAe5uYTDC_M0nUv5W1oNCMYuVL_wow94/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9pLmNi/Yy5jYS9haXMvMmRk/NGExNDktMjdmZC00/ZGZmLTg0NmYtZjFm/MmZmNGY4NGM1LDE3/NjE2NTQ0NzM1NDkv/ZnVsbC9tYXgvMC9k/ZWZhdWx0LmpwZz9p/bT1Dcm9wJTJDcmVj/dCUzRCUyODAlMkMx/NjMlMkM2NTAwJTJD/MzY1NiUyOSUzQlJl/c2l6ZSUzRCUyODYy/MCUyOQ\"},\"age\":\"2
+        days ago\",\"extra_snippets\":[\"It was the biggest culling at Amazon since
+        2023, when the company cut 27,000 jobs. Amazon has not said if more job cuts
+        are coming. Yet the jobs market, which has for years been a pillar in the
+        U.S. economy, is showing signs of weakening. Layoffs have been limited, but
+        the same can be said for hiring.\",\"Amazon said this month, however, that
+        it would hire 250,000 seasonal workers, the same as last year's holiday season.
+        Neil Saunders, managing director of GlobalData, said in a statement that the
+        layoffs \\\"represent a deep cleaning of Amazon's corporate workforce.\\\"\",\"CBC
+        News reached out to a spokesperson for Amazon to ask whether any Canadian
+        employees are impacted by the layoffs and did not receive a response.\",\"\\\"Unlike
+        the Target layoffs, Amazon is operating from a position of strength,\\\" he
+        said. \\\"The company has been producing good growth, and it still has a lot
+        of headroom for further expansion in both the U.S.\"]},{\"title\":\"Amazon
+        cutting 14,000 jobs as the retailing giant embraces AI\",\"url\":\"https://www.cbsnews.com/news/amazon-layoffs-14000-job-cuts-ai/\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"\\\"The
+        Amazon layoffs are dramatic in scale, and they represent a deep cleaning of
+        Amazon's corporate workforce,\\\" Saunders added.\",\"page_age\":\"2025-10-28T12:43:12\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"cbsnews.com\",\"hostname\":\"www.cbsnews.com\",\"favicon\":\"https://imgs.search.brave.com/WMJ84WFf8h1hcjjVVUUmzl0nnJIhOkOa5cdJGjXcdWk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDUwNTNjY2I0/ZTJkMTA1NjkzNzQ3/Mzg4OGQ4ZDNmZjg0/YTFmYzhhZjBkMTU2/N2ZkNDA4MmZjZTM4/YTI3MTllMS93d3cu/Y2JzbmV3cy5jb20v\",\"path\":\"\u203A
+        news  \u203A amazon-layoffs-14000-job-cuts-ai\"},\"source\":\"https://www.cbsnews.com/news/amazon-layoffs-14000-job-cuts-ai/\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/Aar_LrPCFWFrmlqviBIQZB56DmwKmEcoxIpMWTMVU6M/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vOEpwWlk1/STFDZnpSUzh1WFc0/d2FKV0VEaUxTdEJk/ZHBBTDB5b0wyLW13/US9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OWhjM05sL2RITXlM/bU5pYzI1bGQzTnov/ZEdGMGFXTXVZMjl0/TDJoMS9ZaTlwTDNJ/dk1qQXlOUzh3L055/OHdOeTlpTldZMk16/ZGgvWVMxak9UbGxM/VFJsT0RVdC9PV0Zr/WmkwMU16SmpZVFUz/L09EZGpOV1l2ZEdo/MWJXSnUvWVdsc0x6/RXlNREI0TmpNdy9M/emhrWm1ObVptVmtN/R00zL09EY3lZalpr/TW1NMk1XRmgvWXpk/a016RTROR1l3TDJO/aS9jMjR0Wm5WemFX/OXVMWGRvL1lYUXRk/Rzh0YTI1dmR5MWgv/YUdWaFpDMXZaaTFo/YldGNi9iMjR0Y0hK/cGJXVXRaR0Y1L0xY/Um9kVzFpYm1GcGJD/NXEvY0dj\",\"original\":\"https://imgs.search.brave.com/8JpZY5I1CfzRS8uXW4waJWEDiLStBddpAL0yoL2-mwQ/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMyLmNic25ld3Nz/dGF0aWMuY29tL2h1/Yi9pL3IvMjAyNS8w/Ny8wNy9iNWY2Mzdh/YS1jOTllLTRlODUt/OWFkZi01MzJjYTU3/ODdjNWYvdGh1bWJu/YWlsLzEyMDB4NjMw/LzhkZmNmZmVkMGM3/ODcyYjZkMmM2MWFh/YzdkMzE4NGYwL2Ni/c24tZnVzaW9uLXdo/YXQtdG8ta25vdy1h/aGVhZC1vZi1hbWF6/b24tcHJpbWUtZGF5/LXRodW1ibmFpbC5q/cGc\"},\"age\":\"2
+        days ago\",\"extra_snippets\":[\"The job cuts come as Amazon CEO Andy Jassy
+        has said he envisions the company relying on AI agents to replace human workers.\",\"Amazon
+        on Tuesday said it is cutting 14,000 corporate jobs as the retailing giant
+        relies more on artificial intelligence and moves to lower its wage bill.\",\"Earlier
+        this year, CEO Andy Jassy said Amazon's investment in AI tools would allow
+        the company to reduce its human workforce as the business becomes more efficient.\",\"Amazon
+        is \\\"investing quite expansively\\\" in generative AI technology, Jassy
+        said earlier this year. The the company has plans to invest $10 billion in
+        a new AI \\\"innovation campus\\\" in North Carolina.\"]},{\"title\":\"Is
+        artificial intelligence to blame for Amazon job cuts?\",\"url\":\"https://www.aljazeera.com/news/2025/10/28/is-artificial-intelligence-to-blame-for-amazon-job-cuts?traffic_source=rss\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Amazon
+        confirms 14,000 layoffs after CEO says AI likely to lead to job losses.\",\"page_age\":\"2025-10-28T11:22:25\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"aljazeera.com\",\"hostname\":\"www.aljazeera.com\",\"favicon\":\"https://imgs.search.brave.com/v6ofD8-UxOz25FG97pc7hKftp3PxiHPGAa1WXzanNHo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjJhNzgzMzNk/Y2FkMjdkN2I5YWFh/YzcwZmE1Y2U4YWY2/MzU4ZTg5YTc3ZDZi/NzRhMDFkNzkzY2I4/NWYzMWNjOC93d3cu/YWxqYXplZXJhLmNv/bS8\",\"path\":\"\u203A
+        news  \u203A 2025  \u203A 10  \u203A 28  \u203A is-artificial-intelligence-to-blame-for-amazon-job-cuts\"},\"source\":\"https://www.aljazeera.com/news/2025/10/28/is-artificial-intelligence-to-blame-for-amazon-job-cuts?traffic_source=rss\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/a9Vki_GOgY1QLBqNlB5rTrLhoeFodeNrvJ3p-1Vv_s0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNVBob2Zi/bXdzOWlydTZqempf/NHJTLTl6SE5sckJS/WDlJUTZyeEdLLXFY/by9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OTNkM2N1L1lXeHFZ/WHBsWlhKaExtTnYv/YlM5M2NDMWpiMjUw/Wlc1MC9MM1Z3Ykc5/aFpITXZNakF5L05T/OHhNQzl5WlhWMFpY/SnovWHpZNU1EQTRa/VE5qTFRFMy9OakUy/TkRRd09USXVhbkJu/L1AzSmxjMmw2WlQw/eE9USXcvSlRKRE1U/UTBNQQ\",\"original\":\"https://imgs.search.brave.com/5Phofbmws9iru6jzj_4rS-9zHNlrBRX9IQ6rxGK-qXo/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly93d3cu/YWxqYXplZXJhLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NS8xMC9yZXV0ZXJz/XzY5MDA4ZTNjLTE3/NjE2NDQwOTIuanBn/P3Jlc2l6ZT0xOTIw/JTJDMTQ0MA\"},\"age\":\"2
+        days ago\",\"extra_snippets\":[\"Multinational technology company Amazon is
+        laying off about 14,000 employees, the company has confirmed. A message sent
+        out to staff on the company\u2019s website followed media reports that the
+        group was planning 30,000 job cuts. News of the layoffs on Tuesday came just
+        a few months after CEO Andrew Jassy said the rollout of artificial intelligence
+        (AI) technology was likely to spell job cuts.\",\"Against the bigger picture
+        of about 1.55 million total employees, the loss of 14,000 workers \u2013 or
+        30,000 if media reports are accurate \u2013 seems of little significance.
+        However, even at 14,000, this would make up 4 percent of Amazon\u2019s 350,000
+        corporate employees.\",\"In September 2024, Jassy announced the launch of
+        a \u201CBureaucracy Mailbox\u201D for Amazon employees to report any instances
+        of unnecessary bureaucracy or \u201Cexcessive processes\u201D. So far, it
+        has received about 1,500 responses, which have resulted in more than 450 process
+        changes, he has said.\",\"Sky Canaves, an analyst at eMarketer, told Reuters:
+        \u201CThis latest move signals that Amazon is likely realising enough AI-driven
+        productivity gains within corporate teams to support a substantial reduction
+        in force.\"]},{\"title\":\"The US companies cutting jobs as Amazon slashes
+        14,000 positions and UPS announces more layoffs\",\"url\":\"https://www.independent.co.uk/news/world/americas/us-layoffs-amazon-target-ups-companies-b2854061.html\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Amazon
+        is the latest company to announce job cuts as American workers continue to
+        endure a tough time in the job market. Amid wider economic uncertainty, some
+        analysts said businesses are at a \u201Cno-hire, no fire\u201D standstill.
+        It has caused many companies to limit new work to only a few specific roles,
+        if not pause openings entirely. At the same time, some sizeable layoffs ...\",\"page_age\":\"2025-10-28T20:34:37\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"independent.co.uk\",\"hostname\":\"www.independent.co.uk\",\"favicon\":\"https://imgs.search.brave.com/M_zo7zhS0WvQG9XhO-0Js_pwEAlWc2wtGKCPFnNjZjI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmEyODE2YjY0/YzFkZDgyOGUzOThi/NmFhOGNkZTRhZDBm/ZmJiYWUxZGQ0MjYx/YWI5YjIyYWQ3N2E4/ZTZjNDk3YS93d3cu/aW5kZXBlbmRlbnQu/Y28udWsv\",\"path\":\"\u203A
+        news  \u203A world  \u203A americas  \u203A us-layoffs-amazon-target-ups-companies-b2854061.html\"},\"source\":\"https://www.independent.co.uk/news/world/americas/us-layoffs-amazon-target-ups-companies-b2854061.html\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/V6LaOTS5rS7QBHYCsxigzlrxZLUC_WvdwLtpFK1_v4o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vQ3RRSFVZ/VjlYTWE5LUJfRGVq/Q2NMWm53NjJuTzBM/b1hHNlRlVWI2TDJi/US9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OXpkR0YwL2FXTXVh/VzVrWlhCbGJtUmwv/Ym5RdVkyOHVkV3N2/TWpBeS9OUzh4TUM4/eU1TOHhOUzh6L05T/OXBVM1J2WTJzdE1q/SXcvTlRFMU56SXdO/UzVxY0djXy9kMmxr/ZEdnOU1USXdNQ1po/L2RYUnZQWGRsWW5B/bVkzSnYvY0QwekpU/TkJNZw\",\"original\":\"https://imgs.search.brave.com/CtQHUYV9XMa9-B_DejCcLZnw62nO0LoXG6TeUb6L2bQ/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuaW5kZXBlbmRl/bnQuY28udWsvMjAy/NS8xMC8yMS8xNS8z/NS9pU3RvY2stMjIw/NTE1NzIwNS5qcGc_/d2lkdGg9MTIwMCZh/dXRvPXdlYnAmY3Jv/cD0zJTNBMg\"},\"age\":\"2
+        days ago\",\"extra_snippets\":[\"Amazon is the latest company to announce
+        job cuts as American workers continue to endure a tough time in the job market.
+        Amid wider economic uncertainty, some analysts said businesses are at a \u201Cno-hire,
+        no fire\u201D standstill. It has caused many companies to limit new work to
+        only a few specific roles, if not pause openings entirely. At the same time,
+        some sizeable layoffs have piled up, raising worker anxieties across sectors.\",\"CEO
+        Andy Jassy previously said he anticipated generative AI would reduce Amazon\u2019s
+        corporate workforce in the coming years. And he has worked to aggressively
+        cut costs overall since 2021. United Parcel Service has cut about 34,000 jobs
+        since the start of this year as part of turnaround efforts, amid wider shifts
+        in the company's shipping outputs. The layoffs, disclosed in a regulatory
+        filing on Tuesday, are notably higher than the roughly 20,000 cuts UPS forecast
+        earlier this year.\",\"Most of the lost jobs would be in Germany, and the
+        focus would be on administrative rather than operational roles, the company
+        said. The layoff plans arrived even as the company reported strong demand
+        for air travel and predicted stronger profits in years ahead.\",\"A spokesperson
+        for ConocoPhillips confirmed the layoffs on Sept. 3, noting that 20% to 25%
+        of the company\u2019s employees and contractors would be impacted worldwide.
+        At the time, ConocoPhillips had a total headcount of about 13,000 \u2014 or
+        between 2,600 and 3,250 workers.\"]},{\"title\":\"Global companies ratchet
+        up job cuts amid weak sentiment, AI push\",\"url\":\"https://www.scmp.com/business/companies/article/3330742/global-companies-ratchet-job-cuts-amid-weak-sentiment-ai-push?utm_source=rss_feed\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"The
+        occupations most likely to be affected would be where entry-level work is
+        replaced with automation, Bank of America economists say.\",\"page_age\":\"2025-10-29T06:51:28\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"scmp.com\",\"hostname\":\"www.scmp.com\",\"favicon\":\"https://imgs.search.brave.com/glh0EcQC-BrbjUU98-nC7yKa1GSIhHuVAbgalCLZ6NA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzgzYjExOTk3/ZjUxYmEwMTVkN2Fl/OTJhMDgxNDBiZGNi/NjEzNTEyZmJjZWE0/MzNiNjQ0MTI4MzUw/ZmQyMTZmZi93d3cu/c2NtcC5jb20v\",\"path\":\"\u203A
+        business  \u203A companies  \u203A article  \u203A 3330742  \u203A global-companies-ratchet-job-cuts-amid-weak-sentiment-ai-push\"},\"source\":\"https://www.scmp.com/business/companies/article/3330742/global-companies-ratchet-job-cuts-amid-weak-sentiment-ai-push?utm_source=rss_feed\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/H9DCboT3-D0oZat7Kx6ipO522WZXJF9BsHntiI90114/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vTHNqTlBO/dXZ0d0k4SU9HTUMt/MHNRdWhpQ0g0VjBH/VzlET2JleFFUTFc4/MC9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OWpaRzR1L2FTMXpZ/MjF3TG1OdmJTOXov/YVhSbGN5OWtaV1po/ZFd4MC9MMlpwYkdW/ekwzTjBlV3hsL2N5/OHhNamd3ZURjeU1D/OXcvZFdKc2FXTXZa/RGd2YVcxaC9aMlZ6/TDJOaGJuWmhjeTh5/L01ESTFMekV3THpJ/NUwyVTUvTkRZMllU/YzFMVE15WWpNdC9O/R0k0WXkwNE9UY3pM/VFV5L1lqQXlaamRp/WkRVME5sODIvT0RW/bE9URmhOeTVxY0dj\",\"original\":\"https://imgs.search.brave.com/LsjNPNuvtwI8IOGMC-0sQuhiCH4V0GW9DObexQTLW80/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9jZG4u/aS1zY21wLmNvbS9z/aXRlcy9kZWZhdWx0/L2ZpbGVzL3N0eWxl/cy8xMjgweDcyMC9w/dWJsaWMvZDgvaW1h/Z2VzL2NhbnZhcy8y/MDI1LzEwLzI5L2U5/NDY2YTc1LTMyYjMt/NGI4Yy04OTczLTUy/YjAyZjdiZDU0Nl82/ODVlOTFhNy5qcGc\"},\"age\":\"1
+        day ago\",\"extra_snippets\":[\"Companies around the globe have ramped up
+        job cuts, with blue-chip firms from Amazon.com to Nestl\xE9 and UPS reining
+        in spending, while consumer sentiment dims and artificial intelligence-focused
+        tech companies start to replace business roles with automation.\",\"Amazon
+        said it would cut up to 14,000 jobs from its corporate workforce, joining
+        Target, Procter & Gamble and others in axing thousands of office roles.\",\"Reuters
+        reported on Monday that as many as 30,000 Amazon jobs could be eliminated.\",\"Amazon.com\u2019s
+        job cuts could be an early sign of deeper structural shifts, as companies
+        push to justify billions spent on artificial intelligence tools.\"]},{\"title\":\"Amazon
+        Says It Will Lay off 14,000 Employees as It Invests in AI\",\"url\":\"https://www.today.com/video/amazon-announces-massive-job-cuts-what-s-behind-the-layoffs-250766917816\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"In
+        one of the largest layoffs in Amazon\u2019s history, the company is announcing
+        it will eliminate 14,000 roles. In a statement, Amazon points to AI, saying
+        the company needs to be lean and remain more \u201Cnimble\u201D in the age
+        of generative artificial intelligence, calling it \u201Cthe most ...\",\"page_age\":\"2025-10-28T11:48:26\",\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"today.com\",\"hostname\":\"www.today.com\",\"favicon\":\"https://imgs.search.brave.com/8IP1z9rq6hQCVgqTu3FvcRh-H7knhDWVbEeasncQp3s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTI3MDdlNDkz/ODk2MzA3ZWVmOGNk/MTRkNDk0YzBkN2Uw/OTkyNTU2MjRkZjQ2/ZmI1YWM5YjA4NGYx/YjgzMDE1NS93d3cu/dG9kYXkuY29tLw\",\"path\":\"\u203A
+        video  \u203A amazon-announces-massive-job-cuts-what-s-behind-the-layoffs-250766917816\"},\"source\":\"https://www.today.com/video/amazon-announces-massive-job-cuts-what-s-behind-the-layoffs-250766917816\",\"breaking\":true,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/bYTP7MMAf9FeH-m_px9XV6oII-K1WLdnb_nc4RM6W9o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vWC1yM1J1/dVhNYXNwZHNGZzkt/WkFURTdDcms1OHFa/d2ZONmlDcnpIMmdp/QS9yczpmaXQ6NjI4/OjQwMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OXRaV1JwL1lTMWpi/R1J1Y25rdWN5MXUv/WW1OdVpYZHpMbU52/YlM5cC9iV0ZuWlM5/MWNHeHZZV1F2L2RG/OXpiMk5wWVd4ZmMy/aGgvY21WZk1USXdN/SGcyTXpCZi9ZMlZ1/ZEdWeUxHWmZZWFYw/L2J5eHhYMkYxZEc4/NlltVnovZEM5dGNI/Z3ZNamN3TkRjeS9N/akl4T1M4eU1ESTFY/ekV3L0x6RTNOakUy/TlRJeE1EQTMvTkRO/ZmRHUjVYMjVsZDNO/Zi9OMkZmY205dFlX/NXpYMkZ0L1lYcHZi/bDlzWVhsdlptWnov/WHpJMU1UQXlPRjh4/T1RJdy9lREV3T0RB/dGRIQnhkVEZvL0xt/cHdadw\",\"original\":\"https://imgs.search.brave.com/X-r3RuuXMaspdsFg9-ZATE7Crk58qZwfN6iCrzH2giA/rs:fit:628:400:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jbGRucnkucy1u/YmNuZXdzLmNvbS9p/bWFnZS91cGxvYWQv/dF9zb2NpYWxfc2hh/cmVfMTIwMHg2MzBf/Y2VudGVyLGZfYXV0/byxxX2F1dG86YmVz/dC9tcHgvMjcwNDcy/MjIxOS8yMDI1XzEw/LzE3NjE2NTIxMDA3/NDNfdGR5X25ld3Nf/N2Ffcm9tYW5zX2Ft/YXpvbl9sYXlvZmZz/XzI1MTAyOF8xOTIw/eDEwODAtdHBxdTFo/LmpwZw\"},\"age\":\"2
+        days ago\",\"extra_snippets\":[\"In one of the largest layoffs in Amazon\u2019s
+        history, the company is announcing it will eliminate 14,000 roles. In a statement,
+        Amazon points to AI, saying the company needs to be lean and remain more \u201Cnimble\u201D
+        in the age of generative artificial intelligence, calling it \u201Cthe most
+        transformative technology since the internet.\u201D NBC\u2019s Christine Romans
+        reports for TODAY.\",\"In a statement, Amazon points to AI, saying the company
+        needs to be lean and remain more \u201Cnimble\u201D in the age of generative
+        artificial intelligence, calling it \u201Cthe most transformative technology
+        since the internet.\u201D NBC\u2019s Christine Romans reports for TODAY.Oct.\"]}],\"mutated_by_goggles\":false},\"type\":\"search\",\"videos\":{\"type\":\"videos\",\"results\":[{\"type\":\"video_result\",\"url\":\"https://www.msnbc.com/morning-joe/watch/amazon-set-to-cut-14-000-corporate-roles-as-it-boosts-artificial-intelligence-250889285533\",\"title\":\"Amazon
+        set to cut 14,000 corporate roles as it boosts artificial ...\",\"description\":\"Layoffs
+        at companies, largely due to AI, ranging from Amazon to Target are sending
+        young and experienced workers alike into unwelcoming market, The Wall Street
+        Journal reports. The Morning Joe panel discusses how AI is impacting jobs.\",\"age\":\"1
+        day ago\",\"page_age\":\"2025-10-29T12:02:05\",\"fetched_content_timestamp\":1761745738,\"video\":{\"duration\":\"10:34\",\"publisher\":\"Msnbc\"},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"msnbc.com\",\"hostname\":\"www.msnbc.com\",\"favicon\":\"https://imgs.search.brave.com/cxONXe2rqNqHMUln0JH_zwHwwh5z_RmhLMUbBdWV4EE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjY0ODMyODk3/ODU5YTkyMjVjZWZm/ZjYwYjdlMDQwY2Y2/ZjgxODRlYTYyOWEz/ODY1ZDI1ZThjMGIx/YzE1NTY3YS93d3cu/bXNuYmMuY29tLw\",\"path\":\"\u203A
+        morning-joe  \u203A watch  \u203A amazon-set-to-cut-14-000-corporate-roles-as-it-boosts-artificial-intelligence-250889285533\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/k70s4sznSyCllC4foCflL6014IhwnDgXYAieB53hGls/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jbGRucnkucy1u/YmNuZXdzLmNvbS9p/bWFnZS91cGxvYWQv/dF9uYmNuZXdzLWZw/LTEyMDAtNjMwLGZf/YXV0byxxX2F1dG86/YmVzdC9tcHgvMjcw/NDcyMjIxOS8yMDI1/XzEwLzE3NjE3Mzkx/OTAxOTFfbl9tal9h/aV8yNTA5MjlfMTky/MHgxMDgwLXBwbmpu/Ni5qcGc\",\"original\":\"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2025_10/1761739190191_n_mj_ai_250929_1920x1080-ppnjn6.jpg\"}},{\"type\":\"video_result\",\"url\":\"https://www.youtube.com/watch?v=Tni0pKx2jEU\",\"title\":\"Widespread
+        Layoffs Highlight Impact of Artificial Intelligence ...\",\"description\":\"As
+        excitement over artificial intelligence drives big time money into stocks,
+        that same technology may also be transforming the American workforce with
+        Amazo...\",\"age\":\"1 day ago\",\"page_age\":\"2025-10-29T12:37:16\",\"fetched_content_timestamp\":1761758643,\"video\":{\"duration\":\"02:47\",\"creator\":\"TODAY\",\"publisher\":\"YouTube\"},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"youtube.com\",\"hostname\":\"www.youtube.com\",\"favicon\":\"https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v\",\"path\":\"\u203A
+        watch\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/uSuDuhHRabiOtTUafo8PQB2yCHfrPqAOCSMTM2ctr7o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9U/bmkwcEt4MmpFVS9t/YXhyZXNkZWZhdWx0/LmpwZw\",\"original\":\"https://i.ytimg.com/vi/Tni0pKx2jEU/maxresdefault.jpg\"}},{\"type\":\"video_result\",\"url\":\"https://www.youtube.com/watch?v=lBsMA5yIFJ4\",\"title\":\"When
+        AI goes 'evil': New fears over artificial intelligence - YouTube\",\"description\":\"AI
+        developers are noticing that its technology can sometimes turn \\\"evil\\\"
+        by deceiving users and even resorting to blackmail. Wired Editor-at-large
+        Steven Lev...\",\"age\":\"1 day ago\",\"page_age\":\"2025-10-29T04:09:26\",\"fetched_content_timestamp\":1761744428,\"video\":{\"duration\":\"07:02\",\"creator\":\"MSNBC\",\"publisher\":\"YouTube\"},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"youtube.com\",\"hostname\":\"www.youtube.com\",\"favicon\":\"https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v\",\"path\":\"\u203A
+        watch\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/ktSQZ2KuRoCTqbmy9LRdCbu1ohh3WE2PS2DzqVMhTvY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9s/QnNNQTV5SUZKNC9t/YXhyZXNkZWZhdWx0/LmpwZw\",\"original\":\"https://i.ytimg.com/vi/lBsMA5yIFJ4/maxresdefault.jpg\"}},{\"type\":\"video_result\",\"url\":\"https://www.msnbc.com/11th-hour/watch/new-fears-over-artificial-intelligence-250874437680\",\"title\":\"New
+        fears over artificial intelligence\",\"description\":\"AI developers are noticing
+        that its technology can sometimes turn \\\"evil\\\" by deceiving users and
+        even resorting to blackmail. Wired Editor-at-large Steven Levy joins Stephanie
+        Ruhle to discuss on The 11th Hour.\",\"age\":\"1 day ago\",\"page_age\":\"2025-10-29T03:52:59\",\"fetched_content_timestamp\":1761812778,\"video\":{\"duration\":\"06:42\",\"publisher\":\"Msnbc\"},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"msnbc.com\",\"hostname\":\"www.msnbc.com\",\"favicon\":\"https://imgs.search.brave.com/cxONXe2rqNqHMUln0JH_zwHwwh5z_RmhLMUbBdWV4EE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjY0ODMyODk3/ODU5YTkyMjVjZWZm/ZjYwYjdlMDQwY2Y2/ZjgxODRlYTYyOWEz/ODY1ZDI1ZThjMGIx/YzE1NTY3YS93d3cu/bXNuYmMuY29tLw\",\"path\":\"\u203A
+        11th-hour  \u203A watch  \u203A new-fears-over-artificial-intelligence-250874437680\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/bUQcTxNQvnBAify3lEZfwJxMd5kTrEOsDY0BTTVggAE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jbGRucnkucy1u/YmNuZXdzLmNvbS9p/bWFnZS91cGxvYWQv/dF9uYmNuZXdzLWZw/LTEyMDAtNjMwLGZf/YXV0byxxX2F1dG86/YmVzdC9tcHgvMjcw/NDcyMjIxOS8yMDI1/XzEwLzE3NjE3MDk5/MTMyNTBfbl8xMXRo/aG91cl9jXzI1MTAy/OF8xOTIweDEwODAt/MGhjZThlLmpwZw\",\"original\":\"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2025_10/1761709913250_n_11thhour_c_251028_1920x1080-0hce8e.jpg\"}},{\"type\":\"video_result\",\"url\":\"https://www.youtube.com/watch?v=zE8soWrsg2Y\",\"title\":\"Artificial
+        Intelligence Full Course FREE | AI Course For Beginners ...\",\"description\":\"Welcome
+        to the Complete Artificial Intelligence Course by Intellipaat, your ultimate
+        guide to mastering AI, Deep Learning, Convolutional Neural Networks (CNN...\",\"age\":\"3
+        days ago\",\"page_age\":\"2025-10-27T07:09:29\",\"fetched_content_timestamp\":1761583960,\"video\":{\"creator\":\"Intellipaat\",\"publisher\":\"YouTube\"},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"youtube.com\",\"hostname\":\"www.youtube.com\",\"favicon\":\"https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v\",\"path\":\"\u203A
+        watch\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/90Sd-6FW4lGuSRTJDuPOTHn-x6UUxJ9bEcp8bsPTxy8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS96/RThzb1dyc2cyWS9t/YXhyZXNkZWZhdWx0/LmpwZz92PTY4ZmYx/YWYy\",\"original\":\"https://i.ytimg.com/vi/zE8soWrsg2Y/maxresdefault.jpg?v=68ff1af2\"}}],\"mutated_by_goggles\":false},\"web\":{\"type\":\"search\",\"results\":[{\"title\":\"Artificial
+        intelligence - Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Artificial
+        intelligence (AI) is <strong>the capability of computational systems to perform
+        tasks typically associated with human intelligence, such as learning, reasoning,
+        problem-solving, perception, and decision-making</strong>. It is a field of
+        research in computer science that develops and studies methods ...\",\"page_age\":\"2025-10-29T11:37:39\",\"profile\":{\"name\":\"Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence\",\"long_name\":\"en.wikipedia.org\",\"img\":\"https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"deep_results\":{\"buttons\":[{\"type\":\"button_result\",\"title\":\"Goals\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#Goals\"},{\"type\":\"button_result\",\"title\":\"Techniques\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#Techniques\"},{\"type\":\"button_result\",\"title\":\"Applications\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#Applications\"},{\"type\":\"button_result\",\"title\":\"Ethics\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#Ethics\"},{\"type\":\"button_result\",\"title\":\"History\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#History\"},{\"type\":\"button_result\",\"title\":\"Philosophy\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#Philosophy\"},{\"type\":\"button_result\",\"title\":\"Future\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#Future\"},{\"type\":\"button_result\",\"title\":\"In
+        fiction\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#In_fiction\"},{\"type\":\"button_result\",\"title\":\"Explanatory
+        notes\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#Explanatory_notes\"},{\"type\":\"button_result\",\"title\":\"Further
+        reading\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_intelligence#Further_reading\"}]},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"en.wikipedia.org\",\"hostname\":\"en.wikipedia.org\",\"favicon\":\"https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw\",\"path\":\"\u203A
+        wiki  \u203A Artificial_intelligence\"},\"age\":\"1 day ago\"},{\"title\":\"What
+        Is Artificial Intelligence (AI)? | IBM\",\"url\":\"https://www.ibm.com/think/topics/artificial-intelligence\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Artificial
+        intelligence (AI) is <strong>technology that enables computers and machines
+        to simulate human learning, comprehension, problem solving, decision-making,
+        creativity and autonomy</strong>.\",\"page_age\":\"2025-10-23T19:22:24\",\"profile\":{\"name\":\"IBM\",\"url\":\"https://www.ibm.com/think/topics/artificial-intelligence\",\"long_name\":\"ibm.com\",\"img\":\"https://imgs.search.brave.com/WtFphd-kJr-JtTbMqTUV8D4gBvSovY56CfvQYWvRbAw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWI0MWQyYmEy/MTNmNWVkODQ2ODFj/ZjYxMjk4YjI3NmY5/Yjk5M2E0YjhjNWZi/OGUyODMzNzllOTQx/M2I4ZDc2My93d3cu/aWJtLmNvbS8\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"ibm.com\",\"hostname\":\"www.ibm.com\",\"favicon\":\"https://imgs.search.brave.com/WtFphd-kJr-JtTbMqTUV8D4gBvSovY56CfvQYWvRbAw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWI0MWQyYmEy/MTNmNWVkODQ2ODFj/ZjYxMjk4YjI3NmY5/Yjk5M2E0YjhjNWZi/OGUyODMzNzllOTQx/M2I4ZDc2My93d3cu/aWJtLmNvbS8\",\"path\":\"\u203A
+        think  \u203A topics  \u203A artificial-intelligence\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/g41Afls32GC8RingWNcD6bGRcckH8oMc6TbDDQbDJLc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aWJtLmNvbS9jb250/ZW50L2RhbS9hZG9i/ZS1jbXMvZmlyZWZs/eS1nZW5lcmF0ZWQt/YXNzZXRzLzIwMjUv/MDUvNjAzZDBmZDMt/MTUxZi00MjU2LTlk/Y2QtYjhhZDc4ODk5/YWVmLmpwZWc\",\"original\":\"https://www.ibm.com/content/dam/adobe-cms/firefly-generated-assets/2025/05/603d0fd3-151f-4256-9dcd-b8ad78899aef.jpeg\",\"logo\":false},\"age\":\"1
+        week ago\"},{\"title\":\"What Is Artificial Intelligence (AI)? | Google Cloud\",\"url\":\"https://cloud.google.com/learn/what-is-artificial-intelligence\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Artificial
+        intelligence is <strong>a technology that allows you to generate, classify,
+        and perform tasks like image analysis and speech recognition</strong>.\",\"profile\":{\"name\":\"Google
+        Cloud\",\"url\":\"https://cloud.google.com/learn/what-is-artificial-intelligence\",\"long_name\":\"cloud.google.com\",\"img\":\"https://imgs.search.brave.com/4faLjwBnHrOY24ELi0qdmoDCRjUko8oKr_dfgTtbPA4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI0Mjg3MThk/OWUxNWIwNTBhZDY0/YmZlNjQ3ZjI5MmNj/NDliNjFkM2ZlZWMx/NWIwNDVmMTAwYjVl/YjQyMjY3Mi9jbG91/ZC5nb29nbGUuY29t/Lw\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"cloud.google.com\",\"hostname\":\"cloud.google.com\",\"favicon\":\"https://imgs.search.brave.com/4faLjwBnHrOY24ELi0qdmoDCRjUko8oKr_dfgTtbPA4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI0Mjg3MThk/OWUxNWIwNTBhZDY0/YmZlNjQ3ZjI5MmNj/NDliNjFkM2ZlZWMx/NWIwNDVmMTAwYjVl/YjQyMjY3Mi9jbG91/ZC5nb29nbGUuY29t/Lw\",\"path\":\"\u203A
+        learn  \u203A what-is-artificial-intelligence\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/5OBF4ltp8uEjUB9CxGwxpHrCYQV7D_lDdrRTrZW7qo4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbG91/ZC5nb29nbGUuY29t/L19zdGF0aWMvY2xv/dWQvaW1hZ2VzL3Nv/Y2lhbC1pY29uLWdv/b2dsZS1jbG91ZC0x/MjAwLTYzMC5wbmc\",\"original\":\"https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png\",\"logo\":true}},{\"title\":\"What
+        is Artificial Intelligence? - NASA\",\"url\":\"https://www.nasa.gov/what-is-artificial-intelligence/\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"<strong>An
+        artificial system designed to act rationally</strong>, including an intelligent
+        software agent or embodied robot that achieves goals using perception, planning,
+        reasoning, learning, communicating, decision-making, and acting.\",\"page_age\":\"2024-05-13T15:15:09\",\"profile\":{\"name\":\"NASA\",\"url\":\"https://www.nasa.gov/what-is-artificial-intelligence/\",\"long_name\":\"nasa.gov\",\"img\":\"https://imgs.search.brave.com/BBFmCMg1UgOoUD0FzIwQhKfBIT1COEbSGDOOGQbY_i8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDNlNTRkMjE4/NjM5MTUzOGQ4ZDI2/ZjdiYjMyZTA5OGY2/NDhlOTBjNTY4MDk5/ZjVjZjkyOGZmZGRl/ZjFiYjlmZS93d3cu/bmFzYS5nb3Yv\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"nasa.gov\",\"hostname\":\"www.nasa.gov\",\"favicon\":\"https://imgs.search.brave.com/BBFmCMg1UgOoUD0FzIwQhKfBIT1COEbSGDOOGQbY_i8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDNlNTRkMjE4/NjM5MTUzOGQ4ZDI2/ZjdiYjMyZTA5OGY2/NDhlOTBjNTY4MDk5/ZjVjZjkyOGZmZGRl/ZjFiYjlmZS93d3cu/bmFzYS5nb3Yv\",\"path\":\"\u203A
+        what-is-artificial-intelligence\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/NK3WXAjVHhoJk7AGdDMzEHs0nScrRQ9PRKov4JGxrTQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmFzYS5nb3Yvd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDUv/YWktbWwtZGwtMDMu/cG5n\",\"original\":\"https://www.nasa.gov/wp-content/uploads/2024/05/ai-ml-dl-03.png\",\"logo\":false},\"age\":\"May
+        13, 2024\"},{\"title\":\"Artificial Intelligence and the Future of Espionage
+        | RealClearDefense\",\"url\":\"https://www.realcleardefense.com/2025/10/30/artificial_intelligence_and_the_future_of_espionage_1144184.html\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Artificial
+        Intelligence is not simply another technological tool; it\u2019s a transformative
+        force reshaping the foundations of intelligence and national security.\",\"page_age\":\"2025-10-30T09:40:05\",\"profile\":{\"name\":\"RealClearDefense\",\"url\":\"https://www.realcleardefense.com/2025/10/30/artificial_intelligence_and_the_future_of_espionage_1144184.html\",\"long_name\":\"realcleardefense.com\",\"img\":\"https://imgs.search.brave.com/ztJcGfK8N2rtDqySXES2smGJiNfGkeMSWh_Hrhlh0ws/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDAxZDAwNTJl/YTUyOWVjMTZlYmIx/ZGIxZjYxODA4YWY0/YmQ5NTg5MTA2Zjc1/ZjViODQ0NzJmN2Vh/OWMzYjZhNC93d3cu/cmVhbGNsZWFyZGVm/ZW5zZS5jb20v\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"realcleardefense.com\",\"hostname\":\"www.realcleardefense.com\",\"favicon\":\"https://imgs.search.brave.com/ztJcGfK8N2rtDqySXES2smGJiNfGkeMSWh_Hrhlh0ws/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDAxZDAwNTJl/YTUyOWVjMTZlYmIx/ZGIxZjYxODA4YWY0/YmQ5NTg5MTA2Zjc1/ZjViODQ0NzJmN2Vh/OWMzYjZhNC93d3cu/cmVhbGNsZWFyZGVm/ZW5zZS5jb20v\",\"path\":\"\u203A
+        2025  \u203A 10  \u203A 30  \u203A artificial_intelligence_and_the_future_of_espionage_1144184.html\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/Tvg6nB7a5dRG61o3gzvY5uam1O9ok2Yr9rWRaSwKgfI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMucmVhbGNsZWFy/LmNvbS9pbWFnZXMv/NzAvNzAwODgzXzZf/LmpwZWc\",\"original\":\"https://assets.realclear.com/images/70/700883_6_.jpeg\",\"logo\":false},\"age\":\"1
+        hour ago\"}],\"family_friendly\":true}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 10:49:33 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+      content-length:
+      - '44959'
+      server-timing:
+      - search-roundtrip;dur=313.045
+      vary:
+      - Accept-Encoding
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site, Sec-Fetch-User
+      x-ratelimit-limit:
+      - 1, 2000
+      x-ratelimit-policy:
+      - 1;w=1, 2000;w=2678400
+      x-ratelimit-remaining:
+      - 0, 1860
+      x-ratelimit-reset:
+      - 1, 133825
+    status:
+      code: 200
+      message: OK
 version: 1

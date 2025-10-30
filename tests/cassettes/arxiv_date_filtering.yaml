@@ -308,4 +308,532 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=5&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3Amachine+learning&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 30 Oct 2025 10:52:33 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:machine%20learning&start=0&max_results=5&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-itm1220072-ITM
+      X-Timer:
+      - S1761821554.857340,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/api/query?max_results=5&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3Amachine+learning&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n
+        \ <link href=\"http://arxiv.org/api/query?search_query%3Dcat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Acs.CL%20AND%20all%3Amachine%20learning%26id_list%3D%26start%3D0%26max_results%3D5\"
+        rel=\"self\" type=\"application/atom+xml\"/>\n  <title type=\"html\">ArXiv
+        Query: search_query=cat:cs.AI OR cat:cs.LG OR cat:cs.CL AND all:machine learning&amp;id_list=&amp;start=0&amp;max_results=5</title>\n
+        \ <id>http://arxiv.org/api/D9jbOwMlxm13ZRJT6OVevFlaMRw</id>\n  <updated>2025-10-30T00:00:00-04:00</updated>\n
+        \ <opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">33936</opensearch:totalResults>\n
+        \ <opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:startIndex>\n
+        \ <opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">5</opensearch:itemsPerPage>\n
+        \ <entry>\n    <id>http://arxiv.org/abs/2510.25701v1</id>\n    <updated>2025-10-29T17:05:00Z</updated>\n
+        \   <published>2025-10-29T17:05:00Z</published>\n    <title>Interpreting LLMs
+        as Credit Risk Classifiers: Do Their Feature\n  Explanations Align with Classical
+        ML?</title>\n    <summary>  Large Language Models (LLMs) are increasingly
+        explored as flexible\nalternatives to classical machine learning models for
+        classification tasks\nthrough zero-shot prompting. However, their suitability
+        for structured tabular\ndata remains underexplored, especially in high-stakes
+        financial applications\nsuch as financial risk assessment. This study conducts
+        a systematic comparison\nbetween zero-shot LLM-based classifiers and LightGBM,
+        a state-of-the-art\ngradient-boosting model, on a real-world loan default
+        prediction task. We\nevaluate their predictive performance, analyze feature
+        attributions using SHAP,\nand assess the reliability of LLM-generated self-explanations.
+        While LLMs are\nable to identify key financial risk indicators, their feature
+        importance\nrankings diverge notably from LightGBM, and their self-explanations
+        often fail\nto align with empirical SHAP attributions. These findings highlight
+        the\nlimitations of LLMs as standalone models for structured financial risk\nprediction
+        and raise concerns about the trustworthiness of their self-generated\nexplanations.
+        Our results underscore the need for explainability audits,\nbaseline comparisons
+        with interpretable models, and human-in-the-loop oversight\nwhen deploying
+        LLMs in risk-sensitive financial environments.\n</summary>\n    <author>\n
+        \     <name>Saeed AlMarri</name>\n    </author>\n    <author>\n      <name>Kristof
+        Juhasz</name>\n    </author>\n    <author>\n      <name>Mathieu Ravaut</name>\n
+        \   </author>\n    <author>\n      <name>Gautier Marti</name>\n    </author>\n
+        \   <author>\n      <name>Hamdan Al Ahbabi</name>\n    </author>\n    <author>\n
+        \     <name>Ibrahim Elfadel</name>\n    </author>\n    <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">8
+        pages, 6 figures, 3 tables, CIKM 2025 FinFAI workshop</arxiv:comment>\n    <link
+        href=\"http://arxiv.org/abs/2510.25701v1\" rel=\"alternate\" type=\"text/html\"/>\n
+        \   <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25701v1\" rel=\"related\"
+        type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n  </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.25626v1</id>\n
+        \   <updated>2025-10-29T15:30:31Z</updated>\n    <published>2025-10-29T15:30:31Z</published>\n
+        \   <title>Are Language Models Efficient Reasoners? A Perspective from Logic\n
+        \ Programming</title>\n    <summary>  Modern language models (LMs) exhibit
+        strong deductive reasoning capabilities,\nyet standard evaluations emphasize
+        correctness while overlooking a key aspect\nof human-like reasoning: efficiency.
+        In real-world reasoning scenarios, much of\nthe available information is irrelevant,
+        and effective deductive inference\nrequires identifying and ignoring such
+        distractions. We propose a framework for\nassessing LM reasoning efficiency
+        through the lens of logic programming,\nintroducing a simple method to align
+        proofs written in natural language -- as\ngenerated by an LM -- with shortest
+        proofs found by executing the logic\nprogram. Efficiency is quantified by
+        measuring how well a model avoids\nunnecessary inference. Empirically, we
+        construct a dataset of math word\nproblems injected with various number of
+        irrelevant axioms that vary in\nsemantic overlap with the goal theorem. We
+        find that current LMs show marked\naccuracy declines under such conditions
+        -- even with minimal, domain-consistent\ndistractions -- and the proofs they
+        generate frequently exhibit detours through\nirrelevant inferences.\n</summary>\n
+        \   <author>\n      <name>Andreas Opedal</name>\n    </author>\n    <author>\n
+        \     <name>Yanick Zengaffinen</name>\n    </author>\n    <author>\n      <name>Haruki
+        Shirakami</name>\n    </author>\n    <author>\n      <name>Clemente Pasti</name>\n
+        \   </author>\n    <author>\n      <name>Mrinmaya Sachan</name>\n    </author>\n
+        \   <author>\n      <name>Abulhair Saparov</name>\n    </author>\n    <author>\n
+        \     <name>Ryan Cotterell</name>\n    </author>\n    <author>\n      <name>Bernhard
+        Sch\xF6lkopf</name>\n    </author>\n    <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Accepted
+        to NeurIPS 2025</arxiv:comment>\n    <link href=\"http://arxiv.org/abs/2510.25626v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25626v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LO\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.25557v1</id>\n    <updated>2025-10-29T14:21:49Z</updated>\n
+        \   <published>2025-10-29T14:21:49Z</published>\n    <title>Hybrid Quantum-Classical
+        Recurrent Neural Networks</title>\n    <summary>  We present a hybrid quantum-classical
+        recurrent neural network (QRNN)\narchitecture in which the entire recurrent
+        core is realized as a parametrized\nquantum circuit (PQC) controlled by a
+        classical feedforward network. The hidden\nstate is the quantum state of an
+        $n$-qubit PQC, residing in an exponentially\nlarge Hilbert space $\\mathbb{C}^{2^n}$.
+        The PQC is unitary by construction,\nmaking the hidden-state evolution norm-preserving
+        without external constraints.\nAt each timestep, mid-circuit readouts are
+        combined with the input embedding\nand processed by the feedforward network,
+        which provides explicit classical\nnonlinearity. The outputs parametrize the
+        PQC, which updates the hidden state\nvia unitary dynamics. The QRNN is compact
+        and physically consistent, and it\nunifies (i) unitary recurrence as a high-capacity
+        memory, (ii) partial\nobservation via mid-circuit measurements, and (iii)
+        nonlinear classical control\nfor input-conditioned parametrization. We evaluate
+        the model in simulation with\nup to 14 qubits on sentiment analysis, MNIST,
+        permuted MNIST, copying memory,\nand language modeling, adopting projective
+        measurements as a limiting case to\nobtain mid-circuit readouts while maintaining
+        a coherent recurrent quantum\nmemory. We further devise a soft attention mechanism
+        over the mid-circuit\nreadouts in a sequence-to-sequence model and show its
+        effectiveness for machine\ntranslation. To our knowledge, this is the first
+        model (RNN or otherwise)\ngrounded in quantum operations to achieve competitive
+        performance against\nstrong classical baselines across a broad class of sequence-learning
+        tasks.\n</summary>\n    <author>\n      <name>Wenduan Xu</name>\n    </author>\n
+        \   <link href=\"http://arxiv.org/abs/2510.25557v1\" rel=\"alternate\" type=\"text/html\"/>\n
+        \   <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25557v1\" rel=\"related\"
+        type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.LG\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"quant-ph\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.25232v1</id>\n    <updated>2025-10-29T07:18:43Z</updated>\n
+        \   <published>2025-10-29T07:18:43Z</published>\n    <title>From Medical Records
+        to Diagnostic Dialogues: A Clinical-Grounded\n  Approach and Dataset for Psychiatric
+        Comorbidity</title>\n    <summary>  Psychiatric comorbidity is clinically
+        significant yet challenging due to the\ncomplexity of multiple co-occurring
+        disorders. To address this, we develop a\nnovel approach integrating synthetic
+        patient electronic medical record (EMR)\nconstruction and multi-agent diagnostic
+        dialogue generation. We create 502\nsynthetic EMRs for common comorbid conditions
+        using a pipeline that ensures\nclinical relevance and diversity. Our multi-agent
+        framework transfers the\nclinical interview protocol into a hierarchical state
+        machine and context tree,\nsupporting over 130 diagnostic states while maintaining
+        clinical standards.\nThrough this rigorous process, we construct PsyCoTalk,
+        the first large-scale\ndialogue dataset supporting comorbidity, containing
+        3,000 multi-turn diagnostic\ndialogues validated by psychiatrists. This dataset
+        enhances diagnostic accuracy\nand treatment planning, offering a valuable
+        resource for psychiatric\ncomorbidity research. Compared to real-world clinical
+        transcripts, PsyCoTalk\nexhibits high structural and linguistic fidelity in
+        terms of dialogue length,\ntoken distribution, and diagnostic reasoning strategies.
+        Licensed psychiatrists\nconfirm the realism and diagnostic validity of the
+        dialogues. This dataset\nenables the development and evaluation of models
+        capable of multi-disorder\npsychiatric screening in a single conversational
+        pass.\n</summary>\n    <author>\n      <name>Tianxi Wan</name>\n    </author>\n
+        \   <author>\n      <name>Jiaming Luo</name>\n    </author>\n    <author>\n
+        \     <name>Siyuan Chen</name>\n    </author>\n    <author>\n      <name>Kunyao
+        Lan</name>\n    </author>\n    <author>\n      <name>Jianhua Chen</name>\n
+        \   </author>\n    <author>\n      <name>Haiyang Geng</name>\n    </author>\n
+        \   <author>\n      <name>Mengyue Wu</name>\n    </author>\n    <link href=\"http://arxiv.org/abs/2510.25232v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25232v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.25206v1</id>\n    <updated>2025-10-29T06:18:37Z</updated>\n
+        \   <published>2025-10-29T06:18:37Z</published>\n    <title>RAVR: Reference-Answer-guided
+        Variational Reasoning for Large Language\n  Models</title>\n    <summary>
+        \ Reinforcement learning (RL) can refine the reasoning abilities of large\nlanguage
+        models (LLMs), but critically depends on a key prerequisite: the LLM\ncan
+        already generate high-utility reasoning paths with non-negligible\nprobability.
+        For tasks beyond the LLM's current competence, such reasoning path\ncan be
+        hard to sample, and learning risks reinforcing familiar but suboptimal\nreasoning.
+        We are motivated by the insight from cognitive science that Why is\nthis the
+        answer is often an easier question than What is the answer, as it\navoids
+        the heavy cognitive load of open-ended exploration, opting instead for\nexplanatory
+        reconstruction-systematically retracing the reasoning that links a\nquestion
+        to its answer. We show that LLMs can similarly leverage answers to\nderive
+        high-quality reasoning paths. We formalize this phenomenon and prove\nthat
+        conditioning on answer provably increases the expected utility of sampled\nreasoning
+        paths, thereby transforming intractable problems into learnable ones.\nBuilding
+        on this insight, we introduce RAVR (Reference-Answer-guided\nVariational Reasoning),
+        an end-to-end framework that uses answer-conditioned\nreasoning as a variational
+        surrogate for question-only reasoning. Experiments\nin both general and math
+        domains demonstrate consistent improvements over\nstrong baselines. We further
+        analyze the reasoning behavior and find that RAVR\nreduces hesitation, strengthens
+        conclusion consolidation, and promotes\nproblem-specific strategies in reasoning.\n</summary>\n
+        \   <author>\n      <name>Tianqianjin Lin</name>\n    </author>\n    <author>\n
+        \     <name>Xi Zhao</name>\n    </author>\n    <author>\n      <name>Xingyao
+        Zhang</name>\n    </author>\n    <author>\n      <name>Rujiao Long</name>\n
+        \   </author>\n    <author>\n      <name>Yi Xu</name>\n    </author>\n    <author>\n
+        \     <name>Zhuoren Jiang</name>\n    </author>\n    <author>\n      <name>Wenbo
+        Su</name>\n    </author>\n    <author>\n      <name>Bo Zheng</name>\n    </author>\n
+        \   <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">17 pages,
+        11 figures</arxiv:comment>\n    <link href=\"http://arxiv.org/abs/2510.25206v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25206v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"I.2.7\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n</feed>\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 30 Oct 2025 10:52:37 GMT
+      Strict-Transport-Security:
+      - max-age=300
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - MISS, MISS, MISS
+      X-Cache-Hits:
+      - 0, 0, 0
+      X-Served-By:
+      - cache-lga21937-LGA, cache-lga21922-LGA, cache-bur-kbur8200114-BUR
+      X-Timer:
+      - S1761821557.847186,VS0,VE223
+      access-control-allow-origin:
+      - '*'
+      content-length:
+      - '13904'
+      content-type:
+      - application/atom+xml; charset=UTF-8
+      server:
+      - Apache
+      via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=5&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3Amachine+learning&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 30 Oct 2025 11:09:57 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:machine%20learning&start=0&max_results=5&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-itm1220064-ITM
+      X-Timer:
+      - S1761822598.709184,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/api/query?max_results=5&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3Amachine+learning&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n
+        \ <link href=\"http://arxiv.org/api/query?search_query%3Dcat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Acs.CL%20AND%20all%3Amachine%20learning%26id_list%3D%26start%3D0%26max_results%3D5\"
+        rel=\"self\" type=\"application/atom+xml\"/>\n  <title type=\"html\">ArXiv
+        Query: search_query=cat:cs.AI OR cat:cs.LG OR cat:cs.CL AND all:machine learning&amp;id_list=&amp;start=0&amp;max_results=5</title>\n
+        \ <id>http://arxiv.org/api/D9jbOwMlxm13ZRJT6OVevFlaMRw</id>\n  <updated>2025-10-30T00:00:00-04:00</updated>\n
+        \ <opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">33936</opensearch:totalResults>\n
+        \ <opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:startIndex>\n
+        \ <opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">5</opensearch:itemsPerPage>\n
+        \ <entry>\n    <id>http://arxiv.org/abs/2510.25701v1</id>\n    <updated>2025-10-29T17:05:00Z</updated>\n
+        \   <published>2025-10-29T17:05:00Z</published>\n    <title>Interpreting LLMs
+        as Credit Risk Classifiers: Do Their Feature\n  Explanations Align with Classical
+        ML?</title>\n    <summary>  Large Language Models (LLMs) are increasingly
+        explored as flexible\nalternatives to classical machine learning models for
+        classification tasks\nthrough zero-shot prompting. However, their suitability
+        for structured tabular\ndata remains underexplored, especially in high-stakes
+        financial applications\nsuch as financial risk assessment. This study conducts
+        a systematic comparison\nbetween zero-shot LLM-based classifiers and LightGBM,
+        a state-of-the-art\ngradient-boosting model, on a real-world loan default
+        prediction task. We\nevaluate their predictive performance, analyze feature
+        attributions using SHAP,\nand assess the reliability of LLM-generated self-explanations.
+        While LLMs are\nable to identify key financial risk indicators, their feature
+        importance\nrankings diverge notably from LightGBM, and their self-explanations
+        often fail\nto align with empirical SHAP attributions. These findings highlight
+        the\nlimitations of LLMs as standalone models for structured financial risk\nprediction
+        and raise concerns about the trustworthiness of their self-generated\nexplanations.
+        Our results underscore the need for explainability audits,\nbaseline comparisons
+        with interpretable models, and human-in-the-loop oversight\nwhen deploying
+        LLMs in risk-sensitive financial environments.\n</summary>\n    <author>\n
+        \     <name>Saeed AlMarri</name>\n    </author>\n    <author>\n      <name>Kristof
+        Juhasz</name>\n    </author>\n    <author>\n      <name>Mathieu Ravaut</name>\n
+        \   </author>\n    <author>\n      <name>Gautier Marti</name>\n    </author>\n
+        \   <author>\n      <name>Hamdan Al Ahbabi</name>\n    </author>\n    <author>\n
+        \     <name>Ibrahim Elfadel</name>\n    </author>\n    <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">8
+        pages, 6 figures, 3 tables, CIKM 2025 FinFAI workshop</arxiv:comment>\n    <link
+        href=\"http://arxiv.org/abs/2510.25701v1\" rel=\"alternate\" type=\"text/html\"/>\n
+        \   <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25701v1\" rel=\"related\"
+        type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n  </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.25626v1</id>\n
+        \   <updated>2025-10-29T15:30:31Z</updated>\n    <published>2025-10-29T15:30:31Z</published>\n
+        \   <title>Are Language Models Efficient Reasoners? A Perspective from Logic\n
+        \ Programming</title>\n    <summary>  Modern language models (LMs) exhibit
+        strong deductive reasoning capabilities,\nyet standard evaluations emphasize
+        correctness while overlooking a key aspect\nof human-like reasoning: efficiency.
+        In real-world reasoning scenarios, much of\nthe available information is irrelevant,
+        and effective deductive inference\nrequires identifying and ignoring such
+        distractions. We propose a framework for\nassessing LM reasoning efficiency
+        through the lens of logic programming,\nintroducing a simple method to align
+        proofs written in natural language -- as\ngenerated by an LM -- with shortest
+        proofs found by executing the logic\nprogram. Efficiency is quantified by
+        measuring how well a model avoids\nunnecessary inference. Empirically, we
+        construct a dataset of math word\nproblems injected with various number of
+        irrelevant axioms that vary in\nsemantic overlap with the goal theorem. We
+        find that current LMs show marked\naccuracy declines under such conditions
+        -- even with minimal, domain-consistent\ndistractions -- and the proofs they
+        generate frequently exhibit detours through\nirrelevant inferences.\n</summary>\n
+        \   <author>\n      <name>Andreas Opedal</name>\n    </author>\n    <author>\n
+        \     <name>Yanick Zengaffinen</name>\n    </author>\n    <author>\n      <name>Haruki
+        Shirakami</name>\n    </author>\n    <author>\n      <name>Clemente Pasti</name>\n
+        \   </author>\n    <author>\n      <name>Mrinmaya Sachan</name>\n    </author>\n
+        \   <author>\n      <name>Abulhair Saparov</name>\n    </author>\n    <author>\n
+        \     <name>Ryan Cotterell</name>\n    </author>\n    <author>\n      <name>Bernhard
+        Sch\xF6lkopf</name>\n    </author>\n    <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Accepted
+        to NeurIPS 2025</arxiv:comment>\n    <link href=\"http://arxiv.org/abs/2510.25626v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25626v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LO\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.25557v1</id>\n    <updated>2025-10-29T14:21:49Z</updated>\n
+        \   <published>2025-10-29T14:21:49Z</published>\n    <title>Hybrid Quantum-Classical
+        Recurrent Neural Networks</title>\n    <summary>  We present a hybrid quantum-classical
+        recurrent neural network (QRNN)\narchitecture in which the entire recurrent
+        core is realized as a parametrized\nquantum circuit (PQC) controlled by a
+        classical feedforward network. The hidden\nstate is the quantum state of an
+        $n$-qubit PQC, residing in an exponentially\nlarge Hilbert space $\\mathbb{C}^{2^n}$.
+        The PQC is unitary by construction,\nmaking the hidden-state evolution norm-preserving
+        without external constraints.\nAt each timestep, mid-circuit readouts are
+        combined with the input embedding\nand processed by the feedforward network,
+        which provides explicit classical\nnonlinearity. The outputs parametrize the
+        PQC, which updates the hidden state\nvia unitary dynamics. The QRNN is compact
+        and physically consistent, and it\nunifies (i) unitary recurrence as a high-capacity
+        memory, (ii) partial\nobservation via mid-circuit measurements, and (iii)
+        nonlinear classical control\nfor input-conditioned parametrization. We evaluate
+        the model in simulation with\nup to 14 qubits on sentiment analysis, MNIST,
+        permuted MNIST, copying memory,\nand language modeling, adopting projective
+        measurements as a limiting case to\nobtain mid-circuit readouts while maintaining
+        a coherent recurrent quantum\nmemory. We further devise a soft attention mechanism
+        over the mid-circuit\nreadouts in a sequence-to-sequence model and show its
+        effectiveness for machine\ntranslation. To our knowledge, this is the first
+        model (RNN or otherwise)\ngrounded in quantum operations to achieve competitive
+        performance against\nstrong classical baselines across a broad class of sequence-learning
+        tasks.\n</summary>\n    <author>\n      <name>Wenduan Xu</name>\n    </author>\n
+        \   <link href=\"http://arxiv.org/abs/2510.25557v1\" rel=\"alternate\" type=\"text/html\"/>\n
+        \   <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25557v1\" rel=\"related\"
+        type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.LG\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"quant-ph\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.25232v1</id>\n    <updated>2025-10-29T07:18:43Z</updated>\n
+        \   <published>2025-10-29T07:18:43Z</published>\n    <title>From Medical Records
+        to Diagnostic Dialogues: A Clinical-Grounded\n  Approach and Dataset for Psychiatric
+        Comorbidity</title>\n    <summary>  Psychiatric comorbidity is clinically
+        significant yet challenging due to the\ncomplexity of multiple co-occurring
+        disorders. To address this, we develop a\nnovel approach integrating synthetic
+        patient electronic medical record (EMR)\nconstruction and multi-agent diagnostic
+        dialogue generation. We create 502\nsynthetic EMRs for common comorbid conditions
+        using a pipeline that ensures\nclinical relevance and diversity. Our multi-agent
+        framework transfers the\nclinical interview protocol into a hierarchical state
+        machine and context tree,\nsupporting over 130 diagnostic states while maintaining
+        clinical standards.\nThrough this rigorous process, we construct PsyCoTalk,
+        the first large-scale\ndialogue dataset supporting comorbidity, containing
+        3,000 multi-turn diagnostic\ndialogues validated by psychiatrists. This dataset
+        enhances diagnostic accuracy\nand treatment planning, offering a valuable
+        resource for psychiatric\ncomorbidity research. Compared to real-world clinical
+        transcripts, PsyCoTalk\nexhibits high structural and linguistic fidelity in
+        terms of dialogue length,\ntoken distribution, and diagnostic reasoning strategies.
+        Licensed psychiatrists\nconfirm the realism and diagnostic validity of the
+        dialogues. This dataset\nenables the development and evaluation of models
+        capable of multi-disorder\npsychiatric screening in a single conversational
+        pass.\n</summary>\n    <author>\n      <name>Tianxi Wan</name>\n    </author>\n
+        \   <author>\n      <name>Jiaming Luo</name>\n    </author>\n    <author>\n
+        \     <name>Siyuan Chen</name>\n    </author>\n    <author>\n      <name>Kunyao
+        Lan</name>\n    </author>\n    <author>\n      <name>Jianhua Chen</name>\n
+        \   </author>\n    <author>\n      <name>Haiyang Geng</name>\n    </author>\n
+        \   <author>\n      <name>Mengyue Wu</name>\n    </author>\n    <link href=\"http://arxiv.org/abs/2510.25232v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25232v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.25206v1</id>\n    <updated>2025-10-29T06:18:37Z</updated>\n
+        \   <published>2025-10-29T06:18:37Z</published>\n    <title>RAVR: Reference-Answer-guided
+        Variational Reasoning for Large Language\n  Models</title>\n    <summary>
+        \ Reinforcement learning (RL) can refine the reasoning abilities of large\nlanguage
+        models (LLMs), but critically depends on a key prerequisite: the LLM\ncan
+        already generate high-utility reasoning paths with non-negligible\nprobability.
+        For tasks beyond the LLM's current competence, such reasoning path\ncan be
+        hard to sample, and learning risks reinforcing familiar but suboptimal\nreasoning.
+        We are motivated by the insight from cognitive science that Why is\nthis the
+        answer is often an easier question than What is the answer, as it\navoids
+        the heavy cognitive load of open-ended exploration, opting instead for\nexplanatory
+        reconstruction-systematically retracing the reasoning that links a\nquestion
+        to its answer. We show that LLMs can similarly leverage answers to\nderive
+        high-quality reasoning paths. We formalize this phenomenon and prove\nthat
+        conditioning on answer provably increases the expected utility of sampled\nreasoning
+        paths, thereby transforming intractable problems into learnable ones.\nBuilding
+        on this insight, we introduce RAVR (Reference-Answer-guided\nVariational Reasoning),
+        an end-to-end framework that uses answer-conditioned\nreasoning as a variational
+        surrogate for question-only reasoning. Experiments\nin both general and math
+        domains demonstrate consistent improvements over\nstrong baselines. We further
+        analyze the reasoning behavior and find that RAVR\nreduces hesitation, strengthens
+        conclusion consolidation, and promotes\nproblem-specific strategies in reasoning.\n</summary>\n
+        \   <author>\n      <name>Tianqianjin Lin</name>\n    </author>\n    <author>\n
+        \     <name>Xi Zhao</name>\n    </author>\n    <author>\n      <name>Xingyao
+        Zhang</name>\n    </author>\n    <author>\n      <name>Rujiao Long</name>\n
+        \   </author>\n    <author>\n      <name>Yi Xu</name>\n    </author>\n    <author>\n
+        \     <name>Zhuoren Jiang</name>\n    </author>\n    <author>\n      <name>Wenbo
+        Su</name>\n    </author>\n    <author>\n      <name>Bo Zheng</name>\n    </author>\n
+        \   <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">17 pages,
+        11 figures</arxiv:comment>\n    <link href=\"http://arxiv.org/abs/2510.25206v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.25206v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"I.2.7\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n</feed>\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '1044'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 30 Oct 2025 11:10:00 GMT
+      Strict-Transport-Security:
+      - max-age=300
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - MISS, MISS, HIT
+      X-Cache-Hits:
+      - 0, 0, 0
+      X-Served-By:
+      - cache-lga21937-LGA, cache-lga21922-LGA, cache-bur-kbur8200068-BUR
+      X-Timer:
+      - S1761822601.741323,VS0,VE1
+      access-control-allow-origin:
+      - '*'
+      content-length:
+      - '13904'
+      content-type:
+      - application/atom+xml; charset=UTF-8
+      server:
+      - Apache
+      via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+    status:
+      code: 200
+      message: OK
 version: 1

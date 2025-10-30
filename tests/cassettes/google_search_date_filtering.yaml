@@ -1140,4 +1140,260 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d1&num=5&q=AI+research&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - AI research\",\n        \"totalResults\": \"11600000\",\n
+        \       \"searchTerms\": \"AI research\",\n        \"count\": 5,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d1\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - AI research\",\n        \"totalResults\":
+        \"11600000\",\n        \"searchTerms\": \"AI research\",\n        \"count\":
+        5,\n        \"startIndex\": 6,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\":
+        \"utf8\",\n        \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n
+        \       \"sort\": \"date\",\n        \"dateRestrict\": \"d1\"\n      }\n    ]\n
+        \ },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n  },\n  \"searchInformation\":
+        {\n    \"searchTime\": 0.196326,\n    \"formattedSearchTime\": \"0.20\",\n
+        \   \"totalResults\": \"11600000\",\n    \"formattedTotalResults\": \"11,600,000\"\n
+        \ },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"IBM Case Studies\",\n      \"htmlTitle\": \"IBM Case \\u003cb\\u003eStudies\\u003c/b\\u003e\",\n
+        \     \"link\": \"https://www.ibm.com/case-studies\",\n      \"displayLink\":
+        \"www.ibm.com\",\n      \"snippet\": \"11 hours ago ... Now in the driver's
+        seat. Scuderia Ferrari HP gives fans the inside track with a smarter AI-driven
+        platform.\",\n      \"htmlSnippet\": \"11 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Now in the driver&#39;s seat. Scuderia Ferrari HP gives fans the inside track
+        with a smarter \\u003cb\\u003eAI\\u003c/b\\u003e-driven platform.\",\n      \"formattedUrl\":
+        \"https://www.ibm.com/case-studies\",\n      \"htmlFormattedUrl\": \"https://www.ibm.com/case-studies\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDKcC3EFOmFD3k62Cpp9TaEq2uZ6-AMkEMnNcOU7EbAOdRfTsY_Wgb0k&s\",\n
+        \           \"width\": \"354\",\n            \"height\": \"142\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"template\":
+        \"full-width-layout\",\n            \"og:image\": \"https://www.ibm.com/content/dam/worldwide-content/creative-assets/s-migr/ul/g/94/07/ferrari-o1.png/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg\",\n
+        \           \"og:type\": \"website\",\n            \"countrycode\": \"us\",\n
+        \           \"og:title\": \"IBM Case Studies\",\n            \"og:description\":
+        \"For every challenge, there\u2019s a solution. And IBM case studies capture
+        our solutions in action.\",\n            \"searchtitle\": \"IBM Case Studies\",\n
+        \           \"primarytopic\": \"Cross IBM - All\",\n            \"languagecode\":
+        \"en\",\n            \"viewport\": \"width=device-width, initial-scale=1\",\n
+        \           \"og:locale\": \"en-US\",\n            \"sitesection\": \"case-studies\",\n
+        \           \"primarytaxonomyen\": \"Cross IBM - All\",\n            \"og:url\":
+        \"https://www.ibm.com/case-studies\",\n            \"focusarea\": \"Cross
+        IBM SDRs\"\n          }\n        ],\n        \"cse_image\": [\n          {\n
+        \           \"src\": \"https://www.ibm.com/content/dam/worldwide-content/creative-assets/s-migr/ul/g/94/07/ferrari-o1.png/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg\"\n
+        \         }\n        ],\n        \"listitem\": [\n          {\n            \"item\":
+        \"Home\",\n            \"name\": \"Home\",\n            \"position\": \"1\"\n
+        \         },\n          {\n            \"name\": \"Case Studies\",\n            \"position\":
+        \"2\"\n          }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"AnswerThis Explained In 2 Minutes, The Only AI Tool Researchers
+        ...\",\n      \"htmlTitle\": \"AnswerThis Explained In 2 Minutes, The Only
+        \\u003cb\\u003eAI\\u003c/b\\u003e Tool \\u003cb\\u003eResearchers\\u003c/b\\u003e
+        ...\",\n      \"link\": \"https://www.youtube.com/watch?v=nKTS2QWnjqw\",\n
+        \     \"displayLink\": \"www.youtube.com\",\n      \"snippet\": \"8 hours
+        ago ... Conducting a literature review shouldn't take months. With AnswerThis,
+        researchers can now explore, analyze, and organize scientific papers in minutes.\",\n
+        \     \"htmlSnippet\": \"8 hours ago \\u003cb\\u003e...\\u003c/b\\u003e Conducting
+        a literature review shouldn&#39;t take months. With AnswerThis, \\u003cb\\u003eresearchers\\u003c/b\\u003e
+        can now explore, analyze, and organize scientific papers in minutes.\",\n
+        \     \"formattedUrl\": \"https://www.youtube.com/watch?v=nKTS2QWnjqw\",\n
+        \     \"htmlFormattedUrl\": \"https://www.youtube.com/watch?v=nKTS2QWnjqw\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrm0250fI9BqRcdzgdAgeZbGi6rah1VjhfWDcGH2Pv-bzxDW0buaQE1qs&s\",\n
+        \           \"width\": \"300\",\n            \"height\": \"168\"\n          }\n
+        \       ],\n        \"imageobject\": [\n          {\n            \"width\":
+        \"1280\",\n            \"url\": \"https://i.ytimg.com/vi/nKTS2QWnjqw/maxresdefault.jpg\",\n
+        \           \"height\": \"720\"\n          }\n        ],\n        \"person\":
+        [\n          {\n            \"name\": \"AnswerThis\",\n            \"url\":
+        \"http://www.youtube.com/@AnswerThisio\"\n          }\n        ],\n        \"interactioncounter\":
+        [\n          {\n            \"userinteractioncount\": \"0\",\n            \"interactiontype\":
+        \"https://schema.org/LikeAction\"\n          },\n          {\n            \"userinteractioncount\":
+        \"3\",\n            \"interactiontype\": \"https://schema.org/WatchAction\"\n
+        \         }\n        ],\n        \"metatags\": [\n          {\n            \"apple-itunes-app\":
+        \"app-id=544007664, app-argument=https://m.youtube.com/watch?v=nKTS2QWnjqw&referring_app=com.apple.mobilesafari-smartbanner,
+        affiliate-data=ct=smart_app_banner_polymer&pt=9008\",\n            \"og:image\":
+        \"https://i.ytimg.com/vi/nKTS2QWnjqw/maxresdefault.jpg\",\n            \"theme-color\":
+        \"rgba(0, 0, 0, 0)\",\n            \"og:image:width\": \"1280\",\n            \"twitter:card\":
+        \"player\",\n            \"og:site_name\": \"YouTube\",\n            \"twitter:url\":
+        \"https://www.youtube.com/watch?v=nKTS2QWnjqw\",\n            \"al:android:package\":
+        \"com.google.android.youtube\",\n            \"title\": \"AnswerThis Explained
+        In 2 Minutes, The Only AI Tool Researchers need\",\n            \"al:ios:url\":
+        \"vnd.youtube://m.youtube.com/watch?v=nKTS2QWnjqw&feature=applinks\",\n            \"og:description\":
+        \"Conducting a literature review shouldn\u2019t take months. With AnswerThis,
+        researchers can now explore, analyze, and organize scientific papers in minutes.
+        Instead of spending endless hours scrolling through Google Scholar and screening
+        abstracts, you can simply describe your research topic, like \u201CAI for
+        cancer drug development\u201D and instantly receive a detailed, citation-based
+        literature review built from verified publications.\\n\\nEach insight includes
+        direct, line-by-line references, so you can quickly trace every claim back
+        to its original source. From there, you can dig deeper by asking contextual
+        follow-up questions such as \u201CWhat are the major research gaps in this
+        field?\u201D or \u201CWhich methodologies are most frequently cited?\u201D
+        allowing you to identify trends and shape new research directions faster than
+        ever.\\n\\nYour curated papers can be saved into organized libraries, shared
+        with collaborators, or seamlessly exported to tools like Zotero and Mendeley.
+        As you write, you can add sections directly into \",\n            \"al:ios:app_store_id\":
+        \"544007664\",\n            \"twitter:site\": \"@youtube\",\n            \"og:video:type\":
+        \"text/html\",\n            \"og:video:height\": \"720\",\n            \"og:video:url\":
+        \"https://www.youtube.com/embed/nKTS2QWnjqw\",\n            \"og:type\": \"video.other\",\n
+        \           \"twitter:title\": \"AnswerThis Explained In 2 Minutes, The Only
+        AI Tool Researchers need\",\n            \"al:ios:app_name\": \"YouTube\",\n
+        \           \"og:title\": \"AnswerThis Explained In 2 Minutes, The Only AI
+        Tool Researchers need\",\n            \"og:image:height\": \"720\",\n            \"al:web:url\":
+        \"http://m.youtube.com/watch?v=nKTS2QWnjqw&feature=applinks\",\n            \"og:video:secure_url\":
+        \"https://www.youtube.com/embed/nKTS2QWnjqw\",\n            \"og:video:tag\":
+        \"AI research assistant\",\n            \"og:video:width\": \"1280\",\n            \"al:android:url\":
+        \"vnd.youtube://m.youtube.com/watch?v=nKTS2QWnjqw&feature=applinks\",\n            \"fb:app_id\":
+        \"87741124305\",\n            \"viewport\": \"width=device-width, initial-scale=1.0,
+        minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,\",\n            \"og:url\":
+        \"https://www.youtube.com/watch?v=nKTS2QWnjqw\",\n            \"al:android:app_name\":
+        \"YouTube\"\n          }\n        ],\n        \"videoobject\": [\n          {\n
+        \           \"identifier\": \"nKTS2QWnjqw\",\n            \"embedurl\": \"https://www.youtube.com/embed/nKTS2QWnjqw\",\n
+        \           \"playertype\": \"HTML5 Flash\",\n            \"isfamilyfriendly\":
+        \"true\",\n            \"keywords\": \"AI research assistant,AI literature
+        review tool,literature review software,academic research tools,AI for researchers,AI
+        for academia,research productivity tools,Zotero alternative,Mendeley...\",\n
+        \           \"uploaddate\": \"2025-10-29T19:43:44-07:00\",\n            \"requiressubscription\":
+        \"False\",\n            \"description\": \"Conducting a literature review
+        shouldn\u2019t take months. With AnswerThis, researchers can now explore,
+        analyze, and organize scientific papers in minutes. Instead of spending endless
+        hours scrolling...\",\n            \"url\": \"https://www.youtube.com/watch?v=nKTS2QWnjqw\",\n
+        \           \"duration\": \"PT2M24S\",\n            \"name\": \"AnswerThis
+        Explained In 2 Minutes, The Only AI Tool Researchers need\",\n            \"width\":
+        \"1280\",\n            \"regionsallowed\": \"AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH...\",\n
+        \           \"genre\": \"Education\",\n            \"datepublished\": \"2025-10-29T19:43:44-07:00\",\n
+        \           \"thumbnailurl\": \"https://i.ytimg.com/vi/nKTS2QWnjqw/maxresdefault.jpg\",\n
+        \           \"height\": \"720\"\n          }\n        ],\n        \"cse_image\":
+        [\n          {\n            \"src\": \"https://i.ytimg.com/vi/nKTS2QWnjqw/maxresdefault.jpg\"\n
+        \         }\n        ],\n        \"thing\": [\n          {\n            \"name\":
+        \"AnswerThis\"\n          }\n        ],\n        \"listitem\": [\n          {\n
+        \           \"position\": \"1\"\n          }\n        ]\n      }\n    },\n
+        \   {\n      \"kind\": \"customsearch#result\",\n      \"title\": \"Actuaries
+        Digital - Actuaries Institute\",\n      \"htmlTitle\": \"Actuaries Digital
+        - Actuaries Institute\",\n      \"link\": \"https://www.actuaries.asn.au/research-analysis/actuaries-digital\",\n
+        \     \"displayLink\": \"www.actuaries.asn.au\",\n      \"snippet\": \"11
+        hours ago ... Artificial intelligence (AI) is a very popular topic in the
+        media now ... What happened in the AI research community over this time period
+        and why did\_...\",\n      \"htmlSnippet\": \"11 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Artificial intelligence (AI) is a very popular topic in the media now ...
+        What happened in the \\u003cb\\u003eAI research\\u003c/b\\u003e community
+        over this time period and why did&nbsp;...\",\n      \"formattedUrl\": \"https://www.actuaries.asn.au/research-analysis/actuaries-digital\",\n
+        \     \"htmlFormattedUrl\": \"https://www.actuaries.asn.au/\\u003cb\\u003eresearch\\u003c/b\\u003e-analysis/actuaries-digital\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlI8XokDalCMiDOas_CnJOsduUH4OlDjM-epVXRtnQ9ktPBXtyNa0vQmM&s\",\n
+        \           \"width\": \"318\",\n            \"height\": \"158\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"og:image\":
+        \"https://assets-au-01.kc-usercontent.com:443/4f4649d8-6df9-023d-bb6c-14e842b8aadb/72a15cf3-4713-476b-9e3b-2218ce211dc0/Actuaries-Institute-we-shape-the-future-.jpg\",\n
+        \           \"og:type\": \"website\",\n            \"og:image:alt\": \"Actuaries
+        Institute home image - person holding young child in a green field\",\n            \"twitter:card\":
+        \"summary\",\n            \"twitter:title\": \"Actuaries Institute\",\n            \"twitter:url\":
+        \"https://www.actuaries.asn.au/research-analysis/actuaries-digital\",\n            \"og:title\":
+        \"Actuaries Institute\",\n            \"og:description\": \"The peak professional
+        body for actuaries in Australia & overseas.\",\n            \"twitter:creator\":
+        \"Actuaries Institute\",\n            \"twitter:image\": \"https://assets-au-01.kc-usercontent.com:443/4f4649d8-6df9-023d-bb6c-14e842b8aadb/c3419171-923d-4e23-982f-ab333cfcd59f/Twitter-Actuaries-Institute-we-shape-the-future-.jpg\",\n
+        \           \"twitter:image:alt\": \"A text description of the image conveying
+        the essential nature of an image to users who are visually impaired. Maximum
+        420 characters.\",\n            \"twitter:site\": \"Actuaries Institute\",\n
+        \           \"viewport\": \"width=device-width, initial-scale=1\",\n            \"twitter:description\":
+        \"The peak professional body for actuaries in Australia & overseas.\",\n            \"og:url\":
+        \"https://www.actuaries.asn.au/research-analysis/actuaries-digital\"\n          }\n
+        \       ],\n        \"cse_image\": [\n          {\n            \"src\": \"https://assets-au-01.kc-usercontent.com/4f4649d8-6df9-023d-bb6c-14e842b8aadb/69ed37db-dfbf-413b-aad5-978e4ef9e291/Untitled%20design%20%284%29.png?h=300&w=600&fm=webp&dpr=2\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"ScienceDaily: Your source for the latest research news\",\n
+        \     \"htmlTitle\": \"ScienceDaily: Your source for the latest \\u003cb\\u003eresearch\\u003c/b\\u003e
+        news\",\n      \"link\": \"https://www.sciencedaily.com/\",\n      \"displayLink\":
+        \"www.sciencedaily.com\",\n      \"snippet\": \"11 hours ago ... 27, 2025
+        \u2014 Two Sydney PhD students have pulled off a remarkable space science
+        feat from Earth\u2014using AI-driven software to correct image blurring in
+        NASA's James\_...\",\n      \"htmlSnippet\": \"11 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        27, 2025 \u2014 Two Sydney PhD students have pulled off a remarkable space
+        science feat from Earth\u2014using \\u003cb\\u003eAI\\u003c/b\\u003e-driven
+        software to correct image blurring in NASA&#39;s James&nbsp;...\",\n      \"formattedUrl\":
+        \"https://www.sciencedaily.com/\",\n      \"htmlFormattedUrl\": \"https://www.sciencedaily.com/\",\n
+        \     \"pagemap\": {\n        \"cse_thumbnail\": [\n          {\n            \"src\":
+        \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmKnN1CIsIrKL9lFdYuRe41qNe4mlODo9Qhl-OsS4RSmxfLEOV45gT5U1V&s\",\n
+        \           \"width\": \"200\",\n            \"height\": \"200\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"last-modified\":
+        \"Thu, 30 Oct 2025 07:15:06 GMT\",\n            \"og:image\": \"https://www.sciencedaily.com/images/scidaily-icon.png\",\n
+        \           \"expires\": \"Thu, 30 Oct 2025 07:35:06 GMT\",\n            \"og:type\":
+        \"article\",\n            \"og:site_name\": \"ScienceDaily\",\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"og:title\": \"ScienceDaily:
+        Your source for the latest research news\",\n            \"og:url\": \"https://www.sciencedaily.com\",\n
+        \           \"og:description\": \"Breaking science news and articles on global
+        warming, extrasolar planets, stem cells, bird flu, autism, nanotechnology,
+        dinosaurs, evolution -- the latest discoveries in astronomy, anthropology,
+        biology, chemistry, climate & environment, computers, engineering, health
+        & medicine, math, physics, psychology, technology, and more -- from the world's
+        leading universities and research organizations.\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://www.sciencedaily.com/images/scidaily-icon.png\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Sanofi: R&D-Driven and AI-Powered Biopharma Company\",\n
+        \     \"htmlTitle\": \"Sanofi: R&amp;D-Driven and \\u003cb\\u003eAI\\u003c/b\\u003e-Powered
+        Biopharma Company\",\n      \"link\": \"https://www.sanofi.com/en\",\n      \"displayLink\":
+        \"www.sanofi.com\",\n      \"snippet\": \"11 hours ago ... Sanofi is a research
+        & development-driven, AI-powered healthcare biopharma company committed to
+        improving lives through innovative medicines & vaccines.\",\n      \"htmlSnippet\":
+        \"11 hours ago \\u003cb\\u003e...\\u003c/b\\u003e Sanofi is a \\u003cb\\u003eresearch\\u003c/b\\u003e
+        &amp; development-driven, \\u003cb\\u003eAI\\u003c/b\\u003e-powered healthcare
+        biopharma company committed to improving lives through innovative medicines
+        &amp; vaccines.\",\n      \"formattedUrl\": \"https://www.sanofi.com/en\",\n
+        \     \"htmlFormattedUrl\": \"https://www.sanofi.com/en\",\n      \"pagemap\":
+        {\n        \"cse_thumbnail\": [\n          {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcNi_daDay-n-KHd4uUBUr_C4r8oFQVGGROEyZ44KU0ubXdhopK5blosM&s\",\n
+        \           \"width\": \"300\",\n            \"height\": \"168\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"og:image\":
+        \"https://www.sanofi.com/assets/dotcom/pages/images/homepage/Integrated-Report-202302_20230612091817.jpg\",\n
+        \           \"twitter:card\": \"summary\",\n            \"twitter:title\":
+        \"R&D-Driven and AI-Powered Biopharma Company | Sanofi\",\n            \"twitter:url\":
+        \"https://www.sanofi.com/en\",\n            \"msvalidate.01\": \"A82E0E9DA021DFDECAA9FC1F4D101BCA\",\n
+        \           \"og:title\": \"R&D-Driven and AI-Powered Biopharma Company |
+        Sanofi\",\n            \"og:description\": \"Sanofi is a research & development-driven,
+        AI-powered healthcare biopharma company committed to improving lives through
+        innovative medicines & vaccines.\",\n            \"twitter:image\": \"https://www.sanofi.com/assets/dotcom/pages/images/homepage/Integrated-Report-202302_20230612091817.jpg\",\n
+        \           \"og:locale:alternate\": \"fr\",\n            \"viewport\": \"width=device-width,initial-scale=1\",\n
+        \           \"twitter:description\": \"Sanofi is a research & development-driven,
+        AI-powered healthcare biopharma company committed to improving lives through
+        innovative medicines & vaccines.\",\n            \"og:locale\": \"en\",\n
+        \           \"og:url\": \"https://www.sanofi.com/en\"\n          }\n        ],\n
+        \       \"cse_image\": [\n          {\n            \"src\": \"https://www.sanofi.com/assets/dotcom/pages/images/homepage/Integrated-Report-202302_20230612091817.jpg\"\n
+        \         }\n        ]\n      }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 30 Oct 2025 10:52:43 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '18707'
+    status:
+      code: 200
+      message: OK
 version: 1
