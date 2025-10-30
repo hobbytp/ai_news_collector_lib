@@ -1,0 +1,82 @@
+interactions:
+- request:
+    body: '{"q": "deep learning", "num": 15}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '33'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://localhost:33210/search
+  response:
+    body:
+      string: "{\"searchParameters\":{\"q\":\"deep learning\",\"type\":\"search\",\"num\":15,\"engine\":\"google\"},\"organic\":[{\"title\":\"Deep
+        learning\",\"link\":\"https://en.wikipedia.org/wiki/Deep_learning\",\"snippet\":\"In
+        machine learning, deep learning focuses on utilizing multilayered neural networks
+        to perform tasks such as classification, regression, and representation ...\",\"position\":1},{\"title\":\"DeepLearning.AI:
+        Start or Advance Your Career in AI\",\"link\":\"https://www.deeplearning.ai/\",\"snippet\":\"Join
+        over 7 million people learning how to use and build AI. AI Courses and Specializations.
+        Build a foundation of machine learning and AI skills.\",\"position\":2},{\"title\":\"Deep
+        Learning\",\"link\":\"https://www.deeplearningbook.org/\",\"snippet\":\"The
+        Deep Learning textbook is a resource intended to help students and practitioners
+        enter the field of machine learning in general and deep learning in ...\",\"position\":3},{\"title\":\"What
+        Is Deep Learning? | IBM\",\"link\":\"https://www.ibm.com/think/topics/deep-learning\",\"snippet\":\"Deep
+        learning is a subset of machine learning driven by multilayered neural networks
+        whose design is inspired by the structure of the human brain.\",\"position\":4},{\"title\":\"Deep
+        learning\",\"link\":\"https://www.nature.com/articles/nature14539\",\"snippet\":\"by
+        Y LeCun \xB7 2015 \xB7 Cited by 103479 \u2014 Deep learning allows computational
+        models that are composed of multiple processing layers to learn representations
+        of data with multiple levels of abstraction.\",\"position\":5},{\"title\":\"PyTorch
+        for Deep Learning Professional Certificate\",\"link\":\"https://www.coursera.org/professional-certificates/pytorch-for-deep-learning\",\"snippet\":\"The
+        PyTorch for Deep Learning Professional Certificate teaches you how to build,
+        train, optimize, and deploy deep learning models using the ...\",\"date\":\"3
+        days ago\",\"position\":6},{\"title\":\"What is deep learning in AI?\",\"link\":\"https://aws.amazon.com/what-is/deep-learning/\",\"snippet\":\"Deep
+        learning is an artificial intelligence (AI) methodthat teaches computers to
+        process data in a way inspired by the human brain. Deep learning models can
+        ...\",\"position\":7},{\"title\":\"Deep learning: What it is and why It matters\",\"link\":\"https://www.sas.com/en_us/insights/analytics/deep-learning.html\",\"snippet\":\"Deep
+        learning is a subset of machine learning that trains a computer to perform
+        human-like tasks, such as speech recognition, image identification and ...\",\"position\":8},{\"title\":\"What
+        is Deep Learning?\",\"link\":\"https://cloud.google.com/discover/what-is-deep-learning\",\"snippet\":\"Deep
+        learning is a type of machine learning that uses artificial neural networks
+        to learn from data, similar to the way we learn. Artificial neural networks
+        ...\",\"position\":9},{\"title\":\"What is Deep Learning? A Tutorial for Beginners\",\"link\":\"https://www.datacamp.com/tutorial/tutorial-deep-learning-tutorial\",\"snippet\":\"Deep
+        learning is a type of machine learning that teaches computers to perform tasks
+        by learning from examples, much like humans do.\",\"position\":10}],\"credits\":1}"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Length:
+      - '2983'
+      access-control-allow-origin:
+      - '*'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 30 Oct 2025 01:47:19 GMT
+      server:
+      - Google Frontend
+      set-cookie:
+      - GAESA=CqQBMDAxNDc3ODI5NjM5NzVmZDk3MmJjNzkyNGE2YTEwNWZkMTFlM2YyMDUzYmE2MzMzODRlNjQ3MjU0MjNjODNiMjdkZWVkNTQwM2I5MDlmZmYwNjFjMTAzMDNhZGE4ODI0N2U2ZWY4OWM2Yjg4MTIyYjlkZTkwMGZjNDU4ZThmNzg1M2RkZDBkZTMyN2MwMzU5ZWU2ZDhmMzI0YTY3OTQ5ZTkwNTEQxomxlqMz;
+        expires=Sat, 29-Nov-2025 01:47:19 GMT; path=/
+      via:
+      - 1.1 google
+      x-cloud-trace-context:
+      - 1c0618e440f4dc99b89088dd13bb73a2
+      x-ratelimit-limit:
+      - '500'
+      x-ratelimit-remaining:
+      - '499'
+      x-ratelimit-reset:
+      - '1761788840'
+    status:
+      code: 200
+      message: OK
+version: 1

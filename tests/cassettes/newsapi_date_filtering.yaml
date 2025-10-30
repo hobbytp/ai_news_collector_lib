@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v2/everything?from=2025-10-29&language=en&pageSize=5&q=AI+technology+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":20,\"articles\":[{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"ETtech\",\"title\":\"Amazon job cuts in India;
+        Building India's next unicorns\",\"description\":\"Happy Wednesday! Amazon
+        is likely to lay off hundreds in India as part of its global job cuts. This
+        and more in today's ETtech Morning Dispatch.\",\"url\":\"https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/amazon-job-cuts-in-india-building-the-next-unicorns/articleshow/124886430.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/msid-124886430,width-1070,height-580,imgsize-1697652,overlay-ettech/editionshow.jpg\",\"publishedAt\":\"2025-10-29T01:41:15Z\",\"content\":\"Happy
+        Wednesday! Amazon is likely to lay off hundreds in India as part of its global
+        job cuts. This and more in today's ETtech Morning Dispatch.Also in the letter:Prepaid
+        cards' growthBlume closes fu\u2026 [+7835 chars]\"},{\"source\":{\"id\":null,\"name\":\"Nextbigwhat.com\"},\"author\":\"Tom\",\"title\":\"Vinod
+        Khosla proposes government equity stake in public firms to address AGI impacts\",\"description\":\"Venture
+        capitalist Vinod Khosla suggests that the U.S. government could acquire a
+        10% stake in all public companies as a means to distribute the wealth generated
+        by artificial general intelligence (AGI). This proposal aims to mitigate the
+        societal challenges \u2026\",\"url\":\"https://nextbigwhat.com/vinod-khosla-proposes-government-equity-stake-in-public-firms-to-address-agi-impacts/\",\"urlToImage\":\"https://i0.wp.com/nextbigwhat.com/wp-content/uploads/2023/03/nextbigwhat-social-media-logo.jpg?fit=1080%2C1080&ssl=1\",\"publishedAt\":\"2025-10-29T01:32:16Z\",\"content\":\"Subscribe
+        now to keep reading and get access to the full archive.\\r\\nContinue reading\"},{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"Akash Podishetti\",\"title\":\"Pre-market action:
+        Here's the trade setup for today's session\",\"description\":\"Indian equities
+        experienced high volatility due to Nifty's monthly expiry, with investors
+        awaiting the US FOMC meeting's interest rate decision. Analysts anticipate
+        a firm market trend, supported by positive global cues, macro-economic data,
+        and domestic Q2 e\u2026\",\"url\":\"https://economictimes.indiatimes.com/markets/stocks/news/pre-market-action-heres-the-trade-setup-for-todays-session/articleshow/124886421.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/msid-124886418,width-1200,height-630,imgsize-88221,overlay-etmarkets/articleshow.jpg\",\"publishedAt\":\"2025-10-29T01:26:16Z\",\"content\":\"Indian
+        equities witnessed high volatility with benchmark indices swinging between
+        gains and losses on Niftys monthly expiry. Investors would closely track the
+        outcome of the US FOMC meeting on Wednes\u2026 [+2560 chars]\"},{\"source\":{\"id\":null,\"name\":\"CNBC\"},\"author\":null,\"title\":\"CNBC
+        Daily Open: It's a boom, it's a bubble, it's still not enough for investors:
+        It's AI\",\"description\":\"Investors can't get enough of AI, despite worries
+        over high valuations \u2014 and tech companies can't get enough of each other,
+        either.\",\"url\":\"https://www.cnbc.com/2025/10/29/cnbc-daily-open-boom-or-bubble-investors-cant-get-enough-of-ai.html\",\"urlToImage\":\"https://image.cnbcfm.com/api/v1/image/107418096-1716321352932-gettyimages-2153474412-AFP_34TH9MQ.jpeg?v=1756437228&w=1920&h=1080\",\"publishedAt\":\"2025-10-29T01:25:39Z\",\"content\":\"Investors
+        can't get enough of artificial intelligence, despite worries over the sector's
+        excessively high valuations.\\r\\nThe S&amp;P 500, Dow Jones Industrial Average
+        and Nasdaq Composite rose Tuesday \u2026 [+1897 chars]\"},{\"source\":{\"id\":null,\"name\":\"Livemint\"},\"author\":\"Riya
+        R Alex\",\"title\":\"Amazon confirms 14,000 job cuts amid AI push, more layoffs
+        likely - here's what we know\",\"description\":\"Amazon confirms a reduction
+        of 14,000 corporate jobs amid growing AI implementation. The layoffs impact
+        various departments, with employees expressing concerns.\",\"url\":\"https://www.livemint.com/companies/news/amazon-confirms-14-000-job-cuts-amid-ai-push-more-layoffs-likely-heres-what-we-know-11761698614456.html\",\"urlToImage\":\"https://www.livemint.com/lm-img/img/2025/10/29/1600x900/im-05406808_1758203630839_1758203676058_1761700108746.jpg\",\"publishedAt\":\"2025-10-29T01:20:22Z\",\"content\":\"E-commerce
+        giant Amazon.com Inc. has confirmed its plans to cut nearly 14,000 corporate
+        jobs just months after Chief Executive Officer Andy Jassy warned that AI would
+        reduce the companys workforce.\\r\\n\u2026 [+3318 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 99673e86f8f8d498-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:47:22 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bFTReWYtpShM4%2BrzH3qSf3VfI1wyjwY%2FHWyqOKwT7IQASlPi31ZnbWDvNWkuZ0p1y2NM2gCFxg0vSoqtlbRf1KiSn%2FTIWXM1AX8%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '4430'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,2162 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=3&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3Atechnology&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 30 Oct 2025 01:53:41 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:technology&start=0&max_results=3&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-itm1220063-ITM
+      X-Timer:
+      - S1761789221.042937,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/api/query?max_results=3&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3Atechnology&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n
+        \ <link href=\"http://arxiv.org/api/query?search_query%3Dcat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Acs.CL%20AND%20all%3Atechnology%26id_list%3D%26start%3D0%26max_results%3D3\"
+        rel=\"self\" type=\"application/atom+xml\"/>\n  <title type=\"html\">ArXiv
+        Query: search_query=cat:cs.AI OR cat:cs.LG OR cat:cs.CL AND all:technology&amp;id_list=&amp;start=0&amp;max_results=3</title>\n
+        \ <id>http://arxiv.org/api/ZDSJc7QFhR5w+6h4rokmdsLlaRk</id>\n  <updated>2025-10-29T00:00:00-04:00</updated>\n
+        \ <opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">3824</opensearch:totalResults>\n
+        \ <opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:startIndex>\n
+        \ <opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">3</opensearch:itemsPerPage>\n
+        \ <entry>\n    <id>http://arxiv.org/abs/2510.24619v1</id>\n    <updated>2025-10-28T16:48:03Z</updated>\n
+        \   <published>2025-10-28T16:48:03Z</published>\n    <title>Zero-Shot Cross-Lingual
+        Transfer using Prefix-Based Adaptation</title>\n    <summary>  With the release
+        of new large language models (LLMs) like Llama and Mistral,\nzero-shot cross-lingual
+        transfer has become increasingly feasible due to their\nmultilingual pretraining
+        and strong generalization capabilities. However,\nadapting these decoder-only
+        LLMs to new tasks across languages remains\nchallenging. While parameter-efficient
+        fine-tuning (PeFT) techniques like\nLow-Rank Adaptation (LoRA) are widely
+        used, prefix-based techniques such as\nsoft prompt tuning, prefix tuning,
+        and Llama Adapter are less explored,\nespecially for zero-shot transfer in
+        decoder-only models. We present a\ncomprehensive study of three prefix-based
+        methods for zero-shot cross-lingual\ntransfer from English to 35+ high- and
+        low-resource languages. Our analysis\nfurther explores transfer across linguistic
+        families and scripts, as well as\nthe impact of scaling model sizes from 1B
+        to 24B. With Llama 3.1 8B, prefix\nmethods outperform LoRA-baselines by up
+        to 6% on the Belebele benchmark.\nSimilar improvements were observed with
+        Mistral v0.3 7B as well. Despite using\nonly 1.23M learning parameters with
+        prefix tuning, we achieve consistent\nimprovements across diverse benchmarks.
+        These findings highlight the potential\nof prefix-based techniques as an effective
+        and scalable alternative to LoRA,\nparticularly in low-resource multilingual
+        settings.\n</summary>\n    <author>\n      <name>Snegha A</name>\n      <arxiv:affiliation
+        xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Indian Institute of Technology
+        Bombay</arxiv:affiliation>\n    </author>\n    <author>\n      <name>Sayambhu
+        Sen</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Amazon
+        Alexa</arxiv:affiliation>\n    </author>\n    <author>\n      <name>Piyush
+        Singh Pasi</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Amazon
+        Alexa</arxiv:affiliation>\n    </author>\n    <author>\n      <name>Abhishek
+        Singhania</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Amazon
+        Alexa</arxiv:affiliation>\n    </author>\n    <author>\n      <name>Preethi
+        Jyothi</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Indian
+        Institute of Technology Bombay</arxiv:affiliation>\n    </author>\n    <arxiv:comment
+        xmlns:arxiv=\"http://arxiv.org/schemas/atom\">12 Pages</arxiv:comment>\n    <link
+        href=\"http://arxiv.org/abs/2510.24619v1\" rel=\"alternate\" type=\"text/html\"/>\n
+        \   <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.24619v1\" rel=\"related\"
+        type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"I.2.7\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.24488v1</id>\n    <updated>2025-10-28T15:03:18Z</updated>\n
+        \   <published>2025-10-28T15:03:18Z</published>\n    <title>A word association
+        network methodology for evaluating implicit biases in\n  LLMs compared to
+        humans</title>\n    <summary>  As Large language models (LLMs) become increasingly
+        integrated into our\nlives, their inherent social biases remain a pressing
+        concern. Detecting and\nevaluating these biases can be challenging because
+        they are often implicit\nrather than explicit in nature, so developing evaluation
+        methods that assess\nthe implicit knowledge representations of LLMs is essential.
+        We present a novel\nword association network methodology for evaluating implicit
+        biases in LLMs\nbased on simulating semantic priming within LLM-generated
+        word association\nnetworks. Our prompt-based approach taps into the implicit
+        relational\nstructures encoded in LLMs, providing both quantitative and qualitative\nassessments
+        of bias. Unlike most prompt-based evaluation methods, our method\nenables
+        direct comparisons between various LLMs and humans, providing a\nvaluable
+        point of reference and offering new insights into the alignment of\nLLMs with
+        human cognition. To demonstrate the utility of our methodology, we\napply
+        it to both humans and several widely used LLMs to investigate social\nbiases
+        related to gender, religion, ethnicity, sexual orientation, and\npolitical
+        party. Our results reveal both convergences and divergences between\nLLM and
+        human biases, providing new perspectives on the potential risks of\nusing
+        LLMs. Our methodology contributes to a systematic, scalable, and\ngeneralizable
+        framework for evaluating and comparing biases across multiple\nLLMs and humans,
+        advancing the goal of transparent and socially responsible\nlanguage technologies.\n</summary>\n
+        \   <author>\n      <name>Katherine Abramski</name>\n    </author>\n    <author>\n
+        \     <name>Giulio Rossetti</name>\n    </author>\n    <author>\n      <name>Massimo
+        Stella</name>\n    </author>\n    <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">24
+        pages, 13 figures, 3 tables</arxiv:comment>\n    <link href=\"http://arxiv.org/abs/2510.24488v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.24488v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.24102v1</id>\n    <updated>2025-10-28T06:16:38Z</updated>\n
+        \   <published>2025-10-28T06:16:38Z</published>\n    <title>Squrve: A Unified
+        and Modular Framework for Complex Real-World\n  Text-to-SQL Tasks</title>\n
+        \   <summary>  Text-to-SQL technology has evolved rapidly, with diverse academic
+        methods\nachieving impressive results. However, deploying these techniques
+        in real-world\nsystems remains challenging due to limited integration tools.
+        Despite these\nadvances, we introduce Squrve, a unified, modular, and extensive
+        Text-to-SQL\nframework designed to bring together research advances and real-world\napplications.
+        Squrve first establishes a universal execution paradigm that\nstandardizes
+        invocation interfaces, then proposes a multi-actor collaboration\nmechanism
+        based on seven abstracted effective atomic actor components.\nExperiments
+        on widely adopted benchmarks demonstrate that the collaborative\nworkflows
+        consistently outperform the original individual methods, thereby\nopening
+        up a new effective avenue for tackling complex real-world queries. The\ncodes
+        are available at https://github.com/Satissss/Squrve.\n</summary>\n    <author>\n
+        \     <name>Yihan Wang</name>\n    </author>\n    <author>\n      <name>Peiyu
+        Liu</name>\n    </author>\n    <author>\n      <name>Runyu Chen</name>\n    </author>\n
+        \   <author>\n      <name>Jiaxing Pu</name>\n    </author>\n    <author>\n
+        \     <name>Wei Xu</name>\n    </author>\n    <link href=\"http://arxiv.org/abs/2510.24102v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.24102v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n  </entry>\n</feed>\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '153'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 30 Oct 2025 01:53:44 GMT
+      Strict-Transport-Security:
+      - max-age=300
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - MISS, MISS, HIT
+      X-Cache-Hits:
+      - 0, 0, 0
+      X-Served-By:
+      - cache-lga21943-LGA, cache-lga21943-LGA, cache-bur-kbur8200111-BUR
+      X-Timer:
+      - S1761789224.019925,VS0,VE1
+      access-control-allow-origin:
+      - '*'
+      content-length:
+      - '8451'
+      content-type:
+      - application/atom+xml; charset=UTF-8
+      server:
+      - Apache
+      via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45751400.json
+  response:
+    body:
+      string: '{"by":"todsacerdoti","descendants":646,"id":45751400,"kids":[45752272,45755030,45751729,45751914,45751764,45754747,45751769,45751609,45751751,45754781,45755380,45751484,45751585,45751803,45752888,45755394,45755130,45751822,45755168,45755116,45752329,45752741,45751935,45751660,45752246,45752417,45754622,45754961,45751748,45754484,45752063,45753326,45753268,45752639,45753402,45754189,45753496,45752816,45753076,45752530,45752091,45752151,45752843,45751782,45752855,45753118,45751944,45752054,45753304,45751497,45752321,45754030,45754545,45751895,45753032,45753218,45753512,45751883,45752868,45753025,45752605,45753929,45752287,45752290,45752087,45752031,45754748,45752850,45753051,45751948,45752072,45753853,45752337,45754119,45751820,45751608,45752564,45752235,45754117,45752880,45751576,45751829,45752578,45753789,45752104,45751938,45752896,45752962,45753435,45753297,45751920,45751570,45751980,45752243,45752326],"score":1105,"time":1761764249,"title":"Uv
+        is the best thing to happen to the Python ecosystem in a decade","type":"story","url":"https://emily.space/posts/251023-uv"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1084'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:53:46 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45754165.json
+  response:
+    body:
+      string: '{"by":"anigbrowl","descendants":52,"id":45754165,"kids":[45754300,45754615,45755489,45754814,45755451,45754696,45754738,45755411,45755109,45754618,45754965,45755061,45754528,45754369],"score":128,"time":1761778493,"title":"Meta
+        and TikTok are obstructing researchers'' access to data, EU commission rules","type":"story","url":"https://www.science.org/content/article/meta-and-tiktok-are-obstructing-researchers-access-data-european-commission-rules"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '450'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:53:49 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45732800.json
+  response:
+    body:
+      string: '{"by":"Brajeshwar","descendants":204,"id":45732800,"kids":[45754522,45753112,45753872,45753993,45754359,45753614,45755228,45752987,45753321,45755407,45753751,45753168,45753656,45754995,45753201,45732882,45755153,45753590,45753581,45753033,45754345,45754724],"score":346,"time":1761658964,"title":"China
+        has added forest the size of Texas since 1990","type":"story","url":"https://e360.yale.edu/digest/china-new-forest-report"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '426'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:53:52 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45754509.json
+  response:
+    body:
+      string: '{"by":"Daiz","descendants":38,"id":45754509,"kids":[45754884,45755123,45755117,45755100,45755312,45754915,45755381,45755473,45755177],"score":116,"time":1761780684,"title":"Crunchyroll
+        is destroying its subtitles for no good reason","type":"story","url":"https://daiz.moe/crunchyroll-is-destroying-its-subtitles-for-no-good-reason/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '333'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:53:55 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45748661.json
+  response:
+    body:
+      string: '{"by":"tartieret","descendants":626,"id":45748661,"kids":[45752029,45749044,45749410,45750953,45751245,45749162,45750150,45748903,45749957,45751059,45750140,45749820,45751257,45748806,45749237,45750741,45750309,45749477,45749788,45750088,45750652,45751352,45748997,45755140,45749347,45749082,45753383,45754148,45749437,45751144,45749553,45749790,45748826,45751480,45753397,45752782,45749027,45750795,45748946,45751763,45751159,45748863,45749206,45749745,45749481,45751100,45753748,45749961,45753757,45754559,45752393,45749269,45753120,45749204,45748933,45750625,45748842,45750367,45748746,45749413,45750892,45749229,45749501,45750380,45751807,45751238,45752140,45750148,45749398,45749521,45749054,45749068,45750357,45749701,45751043,45751079,45749053,45749411,45749077,45749468,45749736,45749205,45749070,45750407,45750057,45748937,45750217,45751124,45749963,45750749,45749660,45749657,45749151,45751110,45749142,45750403,45749018,45749093,45749881,45753511,45752300,45749080,45750014,45750236,45751166,45749543,45749875,45752545,45751094,45751301,45748968,45749186,45750183,45752128,45752296,45749215,45749500,45754043,45748961,45749351,45748991,45749512,45750764,45750209,45752408,45749048,45748680,45750360,45749878,45750778,45748840,45749922,45749571,45749846,45748792,45748979,45749130,45752476,45749390,45751589,45748797,45752597,45749406,45750186,45749494,45748789,45750415,45751730,45749259,45751363,45751228,45748927,45751001,45750904,45753564,45750143,45750401,45749855,45750805,45749561,45749037,45749158,45749713,45749778,45751023,45749766,45749086,45750455,45750975,45750916,45749770,45749346,45748662,45751117,45748755,45749817,45749769],"score":636,"text":"Azure
+        is down for us, we can&#x27;t even access the azure portal. Are other experiencing
+        this? Our services are located in Canada&#x2F;Central and US-East 2<p><a href=\"https:&#x2F;&#x2F;downdetector.ca&#x2F;status&#x2F;windows-azure&#x2F;\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;downdetector.ca&#x2F;status&#x2F;windows-azure&#x2F;</a><p><a
+        href=\"https:&#x2F;&#x2F;azure.status.microsoft&#x2F;en-gb&#x2F;status\" rel=\"nofollow\">https:&#x2F;&#x2F;azure.status.microsoft&#x2F;en-gb&#x2F;status</a>","time":1761753678,"title":"Tell
+        HN: Azure outage","type":"story"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2235'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:53:58 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45754390.json
+  response:
+    body:
+      string: '{"by":"softwaredoug","descendants":4,"id":45754390,"kids":[45754899,45755033],"score":68,"time":1761779822,"title":"A
+        century of reforestation helped keep the eastern US cool","type":"story","url":"https://news.agu.org/press-release/a-century-of-reforestation-helped-keep-the-eastern-us-cool/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '294'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45748879.json
+  response:
+    body:
+      string: '{"by":"SteveHawk27","descendants":190,"id":45748879,"kids":[45751039,45749518,45750052,45750189,45755417,45750993,45751839,45751174,45754705,45750835,45751347,45750702,45752755,45752331,45754873,45752591,45751294,45751934,45750225,45753057,45752436,45751847,45751260,45750340,45753089,45753006],"score":550,"time":1761754376,"title":"Minecraft
+        removing obfuscation in Java Edition","type":"story","url":"https://www.minecraft.net/en-us/article/removing-obfuscation-in-java-edition"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '482'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:04 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45754439.json
+  response:
+    body:
+      string: '{"by":"chaosprint","descendants":8,"id":45754439,"kids":[45755114,45754594,45754629,45755258,45755007],"score":50,"time":1761780111,"title":"Raspberry
+        Pi Pico Bit-Bangs 100 Mbit/S Ethernet","type":"story","url":"https://www.elektormagazine.com/news/rp2350-bit-bangs-100-mbit-ethernet"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '285'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:07 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45750954.json
+  response:
+    body:
+      string: "{\"by\":\"Bogdanp\",\"descendants\":45,\"id\":45750954,\"kids\":[45754008,45752415,45755346,45753088,45752838,45754482,45754158,45752916,45752847,45753007,45751702,45755000,45752270,45754603,45752017,45751998],\"score\":206,\"time\":1761762095,\"title\":\"Dithering
+        \u2013 Part 1\",\"type\":\"story\",\"url\":\"https://visualrambling.space/dithering-part-1/\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '331'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:10 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45753422.json
+  response:
+    body:
+      string: '{"by":"xd1936","descendants":83,"id":45753422,"kids":[45754677,45755532,45754689,45754543,45755374,45754737,45754950,45755083,45754265,45754711,45754760,45754994,45754191,45754654,45754227,45755072,45754798,45754750,45755086,45754939,45754487,45753423,45754700,45754658,45754853],"score":133,"time":1761774005,"title":"Responses
+        from LLMs are not facts","type":"story","url":"https://stopcitingai.com/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '403'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:13 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45745281.json
+  response:
+    body:
+      string: '{"by":"ndhandala","descendants":423,"id":45745281,"kids":[45745567,45745584,45746995,45745928,45746015,45746522,45746530,45746892,45747413,45745947,45747865,45751462,45745582,45746421,45754489,45746007,45746230,45745554,45747756,45753180,45747404,45747520,45746040,45748440,45745717,45753155,45746379,45755233,45751903,45746652,45746788,45752657,45746757,45748015,45748683,45745556,45746519,45746052,45746472,45746469,45747361,45749038,45748975,45753667,45746303,45746521,45749718,45749100,45746524,45746337,45746054,45745691,45754423,45746285,45745510,45746854,45747220,45745413,45745396,45750662],"score":604,"time":1761736478,"title":"AWS
+        to bare metal two years later: Answering your questions about leaving AWS","type":"story","url":"https://oneuptime.com/blog/post/2025-10-29-aws-to-bare-metal-two-years-later/view"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '822'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:16 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45753222.json
+  response:
+    body:
+      string: '{"by":"zdw","descendants":8,"id":45753222,"kids":[45753613,45754968,45755414,45754821,45754383],"score":51,"time":1761772970,"title":"How
+        the U.S. National Science Foundation Enabled Software-Defined Networking","type":"story","url":"https://cacm.acm.org/federal-funding-of-academic-research/how-the-u-s-national-science-foundation-enabled-software-defined-networking/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '370'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:19 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45749161.json
+  response:
+    body:
+      string: '{"by":"jmsflknr","descendants":167,"id":45749161,"kids":[45749725,45751167,45755501,45751715,45752033,45749730,45749641,45750373,45751675,45753770,45750294,45750087,45750973,45753267,45751170,45754102,45750044,45753877,45752565,45752129,45752450,45753264,45750804,45754343,45751901,45751125,45752527,45751350,45754524,45750742,45750706,45754845],"score":182,"time":1761755336,"title":"AOL
+        to be sold to Bending Spoons for $1.5B","type":"story","url":"https://www.axios.com/2025/10/29/aol-bending-spoons-deal"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '509'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:22 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45747018.json
+  response:
+    body:
+      string: "{\"by\":\"enether\",\"descendants\":244,\"id\":45747018,\"kids\":[45748795,45747736,45747975,45747991,45755392,45747818,45754628,45747981,45748251,45753693,45747871,45753628,45747664,45753615,45755453,45753600,45749137,45749786,45748622,45748258,45747675,45747794,45750412,45748203,45753855,45751074,45748253,45749568,45748076,45748671,45749031,45748429,45749863,45751841,45749150,45749231,45748054,45748818,45753602,45747740,45748221,45749637,45752722,45747929,45749492,45749180,45748293,45752683,45747796,45748901,45748367,45747723,45747870,45747667,45747748],\"score\":295,\"time\":1761746761,\"title\":\"Kafka
+        is Fast \u2013 I'll use Postgres\",\"type\":\"story\",\"url\":\"https://topicpartition.io/blog/postgres-pubsub-queue-benchmarks\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '715'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:25 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45749017.json
+  response:
+    body:
+      string: '{"by":"seemaze","descendants":71,"id":45749017,"kids":[45750977,45749750,45753510,45749978,45753596,45754314,45751676,45750581,45752051,45749638,45749679,45751040,45749559,45750682,45749674,45751378,45750029,45750751,45750281,45750896],"score":249,"time":1761754896,"title":"Tailscale
+        Peer Relays","type":"story","url":"https://tailscale.com/blog/peer-relays-beta"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '365'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:28 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45750425.json
+  response:
+    body:
+      string: "{\"by\":\"badprobe\",\"descendants\":194,\"id\":45750425,\"kids\":[45752764,45754922,45751304,45754187,45754226,45753621,45754511,45755229,45751112,45755356,45751241,45755218,45752444,45753744,45751006,45753689,45751564,45751776,45751178],\"score\":149,\"text\":\"<a
+        href=\\\"https:&#x2F;&#x2F;archive.ph&#x2F;NCZhi\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;archive.ph&#x2F;NCZhi</a>\",\"time\":1761759874,\"title\":\"OpenAI\u2019s
+        promise to stay in California helped clear the path for its IPO\",\"type\":\"story\",\"url\":\"https://www.wsj.com/tech/ai/openais-promise-to-stay-in-california-helped-clear-the-path-for-its-ipo-3af1c31c\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '598'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:31 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45754660.json
+  response:
+    body:
+      string: '{"by":"TMWNN","descendants":5,"id":45754660,"kids":[45755469,45755175,45755154],"score":16,"time":1761781929,"title":"OS/2
+        Warp, PowerPC Edition","type":"story","url":"https://www.os2museum.com/wp/os2-history/os2-warp-powerpc-edition/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '236'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:34 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45742456.json
+  response:
+    body:
+      string: '{"by":"nicoles","descendants":50,"id":45742456,"kids":[45753662,45753696,45753230,45753545,45745670,45742940,45753330,45753767,45754693,45754073,45753593,45754194,45753776,45742457,45752996,45752875,45753795,45742480,45753371,45752807],"score":135,"time":1761710337,"title":"Board:
+        New game console recognizes physical pieces, with an open SDK","type":"story","url":"https://board.fun/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '387'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:37 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45751995.json
+  response:
+    body:
+      string: '{"by":"todsacerdoti","descendants":46,"id":45751995,"kids":[45753978,45755148,45753439,45752797,45754507,45753503,45754519,45754533,45754015,45752646,45753857,45753586,45753254],"score":76,"time":1761766797,"title":"How
+        to Obsessively Tune WezTerm","type":"story","url":"https://rashil2000.me/blogs/tune-wezterm"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '313'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:40 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45728525.json
+  response:
+    body:
+      string: '{"by":"PaulHoule","descendants":53,"id":45728525,"kids":[45753090,45738766,45755419,45752874,45753258,45753038,45753756,45753817,45736529],"score":148,"time":1761616858,"title":"GLP-1
+        therapeutics: Their emerging role in alcohol and substance use disorders","type":"story","url":"https://academic.oup.com/jes/article/9/11/bvaf141/8277723?login=false"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '351'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:43 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45750875.json
+  response:
+    body:
+      string: '{"by":"ChrisArchitect","descendants":5,"id":45750875,"kids":[45755133,45752257,45753940],"score":95,"text":"Report:
+        <i>The Domain Name System Runs on Free and Open Source Software (FOSS) [pdf]</i>
+        <a href=\"https:&#x2F;&#x2F;itp.cdn.icann.org&#x2F;en&#x2F;files&#x2F;security-and-stability-advisory-committee-ssac-reports&#x2F;sac132-25-09-2025-en.pdf\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;itp.cdn.icann.org&#x2F;en&#x2F;files&#x2F;security-and-stability-ad...</a>","time":1761761767,"title":"The
+        Internet runs on free and open source software and so does the DNS","type":"story","url":"https://www.icann.org/en/blogs/details/the-internet-runs-on-free-and-open-source-softwareand-so-does-the-dns-23-10-2025-en"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '710'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:46 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45722471.json
+  response:
+    body:
+      string: '{"by":"birdculture","descendants":22,"id":45722471,"kids":[45728226,45754088,45754981,45753451,45752890,45753108],"score":72,"time":1761580606,"title":"More
+        than DNS: Learnings from the 14 hour AWS outage","type":"story","url":"https://thundergolfer.com/blog/aws-us-east-1-outage-oct20"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '287'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:49 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45722896.json
+  response:
+    body:
+      string: '{"by":"tapanjk","descendants":20,"id":45722896,"kids":[45754739,45753056,45754050,45755421],"score":46,"time":1761582470,"title":"How
+        blocks are chained in a blockchain","type":"story","url":"https://www.johndcook.com/blog/2025/10/27/blockchain/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '247'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:52 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45742488.json
+  response:
+    body:
+      string: '{"by":"LorenDB","descendants":740,"id":45742488,"kids":[45745309,45743519,45743194,45743034,45742969,45743107,45744547,45744026,45743248,45746695,45744624,45744165,45755270,45743170,45743134,45746794,45743559,45747451,45744019,45752231,45744190,45745342,45744215,45745090,45743951,45747033,45748970,45742952,45743216,45744195,45745918,45744235,45744119,45743511,45745713,45745541,45744271,45747017,45746966,45750213,45746752,45751051,45746232,45749487,45750464,45746719,45743807,45749311,45749069,45750404,45745893,45746528,45744376,45747595,45746029,45744529,45743500,45743935,45747326,45744584,45743120,45745455,45750834,45751851,45744906,45745250,45745841,45743808,45743685,45743206,45745285,45745071,45744952,45748499,45743684,45742946,45747648,45745444,45743332,45744535,45747411,45745147,45745005,45743566,45747762,45743408,45743070],"score":2322,"time":1761710621,"title":"Keep
+        Android Open","type":"story","url":"http://keepandroidopen.org/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '950'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:55 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45749690.json
+  response:
+    body:
+      string: '{"by":"ckelly","id":45749690,"score":1,"time":1761757215,"title":"Upwave
+        (YC S12) is hiring software engineers","type":"job","url":"https://www.upwave.com/job/8228849002/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '172'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:54:58 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45750501.json
+  response:
+    body:
+      string: '{"by":"st_goliath","descendants":27,"id":45750501,"kids":[45751933,45751349,45753674,45753527,45752406,45750736,45752660,45752047,45751814,45751351],"score":79,"time":1761760221,"title":"Encoding
+        x86 Instructions","type":"story","url":"https://www-user.tu-chemnitz.de/~heha/hs/chm/x86.chm/x86.htm"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '298'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45750995.json
+  response:
+    body:
+      string: '{"by":"vyrotek","descendants":68,"id":45750995,"kids":[45751249,45751752,45751235,45751492,45752258,45751180,45753840,45752491,45752398,45751888,45754664,45751661,45751431,45754558,45753310,45754991,45753765,45754610,45751376,45751845,45751409,45752561,45752276],"score":90,"time":1761762301,"title":"Extropic
+        is building thermodynamic computing hardware","type":"story","url":"https://extropic.ai/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:04 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45748725.json
+  response:
+    body:
+      string: '{"by":"leerob","descendants":133,"id":45748725,"kids":[45751309,45749440,45749526,45749427,45755282,45749365,45749399,45754831,45749592,45749324,45752583,45750889,45752509,45749709,45749443,45751850,45750503,45750458,45751651,45749532,45754574,45750462,45749243,45748940,45749092,45750344],"score":174,"time":1761753873,"title":"Composer:
+        Building a fast frontier model with RL","type":"story","url":"https://cursor.com/blog/composer"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '435'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:07 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45674766.json
+  response:
+    body:
+      string: '{"by":"g0xA52A2A","descendants":2,"id":45674766,"kids":[45755522,45754076],"score":45,"time":1761165058,"title":"A
+        Fork in the Road: Deciding Kafka''s Diskless Future","type":"story","url":"https://jack-vanlightly.com/blog/2025/10/22/a-fork-in-the-road-deciding-kafkas-diskless-future"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '285'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:10 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45739877.json
+  response:
+    body:
+      string: '{"by":"owenm","descendants":5,"id":45739877,"kids":[45741361,45741302,45743709,45753966],"score":59,"time":1761689261,"title":"SwirlDB:
+        Modular-first, CRDT-based embedded database","type":"story","url":"https://docs.swirldb.org/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '230'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:13 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45731848.json
+  response:
+    body:
+      string: '{"by":"xd1936","descendants":27,"id":45731848,"kids":[45742608,45754272,45755098,45740451,45754338,45753691,45753552,45753250,45737366,45743380,45744678,45742441,45739514,45737067,45738325,45744638,45731851],"score":123,"text":"Video
+        walkthrough: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=mELAg50ljSA\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=mELAg50ljSA</a>","time":1761653978,"title":"Tailscale
+        Services","type":"story","url":"https://tailscale.com/blog/services-beta"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '510'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:16 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45736426.json
+  response:
+    body:
+      string: '{"by":"speckx","descendants":36,"id":45736426,"kids":[45753272,45755138,45753099,45754149,45753013,45753338,45753702,45753249,45754169,45755327,45753843,45741863,45753279],"score":76,"time":1761674385,"title":"Cancer
+        survival rates are misleading","type":"story","url":"https://www.allendowney.com/blog/2025/10/27/cancer-survival-rates-are-misleading/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '353'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:19 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45671677.json
+  response:
+    body:
+      string: '{"by":"gmays","descendants":15,"id":45671677,"kids":[45749464,45746793,45752391,45748834,45751189,45749233,45748685,45748831,45747225],"score":187,"time":1761150985,"title":"Eye
+        prosthesis is the first to restore sight lost to macular degeneration","type":"story","url":"https://med.stanford.edu/news/all-news/2025/10/eye-prosthesis.html"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '339'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:22 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45747112.json
+  response:
+    body:
+      string: "{\"by\":\"iamflimflam1\",\"descendants\":44,\"id\":45747112,\"kids\":[45748360,45749517,45747659,45747649,45750616,45748127,45747616,45747695,45748167,45751049,45748275,45749447,45748844,45748204],\"score\":170,\"time\":1761747170,\"title\":\"I
+        made a 10\xA2 MCU Talk\",\"type\":\"story\",\"url\":\"https://www.atomic14.com/2025/10/29/CH32V003-talking\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '326'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:25 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45681742.json
+  response:
+    body:
+      string: '{"by":"bookofjoe","descendants":2,"id":45681742,"kids":[45754736,45754703],"score":17,"time":1761227050,"title":"Space
+        Exploration Logo Archive","type":"story","url":"https://kottke.org/25/10/the-space-exploration-logo-archive"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:28 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45746401.json
+  response:
+    body:
+      string: '{"by":"coloneltcb","descendants":88,"id":45746401,"kids":[45747771,45748424,45746722,45749129,45747160,45747340,45747318,45752851,45750743,45746763,45748392,45749629,45748080,45751843,45750098,45748776,45748819,45747324,45746585,45753671,45747456,45748866,45749260,45748741,45748413,45751397],"score":113,"time":1761743543,"title":"Grammarly
+        rebrands to ''Superhuman,'' launches a new AI assistant","type":"story","url":"https://techcrunch.com/2025/10/29/grammarly-rebrands-to-superhuman-launches-a-new-ai-assistant/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '516'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:31 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45726272.json
+  response:
+    body:
+      string: "{\"by\":\"codethief\",\"descendants\":6,\"id\":45726272,\"kids\":[45726806,45754514,45753200,45726793,45726273,45732729],\"score\":44,\"text\":\"I
+        saw Mario (the author) at Zigtoberfest in Munich last Saturday where he gave
+        a presentation on a whole stack of related projects implemented in Zig: A
+        graphics library for the terminal (movy), movycat (video playback in the terminal),
+        zig64 &amp; zigreSID (emulators for Commodore 64&#x27;s CPU and sound chip),
+        and a reimplementation of a C64 video game (which I don&#x27;t think he has
+        published on GitHub yet). Anyway, I found his work incredible and thought
+        he deserved some attention.<p>Update: Since writing this, Mario has uploaded
+        the game, too: <a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;M64GitHub&#x2F;1st-shot\\\"
+        rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;M64GitHub&#x2F;1st-shot</a>
+        . I misunderstood, though: It doesn&#x27;t seem to be a port of an actual
+        C64 game.\",\"time\":1761599051,\"title\":\"Movycat \u2013 A terminal movie
+        player written in Zig\",\"type\":\"story\",\"url\":\"https://github.com/M64GitHub/movycat\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1059'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:34 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45697234.json
+  response:
+    body:
+      string: '{"by":"HeyMeco","descendants":72,"id":45697234,"kids":[45749774,45749318,45751679,45749874,45697235,45753125,45750443,45749428,45752038,45753059,45749654,45753587,45749188,45751149,45750910,45749222,45749263,45750607,45748989],"score":123,"time":1761328340,"title":"State
+        of Embedded: Q4 2025 Overview","type":"story","url":"https://sbcwiki.com/news/articles/state-of-embedded-q4-25/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '385'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:37 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45694666.json
+  response:
+    body:
+      string: '{"by":"surprisetalk","descendants":1,"id":45694666,"kids":[45755210],"score":10,"time":1761313996,"title":"Are
+        voice coils better than motors? [video]","type":"story","url":"https://www.youtube.com/watch?v=Y3h0vZ2PYl8"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '219'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:40 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45740241.json
+  response:
+    body:
+      string: '{"by":"generichuman","descendants":1,"id":45740241,"kids":[45755454],"score":51,"time":1761691336,"title":"Detour:
+        Dynamic linking on Linux without Libc","type":"story","url":"https://github.com/graphitemaster/detour"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '218'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:42 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45728170.json
+  response:
+    body:
+      string: '{"by":"todsacerdoti","descendants":22,"id":45728170,"kids":[45753934,45731198,45753303,45733221,45731727],"score":98,"time":1761612764,"title":"Quantifying
+        pass-by-value overhead","type":"story","url":"https://owen.cafe/posts/struct-sizes/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '241'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:45 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45749746.json
+  response:
+    body:
+      string: '{"by":"0xedb","descendants":14,"id":45749746,"kids":[45752148,45753179,45751466,45752567,45752268,45755452,45752632,45752342,45751526],"score":105,"time":1761757431,"title":"The
+        Green Tea Garbage Collector","type":"story","url":"https://go.dev/blog/greenteagc"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '261'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:48 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45746478.json
+  response:
+    body:
+      string: '{"by":"todsacerdoti","descendants":111,"id":45746478,"kids":[45748981,45746654,45747144,45747964,45749336,45746875,45747157,45749508,45754219,45755059,45746870,45747622,45747415,45748391,45748136,45747626,45747516,45747457,45752169,45746912,45748810,45747472,45748998,45747798,45747229,45750971,45752292,45748310,45747735,45748149,45748257,45749890],"score":232,"time":1761743970,"title":"From
+        VS Code to Helix","type":"story","url":"https://ergaster.org/posts/2025/10/29-vscode-to-helix/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '490'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:51 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45746844.json
+  response:
+    body:
+      string: '{"by":"geox","descendants":75,"id":45746844,"kids":[45750712,45752595,45751422,45752058,45750713,45751789,45748248,45750783,45752633,45750950,45750735,45750671,45750864,45750902],"score":74,"text":"<a
+        href=\"https:&#x2F;&#x2F;archive.ph&#x2F;fhVEV\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;fhVEV</a>","time":1761745951,"title":"Character.ai
+        to bar children under 18 from using its chatbots","type":"story","url":"https://www.nytimes.com/2025/10/29/technology/characterai-underage-users.html"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '503'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:55 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45734865.json
+  response:
+    body:
+      string: "{\"by\":\"lchoquel\",\"descendants\":7,\"id\":45734865,\"kids\":[45755014,45742140,45735021,45735080],\"score\":39,\"text\":\"We\u2019re
+        Robin, Louis, and Thomas. Pipelex is a DSL and a Python runtime for repeatable
+        AI workflows. Think Dockerfile&#x2F;SQL for multi-step LLM pipelines: you
+        declare steps and interfaces; any model&#x2F;provider can fill them.<p>Why
+        this instead of yet another workflow builder?<p>- Declarative, not glue code:
+        you state what to do; the runtime figures out how.\\n- Agent-first: each step
+        carries natural-language context (purpose, inputs&#x2F;outputs with meaning)
+        so LLMs can follow, audit, and optimize. Our MCP server enables agents to
+        run pipelines but also to build new pipelines on demand.\\n- Open standard
+        under MIT: language spec, runtime, API server, editor extensions, MCP server,
+        n8n node.\\n- Composable: pipes can call other pipes, created by you or shared
+        in the community.<p>Why a domain-specific language?<p>- We need context, meaning
+        and nuances preserved in a structured syntax that both humans and LLMs can
+        understand\\n- We need determinism, control, and reproducibility that pure
+        prompts can&#x27;t deliver\\n- Bonus: editors, diffs, semantic coloring, easy
+        sharing, search &amp; replace, version control, linters\u2026<p>How we got
+        there:<p>Initially, we just wanted to solve every use-case with LLMs but kept
+        rebuilding the same agentic patterns across different projects. So we challenged
+        ourselves to keep the code generic and separate from use-case specifics, which
+        meant modeling workflows from the relevant knowledge and know-how.<p>Unlike
+        existing code&#x2F;no-code frameworks for AI workflows, our abstraction layer
+        doesn&#x27;t wrap APIs, it transcribes business logic into a structured, unambiguous
+        script executable by software and AI. Hence the &quot;declarative&quot; aspect:
+        the script says what should be done, not how to do it. It&#x27;s like a Dockerfile
+        or SQL for AI workflows.<p>Additionally, we wanted the language to be LLM-friendly.
+        Classic programming languages hide logic and context in variable names, functions,
+        and comments: all invisible to the interpreter. In Pipelex, these elements
+        are explicitly stated in natural language, giving AI full visibility: it&#x27;s
+        all logic and context, with minimal syntax.<p>Then, we didn&#x27;t want to
+        write Pipelex scripts ourselves so we dogfooded: we built a Pipelex workflow
+        that writes Pipelex workflows. It&#x27;s in the MCP and CLI: &quot;pipelex
+        build pipe &#x27;\u2026&#x27;&quot; runs a multi-step, structured generation
+        flow that produces a validated workflow ready to execute with &quot;pipelex
+        run&quot;. Then you can iterate on it yourself or with any coding agent.<p>What\u2019s
+        included: Python library, FastAPI and Docker, MCP server, n8n node, VS Code
+        extension.<p>What we\u2019d like from you<p>1. Build a workflow: did the language
+        work for you or against you?\\n2. Agent&#x2F;MCP workflows and n8n node usability.\\n3.
+        Suggest new kinds of pipes and other AI models we could integrate\\n4. Looking
+        for OSS contributors to the core library but also to share pipes with the
+        community<p>Known limitations<p>- Connectors: Pipelex doesn\u2019t integrate
+        with \u201Cyour apps\u201D, we focus on the cognitive steps, and you can integrate
+        through code&#x2F;API or using MCP or n8n\\n- Visualization: we need to generate
+        flow-charts\\n- The pipe builder is still buggy\\n- Run it yourself: we don\u2019t
+        yet provide a hosted Pipelex API, it\u2019s in the works\\n- Cost-tracking:
+        we only track LLM costs, not image generation or OCR costs yet\\n- Caching
+        and reasoning options: not supported yet<p>Links<p>- GitHub: <a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;Pipelex&#x2F;pipelex\\\"
+        rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;Pipelex&#x2F;pipelex</a>\\n-
+        Cookbook: <a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;Pipelex&#x2F;pipelex-cookbook\\\"
+        rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;Pipelex&#x2F;pipelex-cookbook</a>\\n-
+        Starter: <a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;Pipelex&#x2F;pipelex-starter\\\"
+        rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;Pipelex&#x2F;pipelex-starter</a>\\n-
+        VS Code extension: <a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;Pipelex&#x2F;vscode-pipelex\\\"
+        rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;Pipelex&#x2F;vscode-pipelex</a>\\n-
+        Docs: [<a href=\\\"https:&#x2F;&#x2F;docs.pipelex.com\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;docs.pipelex.com</a>](<a
+        href=\\\"https:&#x2F;&#x2F;docs.pipelex.com&#x2F;\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;docs.pipelex.com&#x2F;</a>)\\n-
+        Demo video (2 min): <a href=\\\"https:&#x2F;&#x2F;youtu.be&#x2F;dBigQa8M8pQ\\\"
+        rel=\\\"nofollow\\\">https:&#x2F;&#x2F;youtu.be&#x2F;dBigQa8M8pQ</a>\\n- Discord
+        for support and sharing: <a href=\\\"https:&#x2F;&#x2F;go.pipelex.com&#x2F;discord\\\"
+        rel=\\\"nofollow\\\">https:&#x2F;&#x2F;go.pipelex.com&#x2F;discord</a><p>Thanks
+        for reading. If you try Pipelex, tell us exactly where it hurts, that\u2019s
+        the most valuable feedback we can get.\",\"time\":1761668366,\"title\":\"Show
+        HN: Pipelex \u2013 Declarative language for repeatable AI workflows\",\"type\":\"story\",\"url\":\"https://github.com/Pipelex/pipelex\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5075'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:55:58 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45742907.json
+  response:
+    body:
+      string: '{"by":"pdubroy","descendants":88,"id":45742907,"kids":[45744917,45743598,45745153,45747875,45748217,45744567,45743872,45743733,45744542,45751233,45743844,45750989,45749125,45748830,45745177,45743999,45744843,45745046,45745790,45749651,45745480,45746258,45750914,45744305,45753055,45747541,45743763,45743781,45745022],"score":432,"time":1761715069,"title":"Who
+        needs Graphviz when you can build it yourself?","type":"story","url":"https://spidermonkey.dev/blog/2025/10/28/iongraph-web.html"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '490'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:56:01 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45711805.json
+  response:
+    body:
+      string: '{"by":"edent","descendants":1,"id":45711805,"kids":[45754393],"score":13,"time":1761486092,"title":"Mapping
+        Underground Structures with 3D Scans","type":"story","url":"https://wilkinson.graphics/blog/2025-10-25-3d-mapping/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '224'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:56:04 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45745566.json
+  response:
+    body:
+      string: '{"by":"predictand","descendants":72,"id":45745566,"kids":[45747529,45747001,45747101,45753094,45746781,45752748,45750716,45748407,45746510,45747195,45750305,45751045,45753300,45749577,45750142,45748317,45750762,45749764,45750441,45748737],"score":90,"text":"I
+        just started learning German, and it has been a frustrating experience, to
+        say the least. There are so many seemingly arbitrary rules that make pattern
+        recognition very difficult. Therefore, I have been looking for ways to make
+        memorization a bit easier and fun. So, I came up with a bunch of games to
+        make learning German a bit more engaging. Hope you find it useful as well!","time":1761738658,"title":"Show
+        HN: Learn German with Games","type":"story","url":"https://www.learngermanwithgames.com/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '760'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:56:07 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45734429.json
+  response:
+    body:
+      string: "{\"by\":\"kianN\",\"descendants\":16,\"id\":45734429,\"kids\":[45734478,45751965,45751226,45751401,45751713,45751193],\"score\":63,\"text\":\"Hi
+        Hacker News! I\u2019m a Bayesian statistician that has been working on applying
+        hierarchical mixture models (originally developed for genomics) to structure
+        text data, and in the process, used these models to build (what started as
+        a personal) tool for conducting literature reviews and deep research.<p>My
+        literature review process starts with a broad search to find a few key papers&#x2F;groups,
+        and from there expands along their citation networks. I needed to conduct
+        a few rounds of literature reviews during the course of my research and decided
+        to build a tool to facilitate this process. The tool started as an experimental
+        wrapper over low-level statistical software in C, quickly became a testing&#x2F;iteration
+        ground for our api, and is now my personal go-to for lit reviews.<p>The tool
+        organizes corpuses of text content, visualizes the high level themes, and
+        enables me to pull up relevant excerpts. Unlike LLMs, this model transparently
+        organizes the data and can train from scratch quickly on small datasets to
+        learn custom hierarchical taxonomies. My favorite part of the tool is the
+        citation network integration: any research paper it pulls up has a button
+        \u201CCitation Network Deep Dive\u201D that pulls every paper that cites or
+        is cited by the original paper, and organizes it for further exploration.<p>I
+        initially built this tool for academic research, but ended up extending it
+        to support Hacker News to mine technical conversation, the top 200 Google
+        results, and earnings transcripts. We have a gallery of ready to explore results
+        on the homepage. If you are kicking off a custom deep dive, it takes about
+        1-5 minutes for academic search, 3-7 minutes for Hacker News, and 5-10 minutes
+        for Google.\\nTo demonstrate the process, I put together a video walkthrough
+        of a short literature review I conducted on AI hallucinations: <a href=\\\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=OUmDPAcK6Ns\\\"
+        rel=\\\"nofollow\\\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=OUmDPAcK6Ns</a><p>I
+        host this tool on my company\u2019s website, free for personal use. I\u2019d
+        love to know if the HN community finds it useful (or to hear what breaks)!\",\"time\":1761666591,\"title\":\"Show
+        HN: Research Hacker News, ArXiv & Google with Hierarchical Bayesian Models\",\"type\":\"story\",\"url\":\"https://sturdystatistics.com/deepdive-search\"}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2451'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:56:10 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v0/item/45742419.json
+  response:
+    body:
+      string: '{"by":"padolsey","descendants":167,"id":45742419,"kids":[45742861,45743274,45746786,45742816,45746687,45746317,45747103,45744468,45742593,45743657,45742550,45743445,45744309,45749539,45744981,45743401,45743055,45745465,45743523,45746515,45747045,45750831,45747283,45746938,45743774,45745098,45743815,45743192,45746819,45744063,45745762,45742664,45742842,45743753,45744875,45743867,45744669,45746072,45744171,45746048,45745303,45744526,45748837,45743059,45747008,45744128,45743883,45744202,45747481,45748474,45744486,45743890,45743078,45742485,45743660],"score":446,"time":1761709916,"title":"Tips
+        for stroke-surviving software engineers","type":"story","url":"https://blog.j11y.io/2025-10-29_stroke_tips_for_engineers/"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '720'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 01:56:13 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    status:
+      code: 200
+      message: OK
+version: 1

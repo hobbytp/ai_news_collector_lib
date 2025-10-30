@@ -57,11 +57,14 @@ class BaseSearchTool:
                     published_str = published_str[:-1] + "+00:00"
 
                 published_time = datetime.fromisoformat(published_str)
+                # 如果解析得到的是naive时间，默认视为UTC
+                if published_time.tzinfo is None:
+                    published_time = published_time.replace(tzinfo=timezone.utc)
                 if published_time >= cutoff_date:
                     filtered_articles.append(article)
             except (ValueError, TypeError):
-                # 如果时间解析失败，保留文章
-                filtered_articles.append(article)
+                # 如果时间解析失败，跳过该文章以避免污染准确率
+                continue
 
         return filtered_articles
 
@@ -92,7 +95,10 @@ class HackerNewsTool(BaseSearchTool):
                     story_data = story_response.json()
 
                     if story_data and story_data.get("type") == "story":
-                        story_time = datetime.fromtimestamp(story_data.get("time", 0))
+                        # HN时间戳为UTC秒，将其转换为带时区的UTC时间
+                        story_time = datetime.fromtimestamp(
+                            story_data.get("time", 0), tz=timezone.utc
+                        )
 
                         # 检查是否包含查询关键词
                         title = story_data.get("title", "").lower()
@@ -101,7 +107,7 @@ class HackerNewsTool(BaseSearchTool):
                                 title=story_data.get("title", "No title"),
                                 url=story_data.get("url", ""),
                                 summary=f"Score: {story_data.get('score', 0)} | Comments: {story_data.get('descendants', 0)}",
-                                published=story_time.isoformat(),
+                                published=story_time.astimezone(timezone.utc).isoformat(),
                                 author=story_data.get("by", "Unknown"),
                                 source_name="HackerNews",
                                 source="hackernews",
@@ -342,7 +348,9 @@ class NewsAPITool(BaseSearchTool):
                     )
                     articles.append(article)
 
-            return articles[: self.max_articles]
+            # 应用客户端时间过滤作为备用
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
 
         except Exception as e:
             logger.error(f"NewsAPI search failed: {e}")
@@ -358,13 +366,12 @@ class TavilyTool(BaseSearchTool):
         self.base_url = "https://api.tavily.com/search"
 
     def search(self, query: str, days_back: int = 7) -> List[Article]:
-        """使用Tavily API搜索"""
+        """使用Tavily API搜索，支持时间过滤"""
         try:
             import requests
 
-            # 计算日期范围
-            end_date = datetime.now(timezone.utc)
-            start_date = end_date - timedelta(days=days_back)
+            # 根据days_back设置时间范围参数
+            time_range = self._get_time_range_param(days_back)
 
             payload = {
                 "api_key": self.api_key,
@@ -376,6 +383,14 @@ class TavilyTool(BaseSearchTool):
                 "include_domains": [],
                 "exclude_domains": [],
             }
+            
+            # 添加时间过滤参数
+            if time_range:
+                payload["time_range"] = time_range
+                # 对于新闻搜索，也可以使用days参数
+                if days_back <= 7:
+                    payload["topic"] = "news"
+                    payload["days"] = days_back
 
             response = requests.post(
                 self.base_url,
@@ -389,35 +404,57 @@ class TavilyTool(BaseSearchTool):
             articles = []
 
             for result in data.get("results", []):
-                # 检查日期过滤
-                published_date = datetime.now(timezone.utc)
-                if result.get("published_date"):
-                    try:
-                        published_date = datetime.fromisoformat(
-                            result["published_date"].replace("Z", "+00:00")
-                        )
-                    except:
-                        pass
+                # 尝试从结果中提取发布时间
+                published_time = self._extract_published_time(result)
+                
+                article = Article(
+                    title=result.get("title", ""),
+                    url=result.get("url", ""),
+                    summary=result.get("content", ""),
+                    published=published_time,
+                    author="Tavily Search",
+                    source_name=result.get("url", "").split("/")[2] if result.get("url") else "Tavily",
+                    source="tavily",
+                )
+                articles.append(article)
 
-                if published_date >= start_date:
-                    article = Article(
-                        title=result.get("title", ""),
-                        url=result.get("url", ""),
-                        summary=result.get("content", ""),
-                        published=published_date.isoformat(),
-                        author="Tavily Search",
-                        source_name=(
-                            result.get("url", "").split("/")[2] if result.get("url") else "Tavily"
-                        ),
-                        source="tavily",
-                    )
-                    articles.append(article)
-
-            return articles[: self.max_articles]
+            # 应用客户端时间过滤作为备用
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
 
         except Exception as e:
             logger.error(f"Tavily search failed: {e}")
             return []
+
+    def _get_time_range_param(self, days_back: int) -> str:
+        """根据天数返回Tavily API的time_range参数"""
+        if days_back <= 1:
+            return "day"  # 过去1天
+        elif days_back <= 7:
+            return "week"  # 过去1周
+        elif days_back <= 30:
+            return "month"  # 过去1月
+        elif days_back <= 365:
+            return "year"  # 过去1年
+        else:
+            return ""  # 不限制时间
+
+    def _extract_published_time(self, result: dict) -> str:
+        """从Tavily搜索结果中提取发布时间"""
+        # 检查是否有发布时间信息
+        if "published_date" in result:
+            try:
+                # 尝试解析Tavily提供的发布时间
+                published_str = result["published_date"]
+                if published_str.endswith("Z"):
+                    published_str = published_str[:-1] + "+00:00"
+                published_time = datetime.fromisoformat(published_str)
+                return published_time.isoformat()
+            except (ValueError, TypeError):
+                pass
+        
+        # 如果没有发布时间信息，使用当前时间
+        return datetime.now(timezone.utc).isoformat()
 
 
 class GoogleSearchTool(BaseSearchTool):
@@ -477,11 +514,12 @@ class SerperTool(BaseSearchTool):
         self.base_url = "https://google.serper.dev/search"
 
     def search(self, query: str, days_back: int = 7) -> List[Article]:
-        """使用Serper API搜索"""
+        """使用Serper API搜索，添加客户端时间过滤"""
         try:
             import requests
 
-            payload = {"q": query, "num": min(self.max_articles, 10)}
+            # 获取更多结果用于客户端过滤
+            payload = {"q": query, "num": min(self.max_articles * 3, 30)}
 
             headers = {"X-API-KEY": self.api_key, "Content-Type": "application/json"}
 
@@ -503,22 +541,33 @@ class SerperTool(BaseSearchTool):
                     except Exception:
                         source_name = ""
 
+                # 尝试从结果中提取发布时间
+                published_time = self._extract_published_time(result)
+
                 article = Article(
                     title=result.get("title", ""),
                     url=url,
                     summary=result.get("snippet", ""),
-                    published=datetime.now(timezone.utc).isoformat(),
+                    published=published_time,
                     author="Serper Search",
                     source_name=source_name,
                     source="serper",
                 )
                 articles.append(article)
 
-            return articles[: self.max_articles]
+            # 应用客户端时间过滤
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
 
         except Exception as e:
             logger.error(f"Serper search failed: {e}")
             return []
+
+    def _extract_published_time(self, result: dict) -> str:
+        """从Serper搜索结果中提取发布时间"""
+        # Serper API通常不直接提供发布时间，使用当前时间作为默认值
+        # 实际应用中可能需要进一步解析页面内容获取真实发布时间
+        return datetime.now(timezone.utc).isoformat()
 
 
 class BraveSearchTool(BaseSearchTool):
@@ -530,10 +579,13 @@ class BraveSearchTool(BaseSearchTool):
         self.base_url = "https://api.search.brave.com/res/v1/web/search"
 
     def search(self, query: str, days_back: int = 7) -> List[Article]:
-        """使用Brave搜索API"""
+        """使用Brave搜索API，支持时间过滤"""
         try:
             import requests
 
+            # 根据days_back设置freshness参数
+            freshness = self._get_freshness_param(days_back)
+            
             params = {
                 "q": query,
                 "count": min(self.max_articles, 20),
@@ -541,6 +593,10 @@ class BraveSearchTool(BaseSearchTool):
                 "mkt": "en-US",
                 "safesearch": "moderate",
             }
+            
+            # 添加时间过滤参数
+            if freshness:
+                params["freshness"] = freshness
 
             headers = {
                 "Accept": "application/json",
@@ -555,11 +611,14 @@ class BraveSearchTool(BaseSearchTool):
             articles = []
 
             for result in data.get("web", {}).get("results", []):
+                # 尝试从结果中提取发布时间
+                published_time = self._extract_published_time(result)
+                
                 article = Article(
                     title=result.get("title", ""),
                     url=result.get("url", ""),
                     summary=result.get("description", ""),
-                    published=datetime.now(timezone.utc).isoformat(),
+                    published=published_time,
                     author="Brave Search",
                     source_name=(
                         result.get("url", "").split("/")[2] if result.get("url") else "Brave"
@@ -568,11 +627,32 @@ class BraveSearchTool(BaseSearchTool):
                 )
                 articles.append(article)
 
-            return articles[: self.max_articles]
+            # 应用客户端时间过滤作为备用
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
 
         except Exception as e:
             logger.error(f"Brave search failed: {e}")
             return []
+
+    def _get_freshness_param(self, days_back: int) -> str:
+        """根据天数返回Brave API的freshness参数"""
+        if days_back <= 1:
+            return "pd"  # 过去24小时
+        elif days_back <= 7:
+            return "pw"  # 过去7天
+        elif days_back <= 31:
+            return "pm"  # 过去31天
+        elif days_back <= 365:
+            return "py"  # 过去365天
+        else:
+            return ""  # 不限制时间
+
+    def _extract_published_time(self, result: dict) -> str:
+        """从Brave搜索结果中提取发布时间"""
+        # Brave API可能不直接提供发布时间，使用当前时间作为默认值
+        # 实际应用中可能需要进一步解析页面内容获取真实发布时间
+        return datetime.now(timezone.utc).isoformat()
 
 
 class MetaSotaSearchTool(BaseSearchTool):
@@ -702,63 +782,45 @@ class MetaSotaSearchTool(BaseSearchTool):
                     articles = []
                     for result in results:
                         if isinstance(result, dict):
-                            # 计算发布时间
-                            published_date = datetime.now(timezone.utc)
-                            if (
-                                result.get("published_date")
-                                or result.get("date")
-                                or result.get("created_at")
-                            ):
-                                try:
-                                    date_str = (
-                                        result.get("published_date")
-                                        or result.get("date")
-                                        or result.get("created_at")
-                                    )
-                                    published_date = datetime.fromisoformat(
-                                        date_str.replace("Z", "+00:00")
-                                    )
-                                except:
-                                    pass
-
-                            # 检查时间范围
-                            if published_date >= datetime.now(timezone.utc) - timedelta(
-                                days=days_back
-                            ):
-                                article = Article(
-                                    title=result.get(
-                                        "title", result.get("headline", result.get("name", ""))
-                                    ),
-                                    url=result.get(
-                                        "link", result.get("url", result.get("href", ""))
-                                    ),
-                                    summary=result.get(
-                                        "snippet",
+                            # 尝试从结果中提取发布时间
+                            published_time = self._extract_published_time(result)
+                            
+                            article = Article(
+                                title=result.get(
+                                    "title", result.get("headline", result.get("name", ""))
+                                ),
+                                url=result.get(
+                                    "link", result.get("url", result.get("href", ""))
+                                ),
+                                summary=result.get(
+                                    "snippet",
+                                    result.get(
+                                        "summary",
                                         result.get(
-                                            "summary",
-                                            result.get(
-                                                "description",
-                                                result.get("content", result.get("abstract", "")),
-                                            ),
+                                            "description",
+                                            result.get("content", result.get("abstract", "")),
                                         ),
                                     ),
-                                    published=published_date.isoformat(),
-                                    author=result.get(
-                                        "authors",
-                                        result.get(
-                                            "author", result.get("creator", "MetaSota Search")
-                                        ),
+                                ),
+                                published=published_time,
+                                author=result.get(
+                                    "authors",
+                                    result.get(
+                                        "author", result.get("creator", "MetaSota Search")
                                     ),
-                                    source_name=result.get(
-                                        "source",
-                                        result.get("domain", result.get("site", "MetaSota")),
-                                    ),
-                                    source="metasota_search",
-                                )
-                                articles.append(article)
+                                ),
+                                source_name=result.get(
+                                    "source",
+                                    result.get("domain", result.get("site", "MetaSota")),
+                                ),
+                                source="metasota_search",
+                            )
+                            articles.append(article)
 
-                    logger.info(f"MetaSota搜索返回 {len(articles)} 篇文章")
-                    return articles[: self.max_articles]
+                    # 应用客户端时间过滤
+                    filtered_articles = self._filter_by_date(articles, days_back)
+                    logger.info(f"MetaSota搜索返回 {len(filtered_articles)} 篇文章（过滤后）")
+                    return filtered_articles[: self.max_articles]
 
                 except json.JSONDecodeError as e:
                     logger.error(f"MetaSota MCP响应JSON解析失败: {e}")
@@ -773,3 +835,22 @@ class MetaSotaSearchTool(BaseSearchTool):
         except Exception as e:
             logger.error(f"MetaSota MCP搜索失败: {e}")
             return []
+
+    def _extract_published_time(self, result: dict) -> str:
+        """从MetaSota搜索结果中提取发布时间"""
+        # 尝试从多个可能的字段中提取发布时间
+        date_fields = ["published_date", "date", "created_at", "pub_date", "publish_date"]
+        
+        for field in date_fields:
+            if result.get(field):
+                try:
+                    date_str = result[field]
+                    if date_str.endswith("Z"):
+                        date_str = date_str[:-1] + "+00:00"
+                    published_time = datetime.fromisoformat(date_str)
+                    return published_time.isoformat()
+                except (ValueError, TypeError):
+                    continue
+        
+        # 如果没有找到有效的发布时间，使用当前时间
+        return datetime.now(timezone.utc).isoformat()

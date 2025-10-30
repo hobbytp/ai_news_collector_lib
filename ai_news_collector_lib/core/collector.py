@@ -167,7 +167,8 @@ class AINewsCollector:
                             "error": str(result),
                         }
                     else:
-                        articles = result
+                        # 对各源返回的文章进行客户端时间过滤，确保集成结果符合 days_back 要求
+                        articles = self._filter_articles_by_days_back(result, self.config.days_back)
                         all_articles.extend(articles)
                         source_progress[source] = {
                             "status": "completed",
@@ -194,6 +195,40 @@ class AINewsCollector:
             articles=unique_articles,
             source_progress=source_progress,
         )
+
+    def _filter_articles_by_days_back(self, articles: List[Article], days_back: int) -> List[Article]:
+        """统一进行客户端时间过滤，兜底保障所有源的文章都在指定时间范围内"""
+        if days_back <= 0:
+            return articles
+
+        try:
+            cutoff_date = datetime.now(timezone.utc) - timedelta(days=days_back)
+        except Exception:
+            # 如果时间计算异常，直接返回原始列表
+            return articles
+
+        filtered = []
+        for article in articles:
+            try:
+                if not getattr(article, "published", None):
+                    continue
+
+                published_str = article.published
+                if published_str.endswith("Z"):
+                    published_str = published_str[:-1] + "+00:00"
+
+                dt = datetime.fromisoformat(published_str)
+                # 缺少时区时默认按UTC处理
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+
+                if dt >= cutoff_date:
+                    filtered.append(article)
+            except Exception:
+                # 日期解析失败时跳过该文章
+                continue
+
+        return filtered
 
     async def _search_single_source(
         self, source: str, query: str, progress_callback: Optional[Callable] = None

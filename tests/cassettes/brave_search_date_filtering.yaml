@@ -1,0 +1,135 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+      X-Subscription-Token:
+      - BSACKDVHAf31lTCeMtxOVO-mvEFiTIg
+    method: GET
+    uri: https://localhost:33210/res/v1/web/search?count=5&freshness=pd&mkt=en-US&offset=0&q=artificial+intelligence&safesearch=moderate
+  response:
+    body:
+      string: "{\"query\":{\"original\":\"artificial intelligence\",\"show_strict_warning\":false,\"is_navigational\":false,\"is_news_breaking\":true,\"spellcheck_off\":false,\"country\":\"us\",\"bad_results\":false,\"should_fallback\":false,\"postal_code\":\"\",\"city\":\"\",\"header_country\":\"\",\"more_results_available\":true,\"state\":\"\"},\"mixed\":{\"type\":\"mixed\",\"main\":[{\"type\":\"web\",\"index\":0,\"all\":false},{\"type\":\"web\",\"index\":1,\"all\":false},{\"type\":\"news\",\"all\":true},{\"type\":\"web\",\"index\":2,\"all\":false},{\"type\":\"videos\",\"all\":true},{\"type\":\"web\",\"index\":3,\"all\":false},{\"type\":\"web\",\"index\":4,\"all\":false},{\"type\":\"web\",\"index\":5,\"all\":false},{\"type\":\"web\",\"index\":6,\"all\":false},{\"type\":\"web\",\"index\":7,\"all\":false},{\"type\":\"web\",\"index\":8,\"all\":false},{\"type\":\"web\",\"index\":9,\"all\":false},{\"type\":\"web\",\"index\":10,\"all\":false},{\"type\":\"web\",\"index\":11,\"all\":false},{\"type\":\"web\",\"index\":12,\"all\":false},{\"type\":\"web\",\"index\":13,\"all\":false},{\"type\":\"web\",\"index\":14,\"all\":false},{\"type\":\"web\",\"index\":15,\"all\":false},{\"type\":\"web\",\"index\":16,\"all\":false},{\"type\":\"web\",\"index\":17,\"all\":false},{\"type\":\"web\",\"index\":18,\"all\":false},{\"type\":\"web\",\"index\":19,\"all\":false}],\"top\":[],\"side\":[]},\"news\":{\"type\":\"news\",\"results\":[{\"title\":\"\u201CThe
+        $5 Trillion Chip: How Nvidia Became the Beating Heart of Artificial Intelligence\u201D
+        | Futurism\",\"url\":\"https://vocal.media/futurism/the-5-trillion-chip-how-nvidia-became-the-beating-heart-of-artificial-intelligence\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"At
+        the time, the idea of designing specialized chips just to make video games
+        look better sounded niche. But three decades later, that same company stands
+        at the center of the world\u2019s most transformative technology boom \u2014
+        <strong>artificial</strong> <strong>intelligence</strong> \u2014 and has become
+        the first ever to hit ...\",\"page_age\":\"2025-10-30T00:47:02\",\"fetched_content_timestamp\":1761786765,\"profile\":{\"name\":\"Vocal
+        Media\",\"url\":\"vocal.media\",\"long_name\":\"vocal.media\",\"img\":\"https://imgs.search.brave.com/fKKp6bHi8c5E2ui8uxbGqsDb6ezNll0uGnSLP85ZHqU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzk2ZmRhNWI2/ZDI1OTIxZDI2MWMy/ZDQ3MzU3MDdjNTA2/Njc2ZDU2OGQwMjA2/Mjg1ZGQwMzVmY2Jh/ZmEyMzA4Mi92b2Nh/bC5tZWRpYS8\"},\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"vocal.media\",\"hostname\":\"vocal.media\",\"favicon\":\"https://imgs.search.brave.com/fKKp6bHi8c5E2ui8uxbGqsDb6ezNll0uGnSLP85ZHqU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzk2ZmRhNWI2/ZDI1OTIxZDI2MWMy/ZDQ3MzU3MDdjNTA2/Njc2ZDU2OGQwMjA2/Mjg1ZGQwMzVmY2Jh/ZmEyMzA4Mi92b2Nh/bC5tZWRpYS8\",\"path\":\"\u203A
+        futurism  \u203A the-5-trillion-chip-how-nvidia-became-the-beating-heart-of-artificial-intelligence\"},\"breaking\":false,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/ohSQzvHofPfsxzbpYiq5SoxsbTb_p4-JWjGrgKEvzX0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vamVycmljay9p/bWFnZS91cGxvYWQv/Y19zY2FsZSxmX2pw/ZyxxX2F1dG8vNjkw/MmIzODgxMDdmY2Yw/MDFlZDRjNWM2Lmpw/Zw\",\"original\":\"https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/6902b388107fcf001ed4c5c6.jpg\"},\"age\":\"1
+        hour ago\"},{\"title\":\"As Trump Weighs Sale of Advanced A.I. Chips to China,
+        Critics Sound Alarm - The New York Times\",\"url\":\"https://www.nytimes.com/2025/10/29/us/politics/trump-china-nvidia-chips-sales.html\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Tripp
+        Mickle reports on some of the world\u2019s biggest tech companies, including
+        Nvidia, Google and Apple. He also writes about trends across the tech industry
+        like layoffs and <strong>artificial</strong> <strong>intelligence</strong>.\",\"page_age\":\"2025-10-29T22:40:02\",\"fetched_content_timestamp\":1761788544,\"profile\":{\"name\":\"NYTimes\",\"url\":\"www.nytimes.com\",\"long_name\":\"The
+        New York Times\",\"img\":\"https://imgs.search.brave.com/lWA-zkTMlWM2cUvrcYa1Fls86e-Vl-rkSBOjichQqVs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFlZWRkYmVh/YWFhZmFjYjM4MWYy/NTQzZmExMTIwN2Nm/NGJmZjgwYTRhYjI5/OTliM2JkYmI2MWY0/M2RlOGFlMi93d3cu/bnl0aW1lcy5jb20v\"},\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"nytimes.com\",\"hostname\":\"www.nytimes.com\",\"favicon\":\"https://imgs.search.brave.com/lWA-zkTMlWM2cUvrcYa1Fls86e-Vl-rkSBOjichQqVs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFlZWRkYmVh/YWFhZmFjYjM4MWYy/NTQzZmExMTIwN2Nm/NGJmZjgwYTRhYjI5/OTliM2JkYmI2MWY0/M2RlOGFlMi93d3cu/bnl0aW1lcy5jb20v\",\"path\":\"\u203A
+        2025  \u203A 10  \u203A 29  \u203A us  \u203A politics  \u203A trump-china-nvidia-chips-sales.html\"},\"breaking\":false,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/gIsilgrFDd3puwo9UZRrtwvSGn27AwbOmWToW6MzvxA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDI1/LzEwLzI5L211bHRp/bWVkaWEvMjlkYy1j/aGluYS1jaGlwcy0w/MS12cWZqLzI5ZGMt/Y2hpbmEtY2hpcHMt/MDEtdnFmai1mYWNl/Ym9va0p1bWJvLmpw/Zw\",\"original\":\"https://static01.nyt.com/images/2025/10/29/multimedia/29dc-china-chips-01-vqfj/29dc-china-chips-01-vqfj-facebookJumbo.jpg\"},\"age\":\"3
+        hours ago\"},{\"title\":\"Healthcare\u2019s AI ROI Enters Era of Scaled, High-Stakes
+        Growth | PYMNTS.com\",\"url\":\"https://www.pymnts.com/news/artificial-intelligence/2025/healthcare-ai-roi-enters-era-scaled-high-stakes-growth/\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Healthcare
+        organizations are moving from pilot projects to enterprise-scale deployment
+        of <strong>artificial</strong> <strong>intelligence</strong> as hospitals
+        automate high-volume\",\"page_age\":\"2025-10-29T19:46:23\",\"fetched_content_timestamp\":1761781928,\"profile\":{\"name\":\"PYMNTS.com\",\"url\":\"www.pymnts.com\",\"long_name\":\"pymnts.com\",\"img\":\"https://imgs.search.brave.com/w68kIc_7HKCOtyJwNpTADJI7ah2LwqemLZf2aAmlNu0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzBkMjA1NDhh/MWY0MzcxZTE5NWJl/YjcwMzM4NTNmZDkw/ZTg2MDhkMzM5ZjRl/YzFhYTQ2NGU3MzMy/ZTIzYzc5MS93d3cu/cHltbnRzLmNvbS8\"},\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"pymnts.com\",\"hostname\":\"www.pymnts.com\",\"favicon\":\"https://imgs.search.brave.com/w68kIc_7HKCOtyJwNpTADJI7ah2LwqemLZf2aAmlNu0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzBkMjA1NDhh/MWY0MzcxZTE5NWJl/YjcwMzM4NTNmZDkw/ZTg2MDhkMzM5ZjRl/YzFhYTQ2NGU3MzMy/ZTIzYzc5MS93d3cu/cHltbnRzLmNvbS8\",\"path\":\"\u203A
+        news  \u203A artificial-intelligence  \u203A 2025  \u203A healthcare-ai-roi-enters-era-scaled-high-stakes-growth\"},\"breaking\":false,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/a4tmZAmYQUlmjJmFC-KZUkgh7XRMjuUF9hPBi9sqyOo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cHltbnRzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8x/MC9oZWFsdGhjYXJl/LWFydGlmaWNpYWwt/aW50ZWxsaWdlbmNl/LXRlY2hub2xvZ3ku/anBn\",\"original\":\"https://www.pymnts.com/wp-content/uploads/2025/10/healthcare-artificial-intelligence-technology.jpg\"},\"age\":\"6
+        hours ago\"},{\"title\":\"Nvidia surpasses Apple and Amazon: artificial intelligence
+        boosts its value to 5 trillion\",\"url\":\"https://www.merca20.com/nvidia-surpasses-apple-and-amazon-artificial-intelligence-boosts-its-value-to-5-trillion/\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Nvidia
+        will present its quarterly results on November 19, a key event for the markets.
+        Expectations are high, and all eyes will be on the company&#x27;s ability
+        to sustain its growth rate\",\"page_age\":\"2025-10-29T19:15:02\",\"fetched_content_timestamp\":1761770013,\"profile\":{\"name\":\"Merca20\",\"url\":\"www.merca20.com\",\"long_name\":\"merca20.com\",\"img\":\"https://imgs.search.brave.com/Hv8uc2VEpvWPlxu6I8xZ7MD1KT3O82BUo98-1jFMSSQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzkxYTZmNzhi/ZTYwYWZjMmUzNTc3/NzQzYzVhMjdkZWZm/OGUyZjQ2Y2U0ZTE3/MjA3YjY5NTQ2M2Nm/ZjBmM2E4Ni93d3cu/bWVyY2EyMC5jb20v\"},\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"merca20.com\",\"hostname\":\"www.merca20.com\",\"favicon\":\"https://imgs.search.brave.com/Hv8uc2VEpvWPlxu6I8xZ7MD1KT3O82BUo98-1jFMSSQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzkxYTZmNzhi/ZTYwYWZjMmUzNTc3/NzQzYzVhMjdkZWZm/OGUyZjQ2Y2U0ZTE3/MjA3YjY5NTQ2M2Nm/ZjBmM2E4Ni93d3cu/bWVyY2EyMC5jb20v\",\"path\":\"\u203A
+        nvidia-surpasses-apple-and-amazon-artificial-intelligence-boosts-its-value-to-5-trillion\"},\"breaking\":false,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/Pdm7Ul8THeFNHKu43aCGwiF2bhGUXwG99Gk0EJJ-1tA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9maWxl/cy5tZXJjYTIwLmNv/bS91cGxvYWRzLzIw/MjUvMTAvbnZpZGlh/LmpwZw\",\"original\":\"https://files.merca20.com/uploads/2025/10/nvidia.jpg\"},\"age\":\"7
+        hours ago\"},{\"title\":\"New Law Would Prevent Minors From Using AI Chatbots
+        Like ChatGPT\",\"url\":\"https://futurism.com/artificial-intelligence/law-minors-ai-chatbots\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"\u201CProtecting
+        children from <strong>artificial</strong> <strong>intelligence</strong> chatbots
+        that simulate human interaction without accountability,\u201D reads the bill,
+        \u201Cis a compelling governmental interest.\u201D\",\"page_age\":\"2025-10-29T19:30:07\",\"fetched_content_timestamp\":1761768756,\"profile\":{\"name\":\"Futurism\",\"url\":\"futurism.com\",\"long_name\":\"futurism.com\",\"img\":\"https://imgs.search.brave.com/owu0E174UnTYKNMMWAWaGSwgw9LqavTvadw8hd4R8q4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGEzYzNiMzFl/NDAyNjJmMDA5ZGIx/MDc4M2ZiNWNlNWI1/MjAxMjA0NmUyNmZl/YjUxMmUwNTFlZjY1/MjRjYmUwZC9mdXR1/cmlzbS5jb20v\"},\"family_friendly\":true,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"futurism.com\",\"hostname\":\"futurism.com\",\"favicon\":\"https://imgs.search.brave.com/owu0E174UnTYKNMMWAWaGSwgw9LqavTvadw8hd4R8q4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGEzYzNiMzFl/NDAyNjJmMDA5ZGIx/MDc4M2ZiNWNlNWI1/MjAxMjA0NmUyNmZl/YjUxMmUwNTFlZjY1/MjRjYmUwZC9mdXR1/cmlzbS5jb20v\",\"path\":\"\u203A
+        artificial-intelligence  \u203A law-minors-ai-chatbots\"},\"breaking\":false,\"is_live\":false,\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/hFP-OOLuMhl45AiZLRrLu0Rwy6IpjKJ5E2Z2bQI_P-k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mdXR1/cmlzbS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMTAv/bGF3LW1pbm9ycy1h/aS1jaGF0Ym90cy5q/cGc_dz0xMjAw\",\"original\":\"https://futurism.com/wp-content/uploads/2025/10/law-minors-ai-chatbots.jpg?w=1200\"},\"age\":\"6
+        hours ago\"}],\"mutated_by_goggles\":false},\"type\":\"search\",\"videos\":{\"type\":\"videos\",\"results\":[{\"type\":\"video_result\",\"url\":\"https://www.msnbc.com/morning-joe/watch/amazon-set-to-cut-14-000-corporate-roles-as-it-boosts-artificial-intelligence-250889285533\",\"title\":\"Amazon
+        set to cut 14,000 corporate roles as it boosts artificial ...\",\"description\":\"Layoffs
+        at companies, largely due to AI, ranging from Amazon to Target are sending
+        young and experienced workers alike into unwelcoming market, The Wall Street
+        Journal reports. The Morning Joe panel discusses how AI is impacting jobs.\",\"age\":\"14
+        hours ago\",\"page_age\":\"2025-10-29T12:02:05\",\"fetched_content_timestamp\":1761745738,\"video\":{\"duration\":\"10:34\",\"publisher\":\"Msnbc\"},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"msnbc.com\",\"hostname\":\"www.msnbc.com\",\"favicon\":\"https://imgs.search.brave.com/cxONXe2rqNqHMUln0JH_zwHwwh5z_RmhLMUbBdWV4EE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjY0ODMyODk3/ODU5YTkyMjVjZWZm/ZjYwYjdlMDQwY2Y2/ZjgxODRlYTYyOWEz/ODY1ZDI1ZThjMGIx/YzE1NTY3YS93d3cu/bXNuYmMuY29tLw\",\"path\":\"\u203A
+        morning-joe  \u203A watch  \u203A amazon-set-to-cut-14-000-corporate-roles-as-it-boosts-artificial-intelligence-250889285533\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/k70s4sznSyCllC4foCflL6014IhwnDgXYAieB53hGls/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jbGRucnkucy1u/YmNuZXdzLmNvbS9p/bWFnZS91cGxvYWQv/dF9uYmNuZXdzLWZw/LTEyMDAtNjMwLGZf/YXV0byxxX2F1dG86/YmVzdC9tcHgvMjcw/NDcyMjIxOS8yMDI1/XzEwLzE3NjE3Mzkx/OTAxOTFfbl9tal9h/aV8yNTA5MjlfMTky/MHgxMDgwLXBwbmpu/Ni5qcGc\",\"original\":\"https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/mpx/2704722219/2025_10/1761739190191_n_mj_ai_250929_1920x1080-ppnjn6.jpg\"}}],\"mutated_by_goggles\":false},\"web\":{\"type\":\"search\",\"results\":[{\"title\":\"Artificial
+        Intelligence News -- ScienceDaily\",\"url\":\"https://www.sciencedaily.com/news/computers_math/artificial_intelligence/\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Sep.
+        7, 2025 \x97 Artificial intelligence is reshaping law, ethics, and society
+        at a speed that threatens fundamental human dignity.\",\"page_age\":\"2025-10-29T17:25:05\",\"profile\":{\"name\":\"ScienceDaily\",\"url\":\"https://www.sciencedaily.com/news/computers_math/artificial_intelligence/\",\"long_name\":\"sciencedaily.com\",\"img\":\"https://imgs.search.brave.com/foZWtSo3V3W24ojU_8gmckPVnJXm8Syx_9jXzX6MPR0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmM2ZmUzNWRm/MGU5YmQyYjQxMDk0/YzMzMmVhYzc1YjE3/NmYzMGRjODIyOGVj/NGE3ZDhiZGQ5NTc3/YTI3NTUzYi93d3cu/c2NpZW5jZWRhaWx5/LmNvbS8\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"sciencedaily.com\",\"hostname\":\"www.sciencedaily.com\",\"favicon\":\"https://imgs.search.brave.com/foZWtSo3V3W24ojU_8gmckPVnJXm8Syx_9jXzX6MPR0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmM2ZmUzNWRm/MGU5YmQyYjQxMDk0/YzMzMmVhYzc1YjE3/NmYzMGRjODIyOGVj/NGE3ZDhiZGQ5NTc3/YTI3NTUzYi93d3cu/c2NpZW5jZWRhaWx5/LmNvbS8\",\"path\":\"\u203A
+        news  \u203A computers_math  \u203A artificial_intelligence\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/dYZ2vdocxOWr1DxdjtH87B18OYgAQUSExFi6GS2G58s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2NpZW5jZWRhaWx5/LmNvbS9pbWFnZXMv/c2NpZGFpbHktaWNv/bi5wbmc\",\"original\":\"https://www.sciencedaily.com/images/scidaily-icon.png\",\"logo\":true},\"age\":\"8
+        hours ago\"},{\"title\":\"Artificial general intelligence - Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Artificial
+        general intelligence (AGI)\u2014sometimes called human\u2011level intelligence
+        AI\u2014is <strong>a type of artificial intelligence that would match or surpass
+        human capabilities across virtually all cognitive tasks</strong>. Some researchers
+        argue that state\u2011of\u2011the\u2011art large language models (LLMs) ...\",\"page_age\":\"2025-10-29T00:11:48\",\"profile\":{\"name\":\"Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence\",\"long_name\":\"en.wikipedia.org\",\"img\":\"https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"deep_results\":{\"buttons\":[{\"type\":\"button_result\",\"title\":\"Terminology\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#Terminology\"},{\"type\":\"button_result\",\"title\":\"Characteristics\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#Characteristics\"},{\"type\":\"button_result\",\"title\":\"History\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#History\"},{\"type\":\"button_result\",\"title\":\"Whole
+        brain emulation\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#Whole_brain_emulation\"},{\"type\":\"button_result\",\"title\":\"Philosophical
+        perspective\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#Philosophical_perspective\"},{\"type\":\"button_result\",\"title\":\"Benefits\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#Benefits\"},{\"type\":\"button_result\",\"title\":\"Risks\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#Risks\"},{\"type\":\"button_result\",\"title\":\"Sources\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#Sources\"},{\"type\":\"button_result\",\"title\":\"Further
+        reading\",\"url\":\"https://en.wikipedia.org/wiki/Artificial_general_intelligence#Further_reading\"}]},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"en.wikipedia.org\",\"hostname\":\"en.wikipedia.org\",\"favicon\":\"https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw\",\"path\":\"\u203A
+        wiki  \u203A Artificial_general_intelligence\"},\"age\":\"1 day ago\"},{\"title\":\"Opinion
+        | Why Even Basic A.I. Use Is So Bad for Students - The New York Times\",\"url\":\"https://www.nytimes.com/2025/10/29/opinion/ai-students-thinking-school-reading.html\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Artificial
+        intelligence threatens students\u2019 most basic skills. If they lose their
+        ability to understand what they read, will they lose their ability to think?\",\"page_age\":\"2025-10-29T19:46:59\",\"profile\":{\"name\":\"NYTimes\",\"url\":\"https://www.nytimes.com/2025/10/29/opinion/ai-students-thinking-school-reading.html\",\"long_name\":\"The
+        New York Times\",\"img\":\"https://imgs.search.brave.com/lWA-zkTMlWM2cUvrcYa1Fls86e-Vl-rkSBOjichQqVs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFlZWRkYmVh/YWFhZmFjYjM4MWYy/NTQzZmExMTIwN2Nm/NGJmZjgwYTRhYjI5/OTliM2JkYmI2MWY0/M2RlOGFlMi93d3cu/bnl0aW1lcy5jb20v\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"article\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"nytimes.com\",\"hostname\":\"www.nytimes.com\",\"favicon\":\"https://imgs.search.brave.com/lWA-zkTMlWM2cUvrcYa1Fls86e-Vl-rkSBOjichQqVs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFlZWRkYmVh/YWFhZmFjYjM4MWYy/NTQzZmExMTIwN2Nm/NGJmZjgwYTRhYjI5/OTliM2JkYmI2MWY0/M2RlOGFlMi93d3cu/bnl0aW1lcy5jb20v\",\"path\":\"\u203A
+        2025  \u203A 10  \u203A 29  \u203A opinion  \u203A ai-students-thinking-school-reading.html\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/nbsWD7OBfcZb4TbaHAAL8ZSBO3SbafIu48GN2WZW6HE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDI1/LzEwLzI5L29waW5p/b24vMjliZXJnLWlt/YWdlLzI5YmVyZy1p/bWFnZS12aWRlb1Np/eHRlZW5CeU5pbmVK/dW1ibzE2MDAuanBn\",\"original\":\"https://static01.nyt.com/images/2025/10/29/opinion/29berg-image/29berg-image-videoSixteenByNineJumbo1600.jpg\",\"logo\":false},\"age\":\"6
+        hours ago\"},{\"title\":\"Amazon to lay off 14,000 employees as it invests
+        in artificial intelligence\",\"url\":\"https://www.nbcnews.com/business/business-news/amazon-layoffs-thousands-corporate-artificial-intelligence-rcna240155\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"The
+        company&#x27;s top human resources executive said Tuesday that the tech giant
+        needs to be &quot;organized more leanly&quot; due to the &quot;transformative&quot;
+        nature of AI.\",\"page_age\":\"2025-10-29T00:39:06\",\"profile\":{\"name\":\"NBC
+        News\",\"url\":\"https://www.nbcnews.com/business/business-news/amazon-layoffs-thousands-corporate-artificial-intelligence-rcna240155\",\"long_name\":\"nbcnews.com\",\"img\":\"https://imgs.search.brave.com/eI6piNjPQhnQicFjMZFpnZ2HlEkQUna_5IQn9Awm0PU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJjOWM3M2Qx/ODU2MGYwNDE1MTFk/ZGZiYTRhYjUwNDg3/NjU3NjhkMjJjMWEx/MWU5NjFiYzRiN2Rj/ZmE1NzUzMC93d3cu/bmJjbmV3cy5jb20v\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"video\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"nbcnews.com\",\"hostname\":\"www.nbcnews.com\",\"favicon\":\"https://imgs.search.brave.com/eI6piNjPQhnQicFjMZFpnZ2HlEkQUna_5IQn9Awm0PU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJjOWM3M2Qx/ODU2MGYwNDE1MTFk/ZGZiYTRhYjUwNDg3/NjU3NjhkMjJjMWEx/MWU5NjFiYzRiN2Rj/ZmE1NzUzMC93d3cu/bmJjbmV3cy5jb20v\",\"path\":\"\u203A
+        business  \u203A business-news  \u203A amazon-layoffs-thousands-corporate-artificial-intelligence-rcna240155\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/l1OQGxTlWHjP72J2ONm5C_A2pt0CfBYnyXqMjHeY9N8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jbGRucnkucy1u/YmNuZXdzLmNvbS9p/bWFnZS91cGxvYWQv/dF9maXQtMTUwMHcs/Zl9hdXRvLHFfYXV0/bzpiZXN0L3JvY2tj/bXMvMjAyNS0xMC8y/NTEwMjctYW1hem9u/LW1uLTE4MTAtZmU4/MTE1LmpwZw\",\"original\":\"https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2025-10/251027-amazon-mn-1810-fe8115.jpg\",\"logo\":false},\"age\":\"1
+        day ago\"},{\"title\":\"Billionaire Philippe Laffont Just Changed His Mind
+        on This Artificial Intelligence (AI) Stock, Adding It to His List of Top Picks
+        | The Motley Fool\",\"url\":\"https://www.fool.com/investing/2025/10/28/billionaire-philippe-laffont-just-changed-his-mind/\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"In
+        a presentation this summer, Coatue Management, headed by billionaire fund
+        manager Philippe Laffont, laid out its case for what it sees as the next group
+        of tech leaders. Unsurprisingly, it sees <strong>artificial intelligence</strong>
+        (AI) as a massive driving force, improving productivity and profits over time.\",\"page_age\":\"2025-10-29T00:00:03\",\"profile\":{\"name\":\"The
+        Motley Fool\",\"url\":\"https://www.fool.com/investing/2025/10/28/billionaire-philippe-laffont-just-changed-his-mind/\",\"long_name\":\"fool.com\",\"img\":\"https://imgs.search.brave.com/WApw2kto_pU_fkDjG9VP20wwEs08ki09eil7b1Kc_aw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWYzZjY3ZTJj/NWQzYjNhNTgxZTBl/ZDUxMTNmNjk1MTMz/ZWFjYWM5NTM4YzAx/Y2JmZmJjMDAyMWE4/NzIzMWRmZi93d3cu/Zm9vbC5jb20v\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"fool.com\",\"hostname\":\"www.fool.com\",\"favicon\":\"https://imgs.search.brave.com/WApw2kto_pU_fkDjG9VP20wwEs08ki09eil7b1Kc_aw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWYzZjY3ZTJj/NWQzYjNhNTgxZTBl/ZDUxMTNmNjk1MTMz/ZWFjYWM5NTM4YzAx/Y2JmZmJjMDAyMWE4/NzIzMWRmZi93d3cu/Zm9vbC5jb20v\",\"path\":\"\u203A
+        investing  \u203A 2025  \u203A 10  \u203A 28  \u203A billionaire-philippe-laffont-just-changed-his-mind\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/BcRcN-Sh7LvHoIPzyQNKanbNwCrxF3BYcrbiYvhCytg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9nLmZv/b2xjZG4uY29tL2Vk/aXRvcmlhbC9pbWFn/ZXMvODM5NjU2L2dl/dHR5aW1hZ2VzLWFy/dGlmaWNpYWwtaW50/ZWxsaWdlbmNlLWFp/LWNoYXRib3QtcGhv/bmUtYWdlbnQuanBn\",\"original\":\"https://g.foolcdn.com/editorial/images/839656/gettyimages-artificial-intelligence-ai-chatbot-phone-agent.jpg\",\"logo\":false},\"age\":\"1
+        day ago\"}],\"family_friendly\":true}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 01:47:11 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+      content-length:
+      - '22277'
+      server-timing:
+      - search-roundtrip;dur=522.41
+      vary:
+      - Accept-Encoding
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site, Sec-Fetch-User
+      x-ratelimit-limit:
+      - 1, 2000
+      x-ratelimit-policy:
+      - 1;w=1, 2000;w=2678400
+      x-ratelimit-remaining:
+      - 0, 1876
+      x-ratelimit-reset:
+      - 1, 166367
+    status:
+      code: 200
+      message: OK
+version: 1

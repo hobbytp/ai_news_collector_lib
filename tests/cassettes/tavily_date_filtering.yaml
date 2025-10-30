@@ -1,0 +1,105 @@
+interactions:
+- request:
+    body: '{"api_key": "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", "query": "machine
+      learning", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 5, "include_domains": [], "exclude_domains": [], "time_range":
+      "day", "topic": "news", "days": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '278'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://localhost:33210/search
+  response:
+    body:
+      string: "{\"query\":\"machine learning\",\"follow_up_questions\":null,\"answer\":null,\"images\":[],\"results\":[{\"url\":\"https://www.nature.com/articles/s41598-025-25547-7\",\"title\":\"Evaluating
+        land degradation and environmental hazards in North delta Egypt using machine
+        learning and GIS approaches - Nature\",\"score\":0.4473884,\"published_date\":\"Wed,
+        29 Oct 2025 09:36:19 GMT\",\"content\":\"This study aims to evaluate the soil
+        quality, land degradation, and ecological risks using an integrated approach
+        that combines GIS and remote sensing with machine learning (ML) models, specifically
+        artificial neural network (ANN), random forest (RF), and decision tree (DT)
+        methodologies. To predict pollution indices of soil, three machine learning
+        (ML) models were developed in this study: an artificial neural network (ANN),
+        a random forest (RF), and a decision tree (DT). Estimation models employing
+        Artificial Neural Networks (ANN), Random Forest (RF), and Decision Trees (DT)
+        successfully captured relationships between physiochemical parameters variables
+        and critical soil pollution indices including contamination degree (CD), potential
+        ecological risk (PER), and pollution load index (PLI).\",\"raw_content\":null},{\"url\":\"https://www.nature.com/articles/s41598-025-22604-z\",\"title\":\"A
+        hybrid statistical\u2013machine learning framework for evaluating geomagnetic
+        storm effects on MisrSat2 satellite power subsystems - Nature\",\"score\":0.35006633,\"published_date\":\"Wed,
+        29 Oct 2025 09:32:36 GMT\",\"content\":\"Figure 1 illustrates the hybrid statistical\u2013machine
+        learning framework used to evaluate the impact of extreme space weather events
+        specifically the May 2024 geomagnetic storm, on the MisrSat-2 satellite\u2019s
+        telemetry data, with a focus on its solar panel current and battery subsystem.
+        The machine learning model incorporates space weather parameters (e.g., proton
+        fluxes, solar wind properties, geomagnetic indices) to investigate the causes
+        of current spikes identified as statistical anomalies, complemented by event-based
+        analysis and probabilistic anomaly detection. To evaluate the MoE model robustness
+        in capturing abnormal telemetry behaviour under varying space weather conditions,
+        Monte Carlo simulation was applied to its residuals for anomaly detection
+        in satellite current data.\",\"raw_content\":null},{\"url\":\"https://www.shopify.com/blog/predictive-marketing\",\"title\":\"How
+        Predictive Marketing Works for Small Businesses (2025) - Shopify\",\"score\":0.2677612,\"published_date\":\"Wed,
+        29 Oct 2025 19:15:41 GMT\",\"content\":\"Learn how businesses can use analytics
+        and predictive marketing to make data-informed decisions. Predictive analytics
+        employs machine learning algorithms and statistical models to identify patterns
+        in historical customer data that can forecast future customer behaviors. Predictive
+        analytics tools use multiple types of customer data to make predictions. With
+        predictive marketing, businesses sort customers into distinct audience segments
+        based on anticipated behaviors, such as conversion likelihood or churn risk.
+        Shopify\u2019s built-in segmentation tools help you discover insights about
+        your customers, build segments as targeted as your marketing plans with filters
+        based on your customers\u2019 demographic and behavioral data, and drive sales
+        with timely and personalized emails. Predictive analytics insights can help
+        your team make data-informed decisions and improve future marketing efforts.\",\"raw_content\":null},{\"url\":\"https://www.newsbreak.com/biospace-321438774/4320376557750-j-j-lilly-crest-ai-wave-with-nvidia-partnerships\",\"title\":\"J&J,
+        Lilly Crest AI Wave With Nvidia Partnerships - NewsBreak: Local News & Alerts\",\"score\":0.25649938,\"published_date\":\"Wed,
+        29 Oct 2025 12:31:12 GMT\",\"content\":\"Eli Lilly and Johnson & Johnson have
+        each forged partnerships with the tech giant Nvidia, with an eye toward harnessing
+        machine learning technologies to aid in drug and device development. The Nvidia
+        partnership will also allow the company to accelerate the development process
+        and shorten the time candidates spend in trials, Lilly claimed. In a news
+        release on Tuesday, the company said it will use Nvidia\u2019s robot development
+        technology, called Isaac, for its MONARCH urology platform. A day earlier,
+        Takeda put more than $1 billion on the line to sign a second deal with its
+        existing partner Nabla Bio, looking to use the latter\u2019s AI-driven design
+        technology to create antibody therapies for multiple yet-undisclosed targets.\",\"raw_content\":null},{\"url\":\"https://www.cbssports.com/nfl/news/week-9-nfl-betting-guide-props-spreads-model-expert-parlay-dfs-fantasy-picks/\",\"title\":\"Week
+        9 NFL betting guide, odds, picks, predictions, player props, DFS and fantasy
+        football rankings - CBS Sports\",\"score\":0.25215882,\"published_date\":\"Wed,
+        29 Oct 2025 17:52:54 GMT\",\"content\":\"section: | slug: week-9-nfl-betting-guide-props-spreads-model-expert-parlay-dfs-fantasy-picks
+        | sport: football | route: article\\\\_single.us | # Week 9 NFL betting guide,
+        props, spreads: Model, expert, parlay, DFS and season-long fantasy picks revealed
+        If you are looking for NFL picks, NFL parlays, Fantasy football rankings or
+        NFL DFS picks for Week 9, SportsLine has you covered with its proven model,
+        Machine Learning Model and team of experts. You can find the model's picks
+        for every NFL Week 9 game here. SportsLine's No. 1 NFL expert R.J. White has
+        made his spread pick, and even though both teams enter off losses, White says
+        the unit of one team is coming off \\\"its best game of the season.\\\" See
+        White's Cardinals vs.\",\"raw_content\":null}],\"response_time\":0.39,\"request_id\":\"c531896f-ae89-42eb-8c13-c0556b50eecb\"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5618'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 01:47:15 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+version: 1

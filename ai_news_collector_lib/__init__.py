@@ -24,7 +24,9 @@ __email__ = "support@ai-news-collector.com"
 # 导入主要类和函数
 from .core.collector import AINewsCollector
 from .core.advanced_collector import AdvancedAINewsCollector
+from .core.flexible_collector import FlexibleAINewsCollector, collect_with_single_engine, collect_with_multiple_engines
 from .config.settings import SearchConfig, AdvancedSearchConfig
+from .config.flexible_config import FlexibleSearchConfig, EngineConfig, TimeRange, create_flexible_config, create_single_engine_config
 from .models.article import Article, AdvancedArticle
 from .models.result import SearchResult
 from .models.enhanced_query import EnhancedQuery
@@ -43,9 +45,13 @@ __all__ = [
     # 核心类
     "AINewsCollector",
     "AdvancedAINewsCollector",
+    "FlexibleAINewsCollector",
     # 配置类
     "SearchConfig",
     "AdvancedSearchConfig",
+    "FlexibleSearchConfig",
+    "EngineConfig",
+    "TimeRange",
     # 数据模型
     "Article",
     "AdvancedArticle",
@@ -57,6 +63,11 @@ __all__ = [
     "QueryEnhancer",
     "QueryEnhancerError",
     "enhance_query_async",
+    # 便捷函数
+    "collect_with_single_engine",
+    "collect_with_multiple_engines",
+    "create_flexible_config",
+    "create_single_engine_config",
     # 版本信息
     "__version__",
     "__author__",
