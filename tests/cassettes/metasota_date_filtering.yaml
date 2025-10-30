@@ -1,0 +1,110 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name":
+      "metaso_web_search", "arguments": {"q": "neural networks", "size": 5, "scope":
+      "webpage", "includeSummary": true, "includeRawContent": false}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - AI-News-Collector/1.0
+    method: POST
+    uri: https://localhost:33210/api/mcp
+  response:
+    body:
+      string: "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"credits\\\":3,\\\"searchParameters\\\":{\\\"conciseSnippet\\\":false,\\\"format\\\":\\\"chat_completions\\\",\\\"includeRawContent\\\":false,\\\"includeSummary\\\":true,\\\"q\\\":\\\"neural
+        networks\\\",\\\"scope\\\":\\\"webpage\\\",\\\"size\\\":5},\\\"total\\\":43,\\\"webpages\\\":[{\\\"date\\\":\\\"2022\u5E7412\u670830\u65E5\\\",\\\"docId\\\":\\\"1fc7bdbf-0ed2-4bce-8781-2dd3532616e6\\\",\\\"link\\\":\\\"https://britewire.com/neural-networks/\\\",\\\"position\\\":1,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Neural
+        Networks\\\\nNeural networks are a type of machine learning algorithm that
+        are inspired by the structure and function of the human brain.\\\\nThey are
+        composed of interconnected \u201Cneurons\u201D that can process and transmit
+        information, and they are designed to recognize patterns and make decisions
+        based on input data.\\\\nNeural networks are particularly useful for tasks
+        that require the ability to learn and adapt based on large amounts of data,
+        such as image and speech recognition, language translation, and predictive
+        modeling.\\\\nThey can be trained using large amounts of data and a set of
+        rules called an \u201Calgorithm,\u201D which determines how the network should
+        process the data and make decisions.\\\",\\\"title\\\":\\\"Neural Networks\\\"},{\\\"date\\\":\\\"2024\u5E7409\u670830\u65E5\\\",\\\"docId\\\":\\\"8815f1e2-ed39-4a0a-8b13-c7def999817e\\\",\\\"link\\\":\\\"https://www.retresco.de/en/encyclopedia/what-are-neural-networks/\\\",\\\"position\\\":2,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Neural
+        networks (also: artificial neural networks, ANN) represent an important branch
+        of development in the field of artificial intelligence and are the particular
+        subject of research in what is often referred to as neuro-informatics, a relatively
+        new interdisciplinary field between computer science and neurobiology.\\\\nNeural
+        networks enable a computer to perform highly efficient pattern recognition
+        in big data using specially-developed algorithms and deep learning.\\\\nNeural
+        networks can therefore recognise patterns in large amounts of data as a multitude
+        of algorithms in a way that is vaguely modelled after the human brain.\\\",\\\"title\\\":\\\"Neural
+        Networks - Retresco Encyclopedia\\\"},{\\\"date\\\":\\\"2008\u5E7408\u670830\u65E5\\\",\\\"docId\\\":\\\"47a28452-76ba-4cf0-92f9-3d9569ace4a5\\\",\\\"link\\\":\\\"http://www.conservapedia.com/Neural_networks\\\",\\\"position\\\":3,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Neural
+        networks\\\\nNeural networks are computer models that attempt to imitate the
+        parallel processing that occurs in the human brain.\\\\nThey are typically
+        viewed as having some number of nodes, each with one or more inputs and one
+        output.\\\\nThese nodes are arranged into multiple layers, with the outputs
+        from one layer acting as the inputs to the next layer.\\\\nThe last layer
+        has a single node, and its output is the output for the entire net.\\\\nThe
+        first layer's inputs are the inputs to the overall network.\\\",\\\"title\\\":\\\"Neural
+        networks\\\"},{\\\"date\\\":\\\"2024\u5E7402\u670812\u65E5\\\",\\\"docId\\\":\\\"4e1876b5-8be6-4bbb-bc43-42d10af643b1\\\",\\\"link\\\":\\\"https://www.daytrading.com/neural-network\\\",\\\"position\\\":4,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"Conclusion
+        \u2013 Neural Network\\\\nNeural networks are a type of machine learning algorithm
+        that are modeled after the structure and function of the human brain.\\\\nThey
+        are able to learn from data and make predictions or decisions without being
+        explicitly programmed to do so.\\\\nIn the field of trading, neural networks
+        can be used to analyze market data and make predictions about future price
+        movements.\\\\nThey can also be used to identify patterns and relationships
+        in the data that humans may not be able to discern (or do so slowly and inefficiently).\\\",\\\"title\\\":\\\"Neural
+        Network\\\"},{\\\"date\\\":\\\"2024\u5E7411\u670828\u65E5\\\",\\\"docId\\\":\\\"ee9fbc98-5356-4e9e-a583-25c942e3dc41\\\",\\\"link\\\":\\\"https://drushyaindia.com/tag/electronics/\\\",\\\"position\\\":5,\\\"score\\\":\\\"high\\\",\\\"snippet\\\":\\\"23,
+        Jan 2023\\\\nNeural networks (NN) is a type of machine learning algorithm
+        that is inspired by the structure and function of the human brain.\\\\nIt
+        is a set of algorithms that is designed to recognize patterns in data and
+        make predictions or decisions.\\\\nNeural networks are particularly well-suited
+        for tasks such as image recognition, speech recognition, and natural language
+        processing.\\\\nA neural network consists of layers of interconnected \u201Cneurons,\u201D
+        which are mathematical functions that process input data and produce output.\\\\nThe
+        input data is passed through the layers of the neural network, and each neuron
+        performs a computation on the data and passes the result to the next layer.\\\\nThe
+        final output of the neural network is a prediction or decision based on the
+        input data.\\\",\\\"title\\\":\\\"Electronics\\\"}]}\",\"description\":null}],\"error\":null}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,auth,minipro,metaso-pc,xiezuocat-h5,androidh5,X-E4M-With,Last-Modified,metaso-app,Authorization,xiezuocat-word,metaso-ios,client-type,xiezuocat-app,api,Content-Type,deviceType,No-Cache,iosh5,metaso-h5,X-Requested-With,device-name,Priority,origin-from,Pragma,is-metaso-search-widget,userId,metaso-android,token,metaso-debug,os-version,metapro-windows,xiezuocat-wps,metaso-mini,Distinguish-Origin-from,Cache-Control,If-Modified-Since,Is-Mini-Webview,metaso-aliapp,Expires,wx-app-origin,metalaw-h5
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT, PATCH
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 30 Oct 2025 01:47:28 GMT
+      Set-Cookie:
+      - aliyungf_tc=06d618aa53863ec88dbdf035e15d132c63b0911a01d15f3b23da1a11edca8908;
+        Path=/; HttpOnly
+      - JSESSIONID=C3431B9B641CC8653BDA94C83D43EE60; Path=/api; Secure; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      XDomainRequestAllowed:
+      - '1'
+      content-length:
+      - '4676'
+    status:
+      code: 200
+      message: ''
+version: 1

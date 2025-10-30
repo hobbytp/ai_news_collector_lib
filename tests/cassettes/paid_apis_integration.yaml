@@ -973,4 +973,69 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v2/everything?from=2025-10-23&language=en&pageSize=2&q=AI+news+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":631,\"articles\":[{\"source\":{\"id\":\"financial-post\",\"name\":\"Financial
+        Post\"},\"author\":\"Bloomberg News\",\"title\":\"SoftBank, Panasonic Shares
+        Climb After New US Investment Plans\",\"description\":\"SoftBank Group Corp.,
+        Panasonic Holdings and Hitachi Ltd. shares outperformed Wednesday after they
+        were listed among companies interested in launching projects in the US during
+        President Donald Trump\u2019s visit to Tokyo.\",\"url\":\"https://financialpost.com/pmn/business-pmn/softbank-panasonic-shares-climb-after-new-us-investment-plans\",\"urlToImage\":null,\"publishedAt\":\"2025-10-29T01:58:28Z\",\"content\":\"(Bloomberg)
+        SoftBank Group Corp., Panasonic Holdings and Hitachi Ltd. shares outperformed
+        Wednesday after they were listed among companies interested in launching projects
+        in the US during President \u2026 [+3821 chars]\"},{\"source\":{\"id\":\"the-times-of-india\",\"name\":\"The
+        Times of India\"},\"author\":\"Reuters\",\"title\":\"Japan's Nikkei hits record
+        high as AI optimism lifts investor sentiment\",\"description\":\"Japan's Nikkei
+        stock market reached a historic peak today. Investors were buoyed by strong
+        performances on Wall Street. Optimism surrounding artificial intelligence
+        investments fueled the rally. Key Japanese tech firms saw significant gains.
+        However, a strong\u2026\",\"url\":\"https://economictimes.indiatimes.com/markets/stocks/news/japans-nikkei-hits-record-high-as-ai-optimism-lifts-investor-sentiment/articleshow/124886676.cms\",\"urlToImage\":\"https://img.etimg.com/thumb/msid-124886736,width-1200,height-630,imgsize-20550,overlay-etmarkets/articleshow.jpg\",\"publishedAt\":\"2025-10-29T01:55:58Z\",\"content\":\"(What's
+        moving Sensex and Nifty Track latest market news, stock tips, Budget 2025,
+        Share Market on Budget 2025 and expert advice, on ETMarkets. Also, ETMarkets.com
+        is now on Telegram. For fastest new\u2026 [+330 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 996757af8eb6a2b3-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 02:04:32 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5GMk2uCaliJxUBtAzNpx0j%2FjDbQ5T%2F4Ea0TspTrw5Cvq%2BB6k%2FA78xoaAKkJhhzY%2FIpgU1%2BgcYsTLPHey4RKI8pL%2F7VZ9YIUkAa4%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1840'
+    status:
+      code: 200
+      message: OK
 version: 1

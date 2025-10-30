@@ -583,4 +583,75 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v2/everything?from=2025-10-23&language=en&pageSize=3&q=artificial+intelligence+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":2341,\"articles\":[{\"source\":{\"id\":null,\"name\":\"CNA\"},\"author\":null,\"title\":\"Amazon
+        subsidiary to invest $5 billion in South Korea, presidential office says\",\"description\":\"GYEONGJU,
+        South Korea :Amazon Web Services will invest at least $5 billion in South
+        Korea by 2031 to build new artificial intelligence data centres in the Asian
+        country, South Korea's presidential office said on Wednesday.\_The announcement
+        was made during AWS\u2026\",\"url\":\"https://www.channelnewsasia.com/business/amazon-subsidiary-invest-5-billion-in-south-korea-presidential-office-says-5431511\",\"urlToImage\":\"https://dam.mediacorp.sg/image/upload/s--OZfEY_WX--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2025-10-29T015824Z_1_LYNXMPEL9S01W_RTROPTP_3_FRANCE-TECH.JPG?itok=35VNy5vG\",\"publishedAt\":\"2025-10-29T02:03:45Z\",\"content\":\"GYEONGJU,
+        South Korea :Amazon Web Services will invest at least $5 billion in South
+        Korea by 2031 to build new artificial intelligence data centres in the Asian
+        country, South Korea's presidential of\u2026 [+834 chars]\"},{\"source\":{\"id\":null,\"name\":\"GlobeNewswire\"},\"author\":\"SOSA\",\"title\":\"SOSA
+        Opens Applications for Global Scaleups to Join Its International Landing Pad
+        Network in NYC\",\"description\":\"SOSA\u2019s 12-month ILPN program will
+        support 10 international technology companies to expand to the U.S. market,
+        beginning in February, 2026.    NEW...\",\"url\":\"https://www.globenewswire.com/news-release/2025/10/29/3176100/0/en/SOSA-Opens-Applications-for-Global-Scaleups-to-Join-Its-International-Landing-Pad-Network-in-NYC.html\",\"urlToImage\":\"https://ml.globenewswire.com/Resource/Download/d52dc71e-33eb-4654-8f4e-3e984b121cc1\",\"publishedAt\":\"2025-10-29T02:03:00Z\",\"content\":\"SOSAs
+        12-month ILPN program will support 10 international technology companies to
+        expand to the U.S. market, beginning in February, 2026.\\r\\nNEW YORK, Oct.
+        28, 2025 (GLOBE NEWSWIRE) -- SOSA, a leading \u2026 [+5896 chars]\"},{\"source\":{\"id\":\"financial-post\",\"name\":\"Financial
+        Post\"},\"author\":\"Bloomberg News\",\"title\":\"SoftBank, Panasonic Shares
+        Climb After New US Investment Plans\",\"description\":\"SoftBank Group Corp.,
+        Panasonic Holdings and Hitachi Ltd. shares outperformed Wednesday after they
+        were listed among companies interested in launching projects in the US during
+        President Donald Trump\u2019s visit to Tokyo.\",\"url\":\"https://financialpost.com/pmn/business-pmn/softbank-panasonic-shares-climb-after-new-us-investment-plans\",\"urlToImage\":null,\"publishedAt\":\"2025-10-29T01:58:28Z\",\"content\":\"(Bloomberg)
+        SoftBank Group Corp., Panasonic Holdings and Hitachi Ltd. shares outperformed
+        Wednesday after they were listed among companies interested in launching projects
+        in the US during President \u2026 [+3821 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 9967578d2dd6d829-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 02:04:27 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=yWzj1FeuKydixgXOdIouSC%2BSPDn5YjLWzhzdTYks708rPrLjNxJdyyrkhuG5V4UqyFkl1%2F1wIz%2FYlL20VpFKUBBGp4I5EKCfoCA%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2810'
+    status:
+      code: 200
+      message: OK
 version: 1

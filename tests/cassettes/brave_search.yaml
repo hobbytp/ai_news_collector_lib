@@ -658,4 +658,85 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+      X-Subscription-Token:
+      - BSACKDVHAf31lTCeMtxOVO-mvEFiTIg
+    method: GET
+    uri: https://localhost:33210/res/v1/web/search?count=3&freshness=pw&mkt=en-US&offset=0&q=neural+networks&safesearch=moderate
+  response:
+    body:
+      string: "{\"query\":{\"original\":\"neural networks\",\"show_strict_warning\":false,\"is_navigational\":false,\"is_news_breaking\":false,\"spellcheck_off\":false,\"country\":\"us\",\"bad_results\":false,\"should_fallback\":false,\"postal_code\":\"\",\"city\":\"\",\"header_country\":\"\",\"more_results_available\":true,\"state\":\"\"},\"mixed\":{\"type\":\"mixed\",\"main\":[{\"type\":\"web\",\"index\":0,\"all\":false},{\"type\":\"web\",\"index\":1,\"all\":false},{\"type\":\"web\",\"index\":2,\"all\":false},{\"type\":\"web\",\"index\":3,\"all\":false},{\"type\":\"web\",\"index\":4,\"all\":false},{\"type\":\"web\",\"index\":5,\"all\":false},{\"type\":\"web\",\"index\":6,\"all\":false},{\"type\":\"web\",\"index\":7,\"all\":false},{\"type\":\"web\",\"index\":8,\"all\":false},{\"type\":\"web\",\"index\":9,\"all\":false},{\"type\":\"web\",\"index\":10,\"all\":false},{\"type\":\"web\",\"index\":11,\"all\":false},{\"type\":\"web\",\"index\":12,\"all\":false},{\"type\":\"web\",\"index\":13,\"all\":false},{\"type\":\"web\",\"index\":14,\"all\":false},{\"type\":\"web\",\"index\":15,\"all\":false},{\"type\":\"web\",\"index\":16,\"all\":false},{\"type\":\"web\",\"index\":17,\"all\":false},{\"type\":\"web\",\"index\":18,\"all\":false},{\"type\":\"web\",\"index\":19,\"all\":false}],\"top\":[],\"side\":[]},\"type\":\"search\",\"web\":{\"type\":\"search\",\"results\":[{\"title\":\"Neural
+        network (machine learning) - Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"In
+        machine learning, a neural network (also artificial neural network or neural
+        net, abbreviated ANN or NN) is <strong>a computational model inspired by the
+        structure and functions of biological neural networks</strong>. A neural network
+        consists of connected units or nodes called artificial neurons, which ...\",\"page_age\":\"2025-10-26T14:35:52\",\"profile\":{\"name\":\"Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)\",\"long_name\":\"en.wikipedia.org\",\"img\":\"https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"deep_results\":{\"buttons\":[{\"type\":\"button_result\",\"title\":\"Training\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Training\"},{\"type\":\"button_result\",\"title\":\"History\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#History\"},{\"type\":\"button_result\",\"title\":\"Models\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Models\"},{\"type\":\"button_result\",\"title\":\"Types\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Types\"},{\"type\":\"button_result\",\"title\":\"Network
+        design\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Network_design\"},{\"type\":\"button_result\",\"title\":\"Monitoring
+        and concept drift detection of ANNs\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Monitoring_and_concept_drift_detection_of_ANNs\"},{\"type\":\"button_result\",\"title\":\"Applications\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Applications\"},{\"type\":\"button_result\",\"title\":\"Theoretical
+        properties\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Theoretical_properties\"},{\"type\":\"button_result\",\"title\":\"Criticism\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Criticism\"},{\"type\":\"button_result\",\"title\":\"Gallery\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Gallery\"},{\"type\":\"button_result\",\"title\":\"Recent
+        advancements and future directions\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Recent_advancements_and_future_directions\"},{\"type\":\"button_result\",\"title\":\"Bibliography\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network_(machine_learning)#Bibliography\"}]},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"en.wikipedia.org\",\"hostname\":\"en.wikipedia.org\",\"favicon\":\"https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw\",\"path\":\"\u203A
+        wiki  \u203A Neural_network_(machine_learning)\"},\"age\":\"3 days ago\"},{\"title\":\"Neural
+        network - Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"A
+        neural network is <strong>a group of interconnected units called neurons that
+        send signals to one another</strong>. Neurons can be either biological cells
+        or signal pathways. While individual neurons are simple, many of them together
+        in a network can perform complex tasks. There are two main types of neural
+        ...\",\"page_age\":\"2025-10-25T21:02:35\",\"profile\":{\"name\":\"Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network\",\"long_name\":\"en.wikipedia.org\",\"img\":\"https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"deep_results\":{\"buttons\":[{\"type\":\"button_result\",\"title\":\"In
+        biology\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network#In_biology\"},{\"type\":\"button_result\",\"title\":\"In
+        machine learning\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network#In_machine_learning\"},{\"type\":\"button_result\",\"title\":\"History\",\"url\":\"https://en.wikipedia.org/wiki/Neural_network#History\"}]},\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"en.wikipedia.org\",\"hostname\":\"en.wikipedia.org\",\"favicon\":\"https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw\",\"path\":\"\u203A
+        wiki  \u203A Neural_network\"},\"age\":\"4 days ago\"},{\"title\":\"What Is
+        Deep Learning? | IBM\",\"url\":\"https://www.ibm.com/think/topics/deep-learning\",\"is_source_local\":false,\"is_source_both\":false,\"description\":\"Deep
+        learning is a subset of machine learning driven by multilayered <strong>neural
+        networks</strong> whose design is inspired by the structure of the human brain.\",\"page_age\":\"2025-10-23T18:18:37\",\"profile\":{\"name\":\"IBM\",\"url\":\"https://www.ibm.com/think/topics/deep-learning\",\"long_name\":\"ibm.com\",\"img\":\"https://imgs.search.brave.com/WtFphd-kJr-JtTbMqTUV8D4gBvSovY56CfvQYWvRbAw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWI0MWQyYmEy/MTNmNWVkODQ2ODFj/ZjYxMjk4YjI3NmY5/Yjk5M2E0YjhjNWZi/OGUyODMzNzllOTQx/M2I4ZDc2My93d3cu/aWJtLmNvbS8\"},\"language\":\"en\",\"family_friendly\":true,\"type\":\"search_result\",\"subtype\":\"generic\",\"is_live\":false,\"meta_url\":{\"scheme\":\"https\",\"netloc\":\"ibm.com\",\"hostname\":\"www.ibm.com\",\"favicon\":\"https://imgs.search.brave.com/WtFphd-kJr-JtTbMqTUV8D4gBvSovY56CfvQYWvRbAw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWI0MWQyYmEy/MTNmNWVkODQ2ODFj/ZjYxMjk4YjI3NmY5/Yjk5M2E0YjhjNWZi/OGUyODMzNzllOTQx/M2I4ZDc2My93d3cu/aWJtLmNvbS8\",\"path\":\"\u203A
+        think  \u203A topics  \u203A deep-learning\"},\"thumbnail\":{\"src\":\"https://imgs.search.brave.com/AGz11f_QShCH7E5DWTDUMtoYKDmCJ7E7LJOwnkkTcF8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aWJtLmNvbS90aGlu/ay90b3BpY3MvZGVl/cC1sZWFybmluZw\",\"original\":\"https://www.ibm.com/think/topics/deep-learning\",\"logo\":false},\"age\":\"1
+        week ago\"}],\"family_friendly\":true}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:04:16 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+      content-length:
+      - '7662'
+      server-timing:
+      - search-roundtrip;dur=421.839
+      vary:
+      - Accept-Encoding
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site, Sec-Fetch-User
+      x-ratelimit-limit:
+      - 1, 2000
+      x-ratelimit-policy:
+      - 1;w=1, 2000;w=2678400
+      x-ratelimit-remaining:
+      - 0, 1871
+      x-ratelimit-reset:
+      - 1, 165342
+    status:
+      code: 200
+      message: OK
 version: 1

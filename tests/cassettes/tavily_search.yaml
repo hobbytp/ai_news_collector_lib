@@ -867,4 +867,82 @@ interactions:
     status:
       code: 401
       message: Unauthorized
+- request:
+    body: '{"api_key": "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", "query": "artificial
+      intelligence", "search_depth": "basic", "include_answer": false, "include_raw_content":
+      false, "max_results": 3, "include_domains": [], "exclude_domains": [], "time_range":
+      "week", "topic": "news", "days": 7}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '286'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://localhost:33210/search
+  response:
+    body:
+      string: "{\"query\":\"artificial intelligence\",\"follow_up_questions\":null,\"answer\":null,\"images\":[],\"results\":[{\"url\":\"https://forklog.com/en/zoom-ceo-predicts-ai-will-reduce-workweek-to-3-4-days/\",\"title\":\"Zoom
+        CEO Predicts AI Will Reduce Workweek to 3-4 Days - ForkLog\",\"score\":0.47767657,\"published_date\":\"Tue,
+        28 Oct 2025 11:47:38 GMT\",\"content\":\"AI translated#Artificial Intelligence#Layoffs#Opinions
+        # Zoom CEO Predicts AI Will Reduce Workweek to 3-4 Days Artificial intelligence
+        will enable a shorter workweek, according to Zoom CEO Eric Yuan at the TechCrunch
+        Disrupt 2025 conference. At the conference, the Zoom chief emphasized that
+        the company is heavily investing in artificial intelligence during the development
+        of new products. In June, Amazon CEO Andy Jassy stated that the increased
+        use of AI tools would lead to further layoffs, as the technology allows for
+        the automation of routine and repetitive tasks. > \u201CThis move indicates
+        that Amazon is likely already seeing a significant productivity boost from
+        artificial intelligence,\u201D noted eMarketer analyst Sky Canaves. Previously,
+        the White House\u2019s head of artificial intelligence and cryptocurrency,
+        David Sacks, dismissed growing concerns about mass layoffs due to AI.\",\"raw_content\":null},{\"url\":\"https://gizmodo.com/an-ai-data-center-is-coming-for-your-backyard-heres-what-that-means-for-you-2000676889\",\"title\":\"An
+        AI Data Center Is Coming for Your Backyard. Here\u2019s What That Means for
+        You - Gizmodo\",\"score\":0.38567597,\"published_date\":\"Wed, 29 Oct 2025
+        11:05:58 GMT\",\"content\":\"The rise of artificial intelligence is driving
+        a surge of data center construction across the United States, and rural communities
+        are feeling the impact. Over the years, the rise of artificial intelligence
+        has transformed their bucolic community into a major hub for data centers,
+        and Mrs. Schlossberg isn\u2019t standing for it. Despite the Coalition\u2019s
+        efforts, the county is now home to 44 data centers operated by various tech
+        companies, with 15 more under construction, according to its latest tax revenue
+        report. Schlossberg and the Coalition to Protect Prince William County have
+        become a model for communities looking to organize against local data center
+        projects. Artificial intelligence   data centers   Energy   Pollution\",\"raw_content\":null},{\"url\":\"https://www.foxnews.com/tech/ai-newsletter-conservative-activist-reaches-breaking-point-google\",\"title\":\"Fox
+        News AI Newsletter: Conservative activist reaches 'breaking point' with Google
+        - Fox News\",\"score\":0.35938716,\"published_date\":\"Fri, 24 Oct 2025 17:30:24
+        GMT\",\"content\":\"# Fox News AI Newsletter: Conservative activist reaches
+        'breaking point' with Google ## **Welcome to Fox News\u2019 Artificial Intelligence
+        newsletter with the latest AI technology advancements.** **SILICON SHOWDOWN:**
+        Palantir CEO Alex Karp said his company is in an artificial intelligence arms
+        race with its competitors, after reaching a deal with Lumen Technologies in
+        which Palantir will deploy AI throughout Lumen's digital communications network
+        and enhance data use and effectiveness. ## **Subscribe now to get the Fox
+        News Artificial Intelligence Newsletter in your inbox****.** Stay up to date
+        on the latest AI technology advancements and learn about the challenges and
+        opportunities AI presents now and for the future with Fox News\_here.\",\"raw_content\":null}],\"response_time\":0.59,\"request_id\":\"18e7bf5d-09a6-4c6b-b426-58ff9b434e73\"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3430'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 30 Oct 2025 02:04:06 GMT
+      content-security-policy:
+      - default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self';
+        style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for
+        'script'; upgrade-insecure-requests;
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
 version: 1

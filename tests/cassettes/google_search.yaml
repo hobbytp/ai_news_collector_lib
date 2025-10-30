@@ -2414,4 +2414,125 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d7&num=3&q=machine+learning&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - machine learning\",\n        \"totalResults\": \"22200000\",\n
+        \       \"searchTerms\": \"machine learning\",\n        \"count\": 3,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d7\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - machine learning\",\n
+        \       \"totalResults\": \"22200000\",\n        \"searchTerms\": \"machine
+        learning\",\n        \"count\": 3,\n        \"startIndex\": 4,\n        \"inputEncoding\":
+        \"utf8\",\n        \"outputEncoding\": \"utf8\",\n        \"safe\": \"off\",\n
+        \       \"cx\": \"6374f7a56b2b34760\",\n        \"sort\": \"date\",\n        \"dateRestrict\":
+        \"d7\"\n      }\n    ]\n  },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n
+        \ },\n  \"searchInformation\": {\n    \"searchTime\": 0.291094,\n    \"formattedSearchTime\":
+        \"0.29\",\n    \"totalResults\": \"22200000\",\n    \"formattedTotalResults\":
+        \"22,200,000\"\n  },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"DeepLearning.AI: Start or Advance Your Career in AI\",\n
+        \     \"htmlTitle\": \"DeepLearning.AI: Start or Advance Your Career in AI\",\n
+        \     \"link\": \"https://www.deeplearning.ai/\",\n      \"displayLink\":
+        \"www.deeplearning.ai\",\n      \"snippet\": \"2 hours ago ... Join over 7
+        million people learning how to use and build AI. AI Courses and Specializations.
+        Build a foundation of machine learning and AI skills.\",\n      \"htmlSnippet\":
+        \"2 hours ago \\u003cb\\u003e...\\u003c/b\\u003e Join over 7 million people
+        learning how to use and build AI. AI Courses and Specializations. Build a
+        foundation of \\u003cb\\u003emachine learning\\u003c/b\\u003e and AI skills.\",\n
+        \     \"formattedUrl\": \"https://www.deeplearning.ai/\",\n      \"htmlFormattedUrl\":
+        \"https://www.deep\\u003cb\\u003elearning\\u003c/b\\u003e.ai/\",\n      \"pagemap\":
+        {\n        \"cse_thumbnail\": [\n          {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtg3cAFle20l_Dq6DxfFi-di-tbaB-WQ8guOzg4nO6e024CrfGG1wKwcd-&s\",\n
+        \           \"width\": \"310\",\n            \"height\": \"163\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"og:image\":
+        \"https://home-wordpress.deeplearning.ai/wp-content/uploads/2024/06/homepage-preview.png\",\n
+        \           \"og:type\": \"website\",\n            \"og:image:width\": \"2400\",\n
+        \           \"twitter:card\": \"summary_large_image\",\n            \"twitter:title\":
+        \"DeepLearning.AI: Start or Advance Your Career in AI\",\n            \"og:title\":
+        \"Home\",\n            \"og:image:height\": \"1260\",\n            \"og:description\":
+        \"DeepLearning.AI | Andrew Ng | Join over 7 million people learning how to
+        use and build AI through our online courses. Earn certifications, level up
+        your skills, and stay ahead of the industry.\",\n            \"twitter:creator\":
+        \"@deeplearningai_\",\n            \"next-head-count\": \"18\",\n            \"twitter:site\":
+        \"@deeplearningai_\",\n            \"viewport\": \"width=device-width\",\n
+        \           \"twitter:description\": \"DeepLearning.AI | Andrew Ng | Join
+        over 7 million people learning how to use and build AI through our online
+        courses. Earn certifications, level up your skills, and stay ahead of the
+        industry.\",\n            \"og:locale\": \"en_US\",\n            \"og:url\":
+        \"https://www.deeplearning.ai/\"\n          }\n        ],\n        \"cse_image\":
+        [\n          {\n            \"src\": \"https://home-wordpress.deeplearning.ai/wp-content/uploads/2024/06/homepage-preview.png\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"IA 343. Introduction to Artificial Intelligence and Machine
+        Learning ...\",\n      \"htmlTitle\": \"IA 343. Introduction to Artificial
+        Intelligence and \\u003cb\\u003eMachine Learning\\u003c/b\\u003e ...\",\n
+        \     \"link\": \"https://catalog.jmu.edu/preview_course_nopop.php?catoid=62&coid=386449\",\n
+        \     \"displayLink\": \"catalog.jmu.edu\",\n      \"snippet\": \"2 hours
+        ago ... Students will learn to build, train and deploy machine learning models
+        while exploring the latest generative AI techniques, such as prompt engineering,
+        vector\_...\",\n      \"htmlSnippet\": \"2 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Students will learn to build, train and deploy \\u003cb\\u003emachine learning\\u003c/b\\u003e
+        models while exploring the latest generative AI techniques, such as prompt
+        engineering, vector&nbsp;...\",\n      \"formattedUrl\": \"https://catalog.jmu.edu/preview_course_nopop.php?catoid=62&coid...\",\n
+        \     \"htmlFormattedUrl\": \"https://catalog.jmu.edu/preview_course_nopop.php?catoid=62&amp;coid...\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"viewport\":
+        \"width=device-width, initial-scale=1, minimum-scale=1\"\n          }\n        ]\n
+        \     }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Machine Learning News - Google Groups\",\n      \"htmlTitle\": \"\\u003cb\\u003eMachine
+        Learning\\u003c/b\\u003e News - Google Groups\",\n      \"link\": \"https://groups.google.com/g/ml-news\",\n
+        \     \"displayLink\": \"groups.google.com\",\n      \"snippet\": \"1 day
+        ago ... This group serves as a forum for notices and announcements of interest
+        to the machine learning community. This includes events, calls for papers,
+        employment-\_...\",\n      \"htmlSnippet\": \"1 day ago \\u003cb\\u003e...\\u003c/b\\u003e
+        This group serves as a forum for notices and announcements of interest to
+        the \\u003cb\\u003emachine learning\\u003c/b\\u003e community. This includes
+        events, calls for papers, employment-&nbsp;...\",\n      \"formattedUrl\":
+        \"https://groups.google.com/g/ml-news\",\n      \"htmlFormattedUrl\": \"https://groups.google.com/g/ml-news\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"application-name\":
+        \"Google Groups\",\n            \"referrer\": \"origin\",\n            \"apple-mobile-web-app-status-bar-style\":
+        \"black\",\n            \"msapplication-tap-highlight\": \"no\",\n            \"viewport\":
+        \"width=device-width, initial-scale=1\",\n            \"apple-mobile-web-app-capable\":
+        \"yes\",\n            \"apple-mobile-web-app-title\": \"Google Groups\",\n
+        \           \"mobile-web-app-capable\": \"yes\"\n          }\n        ]\n
+        \     }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 30 Oct 2025 02:04:09 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '6860'
+    status:
+      code: 200
+      message: OK
 version: 1

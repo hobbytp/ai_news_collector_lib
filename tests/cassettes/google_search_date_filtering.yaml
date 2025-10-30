@@ -1,0 +1,1143 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/customsearch/v1?cx=6374f7a56b2b34760&dateRestrict=d1&num=5&q=AI+research&sort=date
+  response:
+    body:
+      string: "{\n  \"kind\": \"customsearch#search\",\n  \"url\": {\n    \"type\":
+        \"application/json\",\n    \"template\": \"https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json\"\n
+        \ },\n  \"queries\": {\n    \"request\": [\n      {\n        \"title\": \"Google
+        Custom Search - AI research\",\n        \"totalResults\": \"11100000\",\n
+        \       \"searchTerms\": \"AI research\",\n        \"count\": 5,\n        \"startIndex\":
+        1,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\": \"utf8\",\n
+        \       \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n        \"sort\":
+        \"date\",\n        \"dateRestrict\": \"d1\"\n      }\n    ],\n    \"nextPage\":
+        [\n      {\n        \"title\": \"Google Custom Search - AI research\",\n        \"totalResults\":
+        \"11100000\",\n        \"searchTerms\": \"AI research\",\n        \"count\":
+        5,\n        \"startIndex\": 6,\n        \"inputEncoding\": \"utf8\",\n        \"outputEncoding\":
+        \"utf8\",\n        \"safe\": \"off\",\n        \"cx\": \"6374f7a56b2b34760\",\n
+        \       \"sort\": \"date\",\n        \"dateRestrict\": \"d1\"\n      }\n    ]\n
+        \ },\n  \"context\": {\n    \"title\": \"hobbygooglesearch\"\n  },\n  \"searchInformation\":
+        {\n    \"searchTime\": 0.399441,\n    \"formattedSearchTime\": \"0.40\",\n
+        \   \"totalResults\": \"11100000\",\n    \"formattedTotalResults\": \"11,100,000\"\n
+        \ },\n  \"items\": [\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"UW-Stout: Faculty integrate A.I. research in machine learning ...\",\n      \"htmlTitle\":
+        \"UW-Stout: Faculty integrate \\u003cb\\u003eA.I. research\\u003c/b\\u003e
+        in machine learning ...\",\n      \"link\": \"https://pro.stateaffairs.com/wi/press-releases/uw-stout-faculty-integrate-a-i-research-in-machine-learning-business-technology-composition-courses\",\n
+        \     \"displayLink\": \"pro.stateaffairs.com\",\n      \"snippet\": \"1 hour
+        ago ... ... research spanning generative artificial intelligence (GenAI),
+        machine learning, AI deep research methods and more. Three professors \u2013
+        Augustine Twumasi\_...\",\n      \"htmlSnippet\": \"1 hour ago \\u003cb\\u003e...\\u003c/b\\u003e
+        ... \\u003cb\\u003eresearch\\u003c/b\\u003e spanning generative \\u003cb\\u003eartificial
+        intelligence\\u003c/b\\u003e (GenAI), machine learning, \\u003cb\\u003eAI\\u003c/b\\u003e
+        deep \\u003cb\\u003eresearch\\u003c/b\\u003e methods and more. Three professors
+        \u2013 Augustine Twumasi&nbsp;...\",\n      \"formattedUrl\": \"https://pro.stateaffairs.com/.../uw-stout-faculty-integrate-a-i-research-in-mac...\",\n
+        \     \"htmlFormattedUrl\": \"https://pro.stateaffairs.com/.../uw-stout-faculty-integrate-a-i-\\u003cb\\u003eresearch\\u003c/b\\u003e-in-mac...\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"apple-itunes-app\":
+        \"app-id=6738106828\",\n            \"og:type\": \"website\",\n            \"twitter:card\":
+        \"summary\",\n            \"twitter:title\": \"UW-Stout: Faculty integrate
+        A.I. research in machine learning, business technology, composition courses\",\n
+        \           \"og:site_name\": \"State Affairs\",\n            \"viewport\":
+        \"width=device-width, initial-scale=1, maximum-scale=1\",\n            \"twitter:description\":
+        \"University\u2019s 360-degree approach to artificial intelligence aims to
+        \u2018equip students with hands-on experience and an applied understanding\u2019
+        Menomonie, Wis. \u2013 As University of Wisconsin-Stout continues to strengthen
+        its 360-degree approach to artificial intelligence, embedding skills across
+        all programs, faculty experts across degree fields build on their growing
+        knowledge with research spanning generative artificial intelligence (GenAI),
+        [&hellip;]\",\n            \"og:title\": \"UW-Stout: Faculty integrate A.I.
+        research in machine learning, business technology, composition courses\",\n
+        \           \"og:url\": \"https://pro.stateaffairs.com/wi/press-releases/uw-stout-faculty-integrate-a-i-research-in-machine-learning-business-technology-composition-courses\",\n
+        \           \"og:description\": \"University\u2019s 360-degree approach to
+        artificial intelligence aims to \u2018equip students with hands-on experience
+        and an applied understanding\u2019 Menomonie, Wis. \u2013 As University of
+        Wisconsin-Stout continues to strengthen its 360-degree approach to artificial
+        intelligence, embedding skills across all programs, faculty experts across
+        degree fields build on their growing knowledge with research spanning generative
+        artificial intelligence (GenAI), [&hellip;]\"\n          }\n        ]\n      }\n
+        \   },\n    {\n      \"kind\": \"customsearch#result\",\n      \"title\":
+        \"Glenn Gabe (@glenngabe) / Posts / X\",\n      \"htmlTitle\": \"Glenn Gabe
+        (@glenngabe) / Posts / X\",\n      \"link\": \"https://x.com/glenngabe?lang=en\",\n
+        \     \"displayLink\": \"x.com\",\n      \"snippet\": \"2 hours ago ... He
+        described this AI researcher \u2014 not to be confused with a human who researches
+        AI \u2014 as a \u201Csystem capable of autonomously delivering on larger research\_...\",\n
+        \     \"htmlSnippet\": \"2 hours ago \\u003cb\\u003e...\\u003c/b\\u003e He
+        described this \\u003cb\\u003eAI\\u003c/b\\u003e researcher \u2014 not to
+        be confused with a human who \\u003cb\\u003eresearches AI\\u003c/b\\u003e
+        \u2014 as a \u201Csystem capable of autonomously delivering on larger \\u003cb\\u003eresearch\\u003c/b\\u003e&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://x.com/glenngabe?lang=en\",\n      \"htmlFormattedUrl\":
+        \"https://x.com/glenngabe?lang=en\",\n      \"pagemap\": {\n        \"cse_thumbnail\":
+        [\n          {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvrqCBBtPnOl-y9X09cckiaIXjU6139R05agM8C8a0VYg0O3XdvNYcyQ&s\",\n
+        \           \"width\": \"225\",\n            \"height\": \"225\"\n          }\n
+        \       ],\n        \"website\": [\n          {\n            \"name\": \"X
+        (formerly Twitter)\",\n            \"url\": \"https://x.com\"\n          }\n
+        \       ],\n        \"metatags\": [\n          {\n            \"og:image\":
+        \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5_400x400.jpg\",\n
+        \           \"og:image:width\": \"400\",\n            \"twitter:card\": \"summary_large_image\",\n
+        \           \"og:site_name\": \"X (formerly Twitter)\",\n            \"apple-mobile-web-app-title\":
+        \"X\",\n            \"rating\": \"general\",\n            \"bingbot\": \"index,
+        follow\",\n            \"language\": \"en\",\n            \"og:description\":
+        \"Glenn Gabe (@glenngabe) - Posts - SEO Consultant at G-Squared Interactive
+        focused on Google algorithm update recovery, technical SEO a... | X (formerly
+        Twitter)\",\n            \"twitter:creator\": \"@glenngabe\",\n            \"og:image:secure_url\":
+        \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5_400x400.jpg\",\n
+        \           \"twitter:data1\": \"89805\",\n            \"twitterbot\": \"index,
+        follow\",\n            \"twitter:data2\": \"2008\",\n            \"twitter:image:alt\":
+        \"Glenn Gabe profile picture\",\n            \"profile:first_name\": \"Glenn\",\n
+        \           \"linkedinbot\": \"index, follow\",\n            \"content-language\":
+        \"en\",\n            \"application-name\": \"X (formerly Twitter)\",\n            \"og:image:alt\":
+        \"Glenn Gabe profile picture\",\n            \"author\": \"Glenn Gabe\",\n
+        \           \"mobileoptimized\": \"320\",\n            \"mobile-web-app-capable\":
+        \"yes\",\n            \"og:locale\": \"en_US\",\n            \"format-detection\":
+        \"telephone=no\",\n            \"theme-color\": \"#FFFFFF\",\n            \"twitter:label1\":
+        \"Posts\",\n            \"twitter:label2\": \"Joined\",\n            \"og:image:type\":
+        \"image/jpeg\",\n            \"title\": \"Glenn Gabe (@glenngabe) / Posts
+        / X\",\n            \"distribution\": \"global\",\n            \"twitter:image\":
+        \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5_400x400.jpg\",\n
+        \           \"profile:last_name\": \"Gabe\",\n            \"twitter:site\":
+        \"@x\",\n            \"facebookbot\": \"index, follow\",\n            \"msapplication-tilecolor\":
+        \"#1DA1F2\",\n            \"og:type\": \"profile\",\n            \"twitter:title\":
+        \"Glenn Gabe (@glenngabe) / Posts / X\",\n            \"skype_toolbar\": \"skype_toolbar_parser_compatible\",\n
+        \           \"handheldfriendly\": \"true\",\n            \"profile:username\":
+        \"glenngabe\",\n            \"og:title\": \"Glenn Gabe (@glenngabe) / Posts
+        / X\",\n            \"og:image:height\": \"400\",\n            \"apple-mobile-web-app-status-bar-style\":
+        \"white\",\n            \"viewport\": \"width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover\",\n
+        \           \"apple-mobile-web-app-capable\": \"yes\",\n            \"twitter:description\":
+        \"Glenn Gabe (@glenngabe) - Posts - SEO Consultant at G-Squared Interactive
+        focused on Google algorithm update recovery, technical SEO a... | X (formerly
+        Twitter)\",\n            \"og:url\": \"https://x.com/glenngabe\",\n            \"apple-touch-fullscreen\":
+        \"yes\"\n          }\n        ],\n        \"videoobject\": [\n          {\n
+        \           \"duration\": \"PT0M7S\",\n            \"contenturl\": \"https://video.twimg.com/amplify_video/1983255814035877888/pl/xfuL1585_gkuDl8u.m3u8?tag=16\",\n
+        \           \"uploaddate\": \"2025-10-28T19:34:34.000Z\",\n            \"name\":
+        \"Glenn Gabe's Video on X\",\n            \"description\": \"Humanoid robot
+        in gray suit with glowing circular eyes and mechanical arms performs kitchen
+        tasks in wooden cabinet kitchen with green tiled backsplash and countertop
+        including picking up bottle...\",\n            \"thumbnailurl\": \"https://pbs.twimg.com/amplify_video_thumb/1983255814035877888/img/_Y0Elg-meICqnSV6.jpg\"\n
+        \         }\n        ],\n        \"collection\": [\n          {\n            \"name\":
+        \"Posts\",\n            \"about\": \"SEO Consultant at G-Squared Interactive
+        focused on Google algorithm update recovery, technical SEO audits, and SEO
+        training. Podcast: \\\"SEO From The Front Lines\\\"\",\n            \"collectionsize\":
+        \"19\"\n          },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         }\n        ],\n        \"creativework\": [\n          {\n            \"name\":
+        \"Expanded Tweet URLs\",\n            \"url\": \"https://twitter.com/glenngabe/status/1983623358294982950/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983624817027719462/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983592620262641805/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983576240263995648/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983575282742161508/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983514311394754853/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983511455426125846/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983505467688038888/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983503890235396169/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983502295720497155/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://originality.ai/blog/openai-chatgpt-lawsuit-list\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983257282986049828/photo/1\"\n
+        \         },\n          {\n            \"name\": \"Expanded Tweet URLs\",\n
+        \           \"url\": \"https://twitter.com/glenngabe/status/1983256092462186815/video/1\"\n
+        \         }\n        ],\n        \"propertyvaluespecification\": [\n          {\n
+        \           \"valuerequired\": \"true\",\n            \"valuename\": \"search_term_string\"\n
+        \         }\n        ],\n        \"socialmediaposting\": [\n          {\n
+        \           \"identifier\": \"1983627702268784644\",\n            \"commentcount\":
+        \"0\",\n            \"articlebody\": \"Google Q3: $102B in revenue, $34.9B
+        in net income. YouTube with $10.2B in revenue. Total advertising revenue of
+        $74.1B.\",\n            \"datecreated\": \"2025-10-29T20:11:12.000Z\",\n            \"position\":
+        \"1\",\n            \"isbasedon\": \"https://x.com/Techmeme/status/1983626432464167182\",\n
+        \           \"url\": \"https://x.com/glenngabe/status/1983627702268784644\",\n
+        \           \"datepublished\": \"2025-10-29T20:11:12.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983623358294982950\",\n            \"commentcount\":
+        \"2\",\n            \"articlebody\": \"Good to see this on Fast Company...
+        And it matches what my recent post outlined about the danger of spamming AI
+        Search platforms -\\u003e Here\u2019s why you don\u2019t need a magic GEO
+        hack Great quote:...\",\n            \"datecreated\": \"2025-10-29T19:53:57.000Z\",\n
+        \           \"position\": \"2\",\n            \"url\": \"https://x.com/glenngabe/status/1983623358294982950\",\n
+        \           \"datepublished\": \"2025-10-29T19:53:57.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983624817027719462\",\n            \"commentcount\":
+        \"0\",\n            \"articlebody\": \"@edans Great article. You might want
+        to check out my recent post about how AI Search platforms will need to build
+        anti-spam systems and core visibility systems like Google and Bing have done...\",\n
+        \           \"ispartof\": \"https://x.com/glenngabe/status/1983623358294982950\",\n
+        \           \"datecreated\": \"2025-10-29T19:59:45.000Z\",\n            \"position\":
+        \"3\",\n            \"url\": \"https://x.com/glenngabe/status/1983624817027719462\",\n
+        \           \"datepublished\": \"2025-10-29T19:59:45.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983592620262641805\",\n            \"commentcount\":
+        \"2\",\n            \"articlebody\": \"NotebookLM update -\\u003e Chat in
+        NotebookLM: A powerful, goal-focused AI research partner \\\"We\u2019ve significantly
+        improved chat in NotebookLM with a 8x larger context window, 6x longer conversation...\",\n
+        \           \"datecreated\": \"2025-10-29T17:51:48.000Z\",\n            \"position\":
+        \"4\",\n            \"url\": \"https://x.com/glenngabe/status/1983592620262641805\",\n
+        \           \"datepublished\": \"2025-10-29T17:51:48.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983576240263995648\",\n            \"commentcount\":
+        \"1\",\n            \"articlebody\": \"Google Q3 earnings coming soon -\\u003e
+        Alphabet set to report Q3 earnings after the bell Wednesday What analysts
+        are expecting: Revenue: $99.89 billion Earnings per share: $2.33 YouTube advertising...\",\n
+        \           \"datecreated\": \"2025-10-29T16:46:43.000Z\",\n            \"position\":
+        \"5\",\n            \"url\": \"https://x.com/glenngabe/status/1983576240263995648\",\n
+        \           \"datepublished\": \"2025-10-29T16:46:43.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983575282742161508\",\n            \"commentcount\":
+        \"1\",\n            \"articlebody\": \"YouTube looks to improve its TV app
+        with QR codes for shopping, AI-powered upscaling, better content discovery
+        with contextual search, and more \\\"Augmenting its shopping offerings, YouTube
+        is...\",\n            \"datecreated\": \"2025-10-29T16:42:55.000Z\",\n            \"position\":
+        \"6\",\n            \"url\": \"https://x.com/glenngabe/status/1983575282742161508\",\n
+        \           \"datepublished\": \"2025-10-29T16:42:55.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983573560787382752\",\n            \"commentcount\":
+        \"1\",\n            \"articlebody\": \"AOL has bounced around over the past
+        few years -\\u003e Apollo Global reaches a deal to sell AOL to Bending Spoons,
+        sources say in a deal valued at ~$1.5B; AOL has about 30M MAUs across its
+        email...\",\n            \"datecreated\": \"2025-10-29T16:36:04.000Z\",\n
+        \           \"position\": \"7\",\n            \"url\": \"https://x.com/glenngabe/status/1983573560787382752\",\n
+        \           \"datepublished\": \"2025-10-29T16:36:04.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983554819659898991\",\n            \"commentcount\":
+        \"2\",\n            \"articlebody\": \"Another reminder that AI Search is
+        still very small... but growing. But still small. :) -\\u003e Booking CFO:
+        \\\"The number of leads that we are receiving from large language models [is]
+        relatively...\",\n            \"datecreated\": \"2025-10-29T15:21:36.000Z\",\n
+        \           \"position\": \"8\",\n            \"isbasedon\": \"https://x.com/ViperChill/status/1983533551212519435\",\n
+        \           \"url\": \"https://x.com/glenngabe/status/1983554819659898991\",\n
+        \           \"datepublished\": \"2025-10-29T15:21:36.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983536718851834287\",\n            \"commentcount\":
+        \"2\",\n            \"articlebody\": \"As a quick reminder, Reddit is suing
+        Perplexity and included three other companies in the filing including Serpapi.
+        Here is Serpapi's statement about the lawsuit.\",\n            \"datecreated\":
+        \"2025-10-29T14:09:40.000Z\",\n            \"position\": \"9\",\n            \"isbasedon\":
+        \"https://x.com/rustybrick/status/1983532950537884121\",\n            \"url\":
+        \"https://x.com/glenngabe/status/1983536718851834287\",\n            \"datepublished\":
+        \"2025-10-29T14:09:40.000Z\"\n          },\n          {\n            \"identifier\":
+        \"1983532267793260685\",\n            \"commentcount\": \"1\",\n            \"articlebody\":
+        \"I've been hearing this was one of the best, if not the best, presentation
+        at the conference. Not shocking. :) Eager to go through the slides when they
+        are published.\",\n            \"datecreated\": \"2025-10-29T13:51:59.000Z\",\n
+        \           \"position\": \"10\",\n            \"isbasedon\": \"https://x.com/lilyraynyc/status/1983171808456229275\",\n
+        \           \"url\": \"https://x.com/glenngabe/status/1983532267793260685\",\n
+        \           \"datepublished\": \"2025-10-29T13:51:59.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983531007786512840\",\n            \"commentcount\":
+        \"4\",\n            \"datecreated\": \"2025-10-29T13:46:59.000Z\",\n            \"url\":
+        \"https://x.com/glenngabe/status/1983531007786512840\"\n          },\n          {\n
+        \           \"identifier\": \"1983447124768632870\",\n            \"commentcount\":
+        \"4\",\n            \"articlebody\": \"AI Search is growing faster than the
+        other platforms (including search), but it\u2019s still a tiny sliver of the
+        pie (Looks like AI Search is recently stagnating too) Also, AI is not stealing...\",\n
+        \           \"datecreated\": \"2025-10-29T08:13:39.000Z\",\n            \"url\":
+        \"https://x.com/lilyraynyc/status/1983447124768632870\",\n            \"datepublished\":
+        \"2025-10-29T08:13:39.000Z\"\n          },\n          {\n            \"identifier\":
+        \"1983514311394754853\",\n            \"commentcount\": \"0\",\n            \"articlebody\":
+        \"Focus on software or software reviews? -\\u003e Reddit Partners With G2
+        to Help Software Brands Reach Reddit Users \\\"This new partnership will enable
+        eligible G2 businesses to claim a personalized...\",\n            \"datecreated\":
+        \"2025-10-29T12:40:38.000Z\",\n            \"position\": \"12\",\n            \"url\":
+        \"https://x.com/glenngabe/status/1983514311394754853\",\n            \"datepublished\":
+        \"2025-10-29T12:40:38.000Z\"\n          },\n          {\n            \"identifier\":
+        \"1983511455426125846\",\n            \"commentcount\": \"1\",\n            \"articlebody\":
+        \"From the Google Security Blog. This will happen one year from now with Chrome
+        154 -\\u003e HTTPS by default \\\"One year from now, with the release of Chrome
+        154 in October 2026, we will change the...\",\n            \"datecreated\":
+        \"2025-10-29T12:29:17.000Z\",\n            \"position\": \"13\",\n            \"url\":
+        \"https://x.com/glenngabe/status/1983511455426125846\",\n            \"datepublished\":
+        \"2025-10-29T12:29:17.000Z\"\n          },\n          {\n            \"identifier\":
+        \"1983509312249983217\",\n            \"commentcount\": \"3\",\n            \"articlebody\":
+        \"This is still showing. LOL. Doesn't mean it's impacting rankings (nothing
+        changed there) but clearly a system is using that anchor text when populating
+        sitelinks -\\u003e Disney's sitelinks still...\",\n            \"datecreated\":
+        \"2025-10-29T12:20:46.000Z\",\n            \"position\": \"14\",\n            \"url\":
+        \"https://x.com/glenngabe/status/1983509312249983217\",\n            \"datepublished\":
+        \"2025-10-29T12:20:46.000Z\"\n          },\n          {\n            \"identifier\":
+        \"1983505467688038888\",\n            \"commentcount\": \"6\",\n            \"articlebody\":
+        \"Nah, AI won't take jobs. Not at all -\\u003e Amazon, UPS, Target, GM, and
+        other major US companies are laying off tens of thousands of white collar
+        workers, as executives hope AI can handle their...\",\n            \"datecreated\":
+        \"2025-10-29T12:05:29.000Z\",\n            \"position\": \"15\",\n            \"url\":
+        \"https://x.com/glenngabe/status/1983505467688038888\",\n            \"datepublished\":
+        \"2025-10-29T12:05:29.000Z\"\n          },\n          {\n            \"identifier\":
+        \"1983503890235396169\",\n            \"commentcount\": \"3\",\n            \"articlebody\":
+        \"OpenAI is tracking toward achieving an intern-level research assistant by
+        September 2026 and a fully automated \u201Clegitimate AI researcher\u201D
+        by 2028 \\\"Jakub Pachocki, OpenAI\u2019s chief scientist,...\",\n            \"datecreated\":
+        \"2025-10-29T11:59:13.000Z\",\n            \"position\": \"16\",\n            \"url\":
+        \"https://x.com/glenngabe/status/1983503890235396169\",\n            \"datepublished\":
+        \"2025-10-29T11:59:13.000Z\"\n          },\n          {\n            \"identifier\":
+        \"1983502295720497155\",\n            \"commentcount\": \"4\",\n            \"articlebody\":
+        \"Oh boy -\\u003e Some ad buyers say brands are increasingly spending on Reddit,
+        reviving old threads, seeding \\\"organic\\\" posts, and even paying third-party
+        groups to generate content due to the site's...\",\n            \"datecreated\":
+        \"2025-10-29T11:52:53.000Z\",\n            \"position\": \"17\",\n            \"url\":
+        \"https://x.com/glenngabe/status/1983502295720497155\",\n            \"datepublished\":
+        \"2025-10-29T11:52:53.000Z\"\n          },\n          {\n            \"identifier\":
+        \"1983312784973804026\",\n            \"commentcount\": \"2\",\n            \"articlebody\":
+        \"Another one for the OpenAI lawsuit list from @AIoriginality. Now Cameo is
+        suing them.\",\n            \"datecreated\": \"2025-10-28T23:19:50.000Z\",\n
+        \           \"position\": \"18\",\n            \"isbasedon\": \"https://x.com/Techmeme/status/1983311919126835464\",\n
+        \           \"url\": \"https://x.com/glenngabe/status/1983312784973804026\",\n
+        \           \"datepublished\": \"2025-10-28T23:19:50.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983257282986049828\",\n            \"commentcount\":
+        \"2\",\n            \"articlebody\": \"You can say that again -\\u003e \\\"To
+        spend that much, ultimately, OpenAI will have to generate far more revenue.\\\"
+        -\\u003e Sam Altman: OpenAI wants to get to $1 trillion a year in infrastructure
+        spend \\\"In...\",\n            \"datecreated\": \"2025-10-28T19:39:18.000Z\",\n
+        \           \"position\": \"19\",\n            \"url\": \"https://x.com/glenngabe/status/1983257282986049828\",\n
+        \           \"datepublished\": \"2025-10-28T19:39:18.000Z\"\n          },\n
+        \         {\n            \"identifier\": \"1983256092462186815\",\n            \"commentcount\":
+        \"2\",\n            \"articlebody\": \"It can be yours for $20K, arriving
+        in 2026 -\\u003e A look at 1X's $20K Neo humanoid housekeeper robot, controlled
+        remotely by a human with a VR headset, available now for preorder, with delivery...\",\n
+        \           \"datecreated\": \"2025-10-28T19:34:34.000Z\",\n            \"position\":
+        \"20\",\n            \"url\": \"https://x.com/glenngabe/status/1983256092462186815\",\n
+        \           \"datepublished\": \"2025-10-28T19:34:34.000Z\"\n          }\n
+        \       ],\n        \"listitem\": [\n          {\n            \"item\": \"X
+        (Twitter)\",\n            \"name\": \"X (Twitter)\",\n            \"position\":
+        \"1\"\n          },\n          {\n            \"item\": \"Explore\",\n            \"name\":
+        \"Explore\",\n            \"position\": \"2\"\n          },\n          {\n
+        \           \"item\": \"Glenn Gabe\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"position\": \"3\"\n          }\n        ],\n        \"imageobject\":
+        [\n          {\n            \"url\": \"https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png\"\n
+        \         },\n          {\n            \"contenturl\": \"https://pbs.twimg.com/profile_banners/14592937/1398209583\"\n
+        \         },\n          {\n            \"contenturl\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5_400x400.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5_normal.jpg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://pbs.twimg.com/media/G4dCeoHWgAABlA4.png\",\n
+        \           \"uploaddate\": \"2025-10-29T20:11:12.000Z\",\n            \"name\":
+        \"Glenn Gabe's Image 1 on X\",\n            \"width\": \"830\",\n            \"description\":
+        \"First image displays a table titled Q3 2025 Financial Highlights unaudited
+        with columns for quarter ended September 30 2024 and 2025 rows include revenues
+        in millions at 88268 and 102346 with...\",\n            \"url\": \"https://pbs.twimg.com/media/G4dCeoHWgAABlA4.png\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4dCeoHWgAABlA4.png?format=jpg&name=thumb\",\n
+        \           \"height\": \"412\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4dCn7hXIAA9eOw.png\",\n            \"uploaddate\":
+        \"2025-10-29T20:11:12.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        2 on X\",\n            \"width\": \"828\",\n            \"description\": \"First
+        image displays a table titled Q3 2025 Financial Highlights unaudited with
+        columns for quarter ended September 30 2024 and 2025 rows include revenues
+        in millions at 88268 and 102346 with...\",\n            \"url\": \"https://pbs.twimg.com/media/G4dCn7hXIAA9eOw.png\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4dCn7hXIAA9eOw.png?format=jpg&name=thumb\",\n
+        \           \"height\": \"392\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4c-wnDXgAADTfO.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T19:53:57.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"750\",\n            \"description\": \"An
+        abstract illustration in yellow and white tones shows stacked rectangular
+        panels resembling search result cards with text placeholders, a search bar
+        icon, and a map pin element on a laptop...\",\n            \"url\": \"https://pbs.twimg.com/media/G4c-wnDXgAADTfO.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4c-wnDXgAADTfO.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"422\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4dAImvXAAAGvyp.png\",\n            \"uploaddate\":
+        \"2025-10-29T19:59:45.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"720\",\n            \"description\": \"Image\",\n
+        \           \"url\": \"https://pbs.twimg.com/media/G4dAImvXAAAGvyp.png\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4dAImvXAAAGvyp.png?format=jpg&name=thumb\",\n
+        \           \"height\": \"395\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4ci7S9XcAA77NC.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T17:51:48.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"1200\",\n            \"description\": \"Central
+        circular portrait of a woman with curly hair wearing glasses and a scarf in
+        teal tones surrounded by floating green chat bubbles containing text snippets
+        and icons like notifications...\",\n            \"url\": \"https://pbs.twimg.com/media/G4ci7S9XcAA77NC.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4ci7S9XcAA77NC.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"676\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4cUB7CXoAEKuVW.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T16:46:43.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"1200\",\n            \"description\": \"Blurred
+        circular Google logo in multicolored sections of red blue green and yellow
+        on a blue background with the word Google below in white text\",\n            \"url\":
+        \"https://pbs.twimg.com/media/G4cUB7CXoAEKuVW.jpg\",\n            \"thumbnailurl\":
+        \"https://pbs.twimg.com/media/G4cUB7CXoAEKuVW.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"675\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4cTErPWIAAvDKp.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T16:42:55.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"900\",\n            \"description\": \"Screenshot
+        of YouTube TV app interface on a dark blue background with a search bar at
+        the top, displaying Top channels for Royal Court section featuring a purple
+        castle icon, YouTube logo,...\",\n            \"url\": \"https://pbs.twimg.com/media/G4cTErPWIAAvDKp.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4cTErPWIAAvDKp.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"506\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4cRIpmWMAEQKPY.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T16:36:04.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        1 on X\",\n            \"width\": \"1648\",\n            \"description\":
+        \"First image displays a line graph titled Visibility Index with a pink line
+        showing fluctuating values from low points around 1 to peaks near 10 over
+        dates from 2020-07-01 to 2023-10-01 marked...\",\n            \"url\": \"https://pbs.twimg.com/media/G4cRIpmWMAEQKPY.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4cRIpmWMAEQKPY.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"570\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4cRn-4XUAAn7Ce.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T16:36:04.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        2 on X\",\n            \"width\": \"1920\",\n            \"description\":
+        \"First image displays a line graph titled Visibility Index with a pink line
+        showing fluctuating values from low points around 1 to peaks near 10 over
+        dates from 2020-07-01 to 2023-10-01 marked...\",\n            \"url\": \"https://pbs.twimg.com/media/G4cRn-4XUAAn7Ce.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4cRn-4XUAAn7Ce.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"1080\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4aepLBacAAWdnf.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T08:13:39.000Z\",\n            \"name\": \"Lily Ray \U0001F60F's
+        Image 1 on X\",\n            \"width\": \"2048\",\n            \"description\":
+        \"First image shows a conference stage with a large screen displaying a bar
+        graph titled Is Search Still Growing with blue green yellow and purple bars
+        representing different data categories...\",\n            \"url\": \"https://pbs.twimg.com/media/G4aepLBacAAWdnf.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4aepLBacAAWdnf.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"1152\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4aepLFb0AAEFc1.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T08:13:39.000Z\",\n            \"name\": \"Lily Ray \U0001F60F's
+        Image 2 on X\",\n            \"width\": \"2048\",\n            \"description\":
+        \"First image shows a conference stage with a large screen displaying a bar
+        graph titled Is Search Still Growing with blue green yellow and purple bars
+        representing different data categories...\",\n            \"url\": \"https://pbs.twimg.com/media/G4aepLFb0AAEFc1.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4aepLFb0AAEFc1.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"1152\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4bbrHNXIAAjFeN.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T12:40:38.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"640\",\n            \"description\": \"Stylized
+        black outline of a Reddit alien logo with a smiling face centered on an orange
+        background surrounded by abstract black geometric shapes resembling brackets
+        and circles.\",\n            \"url\": \"https://pbs.twimg.com/media/G4bbrHNXIAAjFeN.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4bbrHNXIAAjFeN.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"427\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4bYggdXMAA9w0a.png\",\n            \"uploaddate\":
+        \"2025-10-29T12:29:17.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"883\",\n            \"description\": \"Screenshot
+        of Google Chrome browser interface displaying a Not secure warning dialog
+        for an HTTP site, with text explaining risks of attackers intercepting information
+        on public Wi-Fi networks,...\",\n            \"url\": \"https://pbs.twimg.com/media/G4bYggdXMAA9w0a.png\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4bYggdXMAA9w0a.png?format=jpg&name=thumb\",\n
+        \           \"height\": \"451\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4bW2eaXwAAl-kD.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T12:20:46.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        1 on X\",\n            \"width\": \"1216\",\n            \"description\":
+        \"Screenshot of Google search results page for Disney account login, showing
+        sitelinks with text Black hat SEO packages from Disney, and options like My
+        Disney Experience and Disney Plus settings....\",\n            \"url\": \"https://pbs.twimg.com/media/G4bW2eaXwAAl-kD.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4bW2eaXwAAl-kD.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"686\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4bW4HlWwAAhXe9.png\",\n            \"uploaddate\":
+        \"2025-10-29T12:20:46.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        2 on X\",\n            \"width\": \"940\",\n            \"description\": \"Screenshot
+        of Google search results page for Disney account login, showing sitelinks
+        with text Black hat SEO packages from Disney, and options like My Disney Experience
+        and Disney Plus settings....\",\n            \"url\": \"https://pbs.twimg.com/media/G4bW4HlWwAAhXe9.png\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4bW4HlWwAAhXe9.png?format=jpg&name=thumb\",\n
+        \           \"height\": \"772\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4bTH85XUAANV3I.png\",\n            \"uploaddate\":
+        \"2025-10-29T12:05:29.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"680\",\n            \"description\": \"A
+        man in a white shirt and dark pants with brown shoes walks away from the viewer
+        on a concrete plaza with wide steps flanked by tall glass buildings and metallic
+        cylindrical bollards under...\",\n            \"url\": \"https://pbs.twimg.com/media/G4bTH85XUAANV3I.png\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4bTH85XUAANV3I.png?format=jpg&name=thumb\",\n
+        \           \"height\": \"444\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4bSRNHWwAEVfy7.jpg\",\n            \"uploaddate\":
+        \"2025-10-29T11:59:13.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"1200\",\n            \"description\": \"Silhouette
+        of a man in dark clothing stands in foreground viewing smartphone screen with
+        both hands. Behind him illuminated blue tiled wall displays large white OpenAI
+        logo prominently. Overall...\",\n            \"url\": \"https://pbs.twimg.com/media/G4bSRNHWwAEVfy7.jpg\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4bSRNHWwAEVfy7.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"800\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4bQ0YjWcAAt_Au.png\",\n            \"uploaddate\":
+        \"2025-10-29T11:52:53.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"876\",\n            \"description\": \"A
+        vibrant digital illustration features the Reddit mascot a stylized white alien-like
+        face with red eyes and a smiling mouth on a red circular background surrounded
+        by swirling colorful gradients...\",\n            \"url\": \"https://pbs.twimg.com/media/G4bQ0YjWcAAt_Au.png\",\n
+        \           \"thumbnailurl\": \"https://pbs.twimg.com/media/G4bQ0YjWcAAt_Au.png?format=jpg&name=thumb\",\n
+        \           \"height\": \"500\"\n          },\n          {\n            \"contenturl\":
+        \"https://pbs.twimg.com/media/G4Xx2_eWIAAsHO2.jpg\",\n            \"uploaddate\":
+        \"2025-10-28T19:39:18.000Z\",\n            \"name\": \"Glenn Gabe's Image
+        on X\",\n            \"width\": \"1920\",\n            \"description\": \"Stylized
+        greenish portrait of a man with short curly hair wearing a suit and white
+        shirt looking surprised against a circuit board pattern background\",\n            \"url\":
+        \"https://pbs.twimg.com/media/G4Xx2_eWIAAsHO2.jpg\",\n            \"thumbnailurl\":
+        \"https://pbs.twimg.com/media/G4Xx2_eWIAAsHO2.jpg?format=jpg&name=thumb\",\n
+        \           \"height\": \"1080\"\n          }\n        ],\n        \"entrypoint\":
+        [\n          {\n            \"urltemplate\": \"https://x.com/search?q={search_term_string}&ref_src=twcamp%5Eseo_searchbox%7Ctwsrc%5Eseo\"\n
+        \         }\n        ],\n        \"person\": [\n          {\n            \"identifier\":
+        \"14592937\",\n            \"name\": \"Glenn Gabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"description\": \"SEO Consultant at G-Squared
+        Interactive focused on Google algorithm update recovery, technical SEO audits,
+        and SEO training. Podcast: \\\"SEO From The Front Lines\\\"\",\n            \"additionalname\":
+        \"glenngabe\",\n            \"url\": \"https://x.com/glenngabe\",\n            \"sameas\":
+        \"https://twitter.com/glenngabe\"\n          },\n          {\n            \"image\":
+        \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"url\": \"https://x.com/glenngabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1935460090821189632/UvkORAsU.jpg\",\n
+        \           \"identifier\": \"29074075\",\n            \"name\": \"Lily Ray
+        \U0001F60F\",\n            \"alternatename\": \"lilyraynyc\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Lily Ray \U0001F60F\"\n          },\n
+        \         {\n            \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          },\n          {\n
+        \           \"image\": \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5.jpg\",\n
+        \           \"identifier\": \"14592937\",\n            \"name\": \"Glenn Gabe\",\n
+        \           \"alternatename\": \"glenngabe\",\n            \"disambiguatingdescription\":
+        \"verified\",\n            \"url\": \"Glenn Gabe\"\n          }\n        ],\n
+        \       \"organization\": [\n          {\n            \"name\": \"X\",\n            \"alternatename\":
+        \"Twitter\",\n            \"url\": \"https://x.com\",\n            \"sameas\":
+        \"https://twitter.com/x\"\n          },\n          {\n            \"name\":
+        \"X\"\n          }\n        ],\n        \"interactioncounter\": [\n          {\n
+        \           \"userinteractioncount\": \"89805\",\n            \"interactiontype\":
+        \"https://schema.org/WriteAction\",\n            \"name\": \"Tweets\"\n          },\n
+        \         {\n            \"userinteractioncount\": \"7491\",\n            \"interactiontype\":
+        \"https://schema.org/FollowAction\",\n            \"name\": \"Following\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"79790\",\n
+        \           \"interactiontype\": \"https://schema.org/FollowAction\",\n            \"name\":
+        \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"0\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983627702268784644\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983627702268784644/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"3\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983627702268784644/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983627702268784644/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1178\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"2\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983623358294982950\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983623358294982950/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"6\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983623358294982950/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983623358294982950/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1223\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"0\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983624817027719462\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983624817027719462/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983624817027719462/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983624817027719462/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"532\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"2\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983592620262641805\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983592620262641805/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983592620262641805/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983592620262641805/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"674\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"1\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983576240263995648\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983576240263995648/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"12\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983576240263995648/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983576240263995648/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2817\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"1\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983575282742161508\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983575282742161508/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983575282742161508/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983575282742161508/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"685\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"1\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983573560787382752\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983573560787382752/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"3\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983573560787382752/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983573560787382752/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"922\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"2\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983554819659898991\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983554819659898991/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"16\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983554819659898991/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983554819659898991/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"3820\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"2\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983536718851834287\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983536718851834287/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"5\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983536718851834287/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983536718851834287/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1884\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"1\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983532267793260685\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983532267793260685/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"8\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983532267793260685/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983532267793260685/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2537\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"37132\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"1280\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"111074\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"4\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/lilyraynyc/status/1983447124768632870\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"6\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/lilyraynyc/status/1983447124768632870/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"35\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/lilyraynyc/status/1983447124768632870/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/lilyraynyc/status/1983447124768632870/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2337\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"4\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/lilyraynyc/status/1983447124768632870\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"6\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/lilyraynyc/status/1983447124768632870/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"35\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/lilyraynyc/status/1983447124768632870/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/lilyraynyc/status/1983447124768632870/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2337\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"0\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983514311394754853\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983514311394754853/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983514311394754853/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983514311394754853/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"777\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"1\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983511455426125846\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983511455426125846/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983511455426125846/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983511455426125846/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1043\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"3\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983509312249983217\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983509312249983217/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"11\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983509312249983217/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983509312249983217/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2246\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"6\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983505467688038888\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"4\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983505467688038888/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"8\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983505467688038888/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983505467688038888/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2339\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"3\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983503890235396169\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983503890235396169/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"3\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983503890235396169/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983503890235396169/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"809\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"4\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983502295720497155\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983502295720497155/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"15\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983502295720497155/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983502295720497155/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"3807\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"2\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983312784973804026\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983312784973804026/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"5\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983312784973804026/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983312784973804026/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"2183\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"2\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983257282986049828\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983257282986049828/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"7\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983257282986049828/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"0\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983257282986049828/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"1762\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"89805\",\n            \"interactiontype\": \"https://schema.org/WriteAction\",\n
+        \           \"name\": \"Tweets\"\n          },\n          {\n            \"userinteractioncount\":
+        \"7491\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Following\"\n          },\n          {\n            \"userinteractioncount\":
+        \"79790\",\n            \"interactiontype\": \"https://schema.org/FollowAction\",\n
+        \           \"name\": \"Follows\"\n          },\n          {\n            \"userinteractioncount\":
+        \"3531\",\n            \"interactiontype\": \"https://schema.org/WatchAction\",\n
+        \           \"name\": \"Views\"\n          },\n          {\n            \"userinteractioncount\":
+        \"2\",\n            \"interactiontype\": \"https://schema.org/ReplyAction\",\n
+        \           \"name\": \"Replies\",\n            \"url\": \"https://x.com/glenngabe/status/1983256092462186815\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"4\",\n
+        \           \"interactiontype\": \"https://schema.org/ShareAction\",\n            \"name\":
+        \"Retweets\",\n            \"url\": \"https://x.com/glenngabe/status/1983256092462186815/retweets\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"11\",\n
+        \           \"interactiontype\": \"https://schema.org/LikeAction\",\n            \"name\":
+        \"Likes\",\n            \"url\": \"https://x.com/glenngabe/status/1983256092462186815/likes\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"3\",\n
+        \           \"interactiontype\": \"https://schema.org/InteractAction\",\n
+        \           \"name\": \"Quotes\",\n            \"url\": \"https://x.com/glenngabe/status/1983256092462186815/retweets/with_comments\"\n
+        \         },\n          {\n            \"userinteractioncount\": \"3531\",\n
+        \           \"interactiontype\": \"https://schema.org/ViewAction\",\n            \"name\":
+        \"Views\"\n          }\n        ],\n        \"profilepage\": [\n          {\n
+        \           \"datecreated\": \"2008-04-29T23:46:31.000Z\",\n            \"url\":
+        \"https://x.com/glenngabe\"\n          }\n        ],\n        \"place\": [\n
+        \         {\n            \"name\": \"Princeton, NJ\"\n          }\n        ],\n
+        \       \"webpage\": [\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         },\n          {\n            \"url\": \"https://x.com/glenngabe\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://pbs.twimg.com/profile_images/1939273879274287104/XDnMSJi5_400x400.jpg\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"American Heart Association Journals\",\n      \"htmlTitle\":
+        \"American Heart Association Journals\",\n      \"link\": \"https://www.ahajournals.org/\",\n
+        \     \"displayLink\": \"www.ahajournals.org\",\n      \"snippet\": \"2 hours
+        ago ... Announcing AI Research Guidelines. Artificial Intelligence Research
+        Guidelines from the AHA Journals. Blog. October 9, 2025. S:VIN Call for Technical
+        Editor\_...\",\n      \"htmlSnippet\": \"2 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Announcing \\u003cb\\u003eAI Research\\u003c/b\\u003e Guidelines. \\u003cb\\u003eArtificial
+        Intelligence Research\\u003c/b\\u003e Guidelines from the AHA Journals. Blog.
+        October 9, 2025. S:VIN Call for Technical Editor&nbsp;...\",\n      \"formattedUrl\":
+        \"https://www.ahajournals.org/\",\n      \"htmlFormattedUrl\": \"https://www.ahajournals.org/\",\n
+        \     \"pagemap\": {\n        \"metatags\": [\n          {\n            \"onetrustenabled\":
+        \"true\",\n            \"og:type\": \"Website\",\n            \"og:site_name\":
+        \"American Heart Association Journals\",\n            \"viewport\": \"width=device-width,initial-scale=1\",\n
+        \           \"og:title\": \"American Heart Association Journals\",\n            \"pbcontext\":
+        \";wgroup:string:Publication Websites;website:website:aha-site;page:string:Home
+        Page\"\n          }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"RAND Provides Objective Research Services and Public Policy
+        ...\",\n      \"htmlTitle\": \"RAND Provides Objective \\u003cb\\u003eResearch\\u003c/b\\u003e
+        Services and Public Policy ...\",\n      \"link\": \"https://www.rand.org/\",\n
+        \     \"displayLink\": \"www.rand.org\",\n      \"snippet\": \"2 hours ago
+        ... ... research staff consisting of some of the world's preeminent minds,
+        RAND has ... Majority of Americans See U.S. Leadership in AI as Crucial. Oct
+        15, 2025.\",\n      \"htmlSnippet\": \"2 hours ago \\u003cb\\u003e...\\u003c/b\\u003e
+        ... \\u003cb\\u003eresearch\\u003c/b\\u003e staff consisting of some of the
+        world&#39;s preeminent minds, RAND has ... Majority of Americans See U.S.
+        Leadership in \\u003cb\\u003eAI\\u003c/b\\u003e as Crucial. Oct 15, 2025.\",\n
+        \     \"formattedUrl\": \"https://www.rand.org/\",\n      \"htmlFormattedUrl\":
+        \"https://www.rand.org/\",\n      \"pagemap\": {\n        \"cse_thumbnail\":
+        [\n          {\n            \"src\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6fNlp4iTXn_lH6KK-_hxVxn4vgsxfwXFUWmeizo7yQFjJPza7TA7hzxw&s\",\n
+        \           \"width\": \"310\",\n            \"height\": \"163\"\n          }\n
+        \       ],\n        \"imageobject\": [\n          {\n            \"contenturl\":
+        \"https://www.rand.org/content/rand/pubs/commentary/2025/10/rebuilding-gaza-from-camps-to-communities/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1761322145843.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/research_reports/RRA2257-1/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1761161227618.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/perspectives/PEA4207-2/_jcr_content/par/teaser.crop.656x344.cm.jpeg/1761565959615.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/commentary/2025/10/china-an-emerging-software-power/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1761691780611.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/commentary/2025/10/ai-is-making-jobs-not-taking-them/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1761351895201.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/research_reports/RRA4438-1/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1760533103357.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/research_reports/RRA4363-1/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1760551718028.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/research_reports/RRA4107-1/_jcr_content/par/teaser.crop.656x344.lm.jpeg/1760458840194.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/about/people/b/bohnert_michael/_jcr_content/par/bio.crop.150x150.ct.jpeg/1720468320034.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/about/people/s/schwartz_heather_l/_jcr_content/par/bio.crop.150x150.ct.jpeg/1692192402855.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/_jcr_content/par/wrapperdiv_policy-minded/wrapperdiv_1011595578/wrapperdiv_177608379/imagewithclass.fit.151x124.svg/1752027868896.svg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/commentary/2025/10/an-anatomy-of-industrial-involution-in-china/_jcr_content/par/teaser.crop.656x344.cm.jpeg/1761565291670.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/commentary/2025/10/eliminating-barriers-to-credit-for-prior-learning/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1761358546266.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/commentary/2025/10/collaborating-toward-a-shipbuilding-renaissance/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1761229949201.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/pubs/commentary/2025/10/needed-blueprint-for-a-us-health-system-overhaul/_jcr_content/par/teaser.crop.308x173.cm.jpeg/1761224071810.jpeg\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/events/_jcr_content/par/teaser.crop.308x173.cm.png/1732201782539.png\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/feature/teasers/2024/_jcr_content/par/teaser.crop.308x173.cm.png/1743702994150.png\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/topics/featured/artificial-intelligence/_jcr_content/par/teaser_41869389.crop.308x173.cm.png/1732684708302.png\"\n
+        \         },\n          {\n            \"contenturl\": \"https://www.rand.org/content/rand/services-and-impact/efficiency/_jcr_content/par/teaser_695972846.crop.308x173.cm.png/1761088091830.png\"\n
+        \         }\n        ],\n        \"metatags\": [\n          {\n            \"og:image\":
+        \"https://www.rand.org/etc/rand/designs/common/social-images/rand.png\",\n
+        \           \"twitter:card\": \"summary\",\n            \"viewport\": \"width=device-width,
+        initial-scale=1\",\n            \"og:title\": \"RAND Provides Objective Research
+        Services and Public Policy Analysis\",\n            \"og:url\": \"https://www.rand.org\",\n
+        \           \"og:description\": \"RAND is a nonprofit institution that helps
+        improve policy and decisionmaking through research and analysis. RAND focuses
+        on the issues that matter most such as health, education, national security,
+        international affairs, the environment, and more. With a research staff consisting
+        of some of the world's preeminent minds, RAND has been expanding the boundaries
+        of human knowledge for more than 75 years.\",\n            \"twitter:image\":
+        \"https://www.rand.org/etc/rand/designs/common/social-images/rand.png\"\n
+        \         }\n        ],\n        \"cse_image\": [\n          {\n            \"src\":
+        \"https://www.rand.org/etc/rand/designs/common/social-images/rand.png\"\n
+        \         }\n        ]\n      }\n    },\n    {\n      \"kind\": \"customsearch#result\",\n
+        \     \"title\": \"Agenda - TMRE 2025 Day 2 | TMRE: The Market Research Event\",\n
+        \     \"htmlTitle\": \"Agenda - TMRE 2025 Day 2 | TMRE: The Market \\u003cb\\u003eResearch\\u003c/b\\u003e
+        Event\",\n      \"link\": \"https://informaconnect.com/tmre/agenda/3/\",\n
+        \     \"displayLink\": \"informaconnect.com\",\n      \"snippet\": \"1 day
+        ago ... Evolving User Research in the Age of AI*. Daniel Hirst - Senior UX
+        Researcher, Research and Insights, Vivint Smart Home. 12:10pm - 12:40pm30
+        mins. Beyond the\_...\",\n      \"htmlSnippet\": \"1 day ago \\u003cb\\u003e...\\u003c/b\\u003e
+        Evolving User \\u003cb\\u003eResearch\\u003c/b\\u003e in the Age of \\u003cb\\u003eAI\\u003c/b\\u003e*.
+        Daniel Hirst - Senior UX Researcher, \\u003cb\\u003eResearch\\u003c/b\\u003e
+        and Insights, Vivint Smart Home. 12:10pm - 12:40pm30 mins. Beyond the&nbsp;...\",\n
+        \     \"formattedUrl\": \"https://informaconnect.com/tmre/agenda/3/\",\n      \"htmlFormattedUrl\":
+        \"https://informaconnect.com/tmre/agenda/3/\",\n      \"pagemap\": {\n        \"thumbnail\":
+        [\n          {\n            \"src\": \"https://knect365.imgix.net/uploads/TMRE-Logo-Color-ff7dc242122f80d4900e8c52fb9bfa5d.png?auto=format&fit=max&w=370&h=80\"\n
+        \         }\n        ],\n        \"metatags\": [\n          {\n            \"st:robots\":
+        \"index, follow\",\n            \"og:image\": \"https://knect365.imgix.net/uploads/image-20231025-192306-b32b03f3-23260ccd68ecc4a1270da4f62eedef2e.jpeg?auto=format&fit=max&w=400\",\n
+        \           \"thumbnail\": \"https://knect365.imgix.net/uploads/TMRE-Logo-Color-ff7dc242122f80d4900e8c52fb9bfa5d.png?auto=format&fit=max&w=370&h=80\",\n
+        \           \"twitter:card\": \"summary\",\n            \"viewport\": \"width=device-width,initial-scale=1\",\n
+        \           \"og:title\": \"Agenda - TMRE 2025 Day 2 | TMRE: The Market Research
+        Event\",\n            \"og:url\": \"https://informaconnect.com/tmre/agenda/3/\",\n
+        \           \"og:description\": \"TMRE 2025 Day 2. Agenda for day 3 of TMRE:
+        The Market Research Event\"\n          }\n        ],\n        \"cse_image\":
+        [\n          {\n            \"src\": \"https://knect365.imgix.net/uploads/image-20231025-192306-b32b03f3-23260ccd68ecc4a1270da4f62eedef2e.jpeg?auto=format&fit=max&w=400\"\n
+        \         }\n        ]\n      }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 30 Oct 2025 01:50:09 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '91464'
+    status:
+      code: 200
+      message: OK
+version: 1

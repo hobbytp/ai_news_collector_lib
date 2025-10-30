@@ -1,0 +1,311 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=5&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3Amachine+learning&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 30 Oct 2025 01:50:00 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:machine%20learning&start=0&max_results=5&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-itm1220028-ITM
+      X-Timer:
+      - S1761789001.562345,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/api/query?max_results=5&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3Amachine+learning&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n
+        \ <link href=\"http://arxiv.org/api/query?search_query%3Dcat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Acs.CL%20AND%20all%3Amachine%20learning%26id_list%3D%26start%3D0%26max_results%3D5\"
+        rel=\"self\" type=\"application/atom+xml\"/>\n  <title type=\"html\">ArXiv
+        Query: search_query=cat:cs.AI OR cat:cs.LG OR cat:cs.CL AND all:machine learning&amp;id_list=&amp;start=0&amp;max_results=5</title>\n
+        \ <id>http://arxiv.org/api/D9jbOwMlxm13ZRJT6OVevFlaMRw</id>\n  <updated>2025-10-29T00:00:00-04:00</updated>\n
+        \ <opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">33920</opensearch:totalResults>\n
+        \ <opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:startIndex>\n
+        \ <opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">5</opensearch:itemsPerPage>\n
+        \ <entry>\n    <id>http://arxiv.org/abs/2510.24701v1</id>\n    <updated>2025-10-28T17:53:02Z</updated>\n
+        \   <published>2025-10-28T17:53:02Z</published>\n    <title>Tongyi DeepResearch
+        Technical Report</title>\n    <summary>  We present Tongyi DeepResearch, an
+        agentic large language model, which is\nspecifically designed for long-horizon,
+        deep information-seeking research\ntasks. To incentivize autonomous deep research
+        agency, Tongyi DeepResearch is\ndeveloped through an end-to-end training framework
+        that combines agentic\nmid-training and agentic post-training, enabling scalable
+        reasoning and\ninformation seeking across complex tasks. We design a highly
+        scalable data\nsynthesis pipeline that is fully automatic, without relying
+        on costly human\nannotation, and empowers all training stages. By constructing
+        customized\nenvironments for each stage, our system enables stable and consistent\ninteractions
+        throughout. Tongyi DeepResearch, featuring 30.5 billion total\nparameters,
+        with only 3.3 billion activated per token, achieves\nstate-of-the-art performance
+        across a range of agentic deep research\nbenchmarks, including Humanity's
+        Last Exam, BrowseComp, BrowseComp-ZH,\nWebWalkerQA, xbench-DeepSearch, FRAMES
+        and xbench-DeepSearch-2510. We\nopen-source the model, framework, and complete
+        solutions to empower the\ncommunity.\n</summary>\n    <author>\n      <name>
+        Tongyi DeepResearch Team</name>\n    </author>\n    <author>\n      <name>Baixuan
+        Li</name>\n    </author>\n    <author>\n      <name>Bo Zhang</name>\n    </author>\n
+        \   <author>\n      <name>Dingchu Zhang</name>\n    </author>\n    <author>\n
+        \     <name>Fei Huang</name>\n    </author>\n    <author>\n      <name>Guangyu
+        Li</name>\n    </author>\n    <author>\n      <name>Guoxin Chen</name>\n    </author>\n
+        \   <author>\n      <name>Huifeng Yin</name>\n    </author>\n    <author>\n
+        \     <name>Jialong Wu</name>\n    </author>\n    <author>\n      <name>Jingren
+        Zhou</name>\n    </author>\n    <author>\n      <name>Kuan Li</name>\n    </author>\n
+        \   <author>\n      <name>Liangcai Su</name>\n    </author>\n    <author>\n
+        \     <name>Litu Ou</name>\n    </author>\n    <author>\n      <name>Liwen
+        Zhang</name>\n    </author>\n    <author>\n      <name>Pengjun Xie</name>\n
+        \   </author>\n    <author>\n      <name>Rui Ye</name>\n    </author>\n    <author>\n
+        \     <name>Wenbiao Yin</name>\n    </author>\n    <author>\n      <name>Xinmiao
+        Yu</name>\n    </author>\n    <author>\n      <name>Xinyu Wang</name>\n    </author>\n
+        \   <author>\n      <name>Xixi Wu</name>\n    </author>\n    <author>\n      <name>Xuanzhong
+        Chen</name>\n    </author>\n    <author>\n      <name>Yida Zhao</name>\n    </author>\n
+        \   <author>\n      <name>Zhen Zhang</name>\n    </author>\n    <author>\n
+        \     <name>Zhengwei Tao</name>\n    </author>\n    <author>\n      <name>Zhongwang
+        Zhang</name>\n    </author>\n    <author>\n      <name>Zile Qiao</name>\n
+        \   </author>\n    <author>\n      <name>Chenxi Wang</name>\n    </author>\n
+        \   <author>\n      <name>Donglei Yu</name>\n    </author>\n    <author>\n
+        \     <name>Gang Fu</name>\n    </author>\n    <author>\n      <name>Haiyang
+        Shen</name>\n    </author>\n    <author>\n      <name>Jiayin Yang</name>\n
+        \   </author>\n    <author>\n      <name>Jun Lin</name>\n    </author>\n    <author>\n
+        \     <name>Junkai Zhang</name>\n    </author>\n    <author>\n      <name>Kui
+        Zeng</name>\n    </author>\n    <author>\n      <name>Li Yang</name>\n    </author>\n
+        \   <author>\n      <name>Hailong Yin</name>\n    </author>\n    <author>\n
+        \     <name>Maojia Song</name>\n    </author>\n    <author>\n      <name>Ming
+        Yan</name>\n    </author>\n    <author>\n      <name>Peng Xia</name>\n    </author>\n
+        \   <author>\n      <name>Qian Xiao</name>\n    </author>\n    <author>\n
+        \     <name>Rui Min</name>\n    </author>\n    <author>\n      <name>Ruixue
+        Ding</name>\n    </author>\n    <author>\n      <name>Runnan Fang</name>\n
+        \   </author>\n    <author>\n      <name>Shaowei Chen</name>\n    </author>\n
+        \   <author>\n      <name>Shen Huang</name>\n    </author>\n    <author>\n
+        \     <name>Shihang Wang</name>\n    </author>\n    <author>\n      <name>Shihao
+        Cai</name>\n    </author>\n    <author>\n      <name>Weizhou Shen</name>\n
+        \   </author>\n    <author>\n      <name>Xiaobin Wang</name>\n    </author>\n
+        \   <author>\n      <name>Xin Guan</name>\n    </author>\n    <author>\n      <name>Xinyu
+        Geng</name>\n    </author>\n    <author>\n      <name>Yingcheng Shi</name>\n
+        \   </author>\n    <author>\n      <name>Yuning Wu</name>\n    </author>\n
+        \   <author>\n      <name>Zhuo Chen</name>\n    </author>\n    <author>\n
+        \     <name>Zijian Li</name>\n    </author>\n    <author>\n      <name>Yong
+        Jiang</name>\n    </author>\n    <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">https://tongyi-agent.github.io/blog</arxiv:comment>\n
+        \   <link href=\"http://arxiv.org/abs/2510.24701v1\" rel=\"alternate\" type=\"text/html\"/>\n
+        \   <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.24701v1\" rel=\"related\"
+        type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.IR\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.MA\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.24699v1</id>\n    <updated>2025-10-28T17:51:50Z</updated>\n
+        \   <published>2025-10-28T17:51:50Z</published>\n    <title>AgentFold: Long-Horizon
+        Web Agents with Proactive Context Management</title>\n    <summary>  LLM-based
+        web agents show immense promise for information seeking, yet their\neffectiveness
+        on long-horizon tasks is hindered by a fundamental trade-off in\ncontext management.
+        Prevailing ReAct-based agents suffer from context\nsaturation as they accumulate
+        noisy, raw histories, while methods that fixedly\nsummarize the full history
+        at each step risk the irreversible loss of critical\ndetails. Addressing these,
+        we introduce AgentFold, a novel agent paradigm\ncentered on proactive context
+        management, inspired by the human cognitive\nprocess of retrospective consolidation.
+        AgentFold treats its context as a\ndynamic cognitive workspace to be actively
+        sculpted, rather than a passive log\nto be filled. At each step, it learns
+        to execute a `folding' operation, which\nmanages its historical trajectory
+        at multiple scales: it can perform granular\ncondensations to preserve vital,
+        fine-grained details, or deep consolidations\nto abstract away entire multi-step
+        sub-tasks. The results on prominent\nbenchmarks are striking: with simple
+        supervised fine-tuning (without continual\npre-training or RL), our AgentFold-30B-A3B
+        agent achieves 36.2% on BrowseComp\nand 47.3% on BrowseComp-ZH. Notably, this
+        performance not only surpasses or\nmatches open-source models of a dramatically
+        larger scale, such as the\nDeepSeek-V3.1-671B-A37B, but also surpasses leading
+        proprietary agents like\nOpenAI's o4-mini.\n</summary>\n    <author>\n      <name>Rui
+        Ye</name>\n    </author>\n    <author>\n      <name>Zhongwang Zhang</name>\n
+        \   </author>\n    <author>\n      <name>Kuan Li</name>\n    </author>\n    <author>\n
+        \     <name>Huifeng Yin</name>\n    </author>\n    <author>\n      <name>Zhengwei
+        Tao</name>\n    </author>\n    <author>\n      <name>Yida Zhao</name>\n    </author>\n
+        \   <author>\n      <name>Liangcai Su</name>\n    </author>\n    <author>\n
+        \     <name>Liwen Zhang</name>\n    </author>\n    <author>\n      <name>Zile
+        Qiao</name>\n    </author>\n    <author>\n      <name>Xinyu Wang</name>\n
+        \   </author>\n    <author>\n      <name>Pengjun Xie</name>\n    </author>\n
+        \   <author>\n      <name>Fei Huang</name>\n    </author>\n    <author>\n
+        \     <name>Siheng Chen</name>\n    </author>\n    <author>\n      <name>Jingren
+        Zhou</name>\n    </author>\n    <author>\n      <name>Yong Jiang</name>\n
+        \   </author>\n    <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">26
+        pages, 9 figures</arxiv:comment>\n    <link href=\"http://arxiv.org/abs/2510.24699v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.24699v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.24664v1</id>\n    <updated>2025-10-28T17:29:59Z</updated>\n
+        \   <published>2025-10-28T17:29:59Z</published>\n    <title>MQM Re-Annotation:
+        A Technique for Collaborative Evaluation of Machine\n  Translation</title>\n
+        \   <summary>  Human evaluation of machine translation is in an arms race
+        with translation\nmodel quality: as our models get better, our evaluation
+        methods need to be\nimproved to ensure that quality gains are not lost in
+        evaluation noise. To this\nend, we experiment with a two-stage version of
+        the current state-of-the-art\ntranslation evaluation paradigm (MQM), which
+        we call MQM re-annotation. In this\nsetup, an MQM annotator reviews and edits
+        a set of pre-existing MQM\nannotations, that may have come from themselves,
+        another human annotator, or an\nautomatic MQM annotation system. We demonstrate
+        that rater behavior in\nre-annotation aligns with our goals, and that re-annotation
+        results in\nhigher-quality annotations, mostly due to finding errors that
+        were missed\nduring the first pass.\n</summary>\n    <author>\n      <name>Parker
+        Riley</name>\n    </author>\n    <author>\n      <name>Daniel Deutsch</name>\n
+        \   </author>\n    <author>\n      <name>Mara Finkelstein</name>\n    </author>\n
+        \   <author>\n      <name>Colten DiIanni</name>\n    </author>\n    <author>\n
+        \     <name>Juraj Juraska</name>\n    </author>\n    <author>\n      <name>Markus
+        Freitag</name>\n    </author>\n    <link href=\"http://arxiv.org/abs/2510.24664v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.24664v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n  </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.24619v1</id>\n
+        \   <updated>2025-10-28T16:48:03Z</updated>\n    <published>2025-10-28T16:48:03Z</published>\n
+        \   <title>Zero-Shot Cross-Lingual Transfer using Prefix-Based Adaptation</title>\n
+        \   <summary>  With the release of new large language models (LLMs) like Llama
+        and Mistral,\nzero-shot cross-lingual transfer has become increasingly feasible
+        due to their\nmultilingual pretraining and strong generalization capabilities.
+        However,\nadapting these decoder-only LLMs to new tasks across languages remains\nchallenging.
+        While parameter-efficient fine-tuning (PeFT) techniques like\nLow-Rank Adaptation
+        (LoRA) are widely used, prefix-based techniques such as\nsoft prompt tuning,
+        prefix tuning, and Llama Adapter are less explored,\nespecially for zero-shot
+        transfer in decoder-only models. We present a\ncomprehensive study of three
+        prefix-based methods for zero-shot cross-lingual\ntransfer from English to
+        35+ high- and low-resource languages. Our analysis\nfurther explores transfer
+        across linguistic families and scripts, as well as\nthe impact of scaling
+        model sizes from 1B to 24B. With Llama 3.1 8B, prefix\nmethods outperform
+        LoRA-baselines by up to 6% on the Belebele benchmark.\nSimilar improvements
+        were observed with Mistral v0.3 7B as well. Despite using\nonly 1.23M learning
+        parameters with prefix tuning, we achieve consistent\nimprovements across
+        diverse benchmarks. These findings highlight the potential\nof prefix-based
+        techniques as an effective and scalable alternative to LoRA,\nparticularly
+        in low-resource multilingual settings.\n</summary>\n    <author>\n      <name>Snegha
+        A</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Indian
+        Institute of Technology Bombay</arxiv:affiliation>\n    </author>\n    <author>\n
+        \     <name>Sayambhu Sen</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Amazon
+        Alexa</arxiv:affiliation>\n    </author>\n    <author>\n      <name>Piyush
+        Singh Pasi</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Amazon
+        Alexa</arxiv:affiliation>\n    </author>\n    <author>\n      <name>Abhishek
+        Singhania</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Amazon
+        Alexa</arxiv:affiliation>\n    </author>\n    <author>\n      <name>Preethi
+        Jyothi</name>\n      <arxiv:affiliation xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Indian
+        Institute of Technology Bombay</arxiv:affiliation>\n    </author>\n    <arxiv:comment
+        xmlns:arxiv=\"http://arxiv.org/schemas/atom\">12 Pages</arxiv:comment>\n    <link
+        href=\"http://arxiv.org/abs/2510.24619v1\" rel=\"alternate\" type=\"text/html\"/>\n
+        \   <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.24619v1\" rel=\"related\"
+        type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.AI\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"cs.LG\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \   <category term=\"I.2.7\" scheme=\"http://arxiv.org/schemas/atom\"/>\n
+        \ </entry>\n  <entry>\n    <id>http://arxiv.org/abs/2510.24592v1</id>\n    <updated>2025-10-28T16:22:54Z</updated>\n
+        \   <published>2025-10-28T16:22:54Z</published>\n    <title>ReForm: Reflective
+        Autoformalization with Prospective Bounded Sequence\n  Optimization</title>\n
+        \   <summary>  Autoformalization, which translates natural language mathematics
+        into\nmachine-verifiable formal statements, is critical for using formal mathematical\nreasoning
+        to solve math problems stated in natural language. While Large\nLanguage Models
+        can generate syntactically correct formal statements, they\noften fail to
+        preserve the original problem's semantic intent. This limitation\narises from
+        the LLM approaches' treating autoformalization as a simplistic\ntranslation
+        task which lacks mechanisms for self-reflection and iterative\nrefinement
+        that human experts naturally employ. To address these issues, we\npropose
+        ReForm, a Reflective Autoformalization method that tightly integrates\nsemantic
+        consistency evaluation into the autoformalization process. This\nenables the
+        model to iteratively generate formal statements, assess its\nsemantic fidelity,
+        and self-correct identified errors through progressive\nrefinement. To effectively
+        train this reflective model, we introduce\nProspective Bounded Sequence Optimization
+        (PBSO), which employs different\nrewards at different sequence positions to
+        ensure that the model develops both\naccurate autoformalization and correct
+        semantic validations, preventing\nsuperficial critiques that would undermine
+        the purpose of reflection. Extensive\nexperiments across four autoformalization
+        benchmarks demonstrate that ReForm\nachieves an average improvement of 17.2
+        percentage points over the strongest\nbaselines. To further ensure evaluation
+        reliability, we introduce\nConsistencyCheck, a benchmark of 859 expert-annotated
+        items that not only\nvalidates LLMs as judges but also reveals that autoformalization
+        is inherently\ndifficult: even human experts produce semantic errors in up
+        to 38.5% of cases.\n</summary>\n    <author>\n      <name>Guoxin Chen</name>\n
+        \   </author>\n    <author>\n      <name>Jing Wu</name>\n    </author>\n    <author>\n
+        \     <name>Xinjie Chen</name>\n    </author>\n    <author>\n      <name>Wayne
+        Xin Zhao</name>\n    </author>\n    <author>\n      <name>Ruihua Song</name>\n
+        \   </author>\n    <author>\n      <name>Chengxi Li</name>\n    </author>\n
+        \   <author>\n      <name>Kai Fan</name>\n    </author>\n    <author>\n      <name>Dayiheng
+        Liu</name>\n    </author>\n    <author>\n      <name>Minpeng Liao</name>\n
+        \   </author>\n    <arxiv:comment xmlns:arxiv=\"http://arxiv.org/schemas/atom\">Ongoing
+        Work</arxiv:comment>\n    <link href=\"http://arxiv.org/abs/2510.24592v1\"
+        rel=\"alternate\" type=\"text/html\"/>\n    <link title=\"pdf\" href=\"http://arxiv.org/pdf/2510.24592v1\"
+        rel=\"related\" type=\"application/pdf\"/>\n    <arxiv:primary_category xmlns:arxiv=\"http://arxiv.org/schemas/atom\"
+        term=\"cs.CL\" scheme=\"http://arxiv.org/schemas/atom\"/>\n    <category term=\"cs.CL\"
+        scheme=\"http://arxiv.org/schemas/atom\"/>\n  </entry>\n</feed>\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 30 Oct 2025 01:50:03 GMT
+      Strict-Transport-Security:
+      - max-age=300
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - MISS, MISS, MISS
+      X-Cache-Hits:
+      - 0, 0, 0
+      X-Served-By:
+      - cache-lga21951-LGA, cache-lga21922-LGA, cache-bur-kbur8200121-BUR
+      X-Timer:
+      - S1761789003.307702,VS0,VE252
+      access-control-allow-origin:
+      - '*'
+      content-length:
+      - '17325'
+      content-type:
+      - application/atom+xml; charset=UTF-8
+      server:
+      - Apache
+      via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+    status:
+      code: 200
+      message: OK
+version: 1

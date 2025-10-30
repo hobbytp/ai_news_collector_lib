@@ -1016,4 +1016,114 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"q": "deep learning", "num": 9}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.5
+    method: POST
+    uri: https://localhost:33210/search
+  response:
+    body:
+      string: '{"searchParameters":{"q":"deep learning","type":"search","num":9,"engine":"google"},"organic":[{"title":"Deep
+        learning - Wikipedia","link":"https://en.wikipedia.org/wiki/Deep_learning","snippet":"In
+        machine learning, deep learning focuses on utilizing multilayered neural networks
+        to perform tasks such as classification, regression, and representation ...","sitelinks":[{"title":"Comparison","link":"https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software"},{"title":"Feature
+        learning","link":"https://en.wikipedia.org/wiki/Feature_learning"},{"title":"Deep
+        belief network","link":"https://en.wikipedia.org/wiki/Deep_belief_network"},{"title":"Transformer","link":"https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"}],"position":1},{"title":"What
+        Is Deep Learning? | IBM","link":"https://www.ibm.com/think/topics/deep-learning","snippet":"Deep
+        learning is a subset of machine learning driven by multilayered neural networks
+        whose design is inspired by the structure of the human brain.","sitelinks":[{"title":"How
+        Deep Learning Works","link":"https://www.ibm.com/think/topics/deep-learning#:~:text=How%20deep%20learning%20works,-Artificial%20neural%20networks%20are%2C"},{"title":"Deep
+        Neural Network...","link":"https://www.ibm.com/think/topics/deep-learning#:~:text=Deep%20neural%20network%20structure"},{"title":"Training
+        Deep Neural...","link":"https://www.ibm.com/think/topics/deep-learning#:~:text=Training%20deep%20neural%20networks"}],"position":2},{"title":"DeepLearning.AI:
+        Start or Advance Your Career in AI","link":"https://www.deeplearning.ai/","snippet":"Join
+        over 7 million people learning how to use and build AI. AI Courses and Specializations.
+        Build a foundation of machine learning and AI skills.","sitelinks":[{"title":"All
+        Courses","link":"https://www.deeplearning.ai/courses/"},{"title":"Careers","link":"https://www.deeplearning.ai/careers/"},{"title":"Generative
+        AI for Everyone","link":"https://www.deeplearning.ai/courses/generative-ai-for-everyone/"},{"title":"Machine
+        Learning Research","link":"https://www.deeplearning.ai/the-batch/tag/research/"}],"position":3},{"title":"Deep
+        Learning","link":"https://www.deeplearningbook.org/","snippet":"The Deep Learning
+        textbook is a resource intended to help students and practitioners enter the
+        field of machine learning in general and deep learning in ...","sitelinks":[{"title":"Lecture
+        Slides","link":"https://www.deeplearningbook.org/lecture_slides.html"},{"title":"Table
+        of Contents","link":"https://www.deeplearningbook.org/contents/TOC.html"},{"title":"6
+        Deep Feedforward Networks","link":"https://www.deeplearningbook.org/contents/mlp.html"},{"title":"1
+        Introduction","link":"https://www.deeplearningbook.org/contents/intro.html"}],"position":4},{"title":"What
+        is deep learning in AI? - AWS","link":"https://aws.amazon.com/what-is/deep-learning/","snippet":"Deep
+        learning is an artificial intelligence (AI) methodthat teaches computers to
+        process data in a way inspired by the human brain. Deep learning models can
+        ...","position":5},{"title":"PyTorch for Deep Learning Professional Certificate
+        - Coursera","link":"https://www.coursera.org/professional-certificates/pytorch-for-deep-learning","snippet":"The
+        PyTorch for Deep Learning Professional Certificate teaches you how to build,
+        train, optimize, and deploy deep learning models using the ...","date":"3
+        days ago","sitelinks":[{"title":"Professional Certificate - 3...","link":"https://www.coursera.org/professional-certificates/pytorch-for-deep-learning#:~:text=Professional%20Certificate%20%2D%203%20course%20series"},{"title":"Open
+        New Doors With Coursera...","link":"https://www.coursera.org/professional-certificates/pytorch-for-deep-learning#:~:text=Open%20new%20doors%20with%20Coursera%20Plus"},{"title":"Join
+        Over 3,400 Global...","link":"https://www.coursera.org/professional-certificates/pytorch-for-deep-learning#:~:text=Join%20over%203%2C400%20global%20companies%20that%20choose%20Coursera%20for%20Business"}],"position":6},{"title":"What
+        is Deep Learning? | Google Cloud","link":"https://cloud.google.com/discover/what-is-deep-learning","snippet":"Deep
+        learning is type of machine learning that uses artificial neural networks
+        to learn from data. Learn more about deep learning in AI.","sitelinks":[{"title":"Deep
+        Learning Algorithms","link":"https://cloud.google.com/discover/what-is-deep-learning#:~:text=Deep%20learning%20algorithms,-Deep%20learning%20algorithms"},{"title":"How
+        Does Deep Learning Work?","link":"https://cloud.google.com/discover/what-is-deep-learning#:~:text=How%20does%20deep%20learning%20work%3F"},{"title":"Types
+        Of Deep Learning","link":"https://cloud.google.com/discover/what-is-deep-learning#:~:text=Types%20of%20deep%20learning,-There%20are%20many%20different%20types"}],"position":7},{"title":"Introduction
+        to Deep Learning - GeeksforGeeks","link":"https://www.geeksforgeeks.org/deep-learning/introduction-deep-learning/","snippet":"Deep
+        Learning is transforming the way machines understand, learn and interact with
+        complex data. Deep learning mimics neural networks of the ...","date":"Sep
+        24, 2025","sitelinks":[{"title":"What is Transfer Learning?","link":"https://www.geeksforgeeks.org/machine-learning/ml-introduction-to-transfer-learning/"},{"title":"Generative
+        Adversarial...","link":"https://www.geeksforgeeks.org/deep-learning/generative-adversarial-network-gan/"},{"title":"What
+        is Perceptron","link":"https://www.geeksforgeeks.org/machine-learning/what-is-perceptron-the-simplest-artificial-neural-network/"}],"position":8},{"title":"What
+        is deep learning? - Cloudflare","link":"https://www.cloudflare.com/learning/ai/what-is-deep-learning/","snippet":"Deep
+        learning uses neural networks and algorithms to recognize patterns in unlabeled
+        data and power modern AI applications. Learn more about deep learning.","sitelinks":[{"title":"What
+        Is The Difference...","link":"https://www.cloudflare.com/learning/ai/what-is-deep-learning/#:~:text=What%20is%20the%20difference%20between%20machine%20learning%20and%20deep%20learning%3F"},{"title":"How
+        Is Deep Learning Used?","link":"https://www.cloudflare.com/learning/ai/what-is-deep-learning/#:~:text=How%20is%20deep%20learning%20used%3F"},{"title":"Unlabeled
+        Data And Object...","link":"https://www.cloudflare.com/learning/ai/what-is-deep-learning/#:~:text=Unlabeled%20data%20and%20object%20storage"}],"position":9}],"peopleAlsoAsk":[{"question":"What
+        is deep learning vs CNN?","snippet":"Within Deep Learning, a Convolutional
+        Neural Network or CNN is a type of artificial neural network, which is widely
+        used for image/object recognition and classification. Deep Learning thus recognizes
+        objects in an image by using a CNN.","title":"Convolutional Neural Networks
+        (CNN) with Deep Learning","link":"https://www.happiestminds.com/insights/convolutional-neural-networks-cnns/"}],"relatedSearches":[{"query":"Natural
+        language p..."},{"query":"Deep learning book"},{"query":"Deep learning AI"},{"query":"Deep
+        learning vs machine learning"},{"query":"Deep learning PDF"},{"query":"Deep
+        Learning Tutorial"},{"query":"Deep learning algorithms"},{"query":"Deep learning
+        examples"},{"query":"Deep learning notes"}],"credits":1}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Length:
+      - '7181'
+      access-control-allow-origin:
+      - '*'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 30 Oct 2025 02:04:13 GMT
+      server:
+      - Google Frontend
+      set-cookie:
+      - GAESA=CqoBMDAxNDc3ODI5NjIzYmQ1NDA4OGZjMDlkODQzYzkxYjEzOGZlN2ZjYTkxM2JhM2I0MmVmMWFmYTQ0YzhmYWIwMzJkMzgxYjkyYWQ1NTgzMzc2ZGQ2YjcwYjI4NjZjYWNiOWJhOGQ1MDhjNTQ3NTUzNGNjOGI2NmU0YjkwZDM3NjE5NjRlMjNkZjc2OWM4NjdiZmU3MGY2MTFmNDlhMjRjZGRmMGIzYWVjMDEQtf3ulqMz;
+        expires=Sat, 29-Nov-2025 02:04:13 GMT; path=/
+      via:
+      - 1.1 google
+      x-cloud-trace-context:
+      - f6155bc7d485457a35468aa548fa85f6
+      x-ratelimit-limit:
+      - '500'
+      x-ratelimit-remaining:
+      - '499'
+      x-ratelimit-reset:
+      - '1761789855'
+    status:
+      code: 200
+      message: OK
 version: 1
