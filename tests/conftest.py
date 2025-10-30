@@ -91,11 +91,13 @@ os.makedirs(_cassette_dir, exist_ok=True)
 @pytest.fixture(scope="session")
 def vcr_vcr(allow_network):
     """提供配置好的 VCR 实例供测试使用。"""
+    # 在 PR/CI 离线模式下（record_mode=none），忽略 query 以避免因动态日期等参数导致匹配失败
+    matchers = ["method", "path"] if not allow_network else ["method", "path", "query"]
     return vcr.VCR(
         cassette_library_dir=_cassette_dir,
         record_mode=_get_record_mode(allow_network),
         filter_headers=["Authorization", "X-API-KEY"],
         filter_query_parameters=["apiKey", "key"],
-        match_on=["method", "path", "query"],
+        match_on=matchers,
         decode_compressed_response=True,
     )
