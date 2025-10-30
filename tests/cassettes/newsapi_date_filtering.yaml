@@ -83,4 +83,93 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://localhost:33210/v2/everything?from=2025-10-29&language=en&pageSize=5&q=AI+technology+AI+artificial+intelligence&sortBy=publishedAt
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"totalResults\":95,\"articles\":[{\"source\":{\"id\":null,\"name\":\"International
+        Business Times\"},\"author\":\"J. Alas\",\"title\":\"Is Elon Musk About to
+        Let AI Run X? Social Media Erupts Over Rumoured End of Human Moderation\",\"description\":\"Elon
+        Musk announces X's new AI system, Grok, will replace all human-set algorithms,
+        sparking debate over transparency, control, and bias.\",\"url\":\"https://www.ibtimes.com/elon-musk-about-let-ai-run-x-social-media-erupts-over-rumoured-end-human-moderation-3788780\",\"urlToImage\":\"https://d.ibtimes.com/en/full/4631582/elon-musk-grok.jpg\",\"publishedAt\":\"2025-10-29T10:36:11Z\",\"content\":\"Elon
+        Musk has announced a sweeping overhaul of X's algorithm, signalling the end
+        of human-made rules in favour of a fully AI-controlled system. The Tesla and
+        SpaceX chief revealed that the social med\u2026 [+4432 chars]\"},{\"source\":{\"id\":\"financial-post\",\"name\":\"Financial
+        Post\"},\"author\":\"GlobeNewswire\",\"title\":\"NetraMark Presents AI-Driven
+        Advances in Precision Psychiatry to Enhance Clinical Trial Designs at Joint
+        Autumn Conference\",\"description\":\"TORONTO, Oct. 29, 2025 (GLOBE NEWSWIRE)
+        \u2014 NetraMark Holdings Inc. (the \u201CCompany\u201D or \u201CNetraMark\u201D)
+        (CSE: AIAI) (OTCQB: AINMF) (Frankfurt: PF0) a premier artificial intelligence
+        (AI) company that is transforming clinical trials with AI-powered precision
+        analytic\u2026\",\"url\":\"https://financialpost.com/globe-newswire/netramark-presents-ai-driven-advances-in-precision-psychiatry-to-enhance-clinical-trial-designs-at-joint-autumn-conference\",\"urlToImage\":null,\"publishedAt\":\"2025-10-29T10:30:30Z\",\"content\":\"For
+        further details on the Company please see the Companys publicly available
+        documents filed on the System for Electronic Document Analysis and Retrieval+
+        (SEDAR+).\\r\\nForward-Looking StatementsThis p\u2026 [+2607 chars]\"},{\"source\":{\"id\":null,\"name\":\"GlobeNewswire\"},\"author\":\"NetraMark
+        Holdings Inc.\",\"title\":\"NetraMark Presents AI-Driven Advances in Precision
+        Psychiatry to Enhance Clinical Trial Designs at Joint Autumn Conference\",\"description\":\"TORONTO,
+        Oct. 29, 2025 (GLOBE NEWSWIRE) -- NetraMark Holdings Inc. (the \u201CCompany\u201D
+        or \u201CNetraMark\u201D) (CSE: AIAI) (OTCQB: AINMF) (Frankfurt: PF0) a premier
+        artificial intelligence (AI) company that is transforming clinical trials
+        with AI-powered precision analyti\u2026\",\"url\":\"https://www.globenewswire.com/news-release/2025/10/29/3176226/0/en/NetraMark-Presents-AI-Driven-Advances-in-Precision-Psychiatry-to-Enhance-Clinical-Trial-Designs-at-Joint-Autumn-Conference.html\",\"urlToImage\":null,\"publishedAt\":\"2025-10-29T10:30:00Z\",\"content\":\"TORONTO,
+        Oct. 29, 2025 (GLOBE NEWSWIRE) -- NetraMark Holdings Inc. (the Company or
+        NetraMark) (CSE: AIAI) (OTCQB: AINMF) (Frankfurt: PF0) a premier artificial
+        intelligence (AI) company that is transf\u2026 [+10570 chars]\"},{\"source\":{\"id\":null,\"name\":\"YLE
+        News\"},\"author\":null,\"title\":\"US tech firm Nvidia invests $1bn in Nokia,
+        with sights on next-gen networks for AI\",\"description\":\"With a nearly
+        $4.9 trillion market cap largely fuelled by artificial intelligence investment,
+        Nvidia is the most valuable company in the world.\",\"url\":\"https://yle.fi/a/74-20191025\",\"urlToImage\":\"https://images.cdn.yle.fi/image/upload/c_crop,x_0,y_405,w_4933,h_2774/w_1200,ar_1.91,c_fill/q_auto:eco,f_auto,fl_lossy/v1761730300/39-1497122687fbafddd1c5\",\"publishedAt\":\"2025-10-29T10:08:22Z\",\"content\":\"US
+        tech giant Nvidia is set to spend one billion US dollars in acquiring a nearly
+        three-percent stake in Finnish networking firm Nokia as part of a broader
+        agreement focused on developing AI and data\u2026 [+5535 chars]\"},{\"source\":{\"id\":null,\"name\":\"CNA\"},\"author\":null,\"title\":\"TE
+        Connectivity forecasts upbeat quarterly profit on strong demand for AI products\",\"description\":\"TE
+        Connectivity issued an upbeat first-quarter forecast on Wednesday, after beating
+        Wall Street estimates for profit for the preceding three months, aided by
+        strong demand for its artificial intelligence-focused products.Shares of the
+        company rose 9 per cent \u2026\",\"url\":\"https://www.channelnewsasia.com/business/te-connectivity-forecasts-upbeat-quarterly-profit-strong-demand-ai-products-5432421\",\"urlToImage\":\"https://dam.mediacorp.sg/image/upload/s--ZdHPGX9S--/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/one-cms/images/2021-06/business_1.png?itok=npguKy4y\",\"publishedAt\":\"2025-10-29T10:05:32Z\",\"content\":\"TE
+        Connectivity issued an upbeat first-quarter forecast on Wednesday, after beating
+        Wall Street estimates for profit for the preceding three months, aided by
+        strong demand for its artificial intellig\u2026 [+1533 chars]\"}]}"
+    headers:
+      CF-RAY:
+      - 996a59035b9925da-LAX
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 30 Oct 2025 10:49:44 GMT
+      Expires:
+      - '-1'
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=msO%2BAJC5t6iHPilZV94xW5kEeOl%2BcVBfRhleEICC3dJ6DoeGbC%2FKDJ1Z8a9QzzCWqauDGOsfAcUkTQHeHO59isnff5mp047JSQA%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Cached-Result:
+      - 'false'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '4574'
+    status:
+      code: 200
+      message: OK
 version: 1
