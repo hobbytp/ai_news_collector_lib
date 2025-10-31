@@ -277,6 +277,9 @@ asyncio.run(main())
 | 📚 **ArXiv** | 学术论文预印本 | 学术质量，多学科覆盖 |
 | 🦆 **DuckDuckGo** | 隐私搜索引擎 | 隐私保护，广泛覆盖 |
 
+⏰ 注：所有搜索引擎的时间过滤参数 days_back 均以 UTC 时间为准，published 字段统一输出为 ISO8601（UTC 时区）。
+🔥 特别说明：HackerNews 的发布时间由 UNIX 时间戳转换为 UTC，时间过滤严格按 UTC 执行。
+
 ### 💰 付费源（需要API密钥）
 
 | 源 | API | 特点 | 免费额度 |
@@ -324,6 +327,7 @@ config = AdvancedSearchConfig(
     # 搜索参数
     max_articles_per_source=10,
     days_back=7,
+    # ⏰ 本参数对所有引擎有效；内部时间过滤使用 UTC；所有 published 输出均为 ISO8601(UTC)
     similarity_threshold=0.85,
     timeout_seconds=30
 )
@@ -353,6 +357,8 @@ scheduler = DailyScheduler(
     schedule_time="09:00",
     timezone="Asia/Shanghai"
 )
+
+# ⏰ 内部与 API 的时间过滤均以 UTC 执行，所有 published 字段为 ISO8601(UTC)。
 
 # 启动调度器
 scheduler.start()
@@ -557,6 +563,9 @@ python scripts/min_check_feedparser_fallback.py
 - 📧 [邮件支持](mailto:support@ai-news-collector.com)
 
 ### 常见问题
+
+**Q: 部分旧文章会拖低时间过滤准确率吗？**
+A: 不会。所有时间过滤严格按 UTC 执行，并跳过无法识别的发布时间，准确率不会被历史无效数据影响。
 
 **Q: 如何不使用API密钥运行测试？**
 A: 使用VCR cassettes！测试会自动使用预录制的HTTP响应。详见[VCR说明](VCR_CASSETTE_EXPLANATION.md)。

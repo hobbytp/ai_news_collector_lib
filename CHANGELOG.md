@@ -26,6 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 为所有搜索引擎添加统一的`_filter_by_date`方法
   - 智能时间格式解析（支持ISO、Z结尾等多种格式）
   - 优雅的错误处理和降级机制
+  - ⏰ **统一UTC时区处理**：所有时间过滤以UTC为准，所有`published`字段输出为ISO8601(UTC)格式
+  - ⏰ **Naive时间自动处理**：自动将无时区信息的时间视为UTC
 
 - **Enhanced Date Extraction**
   - 为每个搜索引擎添加专门的`_extract_published_time`方法
@@ -44,7 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **BraveSearchTool**: 添加API和客户端双重过滤
   - **MetaSotaSearchTool**: 优化时间提取和客户端过滤
   - **TavilyTool**: 添加API和客户端双重过滤
-  - **HackerNewsTool**: 添加客户端时间过滤
+  - **HackerNewsTool**: 添加客户端时间过滤 + UNIX时间戳转UTC（使用`datetime.fromtimestamp(..., tz=timezone.utc)`）
   - **ArxivTool**: 优化时间提取逻辑
   - **DuckDuckGoTool**: 添加客户端时间过滤
   - **NewsAPITool**: 添加客户端备用过滤

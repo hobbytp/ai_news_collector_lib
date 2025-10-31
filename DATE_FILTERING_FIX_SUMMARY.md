@@ -55,7 +55,7 @@
 
 ```python
 def _filter_by_date(self, articles: List[Article], days_back: int) -> List[Article]:
-    """按日期过滤文章"""
+    """按日期过滤文章（所有时间以 UTC 为准）"""
     if days_back <= 0:
         return articles
     
@@ -65,7 +65,7 @@ def _filter_by_date(self, articles: List[Article], days_back: int) -> List[Artic
     for article in articles:
         try:
             if not article.published:
-                continue
+                continue  # 跳过无发布时间文章
             
             # 处理不同的时间格式
             published_str = article.published
@@ -73,12 +73,16 @@ def _filter_by_date(self, articles: List[Article], days_back: int) -> List[Artic
                 published_str = published_str[:-1] + "+00:00"
             
             published_time = datetime.fromisoformat(published_str)
+            # ⏰ 关键改进：如果解析得到 naive 时间，自动视为 UTC
+            if published_time.tzinfo is None:
+                published_time = published_time.replace(tzinfo=timezone.utc)
             
-            # 只保留在时间范围内的文章
+            # 只保留在时间范围内的文章（UTC 比较）
             if published_time >= cutoff_date:
                 filtered_articles.append(article)
                 
         except (ValueError, TypeError):
+            # ⏰ 关键改进：无法解析的时间格式直接跳过，确保过滤准确率
             continue
     
     return filtered_articles
@@ -90,7 +94,7 @@ def _filter_by_date(self, articles: List[Article], days_back: int) -> List[Artic
 
 ```python
 def _extract_published_time(self, result: dict) -> str:
-    """从搜索结果中提取发布时间"""
+    """从搜索结果中提取发布时间（统一返回 UTC ISO8601 格式）"""
     # 尝试从多个可能的字段中提取发布时间
     date_fields = ["published_date", "date", "created_at", "pub_date", "publish_date"]
     
@@ -101,13 +105,36 @@ def _extract_published_time(self, result: dict) -> str:
                 if date_str.endswith("Z"):
                     date_str = date_str[:-1] + "+00:00"
                 published_time = datetime.fromisoformat(date_str)
+                # ⏰ 关键改进：如果解析得到 naive 时间，自动视为 UTC
+                if published_time.tzinfo is None:
+                    published_time = published_time.replace(tzinfo=timezone.utc)
                 return published_time.isoformat()
             except (ValueError, TypeError):
                 continue
     
-    # 如果没有找到有效的发布时间，使用当前时间
+    # 如果没有找到有效的发布时间，使用当前时间（UTC）
     return datetime.now(timezone.utc).isoformat()
 ```
+
+### 4. HackerNews UNIX 时间戳转换
+
+HackerNews 使用 UNIX 时间戳（秒级），需要转换为 UTC 时间：
+
+```python
+# HackerNews 时间戳转换示例
+story_time = datetime.fromtimestamp(
+    story_data.get("time", 0),  # UNIX 时间戳（秒）
+    tz=timezone.utc  # ⏰ 关键：明确指定 UTC 时区
+)
+
+# 输出为 ISO8601 (UTC) 格式
+article.published = story_time.astimezone(timezone.utc).isoformat()
+```
+
+⏰ **关键改进点**：
+- 使用 `datetime.fromtimestamp(timestamp, tz=timezone.utc)` 明确指定 UTC 时区
+- 所有 `published` 字段统一输出为 ISO8601 (UTC) 格式
+- 确保时间过滤在 UTC 时区下进行，避免时区转换问题
 
 ## 📊 修复效果验证
 
@@ -127,7 +154,7 @@ def _extract_published_time(self, result: dict) -> str:
 
 | 搜索引擎 | 修复前状态 | 修复后状态 | 修复方法 |
 |---------|-----------|-----------|---------|
-| HackerNews | ❌ 无时间过滤 | ✅ 客户端过滤 | 添加`_filter_by_date`调用 |
+| HackerNews | ❌ 无时间过滤 | ✅ 客户端过滤 + UTC转换 | 添加`_filter_by_date`调用 + UNIX时间戳转UTC |
 | Arxiv | ⚠️ 按提交时间排序 | ✅ 客户端过滤 | 优化时间提取逻辑 |
 | DuckDuckGo | ⚠️ 时间过滤不精确 | ✅ 客户端过滤 | 添加`_filter_by_date`调用 |
 | NewsAPI | ⚠️ 缺少客户端过滤 | ✅ 双重过滤 | API过滤 + 客户端过滤 |
@@ -145,6 +172,9 @@ def _extract_published_time(self, result: dict) -> str:
 - ✅ **9个搜索引擎全部修复** - 从0个正常到9个全部正常
 - ✅ **双重过滤机制** - API级别过滤 + 客户端备用过滤
 - ✅ **智能时间提取** - 支持多种时间格式的自动解析
+- ✅ **统一UTC时区处理** - 所有时间过滤和`published`字段统一使用UTC
+- ✅ **HackerNews UNIX时间戳转换** - 正确将UNIX时间戳转换为UTC ISO8601格式
+- ✅ **Naive时间自动处理** - 自动将无时区信息的时间视为UTC
 
 ### 2. 代码质量提升
 
