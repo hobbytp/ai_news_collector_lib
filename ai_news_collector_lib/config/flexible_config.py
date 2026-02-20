@@ -106,10 +106,13 @@ class FlexibleSearchConfig:
             self.engines["newsapi"] = EngineConfig(enabled=False)
             self.engines["tavily"] = EngineConfig(enabled=False)
             self.engines["google_search"] = EngineConfig(enabled=False)
-            self.engines["bing_search"] = EngineConfig(enabled=False)
             self.engines["serper"] = EngineConfig(enabled=False)
             self.engines["brave_search"] = EngineConfig(enabled=False)
             self.engines["metasota_search"] = EngineConfig(enabled=False)
+            self.engines["youtube"] = EngineConfig(enabled=False)
+            self.engines["github_search"] = EngineConfig(enabled=False)
+            self.engines["huggingface"] = EngineConfig(enabled=False)
+            self.engines["perplexity"] = EngineConfig(enabled=False)
     
     def _load_api_keys_from_env(self):
         """从环境变量加载API密钥"""
@@ -117,10 +120,13 @@ class FlexibleSearchConfig:
             "newsapi": "NEWS_API_KEY",
             "tavily": "TAVILY_API_KEY", 
             "google_search": "GOOGLE_SEARCH_API_KEY",
-            "bing_search": "BING_SEARCH_API_KEY",
             "serper": "SERPER_API_KEY",
             "brave_search": "BRAVE_SEARCH_API_KEY",
             "metasota_search": "METASOSEARCH_API_KEY",
+            "youtube": "YOUTUBE_API_KEY",
+            "github_search": "GITHUB_TOKEN",
+            "huggingface": "HUGGINGFACE_API_KEY",
+            "perplexity": "PERPLEXITY_API_KEY",
         }
         
         for engine_name, env_var in api_key_mapping.items():
@@ -201,7 +207,7 @@ class FlexibleSearchConfig:
         # 检查API密钥
         for engine_name, config in self.engines.items():
             if config.enabled and config.api_key is None:
-                if engine_name in ["newsapi", "tavily", "google_search", "bing_search", "serper", "brave_search", "metasota_search"]:
+                if engine_name in ["newsapi", "tavily", "google_search", "serper", "brave_search", "metasota_search"]:
                     validation_result["warnings"].append(f"{engine_name} 已启用但缺少API密钥")
         
         return validation_result

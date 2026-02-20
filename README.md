@@ -5,30 +5,66 @@
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![PyPI](https://img.shields.io/badge/PyPI-ai--news--collector--lib-blue)](https://pypi.org/project/ai-news-collector-lib/)
-[![Latest Release](https://img.shields.io/badge/Latest-v0.1.4-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.4)
+[![Latest Release](https://img.shields.io/badge/Latest-v0.1.5-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.5)
 
 ---
 
-## 🚀 最新更新 (v0.1.4 - 时间过滤增强)
+## 📊 支持的信息源（截止 v0.1.5）
 
-> **这是 v0.1.4 版本的重大更新！** 完全解决了时间过滤不准确的问题。强烈建议所有用户升级。
+> AI News Collector 截止最新版本（v0.1.5），已支持从 **13 个不同数据源** 收集 AI 相关信息，覆盖 **新闻资讯、学术论文、开源项目、AI 模型、视频内容、AI 搜索** 等多种维度。
 
-### ⏰ 时间过滤增强（重大修复）
+### ✅ 免费源（无需 API 密钥）
 
-- ✅ **100%时间过滤准确率** - 从0%提升到100%，彻底解决时间过滤问题
-- ✅ **双重过滤机制** - API级别过滤 + 客户端备用过滤，确保准确性
-- ✅ **全搜索引擎支持** - 修复了8个搜索引擎的时间过滤问题
-- ✅ **智能时间解析** - 支持多种时间格式的自动识别和解析
-- ✅ **统一接口** - 所有搜索引擎使用相同的时间过滤逻辑
+| 源 | 描述 | 特点 |
+|---|---|---|
+| 🔥 **HackerNews** | 技术社区讨论 | 实时热点，开发者友好 |
+| 📚 **ArXiv** | 学术论文预印本 | 学术质量，多学科覆盖 |
+| 🦆 **DuckDuckGo** | 隐私搜索引擎 | 隐私保护，广泛覆盖 |
+| 🐙 **GitHub** | 开源项目搜索 | 代码库/Star/Language，可选 Token 提高速率 |
+| 🤗 **HuggingFace** | AI 模型搜索 | 模型/数据集/Downloads/Likes，可选 Token |
+| 📰 **RSS Feeds** | RSS 订阅源 | 自定义订阅，灵活扩展 |
 
-### 🔧 核心改进
+### 💰 付费源（需要 API 密钥）
 
-- ✅ **API级别过滤** - Brave Search、Tavily、NewsAPI等支持原生时间参数
-- ✅ **客户端过滤** - 所有搜索引擎都有客户端时间过滤作为备用
-- ✅ **时间提取优化** - 为每个搜索引擎添加专门的发布时间提取方法
-- ✅ **错误处理增强** - 时间解析失败时的优雅降级机制
+| 源 | API | 特点 | 免费额度 |
+|---|---|---|---|
+| 📹 **YouTube** | YouTube Data API v3 | 视频搜索，频道信息 | 10k units/天 |
+| 🧠 **Perplexity** | Perplexity Sonar API | AI 智能搜索，带引用摘要 | 按量付费 |
+| 📡 **NewsAPI** | newsapi.org | 多源新闻聚合 | 100 请求/天 |
+| 🔍 **Tavily** | tavily.com | AI 驱动搜索 | 1000 请求/月 |
+| 🌐 **Google Search** | googleapis.com | 精准搜索，覆盖广 | 100 请求/天 |
+| ⚡ **Serper** | serper.dev | 高速 Google 搜索 | 100 请求/月 |
+| 🦁 **Brave Search** | search.brave.com | 独立隐私搜索 | 100 请求/月 |
 
-📋 详见: [时间过滤修复总结](DATE_FILTERING_FIX_SUMMARY.md) | [测试验证](tests/test_date_filtering.py) | [完整指南](USAGE_GUIDE.md)
+> **注**: MetaSota Search 通过 MCP 协议支持，需要特殊配置。
+
+⏰ 所有搜索引擎的时间过滤参数 `days_back` 均以 UTC 时间为准，`published` 字段统一输出为 ISO8601（UTC 时区）。
+
+---
+
+## 🚀 最新更新 (v0.1.5 - 新增4大搜索引擎 + 架构统一)
+
+> **v0.1.5 版本更新** - 新增 YouTube, GitHub, HuggingFace, Perplexity 搜索支持！
+
+### 🔍 新增搜索引擎
+
+- ✅ **YouTube** - 搜索 AI 相关视频教程和讲座（YouTube Data API v3）
+- ✅ **GitHub** - 搜索最新的 AI 开源项目和代码库（REST API，可选 Token）
+- ✅ **HuggingFace** - 搜索最新的 AI 模型、数据集和 Space（Hub API，可选 Token）
+- ✅ **Perplexity** - 使用 AI 驱动的搜索（Sonar API，带引用和摘要映射）
+
+### 🏗️ 架构统一
+
+- ✅ **统一配置** - 所有 13 个搜索引擎可通过 `SearchConfig`、`AdvancedSearchConfig`、`FlexibleSearchConfig` 中的任意一个配置使用
+- ✅ **移除 Bing Search** - 微软已停止支持 Bing Search API
+
+### 🔧 核心改进 (v0.1.4)
+
+- ✅ **100%时间过滤准确率** - 彻底解决时间过滤问题
+- ✅ **双重过滤机制** - API级别过滤 + 客户端备用过滤
+- ✅ **全搜索引擎支持** - 修复了所有搜索引擎的时间过滤问题
+
+📋 详见: [完整指南](USAGE_GUIDE.md) | [v0.1.5 发布总结](V0.1.5_RELEASE_SUMMARY.md)
 
 ---
 
@@ -39,18 +75,12 @@
 ### 🤖 LLM 查询增强（v0.1.3功能）
 
 - ✅ **AI 驱动查询优化** - 集成 Google Gemini LLM，智能优化用户查询
-- ✅ **多引擎支持** - 为所有 11 个搜索引擎生成优化查询（单一 LLM 调用）
+- ✅ **多引擎支持** - 为所有搜索引擎生成优化查询（单一 LLM 调用）
 - ✅ **智能缓存** - 24 小时缓存，避免重复 LLM 调用
 - ✅ **灵活配置** - 可选启用/禁用，支持自定义 LLM 提供商和模型
 - ✅ **优雅降级** - LLM 调用失败时自动使用原始查询，确保服务可用性
 
-### 🔧 核心改进（v0.1.3）
-
-- ✅ **增强的查询对象** - 新增 `EnhancedQuery` 模型（支持 11 个搜索引擎）
-- ✅ **查询优化器** - 新增 `QueryEnhancer` 工具类（500+ 行高质量代码）
-- ✅ **集成优化** - AdvancedAINewsCollector 无缝集成查询增强
-
-📋 详见: [实现总结](IMPLEMENTATION_SUMMARY.md) | [LLM 配置指南](docs/README_BADGES.md) | [完整指南](USAGE_GUIDE.md)
+📋 详见: [实现总结](IMPLEMENTATION_SUMMARY.md) | [完整指南](USAGE_GUIDE.md)
 
 ---
 
@@ -58,13 +88,13 @@
 
 ### 核心功能
 
-- 🔥 **多源聚合** - 支持HackerNews、ArXiv、DuckDuckGo等多个搜索源
-- 📰 **付费API集成** - NewsAPI、Tavily、Google Search、Bing Search、Serper等
+- 🔥 **多源聚合** - 支持 13 个搜索源，覆盖新闻、论文、代码、模型、视频、AI 搜索
 - 🤖 **智能内容处理** - 自动提取文章内容和关键词
 - 💾 **智能缓存** - 避免重复搜索，提高效率
 - ⏰ **定时任务** - 支持定时自动收集和报告生成
 - 🔍 **去重处理** - 基于相似度的智能去重
 - 📊 **数据分析** - 生成详细的收集结果报告
+- 🤖 **LLM 查询增强** - AI 驱动的查询优化，为不同引擎生成最优查询
 
 ### 测试与质量
 
@@ -102,12 +132,17 @@ pip install -e .[dev]
 创建 `.env` 文件并配置API密钥（可选，仅用于付费API）：
 
 ```bash
-# API密钥配置
+# v0.1.5 新增搜索引擎配置
+YOUTUBE_API_KEY=your_youtube_key
+GITHUB_TOKEN=your_github_token          # 可选 (提高速率限制)
+HUGGINGFACE_API_KEY=your_hf_token       # 可选
+PERPLEXITY_API_KEY=your_perplexity_key
+
+# 现有搜索引擎配置
 NEWS_API_KEY=your_newsapi_key
 TAVILY_API_KEY=your_tavily_key
 GOOGLE_SEARCH_API_KEY=your_google_key
 GOOGLE_SEARCH_ENGINE_ID=your_engine_id
-BING_SEARCH_API_KEY=your_bing_key
 SERPER_API_KEY=your_serper_key
 BRAVE_SEARCH_API_KEY=your_brave_key
 METASOSEARCH_API_KEY=your_metasota_key
@@ -131,6 +166,8 @@ async def main():
         enable_hackernews=True,
         enable_arxiv=True,
         enable_duckduckgo=True,
+        enable_github_search=True,     # v0.1.5 新增，免费
+        enable_huggingface=True,       # v0.1.5 新增，免费
         max_articles_per_source=10,
         days_back=7
     )
@@ -144,7 +181,7 @@ async def main():
     # 输出结果
     print(f"收集 {result.total_articles} 篇文章（去重后 {result.unique_articles} 篇）")
     for article in result.articles[:5]:
-        print(f"- {article.title}")
+        print(f"- [{article.source}] {article.title}")
     
     return result
 
@@ -152,7 +189,7 @@ async def main():
 asyncio.run(main())
 ```
 
-### 🤖 LLM 查询增强（新）
+### 🤖 LLM 查询增强
 
 ```python
 import asyncio
@@ -164,9 +201,10 @@ async def main():
         enable_hackernews=True,
         enable_arxiv=True,
         enable_tavily=True,
+        enable_github_search=True,            # v0.1.5 新增
         enable_query_enhancement=True,        # ✨ 启用 LLM 查询增强
-        llm_provider="google",                # 使用 Google Gemini
-        llm_model="gemini-1.5-flash",         # 高性能模型
+        llm_provider="google-gemini",
+        llm_model="gemini-2.5-pro",
         llm_api_key="your-google-api-key",    # 从环境变量设置更安全
         query_enhancement_cache_ttl=86400,    # 24 小时缓存
         max_articles_per_source=10
@@ -176,32 +214,46 @@ async def main():
     collector = AdvancedAINewsCollector(config)
     
     # LLM 会自动为各个搜索引擎优化查询
-    # 例如：输入 "machine learning" → 
-    #   HackerNews: "machine learning frameworks algorithms"
-    #   ArXiv: "machine learning optimization techniques"
-    #   Tavily: "latest machine learning applications 2024"
     result = await collector.collect_news_advanced("machine learning")
     
     # 查看增强后的查询
-    if result.get('enhanced_query'):
-        enhanced = result['enhanced_query']
-        print(f"原始查询: {enhanced.original_query}")
-        print(f"增强查询数: {len(enhanced.get_enabled_engines())}")
-        for engine in enhanced.get_enabled_engines():
-            print(f"  - {engine}: {getattr(enhanced, engine)}")
+    if result.get('enhanced_queries'):
+        for engine, query in result['enhanced_queries'].items():
+            print(f"  - {engine}: {query}")
     
     return result
 
 asyncio.run(main())
 ```
 
-**LLM 查询增强的优势：**
+### 🔧 灵活配置（独立引擎参数）
 
-- 🎯 **精准搜索** - AI 自动为不同搜索引擎生成最优查询
-- ⚡ **智能缓存** - 相同查询在 24 小时内无需重新调用 LLM
-- 💰 **经济高效** - 单一 LLM 调用处理所有搜索引擎
-- 🔄 **灵活降级** - LLM 不可用时自动使用原始查询
-- 📊 **完整支持** - 支持所有 11 个搜索引擎（HackerNews、ArXiv、DuckDuckGo、NewsAPI、Tavily、Google Search、Bing Search、Serper、Reddit、Hacker News API、Medium）
+```python
+import asyncio
+from ai_news_collector_lib import FlexibleAINewsCollector, FlexibleSearchConfig, TimeRange
+
+async def main():
+    # 灵活配置 - 为每个搜索引擎独立设置参数
+    config = FlexibleSearchConfig()
+    
+    # 为 HackerNews 设置独立的时间范围和文章数
+    config.set_engine_config("hackernews", enabled=True, max_articles=20, time_range=TimeRange.ONE_DAY)
+    
+    # 为 GitHub 设置较长的时间范围
+    config.set_engine_config("github_search", enabled=True, max_articles=15, time_range=TimeRange.ONE_MONTH)
+    
+    # 为 YouTube 设置 API 密钥和参数
+    config.set_engine_config("youtube", enabled=True, max_articles=10, api_key="your-key")
+    
+    # 创建灵活收集器
+    collector = FlexibleAINewsCollector(config)
+    result = await collector.collect_news("artificial intelligence")
+    
+    print(f"收集 {result.total_articles} 篇文章")
+    return result
+
+asyncio.run(main())
+```
 
 ### 高级使用（包含内容提取和关键词提取）
 
@@ -215,6 +267,7 @@ async def main():
         enable_hackernews=True,
         enable_arxiv=True,
         enable_duckduckgo=True,
+        enable_github_search=True,
         enable_content_extraction=True,      # 自动提取内容
         enable_keyword_extraction=True,      # 自动提取关键词
         cache_results=True,                  # 启用缓存
@@ -230,7 +283,6 @@ async def main():
     # 分析结果
     total_words = sum(article.get('word_count', 0) for article in result['articles'])
     print(f"总字数: {total_words}")
-    print(f"关键词: {', '.join(result.get('top_keywords', [])[:10])}")
     
     return result
 
@@ -252,6 +304,8 @@ async def main():
         enable_tavily=True,              # 付费搜索API
         enable_google_search=True,       # 谷歌自定义搜索
         enable_serper=True,              # Serper搜索API
+        enable_youtube=True,             # YouTube 视频搜索
+        enable_perplexity=True,          # Perplexity AI 搜索
         cache_results=True,              # 启用缓存减少API调用
         max_articles_per_source=15,
         similarity_threshold=0.85
@@ -264,33 +318,6 @@ async def main():
 
 asyncio.run(main())
 ```
-
----
-
-## 📊 支持的搜索源
-
-### ✅ 免费源（无需API密钥）
-
-| 源 | 描述 | 特点 |
-|---|---|---|
-| 🔥 **HackerNews** | 技术社区讨论 | 实时热点，开发者友好 |
-| 📚 **ArXiv** | 学术论文预印本 | 学术质量，多学科覆盖 |
-| 🦆 **DuckDuckGo** | 隐私搜索引擎 | 隐私保护，广泛覆盖 |
-
-⏰ 注：所有搜索引擎的时间过滤参数 days_back 均以 UTC 时间为准，published 字段统一输出为 ISO8601（UTC 时区）。
-🔥 特别说明：HackerNews 的发布时间由 UNIX 时间戳转换为 UTC，时间过滤严格按 UTC 执行。
-
-### 💰 付费源（需要API密钥）
-
-| 源 | API | 特点 | 免费额度 |
-|---|---|---|---|
-| 📡 **NewsAPI** | newsapi.org | 多源聚合、新闻分类 | 100 请求/天 |
-| 🔍 **Tavily** | tavily.com | AI驱动搜索、实时 | 1000 请求/月 |
-| 🌐 **Google Search** | googleapis.com | 精准搜索、覆盖广 | 100 请求/天 |
-| 🔵 **Bing Search** | bing.com | 多媒体支持、国际化 | 3000 请求/月 |
-| ⚡ **Serper** | serper.dev | 高速、便宜 | 100 请求/月 |
-| 🦁 **Brave Search** | search.brave.com | 独立隐私搜索 | 100 请求/月 |
-| 🔬 **MetaSota** | metaso.cn | MCP协议搜索 | 按配额 |
 
 ---
 
@@ -310,11 +337,16 @@ config = AdvancedSearchConfig(
     # 付费搜索源
     enable_tavily=False,
     enable_google_search=False,
-    enable_bing_search=False,
     enable_serper=False,
     enable_brave_search=False,
     enable_metasota_search=False,
     enable_newsapi=False,
+    
+    # v0.1.5 新增搜索源
+    enable_youtube=False,           # YouTube 视频搜索（需要 API 密钥）
+    enable_github_search=False,     # GitHub 项目搜索（可选 API 密钥）
+    enable_huggingface=False,       # HuggingFace 模型搜索（可选 API 密钥）
+    enable_perplexity=False,        # Perplexity AI 搜索（需要 API 密钥）
     
     # 网页搜索
     enable_duckduckgo=True,
@@ -329,7 +361,6 @@ config = AdvancedSearchConfig(
     days_back=7,
     # ⏰ 本参数对所有引擎有效；内部时间过滤使用 UTC；所有 published 输出均为 ISO8601(UTC)
     similarity_threshold=0.85,
-    timeout_seconds=30
 )
 ```
 
@@ -357,8 +388,6 @@ scheduler = DailyScheduler(
     schedule_time="09:00",
     timezone="Asia/Shanghai"
 )
-
-# ⏰ 内部与 API 的时间过滤均以 UTC 执行，所有 published 字段为 ISO8601(UTC)。
 
 # 启动调度器
 scheduler.start()
@@ -470,10 +499,10 @@ def test_with_cassette(vcr):
 pytest
 
 # 2. 创建版本标签
-git tag -a v0.1.3 -m "Release v0.1.3"
+git tag -a v0.1.5 -m "Release v0.1.5"
 
 # 3. 推送标签（自动触发发布工作流）
-git push origin v0.1.3
+git push origin v0.1.5
 ```
 
 详见: [发布指南](RELEASE_GUIDE.md) | [快速发布](QUICK_RELEASE.md)
@@ -485,10 +514,10 @@ git push origin v0.1.3
 ### 核心文档
 
 - [架构设计](ARCHITECTURE.md) - 项目结构和设计理念
+- [使用指南](USAGE_GUIDE.md) - 详细使用文档
 - [实现总结](IMPLEMENTATION_SUMMARY.md) - v0.1.3 LLM 查询增强实现详情
 - [VCR说明](VCR_CASSETTE_EXPLANATION.md) - 离线测试机制解析
 - [测试指南](TESTING_GUIDE.md) - 完整测试说明
-- [使用指南](USAGE_GUIDE.md) - 详细使用文档
 
 ### 快速参考
 
@@ -567,6 +596,9 @@ python scripts/min_check_feedparser_fallback.py
 **Q: 部分旧文章会拖低时间过滤准确率吗？**
 A: 不会。所有时间过滤严格按 UTC 执行，并跳过无法识别的发布时间，准确率不会被历史无效数据影响。
 
+**Q: GitHub 和 HuggingFace 需要 API 密钥吗？**
+A: 不需要。两者都可以在无密钥的情况下使用。设置 `GITHUB_TOKEN` 可以将速率限制从 60 次/小时提升到 5000 次/小时；设置 `HUGGINGFACE_API_KEY` 可以提高速率限制。
+
 **Q: 如何不使用API密钥运行测试？**
 A: 使用VCR cassettes！测试会自动使用预录制的HTTP响应。详见[VCR说明](VCR_CASSETTE_EXPLANATION.md)。
 
@@ -586,23 +618,35 @@ A: 详见[架构设计](ARCHITECTURE.md)中的"添加新搜索源"部分。
 
 ## 📈 更新日志
 
+### v0.1.5 (2026-02-20) - 🔍 新增4大搜索引擎 + 架构统一
+
+- ✨ **新增 YouTube 搜索** - YouTube Data API v3，视频搜索与频道信息
+- ✨ **新增 GitHub 搜索** - REST API 搜索 AI 开源项目（可选 Token）
+- ✨ **新增 HuggingFace 搜索** - Hub API 搜索 AI 模型、数据集
+- ✨ **新增 Perplexity 搜索** - Sonar API，AI 驱动搜索，带引用和摘要映射
+- ✅ 架构统一 - 所有搜索引擎在 `SearchConfig`、`AdvancedSearchConfig`、`FlexibleSearchConfig` 中均可使用
+- ✅ 移除 Bing Search - 微软已停止支持
+- ✅ 新增 `FlexibleSearchConfig` - 支持为每个引擎独立配置参数
+- ✅ 新增 `FlexibleAINewsCollector` - 灵活收集器，支持引擎级别参数控制
+
+### v0.1.4 (2025-10-29) - ⏰ 时间过滤增强
+
+- ✅ **100%时间过滤准确率** - 彻底解决时间过滤问题
+- ✅ 双重过滤机制 - API级别过滤 + 客户端备用过滤
+- ✅ 全搜索引擎支持 - 修复了所有搜索引擎的时间过滤问题
+
 ### v0.1.3 (2025-10-22) - 🤖 LLM 查询增强
 
 - ✨ **AI 驱动查询优化** - 集成 Google Gemini LLM，为所有搜索引擎生成优化查询
-- ✅ 新增 `EnhancedQuery` 数据模型（支持 11 个搜索引擎）
-- ✅ 新增 `QueryEnhancer` 工具类（500+ 行，单一 LLM 调用架构）
+- ✅ 新增 `EnhancedQuery` 数据模型
+- ✅ 新增 `QueryEnhancer` 工具类
 - ✅ 智能缓存 - 24 小时 TTL 避免重复 LLM 调用
-- ✅ 灵活配置 - 可选启用/禁用，支持自定义 LLM 提供商
 - ✅ 优雅降级 - LLM 不可用时自动使用原始查询
-- ✅ 完整测试 - 8 个单元测试，81% 代码覆盖率
-- ✅ 代码质量 - Black & Flake8 检查通过
 
 ### v0.1.2 (2025-10-21) - 🔒 安全版本
 
 - ✅ 全面安全审计 - 清理VCR cassettes中的所有凭证
 - ✅ 将测试API密钥替换为"FILTERED"占位符
-- ✅ 更新所有cassette URL为真实API端点
-- ✅ 集成pytest-cov提供覆盖率报告
 - ✅ GitHub Actions自动化测试和PyPI发布
 
 ### v0.1.0 (2025-10-07)
@@ -622,24 +666,28 @@ ai_news_collector_lib/
 ├── cli.py                        # 命令行接口
 ├── config/                       # 配置模块
 │   ├── __init__.py
-│   ├── settings.py              # 搜索配置
+│   ├── settings.py              # SearchConfig / AdvancedSearchConfig
+│   ├── flexible_config.py       # FlexibleSearchConfig
 │   └── api_keys.py              # API密钥管理
 ├── core/                        # 核心功能
 │   ├── __init__.py
-│   ├── collector.py             # 基础收集器
-│   └── advanced_collector.py    # 高级收集器
+│   ├── collector.py             # 基础收集器 (AINewsCollector)
+│   ├── advanced_collector.py    # 高级收集器 (AdvancedAINewsCollector)
+│   └── flexible_collector.py    # 灵活收集器 (FlexibleAINewsCollector)
 ├── models/                      # 数据模型
 │   ├── __init__.py
 │   ├── article.py              # 文章模型
+│   ├── enhanced_query.py       # LLM 增强查询模型
 │   └── result.py               # 结果模型
-├── tools/                       # 搜索工具
+├── tools/                       # 搜索工具 (13 个搜索引擎)
 │   ├── __init__.py
-│   └── search_tools.py         # 各种搜索工具
+│   └── search_tools.py         # 各种搜索工具实现
 ├── utils/                       # 工具函数
 │   ├── __init__.py
 │   ├── cache.py                # 缓存管理
 │   ├── content_extractor.py    # 内容提取
 │   ├── keyword_extractor.py    # 关键词提取
+│   ├── query_enhancer.py       # LLM 查询增强
 │   ├── reporter.py             # 报告生成
 │   └── scheduler.py            # 定时任务
 └── examples/                    # 使用示例
@@ -651,6 +699,7 @@ tests/
 ├── test_basic.py               # 基础功能测试
 ├── test_integration_basic.py    # 基础集成测试
 ├── test_integration_advanced.py # 付费API集成测试
+├── test_new_search_tools.py     # 新搜索引擎测试
 ├── cassettes/                  # VCR cassette文件
 │   ├── basic_ai_hn_ddg.yaml
 │   ├── advanced_ml_hn_ddg.yaml

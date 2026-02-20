@@ -3,14 +3,17 @@
 包含各种搜索源的具体实现
 """
 
+import html
 import requests
 import logging
 import json
+import re
 from typing import List, Optional
 from datetime import datetime, timedelta, timezone
+from urllib.parse import urlparse, quote_plus
+
 from bs4 import BeautifulSoup
 import feedparser
-import re
 
 from ..models.article import Article
 
@@ -20,10 +23,37 @@ logger = logging.getLogger(__name__)
 class BaseSearchTool:
     """搜索工具基类"""
 
+    # 默认重试配置
+    _RETRY_TOTAL = 3
+    _RETRY_BACKOFF = 0.5
+    _RETRY_STATUS_FORCELIST = [429, 500, 502, 503, 504]
+
     def __init__(self, max_articles: int = 10):
         self.max_articles = max_articles
         self.name = self.__class__.__name__
         self.description = f"搜索工具: {self.name}"
+
+    @classmethod
+    def _build_session(cls) -> requests.Session:
+        """创建一个带自动重试的 requests Session。
+
+        重试策略：最多 3 次，指数退避 0.5s，对 429/5xx 自动重试。
+        """
+        from requests.adapters import HTTPAdapter
+        from urllib3.util.retry import Retry
+
+        session = requests.Session()
+        retry = Retry(
+            total=cls._RETRY_TOTAL,
+            backoff_factor=cls._RETRY_BACKOFF,
+            status_forcelist=cls._RETRY_STATUS_FORCELIST,
+            allowed_methods=["GET", "POST"],
+            raise_on_status=False,
+        )
+        adapter = HTTPAdapter(max_retries=retry)
+        session.mount("https://", adapter)
+        session.mount("http://", adapter)
+        return session
 
     def search(self, query: str, days_back: int = 7) -> List[Article]:
         """
@@ -37,6 +67,28 @@ class BaseSearchTool:
             List[Article]: 文章列表
         """
         raise NotImplementedError("子类必须实现search方法")
+
+    @staticmethod
+    def _parse_iso_datetime(raw: str) -> str:
+        """解析ISO时间字符串，统一输出格式。
+
+        Args:
+            raw: 原始时间字符串（可能以 'Z' 结尾或不带时区）
+
+        Returns:
+            标准化的 ISO 格式时间字符串
+        """
+        if not raw:
+            return datetime.now(timezone.utc).isoformat()
+        try:
+            if raw.endswith("Z"):
+                raw = raw[:-1] + "+00:00"
+            dt = datetime.fromisoformat(raw)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt.isoformat()
+        except (ValueError, TypeError):
+            return datetime.now(timezone.utc).isoformat()
 
     def _filter_by_date(self, articles: List[Article], days_back: int) -> List[Article]:
         """按日期过滤文章"""
@@ -913,3 +965,400 @@ class MetaSotaSearchTool(BaseSearchTool):
         
         # 如果没有找到有效的发布时间，使用当前时间
         return datetime.now(timezone.utc).isoformat()
+
+
+class YouTubeTool(BaseSearchTool):
+    """YouTube搜索工具 — 使用YouTube Data API v3
+
+    注意: YouTube Data API v3 每天免费配额为 10,000 units，
+    一次 search.list 调用消耗 100 units（即每天最多 100 次搜索）。
+    """
+
+    def __init__(
+        self,
+        api_key: str,
+        max_articles: int = 10,
+        relevance_language: Optional[str] = None,
+    ):
+        super().__init__(max_articles)
+        self.api_key = api_key
+        self.base_url = "https://www.googleapis.com/youtube/v3/search"
+        self.relevance_language = relevance_language
+        self.description = "使用YouTube Data API v3搜索AI相关视频"
+
+    def search(self, query: str, days_back: int = 7) -> List[Article]:
+        """使用YouTube Data API v3搜索视频"""
+        try:
+            published_after = (
+                datetime.now(timezone.utc) - timedelta(days=days_back)
+            ).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+            params = {
+                "part": "snippet",
+                "q": query,
+                "type": "video",
+                "order": "date",
+                "maxResults": min(self.max_articles, 50),
+                "publishedAfter": published_after,
+                "key": self.api_key,
+            }
+            if self.relevance_language:
+                params["relevanceLanguage"] = self.relevance_language
+
+            session = self._build_session()
+            response = session.get(self.base_url, params=params, timeout=30)
+            response.raise_for_status()
+
+            data = response.json()
+            articles = []
+
+            for item in data.get("items", []):
+                snippet = item.get("snippet", {})
+                video_id = item.get("id", {}).get("videoId", "")
+                video_url = f"https://www.youtube.com/watch?v={video_id}" if video_id else ""
+
+                published_time = self._parse_iso_datetime(snippet.get("publishedAt", ""))
+                title = html.unescape(snippet.get("title", ""))
+
+                article = Article(
+                    title=title,
+                    url=video_url,
+                    summary=html.unescape(snippet.get("description", ""))[:500],
+                    published=published_time,
+                    author=snippet.get("channelTitle", "YouTube"),
+                    source_name=snippet.get("channelTitle", "YouTube"),
+                    source="youtube",
+                )
+                articles.append(article)
+
+            # 应用客户端时间过滤作为备用
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
+
+        except Exception as e:
+            logger.error(f"YouTube search failed: {e}")
+            return []
+
+
+class GitHubSearchTool(BaseSearchTool):
+    """GitHub搜索工具 — 使用GitHub REST API搜索仓库
+
+    GitHub REST API 允许未认证请求（60 次/小时），
+    认证后提升到 5,000 次/小时。api_key 为可选参数。
+    """
+
+    def __init__(self, api_key: Optional[str] = None, max_articles: int = 10):
+        super().__init__(max_articles)
+        self.api_key = api_key
+        self.base_url = "https://api.github.com/search/repositories"
+        self.description = "使用GitHub REST API搜索AI相关仓库和项目"
+
+    def search(self, query: str, days_back: int = 7) -> List[Article]:
+        """使用GitHub REST API搜索仓库"""
+        try:
+            # 构建带日期过滤的查询
+            pushed_after = (
+                datetime.now(timezone.utc) - timedelta(days=days_back)
+            ).strftime("%Y-%m-%d")
+            github_query = f"{query} pushed:>={pushed_after}"
+
+            params = {
+                "q": github_query,
+                "sort": "updated",
+                "order": "desc",
+                "per_page": min(self.max_articles, 100),
+            }
+
+            headers = {
+                "Accept": "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2022-11-28",
+            }
+            if self.api_key:
+                headers["Authorization"] = f"Bearer {self.api_key}"
+
+            session = self._build_session()
+            response = session.get(
+                self.base_url, params=params, headers=headers, timeout=30
+            )
+
+            # 处理速率限制
+            if response.status_code == 403:
+                remaining = response.headers.get("X-RateLimit-Remaining", "?")
+                reset_ts = response.headers.get("X-RateLimit-Reset", "")
+                reset_info = ""
+                if reset_ts:
+                    try:
+                        reset_dt = datetime.fromtimestamp(int(reset_ts), tz=timezone.utc)
+                        reset_info = f", resets at {reset_dt.isoformat()}"
+                    except (ValueError, OSError):
+                        pass
+                logger.warning(
+                    f"GitHub API rate limited (remaining={remaining}{reset_info}). "
+                    f"Consider setting GITHUB_TOKEN for higher limits."
+                )
+                return []
+
+            response.raise_for_status()
+
+            data = response.json()
+            articles = []
+
+            for repo in data.get("items", []):
+                raw_time = repo.get("pushed_at") or repo.get("updated_at", "")
+                published_time = self._parse_iso_datetime(raw_time)
+
+                # 构建摘要
+                description = repo.get("description", "") or ""
+                stars = repo.get("stargazers_count", 0)
+                language = repo.get("language", "Unknown")
+                summary = f"{description} [⭐ {stars} | {language}]"
+
+                article = Article(
+                    title=repo.get("full_name", repo.get("name", "")),
+                    url=repo.get("html_url", ""),
+                    summary=summary[:500],
+                    published=published_time,
+                    author=repo.get("owner", {}).get("login", "GitHub"),
+                    source_name="GitHub",
+                    source="github",
+                )
+                articles.append(article)
+
+            # 应用客户端时间过滤作为备用
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
+
+        except Exception as e:
+            logger.error(f"GitHub search failed: {e}")
+            return []
+
+
+class HuggingFaceTool(BaseSearchTool):
+    """HuggingFace搜索工具 — 使用HuggingFace Hub API搜索模型
+
+    HuggingFace Hub API 的 /api/models 端点是公开的，
+    不需要认证即可使用（有速率限制）。api_key 为可选参数。
+    """
+
+    def __init__(self, api_key: Optional[str] = None, max_articles: int = 10):
+        super().__init__(max_articles)
+        self.api_key = api_key
+        self.base_url = "https://huggingface.co/api/models"
+        self.description = "使用HuggingFace Hub API搜索AI模型"
+
+    def search(self, query: str, days_back: int = 7) -> List[Article]:
+        """使用HuggingFace Hub API搜索模型"""
+        try:
+            params = {
+                "search": query,
+                "sort": "lastModified",
+                "direction": "-1",
+                "limit": min(self.max_articles * 3, 100),  # 多取一些，后续按时间过滤
+            }
+
+            headers = {}
+            if self.api_key:
+                headers["Authorization"] = f"Bearer {self.api_key}"
+
+            session = self._build_session()
+            response = session.get(
+                self.base_url, params=params, headers=headers, timeout=30
+            )
+            response.raise_for_status()
+
+            data = response.json()
+            articles = []
+
+            for model in data if isinstance(data, list) else []:
+                model_id = model.get("modelId", model.get("id", ""))
+                model_url = f"https://huggingface.co/{model_id}"
+                published_time = self._parse_iso_datetime(
+                    model.get("lastModified", "")
+                )
+
+                # 构建摘要信息
+                pipeline_tag = model.get("pipeline_tag", "")
+                downloads = model.get("downloads", 0)
+                likes = model.get("likes", 0)
+                tags = model.get("tags", [])
+                tag_str = ", ".join(tags[:5]) if tags else ""
+                summary_parts = []
+                if pipeline_tag:
+                    summary_parts.append(f"Task: {pipeline_tag}")
+                if downloads:
+                    summary_parts.append(f"Downloads: {downloads:,}")
+                if likes:
+                    summary_parts.append(f"Likes: {likes}")
+                if tag_str:
+                    summary_parts.append(f"Tags: {tag_str}")
+                summary = " | ".join(summary_parts) if summary_parts else model_id
+
+                article = Article(
+                    title=model_id,
+                    url=model_url,
+                    summary=summary[:500],
+                    published=published_time,
+                    author=model_id.split("/")[0] if "/" in model_id else "HuggingFace",
+                    source_name="HuggingFace",
+                    source="huggingface",
+                )
+                articles.append(article)
+
+            # 统一使用 _filter_by_date 进行时间过滤
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
+
+        except Exception as e:
+            logger.error(f"HuggingFace search failed: {e}")
+            return []
+
+
+class PerplexityTool(BaseSearchTool):
+    """Perplexity搜索工具 — 使用Perplexity Sonar API（带引用的搜索型LLM）"""
+
+    # Perplexity inline citation 标记的正则: [1], [2], [1][2] 等
+    _CITATION_RE = re.compile(r"\[(\d+)\]")
+
+    def __init__(
+        self,
+        api_key: str,
+        max_articles: int = 10,
+        model: str = "sonar",
+    ):
+        super().__init__(max_articles)
+        self.api_key = api_key
+        self.model = model
+        self.base_url = "https://api.perplexity.ai/chat/completions"
+        self.description = "使用Perplexity Sonar API进行AI驱动的搜索"
+
+    def _map_citations_to_content(self, content: str, num_citations: int) -> dict[int, str]:
+        """将 LLM 回答按内联引用标记 [N] 映射到对应的引用索引。
+
+        Perplexity 回答中包含 [1], [2] 等标记，标识该段落引用了哪个 citation。
+        本方法按这些标记拆分文本，将每段归属到其引用的 citation 索引。
+
+        Returns:
+            dict: {citation_0_based_index: "relevant text snippet"}
+        """
+        result: dict[int, list[str]] = {}
+
+        # 按句子/段落分割，保留引用标记
+        segments = self._CITATION_RE.split(content)
+
+        # segments 形如: ["text", "1", "more text", "2", "text", ...]
+        current_text_parts: list[str] = []
+        for seg in segments:
+            if seg.isdigit():
+                idx = int(seg) - 1  # Perplexity 引用从 1 开始
+                if 0 <= idx < num_citations:
+                    # 把累积的文本归属到这个引用
+                    text = "".join(current_text_parts).strip()
+                    if text:
+                        result.setdefault(idx, []).append(text)
+                    current_text_parts = []
+            else:
+                current_text_parts.append(seg)
+
+        # 合并每个引用的所有段落
+        return {idx: " ".join(parts)[:500] for idx, parts in result.items()}
+
+    def search(self, query: str, days_back: int = 7) -> List[Article]:
+        """使用Perplexity Sonar API搜索，提取引用作为文章"""
+        try:
+            payload = {
+                "model": self.model,
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are a research assistant. Find the most recent and relevant "
+                            "news, articles, and resources. Return factual information with sources."
+                        ),
+                    },
+                    {
+                        "role": "user",
+                        "content": (
+                            f"Find the latest news and developments about: {query}. "
+                            f"Focus on content from the last {days_back} days."
+                        ),
+                    },
+                ],
+                "max_tokens": 1024,
+                "return_citations": True,
+                "return_related_questions": False,
+            }
+
+            headers = {
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json",
+            }
+
+            session = self._build_session()
+            response = session.post(
+                self.base_url, json=payload, headers=headers, timeout=60
+            )
+            response.raise_for_status()
+
+            data = response.json()
+            articles = []
+
+            # 从Perplexity响应中提取LLM摘要内容
+            content_text = ""
+            choices = data.get("choices", [])
+            if choices:
+                content_text = choices[0].get("message", {}).get("content", "")
+
+            # 提取引用URL列表
+            citations = data.get("citations", [])
+            now_iso = datetime.now(timezone.utc).isoformat()
+
+            if citations:
+                # 按内联引用标记映射 LLM 回答到各 citation
+                citation_map = self._map_citations_to_content(
+                    content_text, len(citations)
+                ) if content_text else {}
+
+                for i, citation_url in enumerate(citations):
+                    if i >= self.max_articles:
+                        break
+
+                    url_str = citation_url if isinstance(citation_url, str) else str(citation_url)
+                    source_name = urlparse(url_str).netloc or "Perplexity"
+
+                    # 优先使用按引用标记映射的摘要，否则用通用提示
+                    citation_summary = citation_map.get(
+                        i,
+                        f"[Source {i + 1}] Referenced in Perplexity search for: {query}"
+                    )
+
+                    article = Article(
+                        title=f"[Perplexity] {source_name}: {query}",
+                        url=url_str,
+                        summary=citation_summary,
+                        published=now_iso,
+                        author="Perplexity Sonar",
+                        source_name=source_name,
+                        source="perplexity",
+                    )
+                    articles.append(article)
+            elif content_text:
+                # 没有引用时，将整个LLM回答作为一篇文章返回
+                encoded_query = quote_plus(query)
+                article = Article(
+                    title=f"Perplexity AI Summary: {query}",
+                    url=f"https://www.perplexity.ai/search?q={encoded_query}",
+                    summary=content_text[:500],
+                    published=now_iso,
+                    author="Perplexity Sonar",
+                    source_name="Perplexity",
+                    source="perplexity",
+                )
+                articles.append(article)
+
+            # 应用客户端时间过滤作为备用
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
+
+        except Exception as e:
+            logger.error(f"Perplexity search failed: {e}")
+            return []

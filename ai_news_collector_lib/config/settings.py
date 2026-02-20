@@ -26,20 +26,30 @@ class SearchConfig:
     enable_duckduckgo: bool = True
     enable_tavily: bool = False
     enable_google_search: bool = False
-    enable_bing_search: bool = False
     enable_serper: bool = False
     enable_brave_search: bool = False
     enable_metasota_search: bool = False
+
+    # v0.1.5 新增搜索源
+    enable_youtube: bool = False
+    enable_github_search: bool = False
+    enable_huggingface: bool = False
+    enable_perplexity: bool = False
 
     # API密钥
     newsapi_key: Optional[str] = None
     tavily_api_key: Optional[str] = None
     google_search_api_key: Optional[str] = None
     google_search_engine_id: Optional[str] = None
-    bing_search_api_key: Optional[str] = None
     serper_api_key: Optional[str] = None
     brave_search_api_key: Optional[str] = None
     metasota_search_api_key: Optional[str] = None
+
+    # v0.1.5 新增 API 密钥
+    youtube_api_key: Optional[str] = None
+    github_token: Optional[str] = None          # 可选，提高速率限制
+    huggingface_api_key: Optional[str] = None   # 可选
+    perplexity_api_key: Optional[str] = None
 
     # 搜索参数
     max_articles_per_source: int = 10
@@ -68,9 +78,6 @@ class SearchConfig:
         if not self.google_search_engine_id:
             self.google_search_engine_id = os.getenv("GOOGLE_SEARCH_ENGINE_ID")
 
-        if not self.bing_search_api_key:
-            self.bing_search_api_key = os.getenv("BING_SEARCH_API_KEY")
-
         if not self.serper_api_key:
             self.serper_api_key = os.getenv("SERPER_API_KEY")
 
@@ -79,6 +86,19 @@ class SearchConfig:
 
         if not self.metasota_search_api_key:
             self.metasota_search_api_key = os.getenv("METASOSEARCH_API_KEY")
+
+        # v0.1.5 新增
+        if not self.youtube_api_key:
+            self.youtube_api_key = os.getenv("YOUTUBE_API_KEY")
+
+        if not self.github_token:
+            self.github_token = os.getenv("GITHUB_TOKEN")
+
+        if not self.huggingface_api_key:
+            self.huggingface_api_key = os.getenv("HUGGINGFACE_API_KEY")
+
+        if not self.perplexity_api_key:
+            self.perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
 
     def _auto_enable_sources(self):
         """自动启用有API密钥的源"""
@@ -91,9 +111,6 @@ class SearchConfig:
         if self.google_search_api_key and self.google_search_engine_id:
             self.enable_google_search = True
 
-        if self.bing_search_api_key:
-            self.enable_bing_search = True
-
         if self.serper_api_key:
             self.enable_serper = True
 
@@ -102,6 +119,16 @@ class SearchConfig:
 
         if self.metasota_search_api_key:
             self.enable_metasota_search = True
+
+        # v0.1.5 新增
+        if self.youtube_api_key:
+            self.enable_youtube = True
+
+        if self.perplexity_api_key:
+            self.enable_perplexity = True
+
+        # GitHub 和 HuggingFace 不需要 API 密钥即可使用，
+        # 因此不在此自动启用，需用户显式启用
 
     def get_enabled_sources(self) -> list:
         """获取启用的源列表"""
@@ -128,9 +155,6 @@ class SearchConfig:
         if self.enable_google_search and self.google_search_api_key:
             sources.append("google_search")
 
-        if self.enable_bing_search and self.bing_search_api_key:
-            sources.append("bing_search")
-
         if self.enable_serper and self.serper_api_key:
             sources.append("serper")
 
@@ -139,6 +163,19 @@ class SearchConfig:
 
         if self.enable_metasota_search and self.metasota_search_api_key:
             sources.append("metasota_search")
+
+        # v0.1.5 新增
+        if self.enable_youtube and self.youtube_api_key:
+            sources.append("youtube")
+
+        if self.enable_github_search:
+            sources.append("github_search")
+
+        if self.enable_huggingface:
+            sources.append("huggingface")
+
+        if self.enable_perplexity and self.perplexity_api_key:
+            sources.append("perplexity")
 
         return sources
 
@@ -166,9 +203,6 @@ class SearchConfig:
         if self.enable_google_search and not self.google_search_api_key:
             validation_result["warnings"].append("Google搜索已启用但缺少API密钥")
 
-        if self.enable_bing_search and not self.bing_search_api_key:
-            validation_result["warnings"].append("Bing搜索已启用但缺少API密钥")
-
         if self.enable_serper and not self.serper_api_key:
             validation_result["warnings"].append("Serper已启用但缺少API密钥")
 
@@ -177,6 +211,13 @@ class SearchConfig:
 
         if self.enable_metasota_search and not self.metasota_search_api_key:
             validation_result["warnings"].append("MetaSota搜索已启用但缺少API密钥")
+
+        # v0.1.5 新增
+        if self.enable_youtube and not self.youtube_api_key:
+            validation_result["warnings"].append("YouTube已启用但缺少API密钥")
+
+        if self.enable_perplexity and not self.perplexity_api_key:
+            validation_result["warnings"].append("Perplexity已启用但缺少API密钥")
 
         return validation_result
 

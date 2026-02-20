@@ -225,7 +225,6 @@ class DuckDuckGoTool(BaseSearchTool):
 - 📡 **NewsAPI** - 多源新闻聚合
 - 🔍 **Tavily** - AI驱动的搜索API
 - 🌐 **Google Search** - Google自定义搜索API
-- 🔵 **Bing Search** - 微软Bing搜索API
 - ⚡ **Serper** - 快速Google搜索API
 - 🦁 **Brave Search** - 独立隐私搜索API
 

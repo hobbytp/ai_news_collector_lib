@@ -68,9 +68,6 @@ TAVILY_API_KEY=your_tavily_api_key_here
 GOOGLE_SEARCH_API_KEY=your_google_search_api_key_here
 GOOGLE_SEARCH_ENGINE_ID=your_google_search_engine_id_here
 
-# Bing Search API (https://www.microsoft.com/en-us/bing/apis/bing-web-search-api)
-BING_SEARCH_API_KEY=your_bing_search_api_key_here
-
 # Serper API (https://serper.dev/)
 SERPER_API_KEY=your_serper_api_key_here
 
@@ -90,7 +87,6 @@ export NEWS_API_KEY="your_newsapi_key_here"
 export TAVILY_API_KEY="your_tavily_api_key_here"
 export GOOGLE_SEARCH_API_KEY="your_google_search_api_key_here"
 export GOOGLE_SEARCH_ENGINE_ID="your_google_search_engine_id_here"
-export BING_SEARCH_API_KEY="your_bing_search_api_key_here"
 export SERPER_API_KEY="your_serper_api_key_here"
 export BRAVE_SEARCH_API_KEY="your_brave_search_api_key_here"
 export METASOSEARCH_API_KEY="your_metasota_search_api_key_here"

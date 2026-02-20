@@ -67,7 +67,7 @@ class QueryEnhancer:
 
     Supported Engines (11 total):
     - Free (4): hackernews, arxiv, duckduckgo, rss_feeds
-    - API-based (7): newsapi, tavily, google_search, bing_search, serper,
+    - API-based (7): newsapi, tavily, google_search, serper,
       brave_search, metasota_search
     """
 
@@ -87,10 +87,13 @@ class QueryEnhancer:
         "newsapi",
         "tavily",
         "google_search",
-        "bing_search",
         "serper",
         "brave_search",
         "metasota_search",
+        "youtube",
+        "github_search",
+        "huggingface",
+        "perplexity",
     ]
 
     def __init__(

@@ -8,8 +8,8 @@ search engine types.
 
 Supported Engines:
 - Free Engines (4): hackernews, arxiv, duckduckgo, rss_feeds
-- API-based Engines (7): newsapi, tavily, google_search, bing_search, serper,
-  brave_search, metasota_search
+- API-based Engines (10): newsapi, tavily, google_search, serper,
+  brave_search, metasota_search, youtube, github_search, huggingface, perplexity
 """
 
 from dataclasses import dataclass, asdict, field
@@ -34,14 +34,17 @@ class EnhancedQuery:
         duckduckgo (Optional[str]): Optimized query for DuckDuckGo
         rss_feeds (Optional[str]): Optimized query for RSS feeds
 
-        # API-based Search Engines (7)
+        # API-based Search Engines (10)
         newsapi (Optional[str]): Optimized query for NewsAPI
         tavily (Optional[str]): Optimized query for Tavily search
         google_search (Optional[str]): Optimized query for Google Custom Search
-        bing_search (Optional[str]): Optimized query for Bing Search
         serper (Optional[str]): Optimized query for Serper
         brave_search (Optional[str]): Optimized query for Brave Search
         metasota_search (Optional[str]): Optimized query for MetaSota Search
+        youtube (Optional[str]): Optimized query for YouTube search
+        github_search (Optional[str]): Optimized query for GitHub search
+        huggingface (Optional[str]): Optimized query for HuggingFace search
+        perplexity (Optional[str]): Optimized query for Perplexity search
     """
 
     original: str
@@ -56,10 +59,13 @@ class EnhancedQuery:
     newsapi: Optional[str] = None
     tavily: Optional[str] = None
     google_search: Optional[str] = None
-    bing_search: Optional[str] = None
     serper: Optional[str] = None
     brave_search: Optional[str] = None
     metasota_search: Optional[str] = None
+    youtube: Optional[str] = None
+    github_search: Optional[str] = None
+    huggingface: Optional[str] = None
+    perplexity: Optional[str] = None
 
     # Metadata
     _timestamp: Optional[float] = field(default=None, repr=False, compare=False)
@@ -75,10 +81,13 @@ class EnhancedQuery:
         "newsapi",
         "tavily",
         "google_search",
-        "bing_search",
         "serper",
         "brave_search",
         "metasota_search",
+        "youtube",
+        "github_search",
+        "huggingface",
+        "perplexity",
     ]
 
     CACHE_TTL = 24 * 60 * 60  # 24 hours in seconds

@@ -20,6 +20,10 @@ from ..tools.search_tools import (
     SerperTool,
     BraveSearchTool,
     MetaSotaSearchTool,
+    YouTubeTool,
+    GitHubSearchTool,
+    HuggingFaceTool,
+    PerplexityTool,
 )
 from ..config.settings import SearchConfig
 
@@ -95,6 +99,31 @@ class AINewsCollector:
         if metasota_enabled:
             self.tools["metasota_search"] = MetaSotaSearchTool(
                 api_key=self.config.metasota_search_api_key,
+                max_articles=self.config.max_articles_per_source,
+            )
+
+        # v0.1.5 新增搜索引擎
+        if self.config.enable_youtube and self.config.youtube_api_key:
+            self.tools["youtube"] = YouTubeTool(
+                api_key=self.config.youtube_api_key,
+                max_articles=self.config.max_articles_per_source,
+            )
+
+        if self.config.enable_github_search:
+            self.tools["github_search"] = GitHubSearchTool(
+                api_key=self.config.github_token,  # 可选
+                max_articles=self.config.max_articles_per_source,
+            )
+
+        if self.config.enable_huggingface:
+            self.tools["huggingface"] = HuggingFaceTool(
+                api_key=self.config.huggingface_api_key,  # 可选
+                max_articles=self.config.max_articles_per_source,
+            )
+
+        if self.config.enable_perplexity and self.config.perplexity_api_key:
+            self.tools["perplexity"] = PerplexityTool(
+                api_key=self.config.perplexity_api_key,
                 max_articles=self.config.max_articles_per_source,
             )
 

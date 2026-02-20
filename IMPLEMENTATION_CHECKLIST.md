@@ -102,12 +102,11 @@
 - [x] DuckDuckGo
 - [x] RSS Feeds
 
-API 引擎（7 个）:
+API 引擎（6 个）:
 - [x] NewsAPI
 - [x] Tavily
-- [x] Google Search
-- [x] Bing Search
-- [x] Serper
+- [x] Google Search (Custom Search JSON API)
+- [x] Serper (Google Search Wrapper)
 - [x] Brave Search
 - [x] Metasota Search
 

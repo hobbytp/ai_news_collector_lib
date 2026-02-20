@@ -13469,4 +13469,234 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=2&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3AAI+technology&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 18 Feb 2026 14:08:29 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:AI%20technology&start=0&max_results=2&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-bur-kbur8200022-BUR
+      X-Timer:
+      - S1771423710.608267,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=2&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3AAI+technology&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 18 Feb 2026 14:27:39 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:AI%20technology&start=0&max_results=2&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-bur-kbur8200078-BUR
+      X-Timer:
+      - S1771424860.672940,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=2&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3AAI+technology&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 18 Feb 2026 14:48:53 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:AI%20technology&start=0&max_results=2&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-bur-kbur8200055-BUR
+      X-Timer:
+      - S1771426133.435255,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=2&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3AAI+technology&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 20 Feb 2026 14:40:35 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:AI%20technology&start=0&max_results=2&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-bur-kbur8200072-BUR
+      X-Timer:
+      - S1771598436.742741,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: http://export.arxiv.org/api/query?max_results=2&search_query=cat%3Acs.AI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+AND+all%3AAI+technology&sortBy=submittedDate&sortOrder=descending&start=0
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - close
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 20 Feb 2026 14:41:52 GMT
+      Location:
+      - https://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.LG%20OR%20cat:cs.CL%20AND%20all:AI%20technology&start=0&max_results=2&sortBy=submittedDate&sortOrder=descending
+      Retry-After:
+      - '0'
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=300
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '0'
+      X-Served-By:
+      - cache-bur-kbur8200045-BUR
+      X-Timer:
+      - S1771598513.998119,VS0,VE0
+    status:
+      code: 301
+      message: Moved Permanently
 version: 1

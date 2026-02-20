@@ -21,6 +21,10 @@ from ..tools.search_tools import (
     SerperTool,
     BraveSearchTool,
     MetaSotaSearchTool,
+    YouTubeTool,
+    GitHubSearchTool,
+    HuggingFaceTool,
+    PerplexityTool,
 )
 
 logger = logging.getLogger(__name__)
@@ -54,42 +58,64 @@ class FlexibleAINewsCollector:
             except Exception as e:
                 logger.error(f"初始化搜索引擎 {engine_name} 失败: {e}")
     
+    # 工具注册表: engine_name -> (ToolClass, requires_api_key)
+    _TOOL_REGISTRY: dict = {
+        "hackernews": (HackerNewsTool, False),
+        "arxiv": (ArxivTool, False),
+        "duckduckgo": (DuckDuckGoTool, False),
+        "newsapi": (NewsAPITool, True),
+        "tavily": (TavilyTool, True),
+        "serper": (SerperTool, True),
+        "brave_search": (BraveSearchTool, True),
+        "metasota_search": (MetaSotaSearchTool, True),
+        "youtube": (YouTubeTool, True),
+        "github_search": (GitHubSearchTool, False),
+        "huggingface": (HuggingFaceTool, False),
+        "perplexity": (PerplexityTool, True),
+    }
+
     def _create_tool(self, engine_name: str, engine_config) -> Optional[Any]:
-        """创建搜索工具"""
+        """创建搜索工具
+
+        使用注册表模式取代长 if-elif 链。
+        google_search 因需要额外的 search_engine_id 参数而保留特殊处理。
+        """
         max_articles = engine_config.max_articles
-        
-        if engine_name == "hackernews":
-            return HackerNewsTool(max_articles=max_articles)
-        elif engine_name == "arxiv":
-            return ArxivTool(max_articles=max_articles)
-        elif engine_name == "duckduckgo":
-            return DuckDuckGoTool(max_articles=max_articles)
-        elif engine_name == "rss_feeds":
-            # 注意：这里需要根据实际的RSS工具类来调整
-            return None  # 暂时返回None，需要实现RSS工具
-        elif engine_name == "newsapi" and engine_config.api_key:
-            return NewsAPITool(api_key=engine_config.api_key, max_articles=max_articles)
-        elif engine_name == "tavily" and engine_config.api_key:
-            return TavilyTool(api_key=engine_config.api_key, max_articles=max_articles)
-        elif engine_name == "google_search" and engine_config.api_key:
-            # 需要Google Search Engine ID，这里需要从配置中获取
+
+        # 特殊情况: rss_feeds 尚未实现
+        if engine_name == "rss_feeds":
+            return None
+
+        # 特殊情况: google_search 需要额外的 search_engine_id
+        if engine_name == "google_search":
+            if not engine_config.api_key:
+                return None
             google_engine_id = getattr(self.config, 'google_search_engine_id', None)
             if google_engine_id:
                 return GoogleSearchTool(
                     api_key=engine_config.api_key,
                     search_engine_id=google_engine_id,
-                    max_articles=max_articles
+                    max_articles=max_articles,
                 )
-        elif engine_name == "bing_search" and engine_config.api_key:
-            return BraveSearchTool(api_key=engine_config.api_key, max_articles=max_articles)
-        elif engine_name == "serper" and engine_config.api_key:
-            return SerperTool(api_key=engine_config.api_key, max_articles=max_articles)
-        elif engine_name == "brave_search" and engine_config.api_key:
-            return BraveSearchTool(api_key=engine_config.api_key, max_articles=max_articles)
-        elif engine_name == "metasota_search" and engine_config.api_key:
-            return MetaSotaSearchTool(api_key=engine_config.api_key, max_articles=max_articles)
-        
-        return None
+            return None
+
+        # 通用注册表查找
+        entry = self._TOOL_REGISTRY.get(engine_name)
+        if not entry:
+            return None
+
+        tool_cls, requires_key = entry
+        if requires_key and not engine_config.api_key:
+            return None
+
+        kwargs: dict = {"max_articles": max_articles}
+        if requires_key:
+            kwargs["api_key"] = engine_config.api_key
+        elif engine_config.api_key:
+            # 可选 key（如 github_search, huggingface）
+            kwargs["api_key"] = engine_config.api_key
+
+        return tool_cls(**kwargs)
     
     def _deduplicate_articles(self, articles: List[Article], similarity_threshold: float = None) -> List[Article]:
         """去重文章"""

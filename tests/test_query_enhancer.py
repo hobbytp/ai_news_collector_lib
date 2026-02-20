@@ -109,7 +109,7 @@ class TestQueryEnhancer:
             raise LLMAPIError("API failed")
 
     def test_supported_engines(self):
-        """Test that SUPPORTED_ENGINES contains all 11 engines."""
+        """Test that SUPPORTED_ENGINES contains all 14 engines."""
         expected_engines = {
             "hackernews",
             "arxiv",
@@ -118,11 +118,14 @@ class TestQueryEnhancer:
             "newsapi",
             "tavily",
             "google_search",
-            "bing_search",
             "serper",
             "brave_search",
             "metasota_search",
+            "youtube",
+            "github_search",
+            "huggingface",
+            "perplexity",
         }
 
         assert set(QueryEnhancer.SUPPORTED_ENGINES) == expected_engines
-        assert len(QueryEnhancer.SUPPORTED_ENGINES) == 11
+        assert len(QueryEnhancer.SUPPORTED_ENGINES) == 14

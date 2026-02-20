@@ -23,7 +23,6 @@
 - NewsAPI
 - Tavily
 - Google Search
-- Bing Search
 - Serper
 - Brave Search
 - Metasota Search

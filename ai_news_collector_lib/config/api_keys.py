@@ -17,7 +17,6 @@ class APIKeyManager:
     tavily_api_key: Optional[str] = None
     google_search_api_key: Optional[str] = None
     google_search_engine_id: Optional[str] = None
-    bing_search_api_key: Optional[str] = None
     serper_api_key: Optional[str] = None
     brave_search_api_key: Optional[str] = None
     metasota_search_api_key: Optional[str] = None
@@ -40,9 +39,6 @@ class APIKeyManager:
         if not self.google_search_engine_id:
             self.google_search_engine_id = os.getenv("GOOGLE_SEARCH_ENGINE_ID")
 
-        if not self.bing_search_api_key:
-            self.bing_search_api_key = os.getenv("BING_SEARCH_API_KEY")
-
         if not self.serper_api_key:
             self.serper_api_key = os.getenv("SERPER_API_KEY")
 
@@ -58,7 +54,6 @@ class APIKeyManager:
             "newsapi": bool(self.newsapi_key),
             "tavily": bool(self.tavily_api_key),
             "google_search": bool(self.google_search_api_key and self.google_search_engine_id),
-            "bing_search": bool(self.bing_search_api_key),
             "serper": bool(self.serper_api_key),
             "brave_search": bool(self.brave_search_api_key),
             "metasota_search": bool(self.metasota_search_api_key),
@@ -70,7 +65,6 @@ class APIKeyManager:
             "newsapi": self.newsapi_key,
             "tavily": self.tavily_api_key,
             "google_search": self.google_search_api_key,
-            "bing_search": self.bing_search_api_key,
             "serper": self.serper_api_key,
             "brave_search": self.brave_search_api_key,
             "metasota_search": self.metasota_search_api_key,
@@ -87,8 +81,6 @@ class APIKeyManager:
             self.google_search_api_key = key
         elif service == "google_search_engine_id":
             self.google_search_engine_id = key
-        elif service == "bing_search":
-            self.bing_search_api_key = key
         elif service == "serper":
             self.serper_api_key = key
         elif service == "brave_search":
@@ -143,13 +135,6 @@ class APIKeyManager:
                 "description": "Google自定义搜索API",
                 "url": "https://developers.google.com/custom-search/",
                 "has_key": bool(self.google_search_api_key and self.google_search_engine_id),
-                "required": True,
-            },
-            "bing_search": {
-                "name": "Bing Search API",
-                "description": "微软Bing搜索API",
-                "url": "https://www.microsoft.com/en-us/bing/apis/bing-web-search-api",
-                "has_key": bool(self.bing_search_api_key),
                 "required": True,
             },
             "serper": {
