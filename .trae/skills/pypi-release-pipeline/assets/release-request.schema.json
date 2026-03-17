@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentskills.io/schema/release-request.json",
+  "title": "Release Request",
+  "type": "object",
+  "required": ["version", "repo_root", "dry_run"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:[-+][0-9A-Za-z.-]+)?$"
+    },
+    "repo_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "branch": {
+      "type": "string",
+      "default": "master"
+    },
+    "tag_prefix": {
+      "type": "string",
+      "default": "v"
+    },
+    "dry_run": {
+      "type": "boolean",
+      "default": true
+    },
+    "quality_gates": {
+      "type": "object",
+      "properties": {
+        "test_command": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": ["python", "-m", "pytest", "-v"]
+        },
+        "lint_command": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": ["make", "lint"]
+        },
+        "typecheck_command": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": ["python", "-m", "mypy", "ai_news_collector_lib"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "documentation_gate": {
+      "type": "object",
+      "properties": {
+        "required_files": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": ["README.md", "USAGE_GUIDE.md", "CHANGELOG.md"]
+        },
+        "require_release_note": {
+          "type": "boolean",
+          "default": true
+        },
+        "release_note_globs": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": ["RELEASE_NOTES.md", "V*_RELEASE_SUMMARY.md", "docs/releases/*.md"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "retry_policy": {
+      "type": "object",
+      "properties": {
+        "max_attempts": {"type": "integer", "minimum": 1, "default": 2},
+        "backoff_seconds": {"type": "number", "minimum": 0, "default": 1},
+        "exponential": {"type": "boolean", "default": true}
+      },
+      "additionalProperties": false
+    },
+    "timeouts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "rollback": {
+      "type": "object",
+      "properties": {
+        "enabled": {"type": "boolean", "default": true},
+        "mode": {
+          "type": "string",
+          "enum": ["none", "safe", "full"],
+          "default": "safe"
+        }
+      },
+      "additionalProperties": false
+    },
+    "required_env_vars": {
+      "type": "array",
+      "items": {"type": "string"},
+      "default": ["PYPI_API_TOKEN"]
+    }
+  },
+  "additionalProperties": false
+}

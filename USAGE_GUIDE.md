@@ -1,5 +1,7 @@
 # AI News Collector Library 使用指南
 
+> 当前文档对应版本：**v0.1.6**
+
 ## 📚 目录结构
 
 ```
@@ -19,7 +21,7 @@ ai_news_collector_lib/
 │   ├── __init__.py
 │   ├── settings.py            # SearchConfig / AdvancedSearchConfig
 │   └── flexible_config.py     # FlexibleSearchConfig
-├── tools/                      # 搜索工具（13 个搜索引擎）
+├── tools/                      # 搜索工具（15 个搜索引擎）
 │   ├── __init__.py
 │   └── search_tools.py        # 搜索工具实现
 ├── utils/                      # 工具模块
@@ -70,6 +72,7 @@ config = SearchConfig(
     enable_duckduckgo=True,
     enable_github_search=True,      # v0.1.5 新增，免费
     enable_huggingface=True,        # v0.1.5 新增，免费
+    enable_baidu_search=True,       # v0.1.6 新增，百度搜索（需要 API Key）
     max_articles_per_source=10
 )
 
@@ -168,11 +171,12 @@ config = SearchConfig(
     enable_brave_search=False,   # Brave搜索 (需要API密钥)
     enable_metasota_search=False, # MetaSota搜索 (需要API密钥)
     
-    # v0.1.5 新增搜索引擎
+    # v0.1.5+ 新增搜索引擎
     enable_youtube=False,        # YouTube视频搜索 (需要API密钥)
     enable_github_search=False,  # GitHub代码搜索 (可选API密钥)
     enable_huggingface=False,    # HuggingFace模型搜索 (可选API密钥)
     enable_perplexity=False,     # Perplexity AI搜索 (需要API密钥)
+    enable_baidu_search=False,   # Baidu Search (需要API密钥)
     
     # 搜索参数
     max_articles_per_source=10,  # 每个源最大文章数
@@ -614,11 +618,12 @@ CMD ["python", "examples/daily_collector.py"]
 
 ```bash
 # .env文件
-# v0.1.5 新增
+# v0.1.5+ 新增
 YOUTUBE_API_KEY=your_youtube_key
 GITHUB_TOKEN=your_github_token          # 可选
 HUGGINGFACE_API_KEY=your_hf_token       # 可选
 PERPLEXITY_API_KEY=your_perplexity_key
+BAIDU_SEARCH_API_KEY=your_baidu_key
 
 # 现有引擎
 NEWS_API_KEY=your_newsapi_key
@@ -627,6 +632,7 @@ GOOGLE_SEARCH_API_KEY=your_google_key
 GOOGLE_SEARCH_ENGINE_ID=your_engine_id
 SERPER_API_KEY=your_serper_key
 BRAVE_SEARCH_API_KEY=your_brave_key
+METASOSEARCH_API_KEY=your_metasota_key
 ```
 
 ### 3. 生产环境配置

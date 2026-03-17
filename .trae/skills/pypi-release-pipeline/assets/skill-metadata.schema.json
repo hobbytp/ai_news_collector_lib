@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentskills.io/schema/skill-metadata.json",
+  "title": "Agent Skill Metadata",
+  "type": "object",
+  "required": [
+    "name",
+    "display_name",
+    "version",
+    "status",
+    "entrypoint",
+    "runtime",
+    "permissions",
+    "env",
+    "secrets"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:[-+][0-9A-Za-z.-]+)?$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "deprecated", "retired"]
+    },
+    "author": {
+      "type": "string"
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri"
+    },
+    "entrypoint": {
+      "type": "string"
+    },
+    "runtime": {
+      "type": "object",
+      "required": ["language", "python"],
+      "properties": {
+        "language": {
+          "type": "string"
+        },
+        "python": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "env": {
+      "type": "object",
+      "required": ["required", "optional"],
+      "properties": {
+        "required": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "optional": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "secrets": {
+      "type": "object",
+      "required": ["provider", "required"],
+      "properties": {
+        "provider": {"type": "string"},
+        "required": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      },
+      "additionalProperties": true
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "defaults": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "atomic_steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "timeout_seconds"],
+        "properties": {
+          "id": {"type": "string"},
+          "timeout_seconds": {"type": "integer", "minimum": 1}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

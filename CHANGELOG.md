@@ -5,6 +5,33 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.6] - 2026-03-17
+
+### ✨ Added
+
+- **Baidu Search 集成**
+  - 新增 `BaiduSearchTool`，接入百度千帆 `POST /v2/ai_search/web_search`
+  - 支持 `messages`、`search_source=baidu_search_v2`、网页模态 `resource_type_filter`
+  - 新增 API 级日期过滤：`search_filter.range.page_time`（按 `days_back` 生成）
+  - 新增客户端 UTC 兜底过滤，确保返回时间范围一致
+
+- **配置层支持**
+  - `SearchConfig` 新增 `enable_baidu_search`、`baidu_search_api_key`
+  - 自动读取环境变量 `BAIDU_SEARCH_API_KEY` 并自动启用源
+  - `FlexibleSearchConfig` 新增 `baidu_search` 默认引擎和 env 映射
+  - `APIKeyManager` 新增 `baidu_search` key 读取、状态查询和服务信息
+
+- **收集器与导出**
+  - `AINewsCollector`、`FlexibleAINewsCollector` 新增百度引擎初始化逻辑
+  - `tools.__init__` 新增 `BaiduSearchTool` 导出
+  - `EnhancedQuery` 与 `QueryEnhancer.SUPPORTED_ENGINES` 新增 `baidu_search`
+
+### 🧪 Testing
+
+- 新增 `TestBaiduSearchTool` 单元测试（成功/空响应/API错误）
+- 更新工具注册与引擎数量断言（含 `baidu_search`）
+- 关键用例验证通过：`43 passed`
+
 ## [0.1.4] - 2025-10-29
 
 ### 🎯 Major Feature: Time Filtering Enhancement

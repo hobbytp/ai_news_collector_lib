@@ -1,0 +1,64 @@
+name: pypi-release-pipeline
+display_name: PyPI Release Pipeline
+version: 1.1.0
+status: active
+author: AI News Collector Team
+homepage: https://agentskills.io/home
+entrypoint: scripts/release_skill.py
+runtime:
+  language: python
+  python: ">=3.9"
+permissions:
+  filesystem:
+    read: true
+    write: true
+  network:
+    github: true
+    pypi: true
+  vcs:
+    git: true
+env:
+  required:
+    - PYPI_API_TOKEN
+  optional:
+    - GITHUB_TOKEN
+    - CI
+secrets:
+  provider: environment
+  required:
+    - PYPI_API_TOKEN
+dependencies:
+  python:
+    - packaging>=24.0
+defaults:
+  dry_run: true
+  retry_policy:
+    max_attempts: 2
+    backoff_seconds: 1
+    exponential: true
+  rollback:
+    enabled: true
+    mode: safe
+atomic_steps:
+  - id: validate_release_request
+    timeout_seconds: 30
+  - id: verify_required_env
+    timeout_seconds: 30
+  - id: validate_git_state
+    timeout_seconds: 60
+  - id: validate_release_docs
+    timeout_seconds: 90
+  - id: run_quality_gates
+    timeout_seconds: 900
+  - id: sync_version_files
+    timeout_seconds: 120
+  - id: create_release_commit
+    timeout_seconds: 120
+  - id: create_annotated_tag
+    timeout_seconds: 60
+  - id: push_branch_and_tag
+    timeout_seconds: 300
+  - id: verify_ci_publication
+    timeout_seconds: 300
+  - id: verify_release_artifacts
+    timeout_seconds: 300

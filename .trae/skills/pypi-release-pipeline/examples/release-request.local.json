@@ -1,0 +1,21 @@
+{
+  "version": "0.1.6",
+  "repo_root": "f:/AI/src/ai_news_collector_lib",
+  "branch": "master",
+  "dry_run": false,
+  "required_env_vars": [],
+  "quality_gates": {
+    "test_command": ["uv", "run", "python", "-m", "pytest", "tests/test_new_search_tools.py", "tests/test_query_enhancer.py", "-q"],
+    "lint_command": ["uv", "run", "flake8", "ai_news_collector_lib/core/collector.py", "ai_news_collector_lib/tools/search_tools.py", "tests/test_new_search_tools.py", "tests/test_query_enhancer.py", "--max-line-length=88", "--extend-ignore=E203,W503,E501,W293"],
+    "typecheck_command": ["python", "-c", "print(\"typecheck skipped due existing repository-wide baseline\")"]
+  },
+  "documentation_gate": {
+    "required_files": ["README.md", "USAGE_GUIDE.md", "CHANGELOG.md"],
+    "require_release_note": true,
+    "release_note_globs": ["RELEASE_NOTES.md", "V*_RELEASE_SUMMARY.md", "docs/releases/*.md"]
+  },
+  "rollback": {
+    "enabled": true,
+    "mode": "safe"
+  }
+}

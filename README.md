@@ -5,13 +5,13 @@
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![PyPI](https://img.shields.io/badge/PyPI-ai--news--collector--lib-blue)](https://pypi.org/project/ai-news-collector-lib/)
-[![Latest Release](https://img.shields.io/badge/Latest-v0.1.5-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.5)
+[![Latest Release](https://img.shields.io/badge/Latest-v0.1.6-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.6)
 
 ---
 
-## 📊 支持的信息源（截止 v0.1.5）
+## 📊 支持的信息源（截止 v0.1.6）
 
-> AI News Collector 截止最新版本（v0.1.5），已支持从 **13 个不同数据源** 收集 AI 相关信息，覆盖 **新闻资讯、学术论文、开源项目、AI 模型、视频内容、AI 搜索** 等多种维度。
+> AI News Collector 截止最新版本（v0.1.6），已支持从 **15 个不同数据源** 收集 AI 相关信息，覆盖 **新闻资讯、学术论文、开源项目、AI 模型、视频内容、AI 搜索** 等多种维度。
 
 ### ✅ 免费源（无需 API 密钥）
 
@@ -35,6 +35,8 @@
 | 🌐 **Google Search** | googleapis.com | 精准搜索，覆盖广 | 100 请求/天 |
 | ⚡ **Serper** | serper.dev | 高速 Google 搜索 | 100 请求/月 |
 | 🦁 **Brave Search** | search.brave.com | 独立隐私搜索 | 100 请求/月 |
+| 🛰️ **MetaSota** | metaso.cn (MCP) | 多模态搜索（MCP 协议） | 按量/平台策略 |
+| 🧭 **Baidu Search** | qianfan.baidubce.com | 百度千帆网页搜索，实时中文内容覆盖 | 1000 请求/天 |
 
 > **注**: MetaSota Search 通过 MCP 协议支持，需要特殊配置。
 
@@ -42,21 +44,18 @@
 
 ---
 
-## 🚀 最新更新 (v0.1.5 - 新增4大搜索引擎 + 架构统一)
+## 🚀 最新更新 (v0.1.6 - 百度搜索接入与发布流程完善)
 
-> **v0.1.5 版本更新** - 新增 YouTube, GitHub, HuggingFace, Perplexity 搜索支持！
+> **v0.1.6 版本更新** - 新增 Baidu Search（百度千帆 web_search）支持，并完善发布与质量门禁流程。
 
 ### 🔍 新增搜索引擎
 
-- ✅ **YouTube** - 搜索 AI 相关视频教程和讲座（YouTube Data API v3）
-- ✅ **GitHub** - 搜索最新的 AI 开源项目和代码库（REST API，可选 Token）
-- ✅ **HuggingFace** - 搜索最新的 AI 模型、数据集和 Space（Hub API，可选 Token）
-- ✅ **Perplexity** - 使用 AI 驱动的搜索（Sonar API，带引用和摘要映射）
+- ✅ **Baidu Search** - 支持百度千帆 `web_search`，默认网页模态，支持日期范围过滤与统一时间字段
 
-### 🏗️ 架构统一
+### 🏗️ 配置与生态同步
 
-- ✅ **统一配置** - 所有 13 个搜索引擎可通过 `SearchConfig`、`AdvancedSearchConfig`、`FlexibleSearchConfig` 中的任意一个配置使用
-- ✅ **移除 Bing Search** - 微软已停止支持 Bing Search API
+- ✅ **统一配置** - `SearchConfig`、`AdvancedSearchConfig`、`FlexibleSearchConfig`、`APIKeyManager` 均已接入 `baidu_search`
+- ✅ **查询增强同步** - `EnhancedQuery` 与 `QueryEnhancer` 的引擎列表已包含 `baidu_search`
 
 ### 🔧 核心改进 (v0.1.4)
 
@@ -64,7 +63,7 @@
 - ✅ **双重过滤机制** - API级别过滤 + 客户端备用过滤
 - ✅ **全搜索引擎支持** - 修复了所有搜索引擎的时间过滤问题
 
-📋 详见: [完整指南](USAGE_GUIDE.md) | [v0.1.5 发布总结](V0.1.5_RELEASE_SUMMARY.md)
+📋 详见: [完整指南](USAGE_GUIDE.md) | [v0.1.6 发布总结](V0.1.6_RELEASE_SUMMARY.md)
 
 ---
 
@@ -88,7 +87,7 @@
 
 ### 核心功能
 
-- 🔥 **多源聚合** - 支持 13 个搜索源，覆盖新闻、论文、代码、模型、视频、AI 搜索
+- 🔥 **多源聚合** - 支持 15 个搜索源，覆盖新闻、论文、代码、模型、视频、AI 搜索
 - 🤖 **智能内容处理** - 自动提取文章内容和关键词
 - 💾 **智能缓存** - 避免重复搜索，提高效率
 - ⏰ **定时任务** - 支持定时自动收集和报告生成
@@ -132,11 +131,12 @@ pip install -e .[dev]
 创建 `.env` 文件并配置API密钥（可选，仅用于付费API）：
 
 ```bash
-# v0.1.5 新增搜索引擎配置
+# v0.1.5+ 新增搜索引擎配置
 YOUTUBE_API_KEY=your_youtube_key
 GITHUB_TOKEN=your_github_token          # 可选 (提高速率限制)
 HUGGINGFACE_API_KEY=your_hf_token       # 可选
 PERPLEXITY_API_KEY=your_perplexity_key
+BAIDU_SEARCH_API_KEY=your_baidu_key
 
 # 现有搜索引擎配置
 NEWS_API_KEY=your_newsapi_key
@@ -306,6 +306,7 @@ async def main():
         enable_serper=True,              # Serper搜索API
         enable_youtube=True,             # YouTube 视频搜索
         enable_perplexity=True,          # Perplexity AI 搜索
+        enable_baidu_search=True,        # Baidu Search（百度千帆）
         cache_results=True,              # 启用缓存减少API调用
         max_articles_per_source=15,
         similarity_threshold=0.85
@@ -340,13 +341,15 @@ config = AdvancedSearchConfig(
     enable_serper=False,
     enable_brave_search=False,
     enable_metasota_search=False,
+    enable_baidu_search=False,
     enable_newsapi=False,
     
-    # v0.1.5 新增搜索源
+    # v0.1.5+ 新增搜索源
     enable_youtube=False,           # YouTube 视频搜索（需要 API 密钥）
     enable_github_search=False,     # GitHub 项目搜索（可选 API 密钥）
     enable_huggingface=False,       # HuggingFace 模型搜索（可选 API 密钥）
     enable_perplexity=False,        # Perplexity AI 搜索（需要 API 密钥）
+    enable_baidu_search=False,      # Baidu Search（需要 API 密钥）
     
     # 网页搜索
     enable_duckduckgo=True,
@@ -499,10 +502,10 @@ def test_with_cassette(vcr):
 pytest
 
 # 2. 创建版本标签
-git tag -a v0.1.5 -m "Release v0.1.5"
+git tag -a v0.1.6 -m "Release v0.1.6"
 
 # 3. 推送标签（自动触发发布工作流）
-git push origin v0.1.5
+git push origin v0.1.6
 ```
 
 详见: [发布指南](RELEASE_GUIDE.md) | [快速发布](QUICK_RELEASE.md)
@@ -618,6 +621,14 @@ A: 详见[架构设计](ARCHITECTURE.md)中的"添加新搜索源"部分。
 
 ## 📈 更新日志
 
+### v0.1.6 (2026-03-17) - 🧭 新增百度搜索支持
+
+- ✨ **新增 BaiduSearchTool** - 接入百度千帆 `web_search` API
+- ✅ 新增 `BAIDU_SEARCH_API_KEY` 环境变量支持与自动启用
+- ✅ `SearchConfig` / `AdvancedSearchConfig` / `FlexibleSearchConfig` / `APIKeyManager` 同步支持
+- ✅ 增强百度结果解析与日期过滤（`search_filter.range.page_time` + 客户端 UTC 过滤）
+- ✅ 新增与更新测试，覆盖百度工具与引擎注册
+
 ### v0.1.5 (2026-02-20) - 🔍 新增4大搜索引擎 + 架构统一
 
 - ✨ **新增 YouTube 搜索** - YouTube Data API v3，视频搜索与频道信息
@@ -679,7 +690,7 @@ ai_news_collector_lib/
 │   ├── article.py              # 文章模型
 │   ├── enhanced_query.py       # LLM 增强查询模型
 │   └── result.py               # 结果模型
-├── tools/                       # 搜索工具 (13 个搜索引擎)
+├── tools/                       # 搜索工具 (15 个搜索引擎)
 │   ├── __init__.py
 │   └── search_tools.py         # 各种搜索工具实现
 ├── utils/                       # 工具函数

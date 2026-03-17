@@ -1,0 +1,32 @@
+{
+  "version": "0.1.6",
+  "repo_root": "f:/AI/src/ai_news_collector_lib",
+  "branch": "master",
+  "tag_prefix": "v",
+  "dry_run": true,
+  "quality_gates": {
+    "test_command": ["python", "-m", "pytest", "tests/test_basic.py", "-v"],
+    "lint_command": ["make", "lint"],
+    "typecheck_command": ["python", "-m", "mypy", ".trae/skills/pypi-release-pipeline/src"]
+  },
+  "documentation_gate": {
+    "required_files": ["README.md", "USAGE_GUIDE.md", "CHANGELOG.md"],
+    "require_release_note": true,
+    "release_note_globs": ["RELEASE_NOTES.md", "V*_RELEASE_SUMMARY.md", "docs/releases/*.md"]
+  },
+  "retry_policy": {
+    "max_attempts": 2,
+    "backoff_seconds": 1,
+    "exponential": true
+  },
+  "timeouts": {
+    "run_tests": 300,
+    "run_lint": 180,
+    "run_typecheck": 180
+  },
+  "rollback": {
+    "enabled": true,
+    "mode": "safe"
+  },
+  "required_env_vars": ["PYPI_API_TOKEN"]
+}
