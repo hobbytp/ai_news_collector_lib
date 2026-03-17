@@ -616,6 +616,175 @@ class GoogleSearchTool(BaseSearchTool):
             return []
 
 
+class BaiduSearchTool(BaseSearchTool):
+    """百度搜索工具"""
+
+    def __init__(self, api_key: str, max_articles: int = 10):
+        super().__init__(max_articles)
+        self.api_key = api_key
+        self.base_url = "https://qianfan.baidubce.com/v2/ai_search/web_search"
+        self.description = "使用百度千帆 web_search API 获取实时网页搜索结果"
+
+    def search(self, query: str, days_back: int = 7) -> List[Article]:
+        try:
+            payload = {
+                "messages": {"role": "user", "content": query[:72]},
+                "edition": "standard",
+                "search_source": "baidu_search_v2",
+                "resource_type_filter": [
+                    {"type": "web", "top_k": min(max(self.max_articles, 1), 50)},
+                    {"type": "video", "top_k": 0},
+                    {"type": "image", "top_k": 0},
+                    {"type": "aladdin", "top_k": 0},
+                ],
+            }
+            date_range = self._build_date_range(days_back)
+            if date_range:
+                payload["search_filter"] = {"range": {"page_time": date_range}}
+            headers = {
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json",
+            }
+
+            session = self._build_session()
+            response = session.post(
+                self.base_url, json=payload, headers=headers, timeout=30
+            )
+            response.raise_for_status()
+
+            data = response.json()
+            raw_results = self._extract_results(data)
+            articles = []
+
+            for item in raw_results:
+                if not isinstance(item, dict):
+                    continue
+
+                url = (
+                    item.get("url")
+                    or item.get("link")
+                    or item.get("href")
+                    or item.get("jump_url")
+                    or ""
+                )
+                title = item.get("title") or item.get("name") or ""
+                if not title or not url:
+                    continue
+
+                summary = (
+                    item.get("summary")
+                    or item.get("snippet")
+                    or item.get("content")
+                    or item.get("abstract")
+                    or ""
+                )
+                source_name = (
+                    item.get("site_name")
+                    or item.get("source")
+                    or item.get("domain")
+                    or self._extract_domain(url)
+                )
+                published_time = self._extract_published_time(item)
+
+                article = Article(
+                    title=title,
+                    url=url,
+                    summary=summary,
+                    published=published_time,
+                    author="Baidu Search",
+                    source_name=source_name or "Baidu",
+                    source="baidu_search",
+                )
+                articles.append(article)
+
+            filtered_articles = self._filter_by_date(articles, days_back)
+            return filtered_articles[: self.max_articles]
+        except Exception as e:
+            logger.error(f"Baidu search failed: {e}")
+            return []
+
+    def _extract_results(self, data: dict) -> List[dict]:
+        candidates = [
+            data.get("results"),
+            data.get("items"),
+            data.get("web"),
+            data.get("resource"),
+            data.get("data"),
+            data.get("result"),
+        ]
+        data_obj = data.get("data", {})
+        result_obj = data.get("result", {})
+        if isinstance(data_obj, dict):
+            candidates.extend(
+                [
+                    data_obj.get("web"),
+                    data_obj.get("results"),
+                    data_obj.get("items"),
+                    data_obj.get("resource"),
+                ]
+            )
+        if isinstance(result_obj, dict):
+            candidates.extend(
+                [
+                    result_obj.get("web"),
+                    result_obj.get("results"),
+                    result_obj.get("items"),
+                    result_obj.get("resource"),
+                ]
+            )
+
+        for candidate in candidates:
+            if isinstance(candidate, list):
+                direct_items = [
+                    item
+                    for item in candidate
+                    if isinstance(item, dict) and ("title" in item or "url" in item)
+                ]
+                if direct_items:
+                    return direct_items
+                nested_items = []
+                for item in candidate:
+                    if not isinstance(item, dict):
+                        continue
+                    for nested_key in ["results", "items", "web", "resource"]:
+                        nested = item.get(nested_key)
+                        if isinstance(nested, list):
+                            nested_items.extend(
+                                [x for x in nested if isinstance(x, dict)]
+                            )
+                if nested_items:
+                    return nested_items
+            if isinstance(candidate, dict):
+                for nested_key in ["results", "items", "web", "resource"]:
+                    nested = candidate.get(nested_key)
+                    if isinstance(nested, list):
+                        return [item for item in nested if isinstance(item, dict)]
+        return []
+
+    def _extract_published_time(self, item: dict) -> str:
+        for field in ["page_time", "publish_time", "published_at", "time", "date"]:
+            raw = item.get(field)
+            if not raw:
+                continue
+            return self._parse_iso_datetime(str(raw))
+        return datetime.now(timezone.utc).isoformat()
+
+    def _extract_domain(self, url: str) -> str:
+        try:
+            return urlparse(url).netloc or ""
+        except Exception:
+            return ""
+
+    def _build_date_range(self, days_back: int) -> Optional[dict]:
+        if days_back <= 0:
+            return None
+        end_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        start_date = (datetime.now(timezone.utc) - timedelta(days=days_back)).strftime(
+            "%Y-%m-%d"
+        )
+        return {"gte": start_date, "lte": end_date}
+
+
 class SerperTool(BaseSearchTool):
     """Serper搜索工具"""
 
@@ -829,10 +998,6 @@ class MetaSotaSearchTool(BaseSearchTool):
             return []
 
         try:
-            import requests
-            import json
-            from datetime import datetime, timedelta
-
             # MCP协议请求格式 - 使用正确的工具名称和参数
             mcp_request = {
                 "jsonrpc": "2.0",

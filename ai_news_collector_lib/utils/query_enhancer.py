@@ -8,7 +8,7 @@ Key Features:
 - Single LLM call per user query (generates variants for all enabled engines)
 - Intelligent caching based on original query hash
 - Graceful fallback to original query on LLM failure
-- Support for all 11 search engines (4 free + 7 API-based)
+- Support for all 15 search engines (4 free + 11 API-based)
 - Comprehensive error handling and logging
 """
 
@@ -65,10 +65,11 @@ class QueryEnhancer:
     - Cache value: EnhancedQuery with all engine variants
     - Performance: One LLM call cost, regardless of engine count
 
-    Supported Engines (11 total):
+    Supported Engines (15 total):
     - Free (4): hackernews, arxiv, duckduckgo, rss_feeds
-    - API-based (7): newsapi, tavily, google_search, serper,
-      brave_search, metasota_search
+    - API-based (11): newsapi, tavily, google_search, serper,
+      brave_search, metasota_search, baidu_search, youtube, github_search,
+      huggingface, perplexity
     """
 
     # LLM Configuration
@@ -90,6 +91,7 @@ class QueryEnhancer:
         "serper",
         "brave_search",
         "metasota_search",
+        "baidu_search",
         "youtube",
         "github_search",
         "huggingface",

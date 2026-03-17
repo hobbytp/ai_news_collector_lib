@@ -8,7 +8,6 @@ Tests cover:
 """
 
 import pytest
-from unittest.mock import patch
 
 from ai_news_collector_lib.models.enhanced_query import EnhancedQuery
 from ai_news_collector_lib.utils.query_enhancer import (
@@ -109,7 +108,7 @@ class TestQueryEnhancer:
             raise LLMAPIError("API failed")
 
     def test_supported_engines(self):
-        """Test that SUPPORTED_ENGINES contains all 14 engines."""
+        """Test that SUPPORTED_ENGINES contains all 15 engines."""
         expected_engines = {
             "hackernews",
             "arxiv",
@@ -125,7 +124,8 @@ class TestQueryEnhancer:
             "github_search",
             "huggingface",
             "perplexity",
+            "baidu_search",
         }
 
         assert set(QueryEnhancer.SUPPORTED_ENGINES) == expected_engines
-        assert len(QueryEnhancer.SUPPORTED_ENGINES) == 14
+        assert len(QueryEnhancer.SUPPORTED_ENGINES) == 15

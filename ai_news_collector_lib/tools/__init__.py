@@ -13,6 +13,7 @@ from .search_tools import (
     GitHubSearchTool,
     HuggingFaceTool,
     PerplexityTool,
+    BaiduSearchTool,
 )
 
 __all__ = [
@@ -25,5 +26,6 @@ __all__ = [
     "GitHubSearchTool",
     "HuggingFaceTool",
     "PerplexityTool",
+    "BaiduSearchTool",
 ]
 

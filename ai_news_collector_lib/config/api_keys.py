@@ -20,6 +20,7 @@ class APIKeyManager:
     serper_api_key: Optional[str] = None
     brave_search_api_key: Optional[str] = None
     metasota_search_api_key: Optional[str] = None
+    baidu_search_api_key: Optional[str] = None
 
     def __post_init__(self):
         """初始化后处理"""
@@ -48,6 +49,9 @@ class APIKeyManager:
         if not self.metasota_search_api_key:
             self.metasota_search_api_key = os.getenv("METASOSEARCH_API_KEY")
 
+        if not self.baidu_search_api_key:
+            self.baidu_search_api_key = os.getenv("BAIDU_SEARCH_API_KEY")
+
     def get_available_keys(self) -> Dict[str, bool]:
         """获取可用的API密钥状态"""
         return {
@@ -57,6 +61,7 @@ class APIKeyManager:
             "serper": bool(self.serper_api_key),
             "brave_search": bool(self.brave_search_api_key),
             "metasota_search": bool(self.metasota_search_api_key),
+            "baidu_search": bool(self.baidu_search_api_key),
         }
 
     def get_key(self, service: str) -> Optional[str]:
@@ -68,6 +73,7 @@ class APIKeyManager:
             "serper": self.serper_api_key,
             "brave_search": self.brave_search_api_key,
             "metasota_search": self.metasota_search_api_key,
+            "baidu_search": self.baidu_search_api_key,
         }
         return key_mapping.get(service)
 
@@ -87,6 +93,8 @@ class APIKeyManager:
             self.brave_search_api_key = key
         elif service == "metasota_search":
             self.metasota_search_api_key = key
+        elif service == "baidu_search":
+            self.baidu_search_api_key = key
         else:
             raise ValueError(f"Unknown service: {service}")
 
@@ -156,6 +164,13 @@ class APIKeyManager:
                 "description": "MetaSota搜索服务 (ModelScope)",
                 "url": "https://www.modelscope.cn/mcp/servers/metasota/metaso-search",
                 "has_key": bool(self.metasota_search_api_key),
+                "required": True,
+            },
+            "baidu_search": {
+                "name": "Baidu Search",
+                "description": "百度千帆网页搜索API",
+                "url": "https://cloud.baidu.com/doc/qianfan-api/s/Wmbq4z7e5",
+                "has_key": bool(self.baidu_search_api_key),
                 "required": True,
             },
         }

@@ -29,6 +29,7 @@ class SearchConfig:
     enable_serper: bool = False
     enable_brave_search: bool = False
     enable_metasota_search: bool = False
+    enable_baidu_search: bool = False
 
     # v0.1.5 新增搜索源
     enable_youtube: bool = False
@@ -44,6 +45,7 @@ class SearchConfig:
     serper_api_key: Optional[str] = None
     brave_search_api_key: Optional[str] = None
     metasota_search_api_key: Optional[str] = None
+    baidu_search_api_key: Optional[str] = None
 
     # v0.1.5 新增 API 密钥
     youtube_api_key: Optional[str] = None
@@ -87,6 +89,9 @@ class SearchConfig:
         if not self.metasota_search_api_key:
             self.metasota_search_api_key = os.getenv("METASOSEARCH_API_KEY")
 
+        if not self.baidu_search_api_key:
+            self.baidu_search_api_key = os.getenv("BAIDU_SEARCH_API_KEY")
+
         # v0.1.5 新增
         if not self.youtube_api_key:
             self.youtube_api_key = os.getenv("YOUTUBE_API_KEY")
@@ -119,6 +124,9 @@ class SearchConfig:
 
         if self.metasota_search_api_key:
             self.enable_metasota_search = True
+
+        if self.baidu_search_api_key:
+            self.enable_baidu_search = True
 
         # v0.1.5 新增
         if self.youtube_api_key:
@@ -163,6 +171,9 @@ class SearchConfig:
 
         if self.enable_metasota_search and self.metasota_search_api_key:
             sources.append("metasota_search")
+
+        if self.enable_baidu_search and self.baidu_search_api_key:
+            sources.append("baidu_search")
 
         # v0.1.5 新增
         if self.enable_youtube and self.youtube_api_key:
@@ -211,6 +222,9 @@ class SearchConfig:
 
         if self.enable_metasota_search and not self.metasota_search_api_key:
             validation_result["warnings"].append("MetaSota搜索已启用但缺少API密钥")
+
+        if self.enable_baidu_search and not self.baidu_search_api_key:
+            validation_result["warnings"].append("百度搜索已启用但缺少API密钥")
 
         # v0.1.5 新增
         if self.enable_youtube and not self.youtube_api_key:

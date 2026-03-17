@@ -109,6 +109,7 @@ class FlexibleSearchConfig:
             self.engines["serper"] = EngineConfig(enabled=False)
             self.engines["brave_search"] = EngineConfig(enabled=False)
             self.engines["metasota_search"] = EngineConfig(enabled=False)
+            self.engines["baidu_search"] = EngineConfig(enabled=False)
             self.engines["youtube"] = EngineConfig(enabled=False)
             self.engines["github_search"] = EngineConfig(enabled=False)
             self.engines["huggingface"] = EngineConfig(enabled=False)
@@ -123,6 +124,7 @@ class FlexibleSearchConfig:
             "serper": "SERPER_API_KEY",
             "brave_search": "BRAVE_SEARCH_API_KEY",
             "metasota_search": "METASOSEARCH_API_KEY",
+            "baidu_search": "BAIDU_SEARCH_API_KEY",
             "youtube": "YOUTUBE_API_KEY",
             "github_search": "GITHUB_TOKEN",
             "huggingface": "HUGGINGFACE_API_KEY",
@@ -207,7 +209,7 @@ class FlexibleSearchConfig:
         # 检查API密钥
         for engine_name, config in self.engines.items():
             if config.enabled and config.api_key is None:
-                if engine_name in ["newsapi", "tavily", "google_search", "serper", "brave_search", "metasota_search"]:
+                if engine_name in ["newsapi", "tavily", "google_search", "serper", "brave_search", "metasota_search", "baidu_search"]:
                     validation_result["warnings"].append(f"{engine_name} 已启用但缺少API密钥")
         
         return validation_result

@@ -8,8 +8,8 @@ search engine types.
 
 Supported Engines:
 - Free Engines (4): hackernews, arxiv, duckduckgo, rss_feeds
-- API-based Engines (10): newsapi, tavily, google_search, serper,
-  brave_search, metasota_search, youtube, github_search, huggingface, perplexity
+- API-based Engines (11): newsapi, tavily, google_search, serper,
+  brave_search, metasota_search, baidu_search, youtube, github_search, huggingface, perplexity
 """
 
 from dataclasses import dataclass, asdict, field
@@ -34,13 +34,14 @@ class EnhancedQuery:
         duckduckgo (Optional[str]): Optimized query for DuckDuckGo
         rss_feeds (Optional[str]): Optimized query for RSS feeds
 
-        # API-based Search Engines (10)
+        # API-based Search Engines (11)
         newsapi (Optional[str]): Optimized query for NewsAPI
         tavily (Optional[str]): Optimized query for Tavily search
         google_search (Optional[str]): Optimized query for Google Custom Search
         serper (Optional[str]): Optimized query for Serper
         brave_search (Optional[str]): Optimized query for Brave Search
         metasota_search (Optional[str]): Optimized query for MetaSota Search
+        baidu_search (Optional[str]): Optimized query for Baidu Search
         youtube (Optional[str]): Optimized query for YouTube search
         github_search (Optional[str]): Optimized query for GitHub search
         huggingface (Optional[str]): Optimized query for HuggingFace search
@@ -62,6 +63,7 @@ class EnhancedQuery:
     serper: Optional[str] = None
     brave_search: Optional[str] = None
     metasota_search: Optional[str] = None
+    baidu_search: Optional[str] = None
     youtube: Optional[str] = None
     github_search: Optional[str] = None
     huggingface: Optional[str] = None
@@ -84,6 +86,7 @@ class EnhancedQuery:
         "serper",
         "brave_search",
         "metasota_search",
+        "baidu_search",
         "youtube",
         "github_search",
         "huggingface",

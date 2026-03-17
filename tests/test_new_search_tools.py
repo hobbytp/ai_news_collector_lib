@@ -5,9 +5,8 @@ YouTubeTool, GitHubSearchTool, HuggingFaceTool, PerplexityTool
 Uses mock HTTP responses — no real API calls.
 """
 
-import pytest
 from unittest.mock import patch, MagicMock
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 from ai_news_collector_lib.tools.search_tools import (
     BaseSearchTool,
@@ -15,10 +14,16 @@ from ai_news_collector_lib.tools.search_tools import (
     GitHubSearchTool,
     HuggingFaceTool,
     PerplexityTool,
+    BaiduSearchTool,
 )
 
 
 # ─────────────────────── Fixtures ─────────────────────────
+
+RECENT_UTC_Z = (datetime.now(timezone.utc) - timedelta(days=1)).strftime(
+    "%Y-%m-%dT%H:%M:%SZ"
+)
+RECENT_UTC_OFFSET = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
 
 MOCK_YOUTUBE_RESPONSE = {
     "items": [
@@ -27,7 +32,7 @@ MOCK_YOUTUBE_RESPONSE = {
             "snippet": {
                 "title": "AI &amp; Machine Learning in 2026",
                 "description": "A comprehensive overview of the latest AI trends.",
-                "publishedAt": "2026-02-18T10:00:00Z",
+                "publishedAt": RECENT_UTC_Z,
                 "channelTitle": "TechChannel",
             },
         },
@@ -36,7 +41,7 @@ MOCK_YOUTUBE_RESPONSE = {
             "snippet": {
                 "title": "Deep Learning Tutorial",
                 "description": "Learn deep learning from scratch.",
-                "publishedAt": "2026-02-17T15:30:00Z",
+                "publishedAt": RECENT_UTC_Z,
                 "channelTitle": "LearnAI",
             },
         },
@@ -52,8 +57,8 @@ MOCK_GITHUB_RESPONSE = {
             "description": "Next generation language model",
             "stargazers_count": 50000,
             "language": "Python",
-            "pushed_at": "2026-02-18T08:00:00Z",
-            "updated_at": "2026-02-18T08:00:00Z",
+            "pushed_at": RECENT_UTC_Z,
+            "updated_at": RECENT_UTC_Z,
             "owner": {"login": "openai"},
         },
     ]
@@ -63,7 +68,7 @@ MOCK_HUGGINGFACE_RESPONSE = [
     {
         "modelId": "meta-llama/Llama-4",
         "id": "meta-llama/Llama-4",
-        "lastModified": "2026-02-18T06:00:00Z",
+        "lastModified": RECENT_UTC_Z,
         "pipeline_tag": "text-generation",
         "downloads": 1000000,
         "likes": 5000,
@@ -88,6 +93,27 @@ MOCK_PERPLEXITY_RESPONSE = {
         "https://openai.com/blog/gpt-5",
         "https://deepmind.google/gemini-3",
     ],
+}
+
+MOCK_BAIDU_RESPONSE = {
+    "data": {
+        "web": [
+            {
+                "title": "Baidu AI Search Launches New Features",
+                "url": "https://example.com/baidu-ai-search",
+                "summary": "Baidu introduces enhanced AI search capabilities.",
+                "site_name": "Example News",
+                "page_time": RECENT_UTC_Z,
+            },
+            {
+                "title": "Qianfan API Update",
+                "url": "https://cloud.baidu.com/doc/qianfan-api",
+                "content": "Qianfan web_search now supports richer filters.",
+                "source": "Baidu Cloud",
+                "publish_time": RECENT_UTC_OFFSET,
+            },
+        ]
+    }
 }
 
 
@@ -411,17 +437,73 @@ class TestPerplexityTool:
         assert len(articles) == 0
 
 
+class TestBaiduSearchTool:
+    """Test BaiduSearchTool with mock API responses."""
+
+    def test_initialization(self):
+        tool = BaiduSearchTool(api_key="baidu-test-key")
+        assert tool.api_key == "baidu-test-key"
+        assert tool.max_articles == 10
+
+    @patch.object(BaseSearchTool, "_build_session")
+    def test_search_success(self, mock_build_session):
+        session = _mock_session(_mock_response(MOCK_BAIDU_RESPONSE))
+        mock_build_session.return_value = session
+
+        tool = BaiduSearchTool(api_key="baidu-test-key", max_articles=5)
+        articles = tool.search("AI 搜索", days_back=7)
+
+        assert len(articles) == 2
+        assert articles[0].source == "baidu_search"
+        assert articles[0].title == "Baidu AI Search Launches New Features"
+        assert articles[0].url == "https://example.com/baidu-ai-search"
+        assert articles[0].source_name == "Example News"
+
+        call_kwargs = session.post.call_args.kwargs
+        assert call_kwargs["headers"]["Authorization"] == "Bearer baidu-test-key"
+        assert call_kwargs["json"]["messages"]["content"] == "AI 搜索"
+        assert call_kwargs["json"]["search_source"] == "baidu_search_v2"
+        assert "search_filter" in call_kwargs["json"]
+        assert "page_time" in call_kwargs["json"]["search_filter"]["range"]
+
+    @patch.object(BaseSearchTool, "_build_session")
+    def test_search_handles_empty_response(self, mock_build_session):
+        mock_build_session.return_value = _mock_session(_mock_response({}))
+
+        tool = BaiduSearchTool(api_key="baidu-test-key", max_articles=3)
+        articles = tool.search("AI")
+
+        assert articles == []
+
+    @patch.object(BaseSearchTool, "_build_session")
+    def test_search_api_error(self, mock_build_session):
+        mock_build_session.return_value = _mock_session(
+            _mock_response({}, status_code=401)
+        )
+
+        tool = BaiduSearchTool(api_key="baidu-test-key")
+        articles = tool.search("AI")
+
+        assert articles == []
+
+
 # ─────────────────── Dispatch Integration Tests ─────────────────
 
 class TestToolDispatch:
     """Test that _create_tool correctly dispatches to new tools."""
 
     def test_config_contains_new_engines(self):
-        """Verify flexible_config registers up all 4 new engines."""
+        """Verify flexible_config registers up all 5 new engines."""
         from ai_news_collector_lib.config.flexible_config import FlexibleSearchConfig
 
         config = FlexibleSearchConfig()
-        for engine in ["youtube", "github_search", "huggingface", "perplexity"]:
+        for engine in [
+            "youtube",
+            "github_search",
+            "huggingface",
+            "perplexity",
+            "baidu_search",
+        ]:
             assert engine in config.engines, f"Engine '{engine}' not in config"
 
     def test_import_all_tools(self):
@@ -431,8 +513,10 @@ class TestToolDispatch:
             GitHubSearchTool,
             HuggingFaceTool,
             PerplexityTool,
+            BaiduSearchTool,
         )
         assert YouTubeTool is not None
         assert GitHubSearchTool is not None
         assert HuggingFaceTool is not None
         assert PerplexityTool is not None
+        assert BaiduSearchTool is not None

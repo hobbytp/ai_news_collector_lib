@@ -5,6 +5,7 @@
 
 import asyncio
 import logging
+from datetime import datetime, timedelta, timezone
 from typing import List, Dict, Any, Optional, Callable
 from difflib import SequenceMatcher
 
@@ -20,6 +21,7 @@ from ..tools.search_tools import (
     SerperTool,
     BraveSearchTool,
     MetaSotaSearchTool,
+    BaiduSearchTool,
     YouTubeTool,
     GitHubSearchTool,
     HuggingFaceTool,
@@ -99,6 +101,12 @@ class AINewsCollector:
         if metasota_enabled:
             self.tools["metasota_search"] = MetaSotaSearchTool(
                 api_key=self.config.metasota_search_api_key,
+                max_articles=self.config.max_articles_per_source,
+            )
+
+        if self.config.enable_baidu_search and self.config.baidu_search_api_key:
+            self.tools["baidu_search"] = BaiduSearchTool(
+                api_key=self.config.baidu_search_api_key,
                 max_articles=self.config.max_articles_per_source,
             )
 
