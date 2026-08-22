@@ -8,6 +8,13 @@ import subprocess
 import shutil
 from dotenv import load_dotenv
 
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 # 自动加载项目根目录 .env（如果存在），便于读取 TWINE_PASSWORD 等环境变量
 load_dotenv()
 
