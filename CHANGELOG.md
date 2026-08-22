@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.7] - 2026-08-22
+
+### 🔄 Changed & Upgraded
+
+- **Google GenAI SDK 升级**
+  - 将 `QueryEnhancer` 从已废弃的旧版 `google-generativeai` 迁移至全新的 Google 官方 SDK `google-genai` (`from google import genai`)
+  - 适配现代 Client 实例模式 (`genai.Client`) 与 `client.models.generate_content()` API
+  - 彻底消除 `FutureWarning: google.generativeai is deprecated` 废弃警告
+  - 升级依赖定义：移除 `google-generativeai`，引入 `google-genai>=0.1.0`
+
+### 🧪 Testing
+
+- 扩展 `TestQueryEnhancer` 单元测试，添加针对 `google-genai` Client 的 Mock 测试（成功优化、缓存复用、API 异常优雅降级回退）
+- 全量测试套件通过（68 passed, 0 failures）
+
 ## [0.1.6] - 2026-03-17
 
 ### ✨ Added

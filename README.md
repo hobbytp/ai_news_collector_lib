@@ -5,13 +5,13 @@
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![PyPI](https://img.shields.io/badge/PyPI-ai--news--collector--lib-blue)](https://pypi.org/project/ai-news-collector-lib/)
-[![Latest Release](https://img.shields.io/badge/Latest-v0.1.6-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.6)
+[![Latest Release](https://img.shields.io/badge/Latest-v0.1.7-brightgreen)](https://github.com/ai-news-collector/ai-news-collector-lib/releases/tag/v0.1.7)
 
 ---
 
-## 📊 支持的信息源（截止 v0.1.6）
+## 📊 支持的信息源（截止 v0.1.7）
 
-> AI News Collector 截止最新版本（v0.1.6），已支持从 **15 个不同数据源** 收集 AI 相关信息，覆盖 **新闻资讯、学术论文、开源项目、AI 模型、视频内容、AI 搜索** 等多种维度。
+> AI News Collector 截止最新版本（v0.1.7），已支持从 **15 个不同数据源** 收集 AI 相关信息，覆盖 **新闻资讯、学术论文、开源项目、AI 模型、视频内容、AI 搜索** 等多种维度。
 
 ### ✅ 免费源（无需 API 密钥）
 
@@ -44,26 +44,17 @@
 
 ---
 
-## 🚀 最新更新 (v0.1.6 - 百度搜索接入与发布流程完善)
+## 🚀 最新更新 (v0.1.7 - Google 官方全新 google-genai SDK 迁移)
 
-> **v0.1.6 版本更新** - 新增 Baidu Search（百度千帆 web_search）支持，并完善发布与质量门禁流程。
+> **v0.1.7 版本更新** - 迁移 `QueryEnhancer` 至 Google 官方全新 `google-genai` SDK，消除废弃警告并增强容灾测试覆盖。
 
-### 🔍 新增搜索引擎
+### 🔄 SDK 与依赖升级
 
-- ✅ **Baidu Search** - 支持百度千帆 `web_search`，默认网页模态，支持日期范围过滤与统一时间字段
+- ✅ **Google GenAI SDK 升级** - `QueryEnhancer` 迁移至 `google-genai` (`from google import genai`)，采用现代 Client 架构与 `client.models.generate_content()`
+- ✅ **消除废弃警告** - 彻底消除旧版 `google-generativeai` 库的 `FutureWarning`
+- ✅ **依赖与测试完善** - 核心依赖更新为 `google-genai>=0.1.0`，新增 Mock 生成、缓存与降级测试
 
-### 🏗️ 配置与生态同步
-
-- ✅ **统一配置** - `SearchConfig`、`AdvancedSearchConfig`、`FlexibleSearchConfig`、`APIKeyManager` 均已接入 `baidu_search`
-- ✅ **查询增强同步** - `EnhancedQuery` 与 `QueryEnhancer` 的引擎列表已包含 `baidu_search`
-
-### 🔧 核心改进 (v0.1.4)
-
-- ✅ **100%时间过滤准确率** - 彻底解决时间过滤问题
-- ✅ **双重过滤机制** - API级别过滤 + 客户端备用过滤
-- ✅ **全搜索引擎支持** - 修复了所有搜索引擎的时间过滤问题
-
-📋 详见: [完整指南](USAGE_GUIDE.md) | [v0.1.6 发布总结](V0.1.6_RELEASE_SUMMARY.md)
+📋 详见: [完整指南](USAGE_GUIDE.md) | [v0.1.7 发布总结](V0.1.7_RELEASE_SUMMARY.md)
 
 ---
 
@@ -620,6 +611,13 @@ A: 详见[架构设计](ARCHITECTURE.md)中的"添加新搜索源"部分。
 ---
 
 ## 📈 更新日志
+
+### v0.1.7 (2026-08-22) - 🔄 Google 官方全新 google-genai SDK 迁移
+
+- 🔄 **迁移至 google-genai SDK** - `QueryEnhancer` 全面迁移至 Google 官方全新 SDK（`from google import genai`），采用现代 Client 架构
+- 🛡️ **彻底消除废弃警告** - 消除旧版 `google-generativeai` 抛出的 `FutureWarning` 弃用警告
+- 📦 **依赖与环境同步** - 移除 `google-generativeai`，引入 `google-genai>=0.1.0`
+- 🧪 **测试用例扩充** - 增加针对 `QueryEnhancer` 的 Mock 生成、缓存与异常降级容灾测试用例
 
 ### v0.1.6 (2026-03-17) - 🧭 新增百度搜索支持
 

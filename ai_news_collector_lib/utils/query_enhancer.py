@@ -21,9 +21,11 @@ from typing import Dict, List, Optional
 import asyncio
 
 try:
-    import google.generativeai as genai
+    from google import genai
+    from google.genai import types
 except ImportError:
     genai = None
+    types = None
 
 from ai_news_collector_lib.models import EnhancedQuery
 
@@ -119,15 +121,15 @@ class QueryEnhancer:
             cache_dir (Optional[str]): Directory for cache files. If None, uses in-memory cache.
 
         Raises:
-            QueryEnhancerError: If google-generativeai is not installed
+            QueryEnhancerError: If google-genai is not installed
         """
         if genai is None:
             raise QueryEnhancerError(
-                "google-generativeai is required for QueryEnhancer. "
-                "Install it with: pip install google-generativeai>=0.3.0"
+                "google-genai is required for QueryEnhancer. "
+                "Install it with: pip install google-genai>=0.1.0"
             )
 
-        self.api_key = api_key or os.getenv("GOOGLE_API_KEY")
+        self.api_key = api_key or os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
         self.provider = provider
         self.model = model
         self.cache_ttl = cache_ttl
@@ -140,8 +142,9 @@ class QueryEnhancer:
         # Initialize LLM
         if self.provider == "google-gemini":
             if self.api_key:
-                genai.configure(api_key=self.api_key)
-            self.llm_model = genai.GenerativeModel(self.model)
+                self.client = genai.Client(api_key=self.api_key)
+            else:
+                self.client = genai.Client()
         else:
             raise QueryEnhancerError(f"Unsupported LLM provider: {self.provider}")
 
@@ -332,13 +335,20 @@ Return ONLY valid JSON, no additional text or explanations:
             )
 
             # Make single LLM API call
-            response = self.llm_model.generate_content(
-                prompt,
-                generation_config=genai.types.GenerationConfig(
+            config = (
+                types.GenerateContentConfig(
                     temperature=0.3,  # Low temperature for consistent results
                     max_output_tokens=2000,
                     top_p=0.95,
-                ),
+                )
+                if types
+                else None
+            )
+
+            response = self.client.models.generate_content(
+                model=self.model,
+                contents=prompt,
+                config=config,
             )
 
             if not response or not response.text:
@@ -347,10 +357,6 @@ Return ONLY valid JSON, no additional text or explanations:
             # Parse and return optimized queries
             return self._parse_response(response.text, enabled_engines)
 
-        except genai.types.BlockedPromptException as e:
-            raise LLMAPIError(f"LLM blocked the prompt: {e}")
-        except genai.types.StopCandidateException as e:
-            raise LLMAPIError(f"LLM stopped generation: {e}")
         except Exception as e:
             raise LLMAPIError(f"LLM API call failed: {e}")
 
